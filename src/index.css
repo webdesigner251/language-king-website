@@ -17,7 +17,7 @@
   --background-image-gradient-primary: linear-gradient(to right, var(--color-brand-green), var(--color-brand-orange));
   --background-image-gradient-secondary: linear-gradient(to right, var(--color-light-blue), var(--color-dark-blue));
   --background-image-gradient-dark: linear-gradient(to right, var(--color-gray25), var(--color-gray30), var(--color-gray13));
-  --container-width: 1840px;
+  --container-width: 1600px;
 }
 
 @utility custom-container {
