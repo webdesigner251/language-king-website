@@ -3,27 +3,38 @@ import CourseImg1 from '../assets/course-img1.png';
 import CourseImg2 from '../assets/course-img2.png';
 import CourseImg3 from '../assets/course-img3.png';
 import avatar from '../assets/avatar-img.png';
-import VideoImg from '../assets/course-video-img-1.png';
-import VideoImg1 from '../assets/course-video-img-2.png';
+import VideoImg1 from '../assets/course-video-img-1.png';
+import VideoImg2 from '../assets/course-video-img-2.png';
+import VideoImg3 from '../assets/course-video-img-3.png';
+import VideoImg4 from '../assets/course-video-img-4.png';
+import Icon1 from '../assets/icons/video-icon.svg';
+import Icon2 from '../assets/icons/download-icon.svg';
+import Icon3 from '../assets/icons/rec-icon.svg';
+import Icon4 from '../assets/icons/ai-icon.svg';
+import Icon5 from '../assets/icons/whatsapp-icon.svg';
+import Icon6 from '../assets/icons/live-icon.svg';
+import Icon7 from '../assets/icons/badge-icon.svg';
 const Home = () => {
     return (
-        <main className="bg-black">
-            <section className="bg-black lg:pt-[180px] lg:pb-[230px] md:pt-[100px] md:pb-[100px] pt-[90px] pb-[50px]">
-                <div className="custom-container mx-auto px-3">
+        <main className="bg-dark">
+            <section className=" lg:pt-[150px] lg:pb-[230px] md:pt-[100px] md:pb-[100px] pt-[90px] pb-[50px]">
+                <div className="custom-container mx-auto py-0 px-4 sm:px-[38px]">
                     <div className="max-w-[830px]">
-                        <h2 className="text-gradient-primary font-bold md:text-[32px] text-2xl"># Australia’s No.1</h2>
-                        <h1 className="font-inter font-bold lg:text-[72px] sm:text-[58px] text-[36px] lg:leading-[77px] sm:leading-[66px] leading-[40px] sm:mt-0 mt-3 text-white">
-                            PTE, IELTS & NAATI CCL  Coaching Institute
-                        </h1>
-                        <p className="md:text-2xl sm:text-xl text-base font-light max-w-[800px] text-white/75 mt-5">
-                            Join 10,000+ satisfied students in achieving their desired Test Scores.
-                            Helped many students, now it's your turn!
-                        </p>
+                        <div className="flex flex-col gap-6">
+                            <h2 className="text-gradient-primary font-bold md:text-[32px] text-2xl"># Australia’s No.1</h2>
+                            <h1 className="font-inter font-bold lg:text-[72px] sm:text-[58px] text-[36px] lg:leading-[77px] sm:leading-[66px] leading-[40px] sm:mt-0 mt-3 text-white">
+                                PTE, IELTS & NAATI CCL  Coaching Institute
+                            </h1>
+                            <p className="md:text-2xl sm:text-xl text-base font-light max-w-[800px] text-white/75">
+                                Join 10,000+ satisfied students in achieving their desired Test Scores.
+                                Helped many students, now it's your turn!
+                            </p>
+                        </div>
                         <div className="mt-[48px] flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[800px]">
-                            <a href="#" className="primary-btn bg-gradient-primary inline-flex justify-center items-center text-center text-black px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10">
+                            <a href="#" className="min-h-[72px] align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10">
                                 Get a Callback
                             </a>
-                            <a href="#" className="text-center bg-transparent border-2 border-Cadmium-Orange text-white px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
+                            <a href="#" className="min-h-[72px] align-middle inline-flex items-center justify-center text-center bg-transparent border-2 border-Cadmium-Orange text-white px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
                                 Watch Free Lessons
                             </a>
                         </div>
@@ -31,13 +42,15 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="bg-black mb-8">
-                <div className="custom-container mx-auto py-0 px-4 sm:px-8 z-50 border-t border-[#252525]">
-                    <h2 className="text-white font-bold sm:text-[29.39px] text-2xl relative  inline-block z-10 mb-[38px] stroke-heading">Our Courses</h2>
+            <section className="mb-8">
+                <div className="custom-container mx-auto py-0 px-4 sm:px-[38px] z-50 ">
+                    <div className="border-t border-[#252525]">
+                        <h2 className="text-white font-bold sm:text-[29.39px] text-2xl relative  inline-block z-10 my-[38px] stroke-heading">Our Courses</h2>
+                    </div>
                     <div className="flex flex-col gap-[38px]">
-                        <div class="grid lg:grid-cols-2 gap-[38px] bg-[#121211] transition-all duration-300 ease hover:bg-white/10 border border-white/10 group px-4 sm:px-6 py-4 sm:py-6  relative">
-                            <div class="ribbon ribbon-top-left z-10"><span>New course!</span></div>
-                            <div className="overflow-hidden relative z-0">
+                        <div className="grid course-drop-shadow lg:grid-cols-2 gap-[38px] bg-course-orange-bg hover:bg-course-orange-hover-bg transition-all duration-300 ease border border-white/10 group px-4 sm:px-6 py-4 sm:py-6  relative">
+                            <div className="ribbon ribbon-top-left z-10"><span>New course!</span></div>
+                            <div className="overflow-hidden relative z-0 max-h-[450px]">
                                 <img src={CourseImg1} alt="CourseImg1" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
                             </div>
                             <div className="lg:py-[40px]">
@@ -50,18 +63,18 @@ const Home = () => {
                                     <img src={avatar} alt="avatar" className="w-[50px] h-[50px] rounded-full border-4 border-white/10" />
                                     <h3 className="text-xl text-white/60">Taught by <span className="text-white font-bold">Abhishek</span></h3>
                                 </div>
-                                <div className="sm:mt-[28px] mt-[24px] flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[800px]">
-                                    <a href="#" className="primary-btn bg-gradient-primary inline-flex justify-center items-center text-center text-white px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10">
+                                <div className="sm:mt-[28px] mt-[24px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
+                                    <a href="#" className="primary-btn bg-gradient-primary inline-flex justify-center items-center text-center text-white px-3 py-3 lg:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10">
                                         Take the Course
                                     </a>
-                                    <a href="#" className="text-center bg-transparent border-2 border-white/20 inline-flex justify-center items-center text-white px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
+                                    <a href="#" className="text-center bg-transparent border-2 border-white/20 inline-flex justify-center items-center text-white px-3 py-3 lg:w-[50%] w-full font-bold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
                                         View Details
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="grid lg:grid-cols-2 gap-[38px] bg-[#121211] transition-all duration-300 ease hover:bg-white/10 border border-white/10 group px-4 sm:px-6 py-4 sm:py-6  relative">
-                            <div className="overflow-hidden relative z-0">
+                        <div className="grid course-drop-shadow lg:grid-cols-2 gap-[38px] bg-course-blue-bg hover:bg-course-blue-hover-bg transition-all duration-300 ease border border-white/10 group px-4 sm:px-6 py-4 sm:py-6  relative">
+                            <div className="overflow-hidden relative z-0 max-h-[450px]">
                                 <img src={CourseImg2} alt="CourseIm21" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
                             </div>
                             <div className="lg:py-[40px]">
@@ -74,18 +87,18 @@ const Home = () => {
                                     <img src={avatar} alt="avatar" className="w-[50px] h-[50px] rounded-full border-4 border-white/10" />
                                     <h3 className="text-xl text-white/60">Taught by <span className="text-white font-bold">Abhishek</span></h3>
                                 </div>
-                                <div className="sm:mt-[28px] mt-[24px] flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[800px]">
-                                    <a href="#" className="primary-btn bg-gradient-secondary leading-[28px] inline-flex justify-center items-center text-center text-white px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10">
+                                <div className="sm:mt-[28px] mt-[24px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
+                                    <a href="#" className="primary-btn bg-gradient-secondary leading-[28px] inline-flex justify-center items-center text-center text-white px-3 py-3 lg:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10">
                                         Take the Course
                                     </a>
-                                    <a href="#" className="text-center bg-transparent border-2 border-white/20 inline-flex justify-center items-center text-white px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
+                                    <a href="#" className="text-center bg-transparent border-2 border-white/20 inline-flex justify-center items-center text-white px-3 py-3 lg:w-[50%] w-full font-bold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
                                         View Details
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="grid lg:grid-cols-2 gap-[38px] bg-[#121211] transition-all duration-300 ease hover:bg-white/10 border border-white/10 group px-4 sm:px-6 py-4 sm:py-6  relative">
-                            <div className="overflow-hidden relative z-0">
+                        <div className="grid course-drop-shadow lg:grid-cols-2 gap-[38px] bg-course-black-bg hover:bg-course-black-hover-bg transition-all duration-300 ease border border-white/10 group px-4 sm:px-6 py-4 sm:py-6  relative">
+                            <div className="overflow-hidden relative z-0 max-h-[450px]">
                                 <img src={CourseImg3} alt="CourseImg3" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
                             </div>
                             <div className="lg:py-[40px]">
@@ -99,11 +112,11 @@ const Home = () => {
                                     <img src={avatar} alt="avatar" className="w-[50px] h-[50px] rounded-full border-4 border-white/10" />
                                     <h3 className="text-xl text-white/60">Taught by <span className="text-white font-bold">Abhishek</span></h3>
                                 </div>
-                                <div className="sm:mt-[28px] mt-[24px] flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[800px]">
-                                    <a href="#" className="primary-btn bg-gradient-dark leading-[28px] inline-flex justify-center items-center text-center text-white px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10">
+                                <div className="sm:mt-[28px] mt-[24px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
+                                    <a href="#" className="primary-btn bg-gradient-dark leading-[28px] inline-flex justify-center items-center text-center text-white px-3 py-3 lg:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10">
                                         Free E-Book
                                     </a>
-                                    <a href="#" className="text-center bg-transparent border-2 border-white/20 inline-flex justify-center items-center text-white px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
+                                    <a href="#" className="text-center bg-transparent border-2 border-white/20 inline-flex justify-center items-center text-white px-3 py-3 lg:w-[50%] w-full font-bold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
                                         View Details
                                     </a>
                                 </div>
@@ -113,8 +126,8 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="bg-black pb-8">
-                <div className="custom-container mx-auto py-0 px-4 sm:px-8">
+            <section className="pb-[40px]">
+                <div className="custom-container mx-auto py-0 px-4 sm:px-[38px]">
                     <div className="bg-[#252525] px-4 sm:px-8 ">
                         <div className="py-10">
                             <h2 className="text-2xl font-bold text-white text-left mb-4">Try these FREE video lessons</h2>
@@ -122,32 +135,76 @@ const Home = () => {
                             <div className="grid lg:grid-cols-4 grid-cols-2 gap-[28px]">
                                 <div className="relative">
                                     <div className="border-b-[4px] border-[#A6A6A6] mb-3">
-                                        <img src={VideoImg} alt="image" />
+                                        <img src={VideoImg1} alt="image" />
                                     </div>
                                     <h3 className="text-white font-bold text-2xl">Impact of Read Aloud on Reading Module</h3>
                                     <span className="text-white/60 mt-1 block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[4px] border-[#A6A6A6] mb-3">
-                                        <img src={VideoImg1} alt="image" />
+                                        <img src={VideoImg2} alt="image" />
                                     </div>
                                     <h3 className="text-white font-bold text-2xl">Poor score in Write Essay</h3>
                                     <span className="text-white/60 mt-1 block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[4px] border-[#A6A6A6] mb-3">
-                                        <img src={VideoImg} alt="image" />
+                                        <img src={VideoImg3} alt="image" />
                                     </div>
                                     <h3 className="text-white font-bold text-2xl">Dialogue vs Segment</h3>
                                     <span className="text-white/60 mt-1 block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[4px] border-[#A6A6A6] mb-3">
-                                        <img src={VideoImg1} alt="image" />
+                                        <img src={VideoImg4} alt="image" />
                                     </div>
                                     <h3 className="text-white font-bold text-2xl">PTE vs IELTS</h3>
                                     <span className="text-white/60 mt-1 block text-base font-semibold">PTE MasterClass</span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="pb-8">
+                <div className="custom-container mx-auto py-0 px-4 sm:px-[38px]">
+                    <div className="bg-black1 flex flex-col gap-[57px] border border-white/10 group md:px-[38px] px-6 md:pt-[70px] md:pb-[85px] pt-6 pb-7  relative">
+                        <h2 className="lg:text-[54px] sm:text-[42px] text-[32px] font-bold text-white text-left">What’s included in every Course</h2>
+                        <div className="grid lg:grid-cols-4 sm:grid-cols-3 grid-col-2 justify-around xl:gap-x-[200px] gap-x-[100px] gap-y-[60px] pe-[45px]">
+                            <div className="text-center">
+                                <img src={Icon1} alt="Icon" className="mx-auto mb-[35px] max-w-[118px]" />
+                                <span className="text-white/50 text-xl">Video Lectures- <br /> Basic to advance</span>
+                            </div>
+                            <div className="text-center">
+                                <img src={Icon2} alt="Icon" className="mx-auto mb-[35px] max-w-[118px]" />
+                                <span className="text-white/50 text-xl">Study Material - Templates,
+                                resources, and prediction file</span>
+                            </div>
+                            <div className="text-center">
+                                <img src={Icon3} alt="Icon" className="mx-auto mb-[35px] max-w-[118px]" />
+                                <span className="text-white/50 text-xl">Class Recordings - <br />
+                                Video library of past classes</span>
+                            </div>
+                            <div className="text-center">
+                                <img src={Icon4} alt="Icon" className="mx-auto mb-[35px] max-w-[118px]" />
+                                <span className="text-white/50 text-xl">AI Portal - Mock Test <br/>
+                                and 5000+ exam questions</span>
+                            </div>
+                            <div className="text-center">
+                                <img src={Icon5} alt="Icon" className="mx-auto mb-[35px] max-w-[118px]" />
+                                <span className="text-white/50 text-xl">Feedback - <br/>
+                                Ask an Expert</span>
+                            </div>
+                            <div className="text-center">
+                                <img src={Icon6} alt="Icon" className="mx-auto mb-[35px] max-w-[118px]" />
+                                <span className="text-white/50 text-xl">Live Classes - <br/>
+                                Learn with other students</span>
+                            </div>
+                            <div className="text-center">
+                                <img src={Icon7} alt="Icon" className="mx-auto mb-[35px] max-w-[118px]" />
+                                <span className="text-white/50 text-xl">Expert Trainers -<br/>
+                                Learn from certified trainers</span>
                             </div>
                         </div>
                     </div>

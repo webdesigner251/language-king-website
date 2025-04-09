@@ -14,18 +14,29 @@
   --color-gray25: #3C4145;
   --color-gray30: #2F3438;
   --color-gray13: #1F2021;
+  --color-black1: #0F1010;
   --background-image-gradient-primary: linear-gradient(to right, var(--color-brand-green), var(--color-brand-orange));
   --background-image-gradient-secondary: linear-gradient(to right, var(--color-light-blue), var(--color-dark-blue));
   --background-image-gradient-dark: linear-gradient(to right, var(--color-gray25), var(--color-gray30), var(--color-gray13));
-  --container-width: 1600px;
+  --container-width: 1920px;
+  --background-image-course-orange-bg: linear-gradient(95.47deg, rgba(216, 157, 138, .05) 0%, rgba(166, 101, 80, .05) 42.71%, rgba(90, 92, 85, .05) 100%);
+  --background-image-course-orange-hover-bg: linear-gradient(95.47deg, rgba(216, 157, 138, .1) 0%, rgba(166, 101, 80, .1) 42.71%, rgba(90, 92, 85, .1) 100%);
+  --background-image-course-green-bg: linear-gradient(95.47deg, rgba(193, 211, 78, .05) 0%, rgba(89, 211, 78, .05) 42.71%, rgba(81, 211, 78, .05) 100%);
+  --background-image-course-green-hover-bg: linear-gradient(95.47deg, rgba(193, 211, 78, .1) 0%, rgba(89, 211, 78, .1) 42.71%, rgba(81, 211, 78, .1) 100%);
+  --background-image-course-blue-bg: linear-gradient(95.47deg, rgba(23, 255, 186, .05) 0%, rgba(118, 180, 200, .05) 13.02%, rgba(47, 87, 167, .05) 100%);
+  --background-image-course-blue-hover-bg: linear-gradient(95.47deg, rgba(23, 255, 186, .1) 0%, rgba(118, 180, 200, .1) 13.02%, rgba(47, 87, 167, .1) 100%);
+  --background-image-course-marron-bg: linear-gradient(95.47deg, rgba(255, 204, 23, .05) 0%, rgba(200, 167, 118, .05) 42.71%, rgba(167, 61, 47, .05) 100%);
+  --background-image-course-marron-hover-bg: linear-gradient(95.47deg, rgba(255, 204, 23, .1) 0%, rgba(200, 167, 118, .1) 42.71%, rgba(167, 61, 47, .1) 100%);
+  --background-image-course-black-bg: linear-gradient(95.47deg, rgba(60, 65, 69, .2) 0%, rgba(47, 52, 56, .2) 45.5%, rgba(31, 32, 33, .2) 100%);
+  --background-image-course-black-hover-bg: linear-gradient(95.47deg, rgba(60, 65, 69, .25) 0%, rgba(47, 52, 56, .25) 45.5%, rgba(31, 32, 33, .25) 100%);
 }
 
 @utility custom-container {
   max-width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 38px;
+  padding-right: 38px;
 }
 
 @utility text-gradient-primary {
@@ -49,8 +60,19 @@
   background-clip: text;
 }
 
+
 * {
   font-family: "Inter", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-dark {
+  background-image: url('./assets/dark-bg.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .primary-btn::before {
@@ -76,7 +98,7 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 10px;
+  height: 6px;
   background: linear-gradient(90deg, #FD4F2B 0%, #D7FF53 100%);
   bottom: 7px;
   left: 0;
@@ -84,13 +106,25 @@
   z-index: -1;
 }
 
+.desktop-logo {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 193.17px;
+  z-index: 5;
+  margin: 0 auto;
+}
+
+
 
 .ribbon {
   width: 240px;
   height: 240px;
   overflow: hidden;
   position: absolute;
-
 }
 
 .ribbon span {
@@ -121,6 +155,23 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+.course-drop-shadow {
+  filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, .35));
+}
+
+.menu-ellipse {
+  position: absolute;
+  width: 232.09px;
+  height: 123.5px;
+  left: 0;
+  right: 0;
+  top: 60%;
+  transform: translate(0, -50%);
+  background: rgba(217, 217, 217, 0.17);
+  filter: blur(60px);
+  margin: 0 auto;
 }
 
 @media (max-width: 576px) {
