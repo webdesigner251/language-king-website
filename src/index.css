@@ -172,6 +172,14 @@ body::-webkit-scrollbar {
   background: rgba(217, 217, 217, 0.17);
   filter: blur(60px);
   margin: 0 auto;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  .desktop-logo {
+    left: -80px;
+    margin: 0;
+}
 }
 
 @media (max-width: 576px) {

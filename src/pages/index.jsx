@@ -169,41 +169,41 @@ const Home = () => {
 
             <section className="pb-8">
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[38px]">
-                    <div className="bg-black1 flex flex-col gap-[57px] border border-white/10 group md:px-[38px] px-6 md:pt-[70px] md:pb-[85px] pt-6 pb-7  relative">
+                    <div className="bg-black1 flex flex-col sm:gap-[57px] gap-[42px] sm:leading-[auto] leading-[40px] border border-white/10 group md:px-[38px] px-6 md:pt-[70px] md:pb-[85px] pt-6 pb-7  relative">
                         <h2 className="lg:text-[54px] sm:text-[42px] text-[32px] font-bold text-white text-left">What’s included in every Course</h2>
-                        <div className="grid lg:grid-cols-4 sm:grid-cols-3 grid-col-2 justify-around xl:gap-x-[200px] gap-x-[100px] gap-y-[60px] pe-[45px]">
+                        <div className="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 justify-around xl:gap-x-[200px] sm:gap-x-[100px] gap-[50px] gap-y-[60px] sm:pe-[45px]">
                             <div className="text-center">
-                                <img src={Icon1} alt="Icon" className="mx-auto mb-[35px] max-w-[118px]" />
-                                <span className="text-white/50 text-xl">Video Lectures- <br /> Basic to advance</span>
+                                <img src={Icon1} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
+                                <span className="text-white/50 md:text-xl sm:text-lg text-base sm:leading-[20px] leading-[16px]">Video Lectures- <br /> Basic to advance</span>
                             </div>
                             <div className="text-center">
-                                <img src={Icon2} alt="Icon" className="mx-auto mb-[35px] max-w-[118px]" />
-                                <span className="text-white/50 text-xl">Study Material - Templates,
+                                <img src={Icon2} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
+                                <span className="text-white/50 md:text-xl sm:text-lg text-base sm:leading-[20px] leading-[16px]">Study Material - Templates,
                                 resources, and prediction file</span>
                             </div>
                             <div className="text-center">
-                                <img src={Icon3} alt="Icon" className="mx-auto mb-[35px] max-w-[118px]" />
-                                <span className="text-white/50 text-xl">Class Recordings - <br />
+                                <img src={Icon3} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
+                                <span className="text-white/50 md:text-xl sm:text-lg text-base sm:leading-[20px] leading-[16px]">Class Recordings - <br />
                                 Video library of past classes</span>
                             </div>
                             <div className="text-center">
-                                <img src={Icon4} alt="Icon" className="mx-auto mb-[35px] max-w-[118px]" />
-                                <span className="text-white/50 text-xl">AI Portal - Mock Test <br/>
+                                <img src={Icon4} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
+                                <span className="text-white/50 md:text-xl sm:text-lg text-base sm:leading-[20px] leading-[16px]">AI Portal - Mock Test <br/>
                                 and 5000+ exam questions</span>
                             </div>
                             <div className="text-center">
-                                <img src={Icon5} alt="Icon" className="mx-auto mb-[35px] max-w-[118px]" />
-                                <span className="text-white/50 text-xl">Feedback - <br/>
+                                <img src={Icon5} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
+                                <span className="text-white/50 md:text-xl sm:text-lg text-base sm:leading-[20px] leading-[16px]">Feedback - <br/>
                                 Ask an Expert</span>
                             </div>
                             <div className="text-center">
-                                <img src={Icon6} alt="Icon" className="mx-auto mb-[35px] max-w-[118px]" />
-                                <span className="text-white/50 text-xl">Live Classes - <br/>
+                                <img src={Icon6} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
+                                <span className="text-white/50 md:text-xl sm:text-lg text-base sm:leading-[20px] leading-[16px]">Live Classes - <br/>
                                 Learn with other students</span>
                             </div>
                             <div className="text-center">
-                                <img src={Icon7} alt="Icon" className="mx-auto mb-[35px] max-w-[118px]" />
-                                <span className="text-white/50 text-xl">Expert Trainers -<br/>
+                                <img src={Icon7} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
+                                <span className="text-white/50 md:text-xl sm:text-lg text-base sm:leading-[20px] leading-[16px]">Expert Trainers -<br/>
                                 Learn from certified trainers</span>
                             </div>
                         </div>
