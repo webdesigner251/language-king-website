@@ -129,36 +129,36 @@ const Home = () => {
             <section className="pb-[40px]">
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[38px]">
                     <div className="bg-[#252525] px-4 sm:px-8 ">
-                        <div className="py-10">
+                        <div className="sm:py-10 py-7">
                             <h2 className="text-2xl font-bold text-white text-left mb-4">Try these FREE video lessons</h2>
 
-                            <div className="grid lg:grid-cols-4 grid-cols-2 gap-[28px]">
+                            <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-[28px]">
                                 <div className="relative">
                                     <div className="border-b-[4px] border-[#A6A6A6] mb-3">
-                                        <img src={VideoImg1} alt="image" />
+                                        <img src={VideoImg1} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold text-2xl">Impact of Read Aloud on Reading Module</h3>
+                                    <h3 className="text-white font-bold sm:text-2xl text-[21px] sm:leading-normal leading-[28px]">Impact of Read Aloud on Reading Module</h3>
                                     <span className="text-white/60 mt-1 block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[4px] border-[#A6A6A6] mb-3">
-                                        <img src={VideoImg2} alt="image" />
+                                        <img src={VideoImg2} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold text-2xl">Poor score in Write Essay</h3>
+                                    <h3 className="text-white font-bold sm:text-2xl text-[21px] sm:leading-normal leading-[28px]">Poor score in Write Essay</h3>
                                     <span className="text-white/60 mt-1 block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[4px] border-[#A6A6A6] mb-3">
-                                        <img src={VideoImg3} alt="image" />
+                                        <img src={VideoImg3} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold text-2xl">Dialogue vs Segment</h3>
+                                    <h3 className="text-white font-bold sm:text-2xl text-[21px] sm:leading-normal leading-[28px]">Dialogue vs Segment</h3>
                                     <span className="text-white/60 mt-1 block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[4px] border-[#A6A6A6] mb-3">
-                                        <img src={VideoImg4} alt="image" />
+                                        <img src={VideoImg4} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold text-2xl">PTE vs IELTS</h3>
+                                    <h3 className="text-white font-bold sm:text-2xl text-[21px] sm:leading-normal leading-[28px]">PTE vs IELTS</h3>
                                     <span className="text-white/60 mt-1 block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                             </div>
@@ -167,43 +167,43 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="pb-8">
+            <section className="sm:pb-8 pb-2">
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[38px]">
                     <div className="bg-black1 flex flex-col sm:gap-[57px] gap-[42px] sm:leading-[auto] leading-[40px] border border-white/10 group md:px-[38px] px-6 md:pt-[70px] md:pb-[85px] pt-6 pb-7  relative">
-                        <h2 className="lg:text-[54px] sm:text-[42px] text-[32px] font-bold text-white text-left">What’s included in every Course</h2>
-                        <div className="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 justify-around xl:gap-x-[200px] sm:gap-x-[100px] gap-[50px] gap-y-[60px] sm:pe-[45px]">
+                        <h2 className="lg:text-[54px] sm:text-[42px] text-[32px] leading-[1.2] font-bold text-white text-left">What’s included in every Course</h2>
+                        <div className="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 justify-around xl:gap-x-[200px] sm:gap-x-[100px] gap-x-[40px] gap-y-[44px] sm:pe-[45px]">
                             <div className="text-center">
                                 <img src={Icon1} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-base sm:leading-[20px] leading-[16px]">Video Lectures- <br /> Basic to advance</span>
+                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block">Video Lectures- <br /> Basic to advance</span>
                             </div>
                             <div className="text-center">
                                 <img src={Icon2} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-base sm:leading-[20px] leading-[16px]">Study Material - Templates,
+                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block">Study Material - Templates,
                                 resources, and prediction file</span>
                             </div>
                             <div className="text-center">
                                 <img src={Icon3} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-base sm:leading-[20px] leading-[16px]">Class Recordings - <br />
+                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block">Class Recordings - <br />
                                 Video library of past classes</span>
                             </div>
                             <div className="text-center">
                                 <img src={Icon4} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-base sm:leading-[20px] leading-[16px]">AI Portal - Mock Test <br/>
+                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block">AI Portal - Mock Test <br/>
                                 and 5000+ exam questions</span>
                             </div>
                             <div className="text-center">
                                 <img src={Icon5} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-base sm:leading-[20px] leading-[16px]">Feedback - <br/>
+                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block">Feedback - <br/>
                                 Ask an Expert</span>
                             </div>
                             <div className="text-center">
                                 <img src={Icon6} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-base sm:leading-[20px] leading-[16px]">Live Classes - <br/>
+                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block">Live Classes - <br/>
                                 Learn with other students</span>
                             </div>
                             <div className="text-center">
                                 <img src={Icon7} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-base sm:leading-[20px] leading-[16px]">Expert Trainers -<br/>
+                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block">Expert Trainers -<br/>
                                 Learn from certified trainers</span>
                             </div>
                         </div>

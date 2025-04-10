@@ -69,6 +69,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+body {
+  background-color: #000000;
+}
+
 .bg-dark {
   background-image: url('./assets/dark-bg.png');
   background-size: cover;
@@ -179,7 +183,8 @@ body::-webkit-scrollbar {
   .desktop-logo {
     left: -80px;
     margin: 0;
-}
+    width: auto;
+  }
 }
 
 @media (max-width: 576px) {
@@ -197,5 +202,11 @@ body::-webkit-scrollbar {
   .ribbon-top-left span {
     right: -25px;
     top: 20px;
+  }
+
+  .desktop-logo {
+    left: -21%;
+    top: -80px;
+    transform: scale(1.3);
   }
 }

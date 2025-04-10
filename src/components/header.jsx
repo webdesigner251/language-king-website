@@ -9,7 +9,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="bg-dark text-white py-[48px]">
+        <header className="bg-dark text-white sm:py-[48px] py-[32px]">
             <div className="custom-container mx-auto py-0 px-4 sm:px-[38px]">
                 <div className="flex items-center justify-between relative">
                     {/* Left Logo */}
@@ -18,7 +18,7 @@ const Header = () => {
                     </div>
 
                     {/* Right Logo */}
-                    <div className="xl:w-[20%] sm:w-[30%] w-[50%] relative logo-wrapper">
+                    <div className="xl:w-[20%] sm:w-[50%] w-[50%] relative logo-wrapper">
                         <img src={Logo} alt="Logo" className="xl:ml-0 ml-[-27%] desktop-logo" />
                     </div>
 
@@ -57,7 +57,7 @@ const Header = () => {
                             <div className="menu-ellipse"></div>
                             <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300">Courses</a></li>
                             <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300">Testimonials</a></li>
-                            <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300">Contact us</a></li>
+                            <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-medium text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300">Contact us</a></li>
                         </ul>
 
                         <div className="flex flex-col justify-center items-center py-[70px] gap-1">
