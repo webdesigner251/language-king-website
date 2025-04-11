@@ -13,28 +13,28 @@ const Footer = () => {
     return (
         <>
             <footer className="bg-dark md:pt-[67px] pt-[32px]">
-                <div className="custom-container mx-auto py-0 px-4 sm:px-[38px]">
+                <div className="custom-container mx-auto py-0 px-0 sm:px-[38px]">
                     <div className="border-t border-[#252525]">
                         <div className="border border-[#333434] mt-[40px] mb-[38px]">
-                            <div className="bg-[#252525] sm:p-[38px] p-4 border-b border-[#333434]">
+                            <div className="bg-[#1A1A1A] sm:p-[38px] p-4 border-b border-[#333434]">
                                 <div className="flex lg:flex-nowrap flex-wrap justify-between sm:gap-8 gap-[33px]">
                                     <div className="lg:w-auto w-full flex flex-col sm:gap-[40px] gap-[22px]">
                                         <h4 className="text-white font-bold sm:text-[27px] text-[23px]">Contact Us </h4>
                                         <ul className="flex flex-col gap-[22px]">
                                             <li>
-                                                <a href="mailto:info@languageking.com.au" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-xl text-lg">
+                                                <a href="mailto:info@languageking.com.au" className="flex items-center gap-5 text-[#919191] font-semibold sm:text-xl text-lg">
                                                     <img src={Email} className="w-10 h-10 " />
                                                     info@languageking.com.au
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="tel:+61488876999" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-xl text-lg">
+                                                <a href="tel:+61488876999" className="flex items-center gap-5 text-[#919191] font-semibold sm:text-xl text-lg">
                                                     <img src={Phone} className="w-10 h-10 " />
                                                     +61 488 876 999
                                                 </a>
                                             </li>
                                             <li>
-                                                <span className="flex items-center gap-4 text-[#919191] font-semibold sm:text-xl text-lg">
+                                                <span className="flex items-center gap-5 text-[#919191] font-semibold sm:text-xl text-lg">
                                                     <img src={Map} className="w-10 h-10 " />
                                                     Online
                                                 </span>

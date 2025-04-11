@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CourseImg1 from '../assets/course-img1.png';
 import CourseImg2 from '../assets/course-img2.png';
 import CourseImg3 from '../assets/course-img3.png';
@@ -14,15 +14,28 @@ import Icon4 from '../assets/icons/ai-icon.svg';
 import Icon5 from '../assets/icons/whatsapp-icon.svg';
 import Icon6 from '../assets/icons/live-icon.svg';
 import Icon7 from '../assets/icons/badge-icon.svg';
+// import CallbackForm from "../components/callback-popup";
+
 const Home = () => {
+
+    // const [isCallbackOpen, setIsCallbackOpen] = useState(false);
+
+    // const openCallback = () => {
+    //     setIsCallbackOpen(true);
+    // };
+
+    // const closeCallback = () => {
+    //     setIsCallbackOpen(false);
+    // };
+
     return (
         <main className="bg-dark">
-            <section className=" lg:pt-[150px] lg:pb-[230px] md:pt-[100px] md:pb-[100px] pt-[90px] pb-[50px]">
-                <div className="custom-container mx-auto py-0 px-4 sm:px-[38px]">
+            <section className="banner-wrapper lg:pt-[150px] lg:pb-[230px] md:pt-[100px] md:pb-[100px] pt-[90px] pb-[50px]">
+                <div className="custom-container mx-auto py-0 px-4 sm:px-[38px] w-full">
                     <div className="max-w-[830px]">
-                        <div className="flex flex-col gap-6">
+                        <div className="flex flex-col sm:gap-6 gap-3">
                             <h2 className="text-gradient-primary font-bold md:text-[32px] text-2xl"># Australia’s No.1</h2>
-                            <h1 className="font-inter font-bold lg:text-[72px] sm:text-[58px] text-[36px] lg:leading-[77px] sm:leading-[66px] leading-[40px] sm:mt-0 mt-3 text-white">
+                            <h1 className="font-inter font-bold main-heading sm:mt-2 mt-0 text-white">
                                 PTE, IELTS & NAATI CCL  Coaching Institute
                             </h1>
                             <p className="md:text-2xl sm:text-xl text-base font-light max-w-[800px] text-white/75">
@@ -31,7 +44,14 @@ const Home = () => {
                             </p>
                         </div>
                         <div className="mt-[48px] flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[800px]">
-                            <a href="#" className="min-h-[72px] align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10">
+                            <a
+                                href="#"
+                                // onClick={(e) => {
+                                //     e.preventDefault();
+                                //     openCallback();
+                                // }}
+                                className="min-h-[72px] align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10"
+                            >
                                 Get a Callback
                             </a>
                             <a href="#" className="min-h-[72px] align-middle inline-flex items-center justify-center text-center bg-transparent border-2 border-Cadmium-Orange text-white px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
@@ -42,28 +62,30 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* {isCallbackOpen && <CallbackForm />} */}
+
             <section className="mb-8">
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[38px] z-50 ">
                     <div className="border-t border-[#252525]">
                         <h2 className="text-white font-bold sm:text-[29.39px] text-2xl relative  inline-block z-10 my-[38px] stroke-heading">Our Courses</h2>
                     </div>
                     <div className="flex flex-col gap-[38px]">
-                        <div className="grid course-drop-shadow lg:grid-cols-2 gap-[38px] bg-course-orange-bg hover:bg-course-orange-hover-bg transition-all duration-300 ease border border-white/10 group px-4 sm:px-6 py-4 sm:py-6  relative">
+                        <div className="grid items-center course-drop-shadow lg:grid-cols-2 gap-[38px] bg-course-orange-bg hover:bg-course-orange-hover-bg transition-all duration-300 ease border border-white/10 group px-4 sm:px-6 py-4 sm:py-6 relative">
                             <div className="ribbon ribbon-top-left z-10"><span>New course!</span></div>
                             <div className="overflow-hidden relative z-0 max-h-[450px]">
                                 <img src={CourseImg1} alt="CourseImg1" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
                             </div>
-                            <div className="lg:py-[40px]">
+                            <div className="lg:py-[16px]">
                                 <h2 className="text-gradient-primary font-bold md:text-[24px] inline-block sm:text-2xl text-lg">NAATI CCL <span className="text-white">Fast Track</span> Course</h2>
-                                <h2 className="font-bold lg:text-[40px] sm:text-[32px] text-2xl text-white lg:leading-[50px] sm:leading-[38px] leading-[28px] my-[8px]">Need to clear the test in 3 days, we’ve got you covered!</h2>
-                                <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-5">
+                                <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] my-[8px]">Need to clear the test in 3 days, we’ve got you covered!</h2>
+                                <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-2">
                                     This is a super fast-paced course. It’s geared for speed, designed for those who need to clear the test on urgent basis, and do whatever it takes to clear it.
                                 </p>
                                 <div className="flex items-center gap-3">
                                     <img src={avatar} alt="avatar" className="w-[50px] h-[50px] rounded-full border-4 border-white/10" />
-                                    <h3 className="text-xl text-white/60">Taught by <span className="text-white font-bold">Abhishek</span></h3>
+                                    <h3 className="text-base text-white/60">Taught by <span className="text-white font-bold">Abhishek</span></h3>
                                 </div>
-                                <div className="sm:mt-[28px] mt-[24px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
+                                <div className="sm:mt-[12px] mt-[12px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
                                     <a href="#" className="primary-btn bg-gradient-primary inline-flex justify-center items-center text-center text-white px-3 py-3 lg:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10">
                                         Take the Course
                                     </a>
@@ -73,21 +95,21 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="grid course-drop-shadow lg:grid-cols-2 gap-[38px] bg-course-blue-bg hover:bg-course-blue-hover-bg transition-all duration-300 ease border border-white/10 group px-4 sm:px-6 py-4 sm:py-6  relative">
+                        <div className="grid items-center course-drop-shadow lg:grid-cols-2 gap-[38px] bg-course-blue-bg hover:bg-course-blue-hover-bg transition-all duration-300 ease border border-white/10 group px-4 sm:px-6 py-4 sm:py-6 relative">
                             <div className="overflow-hidden relative z-0 max-h-[450px]">
                                 <img src={CourseImg2} alt="CourseIm21" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
                             </div>
-                            <div className="lg:py-[40px]">
+                            <div className="lg:py-[16px]">
                                 <h2 className="text-gradient-secondary font-bold md:text-[24px] inline-block sm:text-2xl text-lg">PTE Master Class</h2>
-                                <h2 className="font-bold lg:text-[40px] sm:text-[32px] text-2xl text-white lg:leading-[50px] sm:leading-[38px] leading-[28px] my-[8px]">Missed your score by a few marks! Clear in 2 weeks</h2>
-                                <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-5">
+                                <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] my-[8px]">Missed your score by a few marks! Clear in 2 weeks</h2>
+                                <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-2">
                                     This is literally the best advice that I give every student. My strategies will teach you how to get 90 in each module. I’ve helped students out for 5+ years as a super-friendly teacher to get their desired score, now it’s your turn.
                                 </p>
                                 <div className="flex items-center gap-3">
                                     <img src={avatar} alt="avatar" className="w-[50px] h-[50px] rounded-full border-4 border-white/10" />
-                                    <h3 className="text-xl text-white/60">Taught by <span className="text-white font-bold">Abhishek</span></h3>
+                                    <h3 className="text-base text-white/60">Taught by <span className="text-white font-bold">Abhishek</span></h3>
                                 </div>
-                                <div className="sm:mt-[28px] mt-[24px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
+                                <div className="sm:mt-[12px] mt-[12px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
                                     <a href="#" className="primary-btn bg-gradient-secondary leading-[28px] inline-flex justify-center items-center text-center text-white px-3 py-3 lg:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10">
                                         Take the Course
                                     </a>
@@ -97,22 +119,22 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="grid course-drop-shadow lg:grid-cols-2 gap-[38px] bg-course-black-bg hover:bg-course-black-hover-bg transition-all duration-300 ease border border-white/10 group px-4 sm:px-6 py-4 sm:py-6  relative">
+                        <div className="grid items-center course-drop-shadow lg:grid-cols-2 gap-[38px] bg-course-black-bg hover:bg-course-black-hover-bg transition-all duration-300 ease border border-white/10 group px-4 sm:px-6 py-4 sm:py-6 relative">
                             <div className="overflow-hidden relative z-0 max-h-[450px]">
                                 <img src={CourseImg3} alt="CourseImg3" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
                             </div>
-                            <div className="lg:py-[40px]">
+                            <div className="lg:py-[16px]">
                                 <h2 className="dark-text-custom font-bold md:text-[26px] block sm:text-2xl text-lg">PTE Master Handbook</h2>
-                                <h2 className="font-bold lg:text-[40px] sm:text-[32px] text-2xl text-white lg:leading-[50px] sm:leading-[38px] leading-[28px] my-[8px]">PTE 79+ in 7 days
+                                <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] my-[8px]">PTE 79+ in 7 days
                                     Crack PTE in 1  attempt</h2>
-                                <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-5">
+                                <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-2">
                                     Learn exactly what students did to achieve their desired band. This book explains the exam structure, target scores, key tasks to focus on, and the 7-day strategy you need to follow to go from 5 to 8 each as quickly as possible.
                                 </p>
                                 <div className="flex items-center gap-3">
                                     <img src={avatar} alt="avatar" className="w-[50px] h-[50px] rounded-full border-4 border-white/10" />
-                                    <h3 className="text-xl text-white/60">Taught by <span className="text-white font-bold">Abhishek</span></h3>
+                                    <h3 className="text-base text-white/60">Taught by <span className="text-white font-bold">Abhishek</span></h3>
                                 </div>
-                                <div className="sm:mt-[28px] mt-[24px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
+                                <div className="sm:mt-[12px] mt-[12px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
                                     <a href="#" className="primary-btn bg-gradient-dark leading-[28px] inline-flex justify-center items-center text-center text-white px-3 py-3 lg:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10">
                                         Free E-Book
                                     </a>
@@ -170,41 +192,41 @@ const Home = () => {
             <section className="sm:pb-8 pb-2">
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[38px]">
                     <div className="bg-black1 flex flex-col sm:gap-[57px] gap-[42px] sm:leading-[auto] leading-[40px] border border-white/10 group md:px-[38px] px-6 md:pt-[70px] md:pb-[85px] pt-6 pb-7  relative">
-                        <h2 className="lg:text-[54px] sm:text-[42px] text-[32px] leading-[1.2] font-bold text-white text-left">What’s included in every Course</h2>
-                        <div className="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 justify-around xl:gap-x-[200px] sm:gap-x-[100px] gap-x-[40px] gap-y-[44px] sm:pe-[45px]">
+                        <h2 className="lg:text-[42px] sm:text-[40px] text-[32px] leading-[1.2] font-bold text-white text-left">What’s included in every Course</h2>
+                        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-around gap-x-[20px] gap-y-[44px] sm:pe-[45px]">
                             <div className="text-center">
                                 <img src={Icon1} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block">Video Lectures- <br /> Basic to advance</span>
+                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block max-w-[270px] mx-auto">Video Lectures- <br /> Basic to advance</span>
                             </div>
                             <div className="text-center">
                                 <img src={Icon2} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block">Study Material - Templates,
-                                resources, and prediction file</span>
+                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block max-w-[270px] mx-auto">Study Material - Templates,
+                                    resources, and prediction file</span>
                             </div>
                             <div className="text-center">
                                 <img src={Icon3} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block">Class Recordings - <br />
-                                Video library of past classes</span>
+                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block max-w-[270px] mx-auto">Class Recordings - <br />
+                                    Video library of past classes</span>
                             </div>
                             <div className="text-center">
                                 <img src={Icon4} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block">AI Portal - Mock Test <br/>
-                                and 5000+ exam questions</span>
+                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block max-w-[270px] mx-auto">AI Portal - Mock Test <br />
+                                    and 5000+ exam questions</span>
                             </div>
                             <div className="text-center">
                                 <img src={Icon5} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block">Feedback - <br/>
-                                Ask an Expert</span>
+                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block max-w-[270px] mx-auto">Feedback - <br />
+                                    Ask an Expert</span>
                             </div>
                             <div className="text-center">
                                 <img src={Icon6} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block">Live Classes - <br/>
-                                Learn with other students</span>
+                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block max-w-[270px] mx-auto">Live Classes - <br />
+                                    Learn with other students</span>
                             </div>
                             <div className="text-center">
                                 <img src={Icon7} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block">Expert Trainers -<br/>
-                                Learn from certified trainers</span>
+                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block max-w-[270px] mx-auto">Expert Trainers -<br />
+                                    Learn from certified trainers</span>
                             </div>
                         </div>
                     </div>

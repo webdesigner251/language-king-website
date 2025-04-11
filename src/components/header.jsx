@@ -25,18 +25,18 @@ const Header = () => {
                     <div className="xl:w-[40%] w-[50%] flex justify-end items-center">
                         {/* Hamburger Menu - Visible on Mobile */}
                         <button
-                            className="lg:hidden flex items-center justify-center p-3 bg-chinese-Black border border-davys-Grey focus:outline-none cursor-pointer"
+                            className="lg:hidden flex items-center justify-center p-3 w-[60px] h-[60px] bg-chinese-Black border border-davys-Grey focus:outline-none cursor-pointer"
                             onClick={() => setIsOpen(!isOpen)}>
-                            <img src={isOpen ? CloseIcon : MenuIcon} alt="Menu Toggle" className="w-8 h-8" />
+                            <img src={isOpen ? CloseIcon : MenuIcon} alt="Menu Toggle" className="w-7 h-7" />
                         </button>
 
                         {/* Desktop Navigation */}
                         <nav className="hidden lg:flex justify-end items-center ">
-                            <ul className="flex xl:gap-[77px] gap-[56px]">
-                                <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold text-[22px] border-b-2 border-transparent hover:border-white transition-all duration-300">Courses</a></li>
-                                <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold text-[22px] border-b-2 border-transparent hover:border-white transition-all duration-300">Testimonials</a></li>
+                            <ul className="flex 2xl:gap-[77px] xl:gap-[62px] gap-[32px]">
+                                <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold xl:text-[20px] text-[16px] border-b-2 border-transparent hover:border-white transition-all duration-300">Courses</a></li>
+                                <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold xl:text-[20px] text-[16px] border-b-2 border-transparent hover:border-white transition-all duration-300">Testimonials</a></li>
                                 <li className="text-center inline-flex items-center">
-                                    <a href="#" className="text-white inline-flex items-center justify-center border border-white/25 hover:border-white px-[31px] py-[10.8px] font-bold text-[19.2px] transition-all duration-300">
+                                    <a href="#" className="text-white inline-flex items-center justify-center border border-white/25 hover:border-white px-[22px] py-[10.8px] font-bold xl:text-[18px] text-[16px] transition-all duration-300 header-btn min-w-[180px]">
                                         Get-a Callback
                                     </a>
                                 </li>
@@ -47,17 +47,18 @@ const Header = () => {
 
                 {/* Mobile Menu (Dropdown) */}
                 {isOpen && (
-                    <nav className="lg:hidden fixed w-full h-full top-0 left-0 right-0 bottom-0 bg-gray7 z-50 py-[45px] px-4">
+                    <nav className="lg:hidden fixed w-full h-full top-0 left-0 right-0 bottom-0 bg-dark z-50 sm:py-[48px] py-[32px] px-4 sm:px-[38px]">
                         <div className="flex items-center justify-end">
-                            <button className="flex items-center justify-center p-3 bg-chinese-Black border border-[#575352] border-[1.5px] [box-shadow:0_4px_0_#000000] cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
-                                <img src={isOpen ? CloseIcon : MenuIcon} alt="CloseIcon" className="w-5" />
+                            <button className="lg:hidden flex items-center justify-center p-3 w-[60px] h-[60px] bg-chinese-Black border border-davys-Grey focus:outline-none cursor-pointer shadow-[0px_4px_0px_#000000]" onClick={() => setIsOpen(!isOpen)}>
+                                <img src={isOpen ? CloseIcon : MenuIcon} alt="CloseIcon" className="w-7 h-7" />
                             </button>
                         </div>
+
                         <ul className="flex flex-col justify-center items-center gap-[34px] relative">
                             <div className="menu-ellipse"></div>
                             <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300">Courses</a></li>
                             <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300">Testimonials</a></li>
-                            <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-medium text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300">Contact us</a></li>
+                            <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-medium text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300 [text-shadow:0px_4px_0px_#000000]">Contact us</a></li>
                         </ul>
 
                         <div className="flex flex-col justify-center items-center py-[70px] gap-1">
