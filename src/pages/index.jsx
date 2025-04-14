@@ -50,11 +50,11 @@ const Home = () => {
                                 //     e.preventDefault();
                                 //     openCallback();
                                 // }}
-                                className="min-h-[72px] align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10"
+                                className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10"
                             >
                                 Get a Callback
                             </a>
-                            <a href="#" className="min-h-[72px] align-middle inline-flex items-center justify-center text-center bg-transparent border-2 border-Cadmium-Orange text-white px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
+                            <a href="#" className="align-middle inline-flex items-center justify-center text-center bg-transparent border-2 border-Cadmium-Orange text-white px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
                                 Watch Free Lessons
                             </a>
                         </div>
