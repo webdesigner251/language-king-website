@@ -38,12 +38,12 @@ const Home = () => {
                             <h1 className="font-inter font-bold main-heading sm:mt-2 mt-0 text-white">
                                 PTE, IELTS & NAATI CCL  Coaching Institute
                             </h1>
-                            <p className="md:text-2xl sm:text-xl text-base font-light max-w-[800px] text-white/75">
+                            <p className="md:text-xl sm:text-xl text-base font-light max-w-[650px] text-white/75">
                                 Join 10,000+ satisfied students in achieving their desired Test Scores.
                                 Helped many students, now it's your turn!
                             </p>
                         </div>
-                        <div className="mt-[48px] flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[800px]">
+                        <div className="mt-[48px] flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[670px]">
                             <a
                                 href="#"
                                 className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10"

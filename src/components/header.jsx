@@ -14,7 +14,7 @@ const Header = () => {
                 <div className="flex items-center justify-between relative">
                     {/* Left Logo */}
                     <div className="xl:w-[40%] w-[30%] lg:flex hidden">
-                        <img src={Textlogo} alt="Logo" className="w-40 md:w-auto" />
+                        <img src={Textlogo} alt="Logo" className="w-40" />
                     </div>
 
                     {/* Right Logo */}

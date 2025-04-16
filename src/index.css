@@ -216,6 +216,13 @@ body {
   }
 }
 
+@media (max-width: 1280px) {
+  .desktop-logo {
+    height: 180px;
+    top: -70px;
+  }
+}
+
 @media (max-width: 1024px) {
   .desktop-logo {
     left: -80px;
