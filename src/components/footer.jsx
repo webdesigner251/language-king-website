@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import AppleImg from '../assets/Apple.png'
-import GoogleImg from '../assets/google-play.png'
-import WindowsImg from '../assets/Windows.png'
+import AppleImg from '../assets/icons/apple.svg'
+import GoogleImg from '../assets/icons/google-play.svg'
+import WindowsImg from '../assets/icons/windows.svg'
 import Email from '../assets/icons/email.svg'
 import Phone from '../assets/icons/call.svg'
 import Map from '../assets/icons/map.svg'
@@ -19,22 +19,22 @@ const Footer = () => {
                             <div className="bg-[#1A1A1A] sm:p-[38px] p-4 border-b border-[#333434]">
                                 <div className="flex lg:flex-nowrap flex-wrap justify-between sm:gap-8 gap-[33px]">
                                     <div className="lg:w-auto w-full flex flex-col sm:gap-[40px] gap-[22px]">
-                                        <h4 className="text-white font-bold sm:text-[27px] text-[23px]">Contact Us </h4>
+                                        <h4 className="text-white font-bold sm:text-[24px] text-[22px]">Contact Us </h4>
                                         <ul className="flex flex-col gap-[22px]">
                                             <li>
-                                                <a href="mailto:info@languageking.com.au" className="flex items-center gap-5 text-[#919191] font-semibold sm:text-xl text-lg">
+                                                <a href="mailto:info@languageking.com.au" className="flex items-center gap-5 text-[#919191] font-semibold sm:text-lg text-lg">
                                                     <img src={Email} className="w-10 h-10 " />
                                                     info@languageking.com.au
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="tel:+61488876999" className="flex items-center gap-5 text-[#919191] font-semibold sm:text-xl text-lg">
+                                                <a href="tel:+61488876999" className="flex items-center gap-5 text-[#919191] font-semibold sm:text-lg text-lg">
                                                     <img src={Phone} className="w-10 h-10 " />
                                                     +61 488 876 999
                                                 </a>
                                             </li>
                                             <li>
-                                                <span className="flex items-center gap-5 text-[#919191] font-semibold sm:text-xl text-lg">
+                                                <span className="flex items-center gap-5 text-[#919191] font-semibold sm:text-lg text-lg">
                                                     <img src={Map} className="w-10 h-10 " />
                                                     Online
                                                 </span>
@@ -43,30 +43,30 @@ const Footer = () => {
                                     </div>
 
                                     <div className="lg:w-auto sm:w-[30%] w-[40%] flex flex-col sm:gap-[40px] gap-[22px]">
-                                        <h4 className="text-white font-bold sm:text-[27px] text-[23px]">About Us </h4>
-                                        <ul className="flex flex-col sm:gap-[22px] gap-[18px]">
+                                        <h4 className="text-white font-bold sm:text-[24px] text-[22px]">About Us </h4>
+                                        <ul className="flex flex-col sm:gap-[15px] gap-[14px]">
                                             <li>
-                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:text-white/80">
+                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-lg text-lg transition-all duration-300 ease hover:text-white/80">
                                                     Terms of Use
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:text-white/80">
+                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-lg text-lg transition-all duration-300 ease hover:text-white/80">
                                                     Privacy Policy
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:text-white/80">
+                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-lg text-lg transition-all duration-300 ease hover:text-white/80">
                                                     Refund Policy
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:text-white/80">
+                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-lg text-lg transition-all duration-300 ease hover:text-white/80">
                                                     Careers
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:text-white/80">
+                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-lg text-lg transition-all duration-300 ease hover:text-white/80">
                                                     FAQs
                                                 </a>
                                             </li>
@@ -74,20 +74,20 @@ const Footer = () => {
                                     </div>
 
                                     <div className="lg:w-auto sm:w-[30%] w-[40%] flex flex-col sm:gap-[40px] gap-[22px]">
-                                        <h4 className="text-white font-bold sm:text-[27px] text-[23px]">Courses</h4>
-                                        <ul className="flex flex-col sm:gap-[22px] gap-[18px]">
+                                        <h4 className="text-white font-bold sm:text-[24px] text-[22px]">Courses</h4>
+                                        <ul className="flex flex-col sm:gap-[15px] gap-[14px]">
                                             <li>
-                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:text-white/80">
+                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-lg text-lg transition-all duration-300 ease hover:text-white/80">
                                                     PTE
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:text-white/80">
+                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-lg text-lg transition-all duration-300 ease hover:text-white/80">
                                                     NAATI CCL
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:text-white/80">
+                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold sm:text-lg text-lg transition-all duration-300 ease hover:text-white/80">
                                                     IELTS
                                                 </a>
                                             </li>
@@ -95,7 +95,7 @@ const Footer = () => {
                                     </div>
 
                                     <div className="lg:w-auto w-full flex flex-col sm:gap-[40px] gap-[22px]">
-                                        <h4 className="text-white font-bold sm:text-[27px] text-[23px]">Devices Supported</h4>
+                                        <h4 className="text-white font-bold sm:text-[24px] text-[22px]">Devices Supported</h4>
                                         <ul className="flex sm:flex-col flex-wrap sm:gap-[22px] gap-[18px]">
                                             <li>
                                                 <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold text-xl transition-all duration-300 ease hover:text-white/80">
@@ -116,7 +116,7 @@ const Footer = () => {
                                     </div>
 
                                     <div className="sm:hidden flex flex-col gap-[24px]">
-                                        <h4 className="text-white font-bold sm:text-[27px] text-[23px]">Follow Us</h4>
+                                        <h4 className="text-white font-bold sm:text-[24px] text-[22px]">Follow Us</h4>
                                         <ul className="flex gap-5">
                                             <li>
                                                 <a href="#" className="bg-[#2E2D2D] rounded-full w-[48px] h-[48px] flex items-center justify-center p-2 transition-all ease duration-300 group hover:bg-white">
@@ -168,7 +168,7 @@ const Footer = () => {
                             </div>
 
                             <div className=" flex items-center sm:justify-between justify-center sm:py-[36px] py-[18px] px-[38px] ">
-                                <span className="font-medium sm:text-xl tex-base sm:text-start text-center text-white [text-shadow:0_0_16px_rgba(255,255,255,0.77)]">Copyright @ 2025 Language King</span>
+                                <span className="font-medium sm:text-lg tex-base sm:text-start text-center text-white [text-shadow:0_0_16px_rgba(255,255,255,0.77)]">Copyright @ 2025 Language King</span>
 
                                 <ul className="sm:flex hidden gap-5">
                                     <li>
@@ -223,8 +223,8 @@ const Footer = () => {
                         <div className="sm:pb-[54px] pb-6 border-b border-white/80">
                             <h5 className="md:text-[22px] sm:text-lg text-sm text-[#8B8C8D]">Disclaimer - Language King is an independent coaching provider for the NAATI CCL and PTE tests. We are not affiliated with, endorsed by, or sponsored by NAATI or PTE. All test applications must be made directly with NAATI or PTE.</h5>
                         </div>
-                        <div className="text-center sm:py-[48px] py-6">
-                            <a href="#" className="min-h-[72px] align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 py-3 sm:w-auto w-full sm:min-w-[398px] mx-auto font-bold sm:text-xl text-lg relative z-10">
+                        <div className="text-center sm:py-[48px] px-4 py-6">
+                            <a href="#" className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 py-3 sm:min-w-[398px] min-w-full font-bold sm:text-xl text-lg relative z-10">
                                 Get a Callback
                             </a>
                         </div>

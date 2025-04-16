@@ -46,10 +46,6 @@ const Home = () => {
                         <div className="mt-[48px] flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[800px]">
                             <a
                                 href="#"
-                                // onClick={(e) => {
-                                //     e.preventDefault();
-                                //     openCallback();
-                                // }}
                                 className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 py-3 sm:w-[50%] w-full font-bold sm:text-xl text-lg relative z-10"
                             >
                                 Get a Callback
@@ -69,7 +65,7 @@ const Home = () => {
                     <div className="border-t border-[#252525]">
                         <h2 className="text-white font-bold sm:text-[29.39px] text-2xl relative  inline-block z-10 my-[38px] stroke-heading">Our Courses</h2>
                     </div>
-                    <div className="flex flex-col gap-[38px]">
+                    <div className="flex flex-col gap-[38px] bg-black">
                         <div className="grid items-center course-drop-shadow lg:grid-cols-2 gap-[38px] bg-course-orange-bg hover:bg-course-orange-hover-bg transition-all duration-300 ease border border-white/10 group px-4 sm:px-6 py-4 sm:py-6 relative">
                             <div className="ribbon ribbon-top-left z-10"><span>New course!</span></div>
                             <div className="overflow-hidden relative z-0 max-h-[450px]">
@@ -156,31 +152,31 @@ const Home = () => {
 
                             <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-[28px]">
                                 <div className="relative">
-                                    <div className="border-b-[4px] border-[#A6A6A6] mb-3">
+                                    <div className="border-b-[8px] border-[#A6A6A6] mb-3">
                                         <img src={VideoImg1} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold sm:text-2xl text-[21px] sm:leading-normal leading-[28px]">Impact of Read Aloud on Reading Module</h3>
+                                    <h3 className="text-white font-bold sm:text-2xl text-[21px] sm:leading-[1.2] leading-[28px]">Impact of Read Aloud on Reading Module</h3>
                                     <span className="text-white/60 mt-1 block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
-                                    <div className="border-b-[4px] border-[#A6A6A6] mb-3">
+                                    <div className="border-b-[8px] border-[#A6A6A6] mb-3">
                                         <img src={VideoImg2} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold sm:text-2xl text-[21px] sm:leading-normal leading-[28px]">Poor score in Write Essay</h3>
+                                    <h3 className="text-white font-bold sm:text-2xl text-[21px] sm:leading-[1.2] leading-[28px]">Poor score in Write Essay</h3>
                                     <span className="text-white/60 mt-1 block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
-                                    <div className="border-b-[4px] border-[#A6A6A6] mb-3">
+                                    <div className="border-b-[8px] border-[#A6A6A6] mb-3">
                                         <img src={VideoImg3} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold sm:text-2xl text-[21px] sm:leading-normal leading-[28px]">Dialogue vs Segment</h3>
+                                    <h3 className="text-white font-bold sm:text-2xl text-[21px] sm:leading-[1.2] leading-[28px]">Dialogue vs Segment</h3>
                                     <span className="text-white/60 mt-1 block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
-                                    <div className="border-b-[4px] border-[#A6A6A6] mb-3">
+                                    <div className="border-b-[8px] border-[#A6A6A6] mb-3">
                                         <img src={VideoImg4} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold sm:text-2xl text-[21px] sm:leading-normal leading-[28px]">PTE vs IELTS</h3>
+                                    <h3 className="text-white font-bold sm:text-2xl text-[21px] sm:leading-[1.2] leading-[28px]">PTE vs IELTS</h3>
                                     <span className="text-white/60 mt-1 block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                             </div>
@@ -193,39 +189,39 @@ const Home = () => {
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[38px]">
                     <div className="bg-black1 flex flex-col sm:gap-[57px] gap-[42px] sm:leading-[auto] leading-[40px] border border-white/10 group md:px-[38px] px-6 md:pt-[70px] md:pb-[85px] pt-6 pb-7  relative">
                         <h2 className="lg:text-[42px] sm:text-[40px] text-[32px] leading-[1.2] font-bold text-white text-left">What’s included in every Course</h2>
-                        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-around gap-x-[20px] gap-y-[44px] sm:pe-[45px]">
+                        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-around gap-x-[20px] gap-y-[60px] sm:pe-[45px]">
                             <div className="text-center">
-                                <img src={Icon1} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block max-w-[270px] mx-auto">Video Lectures- <br /> Basic to advance</span>
+                                <img src={Icon1} alt="Icon" className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]" />
+                                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">Video Lectures- <br /> Basic to advance</span>
                             </div>
                             <div className="text-center">
-                                <img src={Icon2} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block max-w-[270px] mx-auto">Study Material - Templates,
+                                <img src={Icon2} alt="Icon" className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]" />
+                                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">Study Material - Templates,
                                     resources, and prediction file</span>
                             </div>
                             <div className="text-center">
-                                <img src={Icon3} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block max-w-[270px] mx-auto">Class Recordings - <br />
+                                <img src={Icon3} alt="Icon" className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]" />
+                                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">Class Recordings - <br />
                                     Video library of past classes</span>
                             </div>
                             <div className="text-center">
-                                <img src={Icon4} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block max-w-[270px] mx-auto">AI Portal - Mock Test <br />
+                                <img src={Icon4} alt="Icon" className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]" />
+                                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">AI Portal - Mock Test <br />
                                     and 5000+ exam questions</span>
                             </div>
                             <div className="text-center">
-                                <img src={Icon5} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block max-w-[270px] mx-auto">Feedback - <br />
+                                <img src={Icon5} alt="Icon" className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]" />
+                                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">Feedback - <br />
                                     Ask an Expert</span>
                             </div>
                             <div className="text-center">
-                                <img src={Icon6} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block max-w-[270px] mx-auto">Live Classes - <br />
+                                <img src={Icon6} alt="Icon" className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]" />
+                                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">Live Classes - <br />
                                     Learn with other students</span>
                             </div>
                             <div className="text-center">
-                                <img src={Icon7} alt="Icon" className="mx-auto sm:mb-[35px] mb-6 sm:max-w-[118px] max-w-[78px]" />
-                                <span className="text-white/50 md:text-xl sm:text-lg text-sm block max-w-[270px] mx-auto">Expert Trainers -<br />
+                                <img src={Icon7} alt="Icon" className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]" />
+                                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">Expert Trainers -<br />
                                     Learn from certified trainers</span>
                             </div>
                         </div>
