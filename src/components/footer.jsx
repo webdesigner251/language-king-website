@@ -170,7 +170,7 @@ const Footer = () => {
                             <div className=" flex items-center sm:justify-between justify-center sm:py-[36px] py-[18px] px-[38px] ">
                                 <span className="font-medium sm:text-lg tex-base sm:text-start text-center text-white [text-shadow:0_0_16px_rgba(255,255,255,0.77)]">Copyright @ 2025 Language King</span>
 
-                                <ul className="sm:flex hidden gap-5 pe-[50px]">
+                                <ul className="sm:flex hidden gap-5 md:pe-[50px] pe-0">
                                     <li>
                                         <a href="#" className="bg-[#2E2D2D] rounded-full w-[42px] h-[42px] flex items-center justify-center p-3 transition-all ease duration-300 group hover:bg-white">
                                             <svg className="w-auto h-full" width="13" height="26" viewBox="0 0 13 26" fill="none" xmlns="http://www.w3.org/2000/svg">
