@@ -10,7 +10,7 @@ const Header = () => {
 
     return (
         <header className="bg-dark text-white sm:py-[48px] py-[32px]">
-            <div className="custom-container mx-auto py-0 px-4 sm:px-[38px]">
+            <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
                 <div className="flex items-center justify-between relative">
                     {/* Left Logo */}
                     <div className="xl:w-[40%] w-[30%] lg:flex hidden">
@@ -25,7 +25,7 @@ const Header = () => {
                     <div className="xl:w-[40%] w-[50%] flex justify-end items-center">
                         {/* Hamburger Menu - Visible on Mobile */}
                         <button
-                            className="lg:hidden flex items-center justify-center p-3 w-[60px] h-[60px] bg-chinese-Black border border-davys-Grey focus:outline-none cursor-pointer"
+                            className="lg:hidden flex items-center justify-center p-3 w-[60px] h-[60px] menu-icon bg-chinese-Black border border-davys-Grey focus:outline-none cursor-pointer"
                             onClick={() => setIsOpen(!isOpen)}>
                             <img src={isOpen ? CloseIcon : MenuIcon} alt="Menu Toggle" className="w-7 h-7" />
                         </button>
@@ -47,9 +47,9 @@ const Header = () => {
 
                 {/* Mobile Menu (Dropdown) */}
                 {isOpen && (
-                    <nav className="lg:hidden fixed w-full h-full top-0 left-0 right-0 bottom-0 bg-dark z-50 sm:py-[48px] py-[32px] px-4 sm:px-[38px]">
+                    <nav className="lg:hidden fixed w-full h-full top-0 left-0 right-0 bottom-0 bg-dark z-50 sm:py-[48px] py-[32px] px-4 sm:px-[32px]">
                         <div className="flex items-center justify-end">
-                            <button className="lg:hidden flex items-center justify-center p-3 w-[60px] h-[60px] bg-chinese-Black border border-davys-Grey focus:outline-none cursor-pointer shadow-[0px_4px_0px_#000000]" onClick={() => setIsOpen(!isOpen)}>
+                            <button className="lg:hidden flex items-center justify-center p-3 w-[60px] h-[60px] menu-icon bg-chinese-Black border border-davys-Grey focus:outline-none cursor-pointer shadow-[0px_4px_0px_#000000]" onClick={() => setIsOpen(!isOpen)}>
                                 <img src={isOpen ? CloseIcon : MenuIcon} alt="CloseIcon" className="w-7 h-7" />
                             </button>
                         </div>
