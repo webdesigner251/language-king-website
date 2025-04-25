@@ -33,10 +33,10 @@ const Header = () => {
                         {/* Desktop Navigation */}
                         <nav className="hidden lg:flex justify-end items-center ">
                             <ul className="flex 2xl:gap-[77px] xl:gap-[62px] gap-[32px]">
-                                <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold xl:text-[20px] text-[16px] border-b-2 border-transparent hover:border-white transition-all duration-300">Courses</a></li>
-                                <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold xl:text-[20px] text-[16px] border-b-2 border-transparent hover:border-white transition-all duration-300">Testimonials</a></li>
+                                <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold 2xl:text-[20px] text-[16px] border-b-2 border-transparent hover:border-white transition-all duration-300">Courses</a></li>
+                                <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold 2xl:text-[20px] text-[16px] border-b-2 border-transparent hover:border-white transition-all duration-300">Testimonials</a></li>
                                 <li className="text-center inline-flex items-center">
-                                    <a href="#" className="text-white inline-flex items-center justify-center border border-white/25 hover:border-white px-[22px] py-[10.8px] font-bold xl:text-[18px] text-[16px] transition-all duration-300 header-btn min-w-[180px]">
+                                    <a href="#" className="text-white inline-flex items-center justify-center border border-white/25 hover:border-white 2xl:px-[22px] 2xl:py-[10.8px] px-[15px] py-[9px] font-bold 2xl:text-[18px] text-[16px] transition-all duration-300 header-btn min-w-[180px]">
                                         Get-a Callback
                                     </a>
                                 </li>

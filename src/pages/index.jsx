@@ -30,11 +30,11 @@ const Home = () => {
 
     return (
         <main className="bg-dark">
-            <section className="banner-wrapper lg:pt-[150px] lg:pb-[230px] md:pt-[100px] md:pb-[100px] pt-[90px] pb-[50px]">
+            <section className="banner-wrapper 2xl:pt-[150px] 2xl:pb-[230px] md:pt-[100px] md:pb-[100px] pt-[90px] pb-[50px]">
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full">
                     <div className="max-w-[830px]">
-                        <div className="flex flex-col sm:gap-6 gap-3">
-                            <h2 className="text-gradient-primary font-bold md:text-[32px] text-2xl"># Australia’s No.1</h2>
+                        <div className="flex flex-col 2xl:gap-6 gap-3">
+                            <h2 className="text-gradient-primary font-bold 2xl:text-[32px] text-2xl"># Australia’s No.1</h2>
                             <h1 className="font-inter font-bold main-heading sm:mt-2 mt-0 text-white">
                                 PTE, IELTS & NAATI CCL  Coaching Institute
                             </h1>
@@ -58,15 +58,13 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* {isCallbackOpen && <CallbackForm />} */}
-
             <section className="mb-8">
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] z-50 ">
                     <div className="border-t border-[#252525]">
                         <h2 className="text-white font-bold sm:text-[29.39px] text-2xl relative  inline-block z-10 my-[38px] stroke-heading">Our Courses</h2>
                     </div>
                     <div className="flex flex-col gap-[38px] bg-black">
-                        <div className="grid items-center course-drop-shadow lg:grid-cols-2 gap-[38px] bg-course-orange-bg hover:bg-course-orange-hover-bg transition-all duration-300 ease border border-white/10 group px-4 sm:px-6 py-4 sm:py-6 relative">
+                        <div className="course-box bg-[#121211] border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
                             <div className="ribbon ribbon-top-left z-10"><span>New course!</span></div>
                             <div className="overflow-hidden relative z-0 max-h-[450px]">
                                 <img src={CourseImg1} alt="CourseImg1" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
@@ -91,7 +89,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="grid items-center course-drop-shadow lg:grid-cols-2 gap-[38px] bg-course-blue-bg hover:bg-course-blue-hover-bg transition-all duration-300 ease border border-white/10 group px-4 sm:px-6 py-4 sm:py-6 relative">
+                        <div className="course-box bg-[#12161D] border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
                             <div className="overflow-hidden relative z-0 max-h-[450px]">
                                 <img src={CourseImg2} alt="CourseIm21" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
                             </div>
@@ -115,7 +113,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="grid items-center course-drop-shadow lg:grid-cols-2 gap-[38px] bg-course-black-bg hover:bg-course-black-hover-bg transition-all duration-300 ease border border-white/10 group px-4 sm:px-6 py-4 sm:py-6 relative">
+                        <div className="bg-[#131213] border-[1.5px] border-[#333434] grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
                             <div className="overflow-hidden relative z-0 max-h-[450px]">
                                 <img src={CourseImg3} alt="CourseImg3" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
                             </div>
@@ -155,28 +153,28 @@ const Home = () => {
                                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                                         <img src={VideoImg1} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold sm:text-xl text-lg sm:leading-[1.3] leading-[28px]">Impact of Read Aloud on Reading Module</h3>
+                                    <h3 className="text-white font-bold 2xl:text-xl text-lg sm:leading-[1.3] leading-[28px]">Impact of Read Aloud on Reading Module</h3>
                                     <span className="text-white/60 mt-[6px] block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                                         <img src={VideoImg2} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold sm:text-xl text-lg sm:leading-[1.3] leading-[28px]">Poor score in Write Essay</h3>
+                                    <h3 className="text-white font-bold 2xl:text-xl text-lg sm:leading-[1.3] leading-[28px]">Poor score in Write Essay</h3>
                                     <span className="text-white/60 mt-[6px] block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                                         <img src={VideoImg3} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold sm:text-xl text-lg sm:leading-[1.3] leading-[28px]">Dialogue vs Segment</h3>
+                                    <h3 className="text-white font-bold 2xl:text-xl text-lg sm:leading-[1.3] leading-[28px]">Dialogue vs Segment</h3>
                                     <span className="text-white/60 mt-[6px] block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                                         <img src={VideoImg4} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold sm:text-xl text-lg sm:leading-[1.3] leading-[28px]">PTE vs IELTS</h3>
+                                    <h3 className="text-white font-bold 2xl:text-xl text-lg sm:leading-[1.3] leading-[28px]">PTE vs IELTS</h3>
                                     <span className="text-white/60 mt-[6px] block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                             </div>
