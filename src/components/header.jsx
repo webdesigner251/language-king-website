@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Textlogo from "../assets/text-logo.svg";
 import Logo from "../assets/Logo.svg";
 import LogoMenu from "../assets/logo-menu.svg";
@@ -8,8 +8,25 @@ import CloseIcon from "../assets/close.svg"; // Custom close icon
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
+    const [isSticky, setIsSticky] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsSticky(window.scrollY > 50);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Cleanup
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <header className="bg-dark text-white sm:py-[48px] py-[32px]">
+        <header className={`bg-dark text-white sm:py-[48px] py-[32px] sticky top-0 z-50 ${
+            isSticky ? 'active-header' : ''
+          }`}>
             <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
                 <div className="flex items-center justify-between relative">
                     {/* Left Logo */}

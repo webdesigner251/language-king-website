@@ -1,0 +1,74 @@
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+
+const TestimonialCarousel = ({ testimonials }) => {
+    return (
+        <Swiper
+            spaceBetween={12}
+            slidesPerView={1}
+            loop={true}
+            breakpoints={{
+                767: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1280: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            }}
+        >
+            {testimonials.map((item, i) => (
+                <SwiperSlide className="h-auto-swiper" key={i}>
+                    <div className="flex flex-col justify-between h-full">
+                        <div>
+                            <img
+                                src={item.reviewImg}
+                                alt="User"
+                                className="sm:max-h-[280px] h-auto w-full object-cover rounded-[10px] mb-[24px]"
+                            />
+                            <p className="text-paraGray font-light 2xl:text-[25px] text-lg 2xl:leading-[36px] leading-normal md:mb-[40px] sm:mb-[30px] mb-8">
+                                {item.text}
+                            </p>
+                        </div>
+                        <div className="2xl:pt-[64px] md:pt-[52px] sm:pt-[42px] pt-8 border-t border-[#3D3D3D] flex flex-col 2xl:gap-y-[58px] md:gap-y-[42px] gap-7">
+                            <div className="flex items-center 2xl:gap-[33px] gap-[20px]">
+                                <img
+                                    src={item.avatar}
+                                    alt="Avatar"
+                                    className="2xl:w-[92px] w-[72px] 2xl:h-[92px] h-[72px] rounded-full object-cover"
+                                />
+                                <div>
+                                    <h4 className="font-light text-white/60 2xl:text-3xl text-2xl 2xl:mb-2 mb-1">{item.name}</h4>
+                                    <span className="font-light text-[#D8D8D8] 2xl:text-xl text-lg">{item.subtitle}</span>
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-3">
+                                <div className="flex items-center 2xl:text-base text-sm font-light text-white gap-3">
+                                    <img src={item.sourceIcon} alt="source" /> {item.time}
+                                </div>
+                                <div className="flex">
+                                    {[...Array(item.rating)].map((_, idx) => (
+                                        <img
+                                            src={item.starIcon}
+                                            alt="star"
+                                            key={idx}
+                                            className="sm:w-7 w-5 h-auto me-1"
+                                        />
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+            ))}
+        </Swiper>
+    );
+};
+
+export default TestimonialCarousel;

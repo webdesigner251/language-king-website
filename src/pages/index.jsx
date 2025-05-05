@@ -15,6 +15,108 @@ import Icon5 from '../assets/icons/whatsapp-icon.svg';
 import Icon6 from '../assets/icons/live-icon.svg';
 import Icon7 from '../assets/icons/badge-icon.svg';
 // import CallbackForm from "../components/callback-popup";
+import TestimonialCarousel from "../components/testimonials";
+import ReviewImg1 from '../assets/testimonial-01.png';
+import ReviewImg2 from '../assets/testimonial-02.png';
+import ReviewImg3 from '../assets/testimonial-03.png';
+import ReviewImg4 from '../assets/testimonial-04.png';
+import Avatar1 from '../assets/avatar1.png';
+import Avatar2 from '../assets/avatar2.png';
+import Avatar3 from '../assets/avatar3.png';
+import Avatar4 from '../assets/avatar4.png';
+import Star from '../assets/icons/star.svg'
+import Google from '../assets/icons/google.svg'
+
+const testimonials = [
+    {
+        reviewImg: ReviewImg1,
+        text: "I’m getting a lot of nutrients in one scoop",
+        avatar: Avatar1,
+        name: "Natalia",
+        subtitle: "PTE - 8 Each",
+        sourceIcon: Google,
+        time: "10 Hours ago",
+        rating: 5,
+        starIcon: Star,
+    },
+    {
+        reviewImg: ReviewImg2,
+        text: "It’s kind of slipped into our recruitment stream so easily There’s no effort needed... ",
+        avatar: Avatar2,
+        name: "Jenny",
+        subtitle: "PTE - 8 Each",
+        sourceIcon: Google,
+        time: "1 day ago",
+        rating: 5,
+        starIcon: Star,
+    },
+    {
+        reviewImg: ReviewImg3,
+        text: "All of our hiring team said that it saves them hours. We’re getting feedback within 20-30 minutes from interviews now, which is ideal for recruiting team that works with time to hire targets.",
+        avatar: Avatar3,
+        name: "Mark",
+        subtitle: "PTE - 8 Each",
+        sourceIcon: Google,
+        time: "10 week ago",
+        rating: 5,
+        starIcon: Star,
+    },
+    {
+        reviewImg: ReviewImg4,
+        text: "There is a clear impact on time saved. We saved 53 hours per month across our recruiting team.",
+        avatar: Avatar4,
+        name: "Priyanka",
+        subtitle: "NAATI CCL - 78/90",
+        sourceIcon: Google,
+        time: "10 month ago",
+        rating: 5,
+        starIcon: Star,
+    },
+    {
+        reviewImg: ReviewImg1,
+        text: "I’m getting a lot of nutrients in one scoop",
+        avatar: Avatar1,
+        name: "Natalia",
+        subtitle: "PTE - 8 Each",
+        sourceIcon: Google,
+        time: "10 Hours ago",
+        rating: 5,
+        starIcon: Star,
+    },
+    {
+        reviewImg: ReviewImg2,
+        text: "It’s kind of slipped into our recruitment stream so easily There’s no effort needed... ",
+        avatar: Avatar2,
+        name: "Jenny",
+        subtitle: "PTE - 8 Each",
+        sourceIcon: Google,
+        time: "1 day ago",
+        rating: 5,
+        starIcon: Star,
+    },
+    {
+        reviewImg: ReviewImg3,
+        text: "All of our hiring team said that it saves them hours. We’re getting feedback within 20-30 minutes from interviews now, which is ideal for recruiting team that works with time to hire targets.",
+        avatar: Avatar3,
+        name: "Mark",
+        subtitle: "PTE - 8 Each",
+        sourceIcon: Google,
+        time: "10 week ago",
+        rating: 5,
+        starIcon: Star,
+    },
+    {
+        reviewImg: ReviewImg4,
+        text: "There is a clear impact on time saved. We saved 53 hours per month across our recruiting team.",
+        avatar: Avatar4,
+        name: "Priyanka",
+        subtitle: "NAATI CCL - 78/90",
+        sourceIcon: Google,
+        time: "10 month ago",
+        rating: 5,
+        starIcon: Star,
+    },
+];
 
 const Home = () => {
 
@@ -183,7 +285,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="sm:pb-8 pb-2">
+            <section className="pb-8">
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
                     <div className="bg-black1 flex flex-col sm:gap-[57px] gap-[42px] sm:leading-[auto] leading-[40px] border border-white/10 group md:px-[38px] px-6 md:pt-[70px] md:pb-[85px] pt-6 pb-7  relative">
                         <h2 className="lg:text-[42px] sm:text-[40px] text-[32px] leading-[1.2] font-bold text-white text-left">What’s included in every Course</h2>
@@ -223,6 +325,20 @@ const Home = () => {
                                     Learn from certified trainers</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="pb-8">
+                <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
+                    <div className="bg-[#252525] px-4 sm:px-8 sm:pb-[32px] pb-4">
+                        <div className="sm:py-[36px] py-7 grid grid-cols-2 items-center">
+                            <h2 className="text-2xl font-bold text-white text-left">Testimonials</h2>
+                            <div className="flex items-center justify-end">
+                                <a href="#" className="bg-black2 2xl:p-[16px] sm:p-[12px] p-[9px] 2xl:min-w-[166px] sm:min-w-[140px] min-w-[100px] text-center rounded-[8px] text-white 2xl:text-[22px] sm:text-lg text-base font-semibold ">View all</a>
+                            </div>
+                        </div>
+                        <TestimonialCarousel testimonials={testimonials} />
                     </div>
                 </div>
             </section>
