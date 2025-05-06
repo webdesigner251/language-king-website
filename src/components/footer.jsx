@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import AppleImg from '../assets/icons/apple.svg'
 import GoogleImg from '../assets/icons/google-play.svg'
 import WindowsImg from '../assets/icons/windows.svg'
+import AppleImg1 from '../assets/icons/apple-light.svg'
+import GoogleImg1 from '../assets/icons/google-play-light.svg'
+import WindowsImg1 from '../assets/icons/windows-light.svg'
 import Email from '../assets/icons/email.svg'
 import Phone from '../assets/icons/call.svg'
 import Map from '../assets/icons/map.svg'
-import Facebook from "../assets/icons/facebook.svg";
-import Insta from "../assets/icons/instagram.svg";
-import Tiktok from "../assets/icons/tiktok.svg";
+import Calender from '../assets/icons/calender.svg'
+
+// import { ReactComponent as Logo } from "./assets/google.svg";
 
 const Footer = () => {
     return (
@@ -17,12 +20,12 @@ const Footer = () => {
                     <div className="">
                         <div className="border border-[#333434] mb-[38px]">
                             <div className="bg-[#1A1A1A] sm:p-[38px] p-4 border-b border-[#333434]">
-                                <div className="sm:pb-8 pb-6 border-b border-white">
+                                {/* <div className="sm:pb-8 pb-6 border-b border-white">
                                     <h2 className="lg:text-[42px] sm:text-[40px] text-[32px] leading-[1.2] font-bold text-white text-left">Book a FREE Trial Class</h2>
-                                </div>
+                                </div> */}
 
                                 <div className="flex xl:flex-nowrap flex-wrap sm:gap-8 gap-[33px]">
-                                    <form className="xl:border-e border-white xl:w-[40%] w-full xl:pb-10 xl:pt-10 sm:pt-8 pt-6 xl:pe-[38px] ">
+                                    {/* <form className="xl:border-e border-white xl:w-[40%] w-full xl:pb-10 xl:pt-10 sm:pt-8 pt-6 xl:pe-[38px] ">
                                         <div className="flex flex-col mb-4">
                                             <label htmlFor="name" className="text-white font-semibold text-base mb-2">Full Name*</label>
                                             <input type="text" name="name" id="" placeholder="Your first & last name" className="border border-[#949AA5] bg-white rounded-[6px] py-[14px] px-[24px] 2xl:text-xl text-lg" />
@@ -37,29 +40,38 @@ const Footer = () => {
                                         >
                                            SUBMIT
                                         </button>
-                                    </form>
+                                    </form> */}
 
                                     <div className="w-full flex lg:flex-nowrap flex-wrap justify-between sm:gap-8 gap-[33px] sm:py-10 py-5">
                                         <div className="lg:w-auto w-full flex flex-col  2xl:gap-[40px] gap-[22px]">
                                             <h4 className="text-white font-bold 2xl:text-[24px] text-[22px]">Contact Us </h4>
                                             <ul className="flex flex-col gap-[22px]">
                                                 <li>
-                                                    <a href="mailto:info@languageking.com.au" className="flex items-center gap-5 text-[#919191] font-semibold sm:text-lg text-lg">
-                                                        <img src={Email} className="w-10 h-10 " />
+                                                    <a href="mailto:info@languageking.com.au" className="flex items-center gap-5 text-[#919191] font-medium sm:text-lg text-lg">
+                                                        <img src={Email} className="w-8 h-8 " />
                                                         info@languageking.com.au
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="tel:+61488876999" className="flex items-center gap-5 text-[#919191] font-semibold sm:text-lg text-lg">
-                                                        <img src={Phone} className="w-10 h-10 " />
+                                                    <span className="flex items-center gap-5 text-[#919191] font-medium sm:text-lg text-lg">
+                                                        <img src={Map} className="w-8 h-8 " />
+                                                        Online
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <a href="tel:+61488876999" className="flex items-center gap-5 text-[#919191] font-medium sm:text-lg text-lg">
+                                                        <img src={Phone} className="w-8 h-8 " />
                                                         +61 488 876 999
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <span className="flex items-center gap-5 text-[#919191] font-semibold sm:text-lg text-lg">
-                                                        <img src={Map} className="w-10 h-10 " />
-                                                        Online
-                                                    </span>
+                                                    <a href="tel:+61488876999" className="flex items-start gap-5 text-[#919191] font-medium sm:text-lg text-lg">
+                                                        <img src={Calender} className="w-8 h-8 " />
+                                                        <span>
+                                                            10 A.M to 7 P.M <br />
+                                                            <span className="italic text-base font-light block">(Mon - Sun | Melbourne Time)</span>
+                                                        </span>
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -68,27 +80,27 @@ const Footer = () => {
                                             <h4 className="text-white font-bold 2xl:text-[24px] text-[22px]">About Us </h4>
                                             <ul className="flex flex-col sm:gap-[15px] gap-[14px]">
                                                 <li>
-                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
+                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
                                                         Terms of Use
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
+                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
                                                         Privacy Policy
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
+                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
                                                         Refund Policy
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
+                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
                                                         Careers
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
+                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
                                                         FAQs
                                                     </a>
                                                 </li>
@@ -99,17 +111,17 @@ const Footer = () => {
                                             <h4 className="text-white font-bold 2xl:text-[24px] text-[22px]">Courses</h4>
                                             <ul className="flex flex-col sm:gap-[15px] gap-[14px]">
                                                 <li>
-                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
+                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
                                                         PTE
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
+                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
                                                         NAATI CCL
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
+                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
                                                         IELTS
                                                     </a>
                                                 </li>
@@ -120,18 +132,21 @@ const Footer = () => {
                                             <h4 className="text-white font-bold 2xl:text-[24px] text-[22px]">Devices Supported</h4>
                                             <ul className="flex sm:flex-col flex-wrap 2xl:gap-[22px] gap-[18px]">
                                                 <li>
-                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold text-xl transition-all duration-300 ease hover:text-white/80">
-                                                        <img src={AppleImg} alt="Image" className="2xl-max-w-[150px] sm:max-w-[100px] max-w-[130px]" />
+                                                    <a href="#" className="flex items-center gap-4 text-[#919191] group font-semibold text-xl transition-all duration-300 ease hover:text-white/80">
+                                                        <img src={AppleImg} alt="Image" className="group-hover:hidden flex 2xl-max-w-[150px] sm:max-w-[100px] max-w-[130px] transition-all duration-300 ease" />
+                                                        <img src={AppleImg1} alt="Image" className="hidden group-hover:flex 2xl-max-w-[150px] sm:max-w-[100px] max-w-[130px] transition-all duration-300 ease" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold text-xl transition-all duration-300 ease hover:text-white/80">
-                                                        <img src={GoogleImg} alt="Image" className="2xl-max-w-[150px] sm:max-w-[100px] max-w-[130px]" />
+                                                    <a href="#" className="flex items-center gap-4 text-[#919191] group font-semibold text-xl transition-all duration-300 ease hover:text-white/80">
+                                                        <img src={GoogleImg} alt="Image" className="group-hover:hidden flex 2xl-max-w-[150px] sm:max-w-[100px] max-w-[130px] transition-all duration-300 ease" />
+                                                        <img src={GoogleImg1} alt="Image" className="hidden group-hover:flex 2xl-max-w-[150px] sm:max-w-[100px] max-w-[130px] transition-all duration-300 ease" />
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold text-xl transition-all duration-300 ease hover:text-white/80">
-                                                        <img src={WindowsImg} alt="Image" className="2xl-max-w-[150px] sm:max-w-[100px] max-w-[130px]" />
+                                                    <a href="#" className="flex items-center gap-4 text-[#919191] group font-semibold text-xl transition-all duration-300 ease hover:text-white/80">
+                                                        <img src={WindowsImg} alt="Image" className="group-hover:hidden flex 2xl-max-w-[150px] sm:max-w-[100px] max-w-[130px] transition-all duration-300 ease" />
+                                                        <img src={WindowsImg1} alt="Image" className="hidden group-hover:flex 2xl-max-w-[150px] sm:max-w-[100px] max-w-[130px] transition-all duration-300 ease" />
                                                     </a>
                                                 </li>
                                             </ul>
@@ -243,14 +258,14 @@ const Footer = () => {
 
                         </div>
 
-                        <div className="sm:pb-[54px] pb-6 border-b border-white/80 sm:px-0 px-4">
-                            <h5 className="2xl:text-[22px] sm:text-lg text-sm text-[#8B8C8D]">Disclaimer - Language King is an independent coaching provider for the NAATI CCL and PTE tests. We are not affiliated with, endorsed by, or sponsored by NAATI or PTE. All test applications must be made directly with NAATI or PTE.</h5>
+                        <div className="sm:pb-[54px] pb-6 sm:px-0 px-4">
+                            <h5 className="2xl:text-[20px] font-normal sm:text-lg text-sm text-[#8B8C8D]">Disclaimer - Language King is an independent coaching provider for the NAATI CCL and PTE tests. We are not affiliated with, endorsed by, or sponsored by NAATI or PTE. All test applications must be made directly with NAATI or PTE.</h5>
                         </div>
-                        <div className="text-center sm:py-[48px] px-4 py-6">
+                        {/* <div className="text-center sm:py-[48px] px-4 py-6">
                             <a href="#" className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 py-3 2xl:min-w-[398px] sm:min-w-[306px] min-w-full font-bold sm:text-xl text-lg relative z-10">
                                 Get a Callback
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </footer>

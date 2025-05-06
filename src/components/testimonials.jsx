@@ -1,6 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from 'swiper/modules';
+
 import "swiper/css";
+import 'swiper/css/pagination';
 
 const TestimonialCarousel = ({ testimonials }) => {
     return (
@@ -8,6 +11,8 @@ const TestimonialCarousel = ({ testimonials }) => {
             spaceBetween={12}
             slidesPerView={1}
             loop={true}
+            pagination={true} 
+            modules={[Pagination]}
             breakpoints={{
                 767: {
                     slidesPerView: 2,
@@ -24,7 +29,7 @@ const TestimonialCarousel = ({ testimonials }) => {
             }}
         >
             {testimonials.map((item, i) => (
-                <SwiperSlide className="h-auto-swiper" key={i}>
+                <SwiperSlide  className="h-auto-swiper" key={i}>
                     <div className="flex flex-col justify-between h-full">
                         <div>
                             <img
@@ -44,13 +49,13 @@ const TestimonialCarousel = ({ testimonials }) => {
                                     className="2xl:w-[92px] w-[72px] 2xl:h-[92px] h-[72px] rounded-full object-cover"
                                 />
                                 <div>
-                                    <h4 className="font-light text-white/60 2xl:text-3xl text-2xl 2xl:mb-2 mb-1">{item.name}</h4>
-                                    <span className="font-light text-[#D8D8D8] 2xl:text-xl text-lg">{item.subtitle}</span>
+                                    <h4 className="font-light text-white/60 2xl:text-2xl text-xl 2xl:mb-2 mb-1">{item.name}</h4>
+                                    <span className="font-light text-[#D8D8D8] 2xl:text-lg text-base">{item.subtitle}</span>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-3">
                                 <div className="flex items-center 2xl:text-base text-sm font-light text-white gap-3">
-                                    <img src={item.sourceIcon} alt="source" /> {item.time}
+                                    <img src={item.sourceIcon} alt="source" className="w-5" /> {item.time}
                                 </div>
                                 <div className="flex">
                                     {[...Array(item.rating)].map((_, idx) => (
@@ -58,7 +63,7 @@ const TestimonialCarousel = ({ testimonials }) => {
                                             src={item.starIcon}
                                             alt="star"
                                             key={idx}
-                                            className="sm:w-7 w-5 h-auto me-1"
+                                            className="sm:w-6 w-5 h-auto me-1"
                                         />
                                     ))}
                                 </div>

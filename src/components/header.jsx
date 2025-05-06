@@ -12,7 +12,7 @@ const Header = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsSticky(window.scrollY > 50);
+            setIsSticky(window.scrollY > 0);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -24,8 +24,8 @@ const Header = () => {
     }, []);
 
     return (
-        <header className={`bg-dark text-white sm:py-[48px] py-[32px] sticky top-0 z-50 ${
-            isSticky ? 'active-header' : ''
+        <header className={`text-white sm:py-[48px] py-[32px] sticky z-50 top-0 ${
+            isSticky ? 'active-header bg-dark' : 'bg-transparent'
           }`}>
             <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
                 <div className="flex items-center justify-between relative">
@@ -53,7 +53,7 @@ const Header = () => {
                                 <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold 2xl:text-[20px] text-[16px] border-b-2 border-transparent hover:border-white transition-all duration-300">Courses</a></li>
                                 <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold 2xl:text-[20px] text-[16px] border-b-2 border-transparent hover:border-white transition-all duration-300">Testimonials</a></li>
                                 <li className="text-center inline-flex items-center">
-                                    <a href="#" className="text-white inline-flex items-center justify-center border border-white/25 hover:border-white 2xl:px-[22px] 2xl:py-[10.8px] px-[15px] py-[9px] font-bold 2xl:text-[18px] text-[16px] transition-all duration-300 header-btn min-w-[180px]">
+                                    <a href="#" className={`relative inline-flex items-center justify-center 2xl:px-[22px] 2xl:py-[10.8px] px-[15px] py-[9px] font-bold 2xl:text-[18px] text-[16px] transition-all duration-300 header-btn min-w-[180px] z-10 ${ isSticky ? 'primary-btn bg-gradient-primary text-black border-none' : 'text-white border border-white/25 hover:border-white bg-black' } `}>
                                         Get-a Callback
                                     </a>
                                 </li>
