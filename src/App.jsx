@@ -8,7 +8,7 @@ import PteMasterClass from './pages/PTE-MasterClass';
 
 function App() {
   const location = useLocation();
-  const isHomePage = location.pathname === '/language-king-website';
+  const isHomePage = location.pathname === '/';
 
   return (
     <>
