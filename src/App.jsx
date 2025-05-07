@@ -8,11 +8,11 @@ import PteMasterClass from './pages/PTE-MasterClass';
 
 function App() {
   const location = useLocation();
-  const isHomePage = location.pathname === '/';
+  const isHomePage = location.pathname === '/language-king-website';
 
   return (
     <>
-       {isHomePage ? <HomeHeader /> : <MainHeader />}
+       {isHomePage ? < MainHeader/> : <HomeHeader />}
       <Routes>
         <Route path="/language-king-website" element={<Home />} />
         <Route path="/pte-masterclass" element={<PteMasterClass />} />
