@@ -5,7 +5,7 @@ import LogoMenu from "../assets/logo-menu.svg";
 import MenuIcon from "../assets/menu.svg"; // Custom menu icon
 import CloseIcon from "../assets/close.svg"; // Custom close icon
 
-const Header = () => {
+const MainHeader = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const [isSticky, setIsSticky] = useState(false);
@@ -24,8 +24,8 @@ const Header = () => {
     }, []);
 
     return (
-        <header className={`text-white sm:py-[48px] py-[32px] sticky z-50 top-0 ${
-            isSticky ? 'active-header bg-dark' : 'bg-transparent'
+        <header className={`text-white sm:py-[32px] py-[32px] sticky z-50 top-0 active-header ${
+            isSticky ? ' bg-black' : 'bg-transparent'
           }`}>
             <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
                 <div className="flex items-center justify-between relative">
@@ -91,4 +91,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default MainHeader;

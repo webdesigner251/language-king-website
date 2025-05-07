@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
+import TestimonialCarousel from "../components/testimonials";
+import BookFreeTrail from "../components/BookFreeTrail";
 import CourseImg1 from '../assets/course-img1.png';
 import CourseImg2 from '../assets/course-img2.png';
 import CourseImg3 from '../assets/course-img3.png';
@@ -15,7 +18,7 @@ import Icon5 from '../assets/icons/whatsapp-icon.svg';
 import Icon6 from '../assets/icons/live-icon.svg';
 import Icon7 from '../assets/icons/badge-icon.svg';
 // import CallbackForm from "../components/callback-popup";
-import TestimonialCarousel from "../components/testimonials";
+
 import ReviewImg1 from '../assets/testimonial-01.png';
 import ReviewImg2 from '../assets/testimonial-02.png';
 import ReviewImg3 from '../assets/testimonial-03.png';
@@ -27,6 +30,8 @@ import Avatar4 from '../assets/avatar4.png';
 import Star from '../assets/icons/star.svg'
 import Google from '../assets/icons/google.svg'
 import HomeBanner from '../assets/Homepage-banner.png'
+import GrainIMG from '../assets/testimonial-grain.png'
+
 
 const testimonials = [
     {
@@ -53,7 +58,8 @@ const testimonials = [
     },
     {
         reviewImg: ReviewImg3,
-        text: "All of our hiring team said that it saves them hours. We’re getting feedback within 20-30 minutes from interviews now, which is ideal for recruiting team that works with time to hire targets.",
+        // text: `All of our hiring team said that it saves them hours. <span>We’re getting feedback within 20-30 minutes from interviews now, which is ideal for recruiting team that works with time to hire targets.</span>`,
+        text: `All of our hiring team said that it saves them hours. <span class="text-white/50">We’re getting feedback within 20-30 minutes from interviews now, which is ideal for recruiting team that works with time to hire targets.</span>`,
         avatar: Avatar3,
         name: "Mark",
         subtitle: "PTE - 8 Each",
@@ -64,7 +70,7 @@ const testimonials = [
     },
     {
         reviewImg: ReviewImg4,
-        text: "There is a clear impact on time saved. We saved 53 hours per month across our recruiting team.",
+        text: `There is a clear impact on time saved. <span class="text-white/50">We saved 53 hours per month across our recruiting team.</span>`,
         avatar: Avatar4,
         name: "Priyanka",
         subtitle: "NAATI CCL - 78/90",
@@ -103,14 +109,14 @@ const Home = () => {
                                 Helped many students, now it's your turn!
                             </p>
                         </div>
-                        <div className="mt-[48px] flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[670px]">
+                        <div className="mt-[48px] flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[640px]">
                             <a
                                 href="#"
                                 className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 py-3 sm:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10"
                             >
                                 Get a Callback
                             </a>
-                            <a href="#" className="align-middle inline-flex items-center gap-[25px] justify-center text-center bg-transparent border-2 border-Cadmium-Orange text-white px-3 py-3 sm:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
+                            <a href="#" className="align-middle inline-flex items-center gap-[18px] justify-center text-center bg-transparent border-2 border-Cadmium-Orange text-white px-3 py-3 sm:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
                                 <svg width="20" height="20" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M21.93 11.9998L0 23.9253V0.0742188L21.93 11.9998Z" fill="url(#paint0_linear_702_4078)" />
                                     <defs>
@@ -127,45 +133,20 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="mb-8">
+            <section className="mb-8" id="">
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] z-50 ">
                     <div className="border-t border-[#252525]">
                         <h2 className="text-white font-bold sm:text-[26.39px] text-2xl relative  inline-block z-10 my-[38px] stroke-heading">Our Courses</h2>
                     </div>
                     <div className="flex flex-col gap-[32px] bg-black">
-                        <div className="course-box bg-dark border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
-                            <div className="overflow-hidden relative z-0 max-h-[450px]">
-                                <img src={CourseImg2} alt="CourseIm21" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
-                            </div>
-                            <div className="lg:py-[16px]">
-                                <h2 className="text-gradient-secondary font-semibold md:text-[24px] inline-block sm:text-2xl text-lg">PTE Master Class</h2>
-                                <h2 className="font-semibold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] my-[8px]">Missed your score by a few marks! Clear in 2 weeks</h2>
-                                <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-0">
-                                    This is literally the best advice that I give every student. My strategies will teach you how to get 90 in each module. I’ve helped students out for 5+ years as a super-friendly teacher to get their desired score, now it’s your turn.
-                                </p>
-                                <div className="flex items-center gap-3 my-[12px]">
-                                    <img src={avatar} alt="avatar" className="w-[50px] h-[50px] rounded-full border-4 border-white/10" />
-                                    <h3 className="text-base font-light text-white/60">Taught by <span className="text-white font-semibold">Abhishek</span></h3>
-                                </div>
-                                <div className="pt-[12px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
-                                    <a href="#" className="primary-btn bg-gradient-secondary leading-[28px] inline-flex justify-center items-center text-center text-white px-3 py-3 lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_4px_rgba(0,0,0,0.25),_0px_3px_4px_rgba(0,0,0,0.25)]">
-                                        Take the Course
-                                    </a>
-                                    <a href="#" className="text-center bg-transparent border-2 border-white/20 inline-flex justify-center items-center text-white px-3 py-3 lg:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all z-10 duration-300 ease hover:bg-white/10 shadow-[0px_4px_4px_rgba(0,0,0,0.25),_0px_3px_4px_rgba(0,0,0,0.25)]">
-                                        View Details
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="course-box bg-dark border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
+                        <div className="course-drop-shadow bg-course-green-bg hover:bg-course-green-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
                             <div className="ribbon ribbon-top-left z-10"><span>New course!</span></div>
                             <div className="overflow-hidden relative z-0 max-h-[450px]">
                                 <img src={CourseImg1} alt="CourseImg1" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
                             </div>
                             <div className="lg:py-[16px]">
-                                <h2 className="text-[#52D34E] [text-shadow:0px_5px_0px_#000000] font-semibold md:text-[24px] inline-block sm:text-2xl text-lg">NAATI CCL Fast Track Course</h2>
-                                <h2 className="font-semibold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] my-[12px]">Need to clear the test in 3 days, we’ve got you covered!</h2>
+                                <h2 className="text-[#52D34E] [text-shadow:0px_5px_0px_#000000] font-bold md:text-[24px] inline-block sm:text-2xl text-lg">NAATI CCL Fast Track Course</h2>
+                                <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] my-[12px]">Need to clear the test in 3 days, we’ve got you covered!</h2>
                                 <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-0">
                                     This is a super fast-paced course. It’s geared for speed, designed for those who need to clear the test on urgent basis, and do whatever it takes to clear it.
                                 </p>
@@ -174,23 +155,48 @@ const Home = () => {
                                     <h3 className="text-base font-light text-white/60">Taught by <span className="text-white font-semibold">Abhishek</span></h3>
                                 </div>
                                 <div className="pt-[12px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
-                                    <a href="#" className="primary-btn bg-gradient-GreenBtn inline-flex justify-center items-center text-center text-white px-3 py-3 lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_4px_rgba(0,0,0,0.25),_0px_3px_4px_rgba(0,0,0,0.25)]">
+                                    <Link to="/pte-masterclass" className="primary-btn bg-gradient-GreenBtn inline-flex justify-center items-center text-center text-white px-3 py-3 lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_4px_rgba(0,0,0,0.25),_0px_3px_4px_rgba(0,0,0,0.25)]">
                                         Take the Course
-                                    </a>
-                                    <a href="#" className="text-center bg-transparent border-2 border-white/20 inline-flex justify-center items-center text-white px-3 py-3 lg:w-[50%] w-full font-semibold sm:text-xl text-lg z-10 transition-all duration-300 ease hover:bg-white/10 shadow-[0px_4px_4px_rgba(0,0,0,0.25),_0px_3px_4px_rgba(0,0,0,0.25)]">
+                                    </Link>
+                                    <Link to="/pte-masterclass" className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-3 py-3 lg:w-[50%] w-full font-semibold sm:text-xl text-lg z-10 transition-all duration-300 ease hover:bg-white/10 shadow-[0px_4px_4px_rgba(0,0,0,0.25),_0px_3px_4px_rgba(0,0,0,0.25)]">
                                         View Details
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="bg-dark border-[1.5px] border-[#333434] grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
+                        <div className="course-drop-shadow bg-course-blue-bg hover:bg-course-blue-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
+                            <div className="overflow-hidden relative z-0 max-h-[450px]">
+                                <img src={CourseImg2} alt="CourseIm21" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
+                            </div>
+                            <div className="lg:py-[16px]">
+                                <h2 className="text-gradient-secondary font-bold md:text-[24px] inline-block sm:text-2xl text-lg">PTE Master Class</h2>
+                                <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] my-[8px]">Missed your score by a few marks! Clear in 2 weeks</h2>
+                                <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-0">
+                                    This is literally the best advice that I give every student. My strategies will teach you how to get 90 in each module. I’ve helped students out for 5+ years as a super-friendly teacher to get their desired score, now it’s your turn.
+                                </p>
+                                <div className="flex items-center gap-3 my-[12px]">
+                                    <img src={avatar} alt="avatar" className="w-[50px] h-[50px] rounded-full border-4 border-white/10" />
+                                    <h3 className="text-base font-light text-white/60">Taught by <span className="text-white font-semibold">Abhishek</span></h3>
+                                </div>
+                                <div className="pt-[12px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
+                                    <Link to="/pte-masterclass" className="primary-btn bg-gradient-secondary leading-[28px] inline-flex justify-center items-center text-center text-white px-3 py-3 lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_4px_rgba(0,0,0,0.25),_0px_3px_4px_rgba(0,0,0,0.25)]">
+                                        Take the Course
+                                    </Link>
+                                    <Link to="/pte-masterclass" className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-3 py-3 lg:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all z-10 duration-300 ease hover:bg-white/10 shadow-[0px_4px_4px_rgba(0,0,0,0.25),_0px_3px_4px_rgba(0,0,0,0.25)]">
+                                        View Details
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="course-drop-shadow bg-course-black-bg hover:bg-course-black-hover-bg border-[1.5px] border-[#333434] grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
                             <div className="overflow-hidden relative z-0 max-h-[450px]">
                                 <img src={CourseImg3} alt="CourseImg3" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
                             </div>
                             <div className="lg:py-[16px]">
-                                <h2 className="dark-text-custom font-semibold md:text-[26px] block sm:text-2xl text-lg">PTE Master Handbook</h2>
-                                <h2 className="font-semibold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] my-[8px]">PTE 79+ in 7 days
+                                <h2 className="dark-text-custom font-bold md:text-[26px] block sm:text-2xl text-lg">PTE Master Handbook</h2>
+                                <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] my-[8px]">PTE 79+ in 7 days
                                     Crack PTE in 1  attempt</h2>
                                 <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-0">
                                     Learn exactly what students did to achieve their desired band. This book explains the exam structure, target scores, key tasks to focus on, and the 7-day strategy you need to follow to go from 5 to 8 each as quickly as possible.
@@ -203,7 +209,7 @@ const Home = () => {
                                     <a href="#" className="primary-btn bg-gradient-dark leading-[28px] inline-flex justify-center items-center text-center text-white px-3 py-3 lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_4px_rgba(0,0,0,0.25),_0px_3px_4px_rgba(0,0,0,0.25)]">
                                         Free E-Book
                                     </a>
-                                    <a href="#" className="text-center bg-transparent border-2 border-white/20 inline-flex justify-center items-center text-white px-3 py-3 lg:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all z-10 duration-300 ease hover:bg-white/10 shadow-[0px_4px_4px_rgba(0,0,0,0.25),_0px_3px_4px_rgba(0,0,0,0.25)]">
+                                    <a href="#" className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-3 py-3 lg:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all z-10 duration-300 ease hover:bg-white/10 shadow-[0px_4px_4px_rgba(0,0,0,0.25),_0px_3px_4px_rgba(0,0,0,0.25)]">
                                         View Details
                                     </a>
                                 </div>
@@ -224,28 +230,28 @@ const Home = () => {
                                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                                         <img src={VideoImg1} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold 2xl:text-xl text-lg sm:leading-[1.3] leading-[28px]">Impact of Read Aloud on Reading Module</h3>
+                                    <h3 className="text-white font-bold 2xl:text-[24px] sm:text-[22px] text-lg sm:leading-[1.3] leading-[28px]">Impact of Read Aloud on Reading Module</h3>
                                     <span className="text-white/60 mt-[6px] block text-base font-medium">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                                         <img src={VideoImg2} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold 2xl:text-xl text-lg sm:leading-[1.3] leading-[28px]">Poor score in Write Essay</h3>
+                                    <h3 className="text-white font-bold 2xl:text-[24px] sm:text-[22px] text-lg sm:leading-[1.3] leading-[28px]">Poor score in Write Essay</h3>
                                     <span className="text-white/60 mt-[6px] block text-base font-medium">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                                         <img src={VideoImg3} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold 2xl:text-xl text-lg sm:leading-[1.3] leading-[28px]">Dialogue vs Segment</h3>
+                                    <h3 className="text-white font-bold 2xl:text-[24px] sm:text-[22px] text-lg sm:leading-[1.3] leading-[28px]">Dialogue vs Segment</h3>
                                     <span className="text-white/60 mt-[6px] block text-base font-medium">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                                         <img src={VideoImg4} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold 2xl:text-xl text-lg sm:leading-[1.3] leading-[28px]">PTE vs IELTS</h3>
+                                    <h3 className="text-white font-bold 2xl:text-[24px] sm:text-[22px] text-lg sm:leading-[1.3] leading-[28px]">PTE vs IELTS</h3>
                                     <span className="text-white/60 mt-[6px] block text-base font-medium">PTE MasterClass</span>
                                 </div>
                             </div>
@@ -298,17 +304,27 @@ const Home = () => {
 
             <section className="pb-8">
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
-                    <div className="bg-[#2525258c] px-4 sm:px-8 sm:pb-[32px] pb-4">
-                        <div className="sm:py-[36px] py-7 grid grid-cols-2 items-center">
-                            <h2 className="text-2xl font-bold text-white text-left">Testimonials</h2>
-                            <div className="flex items-center justify-end">
-                                <a href="#" className="bg-black2 2xl:p-[16px] sm:p-[12px] p-[9px] 2xl:min-w-[166px] sm:min-w-[140px] min-w-[100px] text-center rounded-[8px] text-white 2xl:text-[22px] sm:text-lg text-base font-semibold ">View all</a>
+                    <div className="bg-[#212121] px-4 sm:px-8 sm:pb-[32px] pb-4 relative z-10">
+                        <div className="relative z-20">
+                            <div className="sm:py-[32px] py-7 flex justify-between items-center">
+                                <h2 className="text-3xl font-bold text-white text-left">Testimonials</h2>
+                                <div className="flex items-center justify-end">
+                                    <a href="#" className="bg-black2 2xl:p-[16px] sm:p-[12px] p-[9px] 2xl:min-w-[166px] sm:min-w-[140px] min-w-[100px] text-center rounded-[6px] text-white 2xl:text-[22px] sm:text-lg text-base font-semibold ">View all</a>
+                                </div>
                             </div>
+                            <TestimonialCarousel testimonials={testimonials} />
                         </div>
-                        <TestimonialCarousel testimonials={testimonials} />
+                        <img src={GrainIMG} alt="GrainIMG" className="absolute top-0  w-full h-full left-0 right-0 z-0 object-cover" />
                     </div>
                 </div>
             </section>
+
+            <section>
+                <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
+                    <BookFreeTrail />
+                </div>
+            </section>
+
         </main>
     );
 };

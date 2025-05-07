@@ -15,7 +15,7 @@ import Calender from '../assets/icons/calender.svg'
 const Footer = () => {
     return (
         <>
-            <footer className="bg-dark md:pt-[42px] pt-[32px]">
+            <footer className="bg-dark pt-[32px]">
                 <div className="custom-container mx-auto py-0 px-0 sm:px-[32px]">
                     <div className="">
                         <div className="border border-[#333434] mb-[38px]">
@@ -24,25 +24,8 @@ const Footer = () => {
                                     <h2 className="lg:text-[42px] sm:text-[40px] text-[32px] leading-[1.2] font-bold text-white text-left">Book a FREE Trial Class</h2>
                                 </div> */}
 
-                                <div className="flex xl:flex-nowrap flex-wrap sm:gap-8 gap-[33px]">
-                                    {/* <form className="xl:border-e border-white xl:w-[40%] w-full xl:pb-10 xl:pt-10 sm:pt-8 pt-6 xl:pe-[38px] ">
-                                        <div className="flex flex-col mb-4">
-                                            <label htmlFor="name" className="text-white font-semibold text-base mb-2">Full Name*</label>
-                                            <input type="text" name="name" id="" placeholder="Your first & last name" className="border border-[#949AA5] bg-white rounded-[6px] py-[14px] px-[24px] 2xl:text-xl text-lg" />
-                                        </div>
-                                        <div className="flex flex-col mb-4">
-                                            <label htmlFor="phone" className="text-white font-semibold text-base mb-2">Phone Number*</label>
-                                            <input type="tel" name="phone" id="" placeholder="Mobile number e.g: 0444786999" className="border border-[#949AA5] bg-white rounded-[6px] py-[14px] px-[24px] 2xl:text-xl text-lg" />
-                                        </div>
-                                        <button type="submit"
-                                            href="#"
-                                            className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 py-3 w-full font-bold sm:text-xl text-lg relative z-10 rounded-[5px] mt-4"
-                                        >
-                                           SUBMIT
-                                        </button>
-                                    </form> */}
-
-                                    <div className="w-full flex lg:flex-nowrap flex-wrap justify-between sm:gap-8 gap-[33px] sm:py-10 py-5">
+                                <div className="flex xl:flex-nowrap flex-wrap sm:gap-8 gap-[33px]">                                  
+                                    <div className="w-full flex lg:flex-nowrap flex-wrap justify-between sm:gap-8 gap-[33px]">
                                         <div className="lg:w-auto w-full flex flex-col  2xl:gap-[40px] gap-[22px]">
                                             <h4 className="text-white font-bold 2xl:text-[24px] text-[22px]">Contact Us </h4>
                                             <ul className="flex flex-col gap-[22px]">

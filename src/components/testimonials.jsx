@@ -37,8 +37,7 @@ const TestimonialCarousel = ({ testimonials }) => {
                                 alt="User"
                                 className="sm:max-h-[280px] h-auto w-full object-cover rounded-[10px] mb-[24px]"
                             />
-                            <p className="text-paraGray font-light 2xl:text-[25px] text-lg 2xl:leading-[36px] leading-normal md:mb-[40px] sm:mb-[30px] mb-8">
-                                {item.text}
+                            <p className="text-paraGray font-light 2xl:text-[25px] text-lg 2xl:leading-[36px] leading-normal md:mb-[40px] sm:mb-[30px] mb-8" dangerouslySetInnerHTML={{ __html: item.text }}>                                
                             </p>
                         </div>
                         <div className="2xl:pt-[64px] md:pt-[52px] sm:pt-[42px] pt-8 border-t border-[#3D3D3D] flex flex-col 2xl:gap-y-[58px] md:gap-y-[42px] gap-7">
@@ -49,7 +48,7 @@ const TestimonialCarousel = ({ testimonials }) => {
                                     className="2xl:w-[92px] w-[72px] 2xl:h-[92px] h-[72px] rounded-full object-cover"
                                 />
                                 <div>
-                                    <h4 className="font-light text-white/60 2xl:text-2xl text-xl 2xl:mb-2 mb-1">{item.name}</h4>
+                                    <h4 className="font-light text-white/60 2xl:text-2xl text-[22px] 2xl:mb-2 mb-1">{item.name}</h4>
                                     <span className="font-light text-[#D8D8D8] 2xl:text-lg text-base">{item.subtitle}</span>
                                 </div>
                             </div>

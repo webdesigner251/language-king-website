@@ -34,6 +34,7 @@
   --background-image-course-marron-hover-bg: linear-gradient(95.47deg, rgba(255, 204, 23, .1) 0%, rgba(200, 167, 118, .1) 42.71%, rgba(167, 61, 47, .1) 100%);
   --background-image-course-black-bg: linear-gradient(95.47deg, rgba(60, 65, 69, .2) 0%, rgba(47, 52, 56, .2) 45.5%, rgba(31, 32, 33, .2) 100%);
   --background-image-course-black-hover-bg: linear-gradient(95.47deg, rgba(60, 65, 69, .25) 0%, rgba(47, 52, 56, .25) 45.5%, rgba(31, 32, 33, .25) 100%);
+  --background-image-gradient-OrangeRed: linear-gradient(90deg, #F69F19 0%, #F69F1A 0.39%, #F69E1A 0.78%, #F69E1B 1.17%, #F69E1C 1.56%, #F69D1D 1.95%, #F69D1D 2.34%, #F69C1E 2.73%, #F69C1F 3.12%, #F69C1F 3.52%, #F69B20 3.91%, #F69B21 4.3%, #F69A22 4.69%, #F79A22 5.08%, #F79A23 5.47%, #F79924 5.86%, #F79924 6.25%, #F79825 6.64%, #F79826 7.03%, #F79827 7.42%, #F79727 7.81%, #F79728 8.2%, #F79629 8.59%, #F79629 8.98%, #F7962A 9.37%, #F7952B 9.77%, #F7952C 10.16%, #F7942C 10.55%, #F7942D 10.94%, #F7942E 11.33%, #F7932E 11.72%, #F7932F 12.11%, #F79230 12.5%, #F79231 12.89%, #F79231 13.28%, #F79132 13.67%, #F79133 14.06%, #F79033 14.45%, #F79034 14.84%, #F79035 15.23%, #F78F36 15.62%, #F88F36 16.02%, #F88E37 16.41%, #F88E38 16.8%, #F88E38 17.19%, #F88D39 17.58%, #F88D3A 17.97%, #F88C3B 18.36%, #F88C3B 18.75%, #F88C3C 19.14%, #F88B3D 19.53%, #F88B3D 19.92%, #F88A3E 20.31%, #F88A3F 20.7%, #F88A40 21.09%, #F88940 21.48%, #F88941 21.87%, #F88842 22.27%, #F88842 22.66%, #F88843 23.05%, #F88744 23.44%, #F88745 23.83%, #F88645 24.22%, #F88646 24.61%, #F88647 25%, #F88547 25.39%, #F88548 25.78%, #F88449 26.17%, #F8844A 26.56%, #F8844A 26.95%, #F9834B 27.34%, #F9834C 27.73%, #F9824C 28.12%, #F9824D 28.52%, #F9824E 28.91%, #F9814F 29.3%, #F9814F 29.69%, #F98050 30.08%, #F98051 30.47%, #F98051 30.86%, #F97F52 31.25%, #F97F53 31.64%, #F97E54 32.03%, #F97E54 32.42%, #F97E55 32.81%, #F97D56 33.2%, #F97D56 33.59%, #F97C57 33.98%, #F97C58 34.37%, #F97C59 34.77%, #F97B59 35.16%, #F97B5A 35.55%, #F97A5B 35.94%, #F97A5B 36.33%, #F97A5C 36.72%, #F9795D 37.11%, #F9795E 37.5%, #F9785E 37.89%, #F9785F 38.28%, #FA7860 38.67%, #FA7760 39.06%, #FA7761 39.45%, #FA7662 39.84%, #FA7663 40.23%, #FA7663 40.62%, #FA7564 41.02%, #FA7565 41.41%, #FA7466 41.8%, #FA7466 42.19%, #FA7467 42.58%, #FA7368 42.97%, #FA7368 43.36%, #FA7369 43.75%, #FA726A 44.14%, #FA726B 44.53%, #FA716B 44.92%, #FA716C 45.31%, #FA716D 45.7%, #FA706D 46.09%, #FA706E 46.48%, #FA6F6F 46.87%, #FA6F70 47.27%, #FA6F70 47.66%, #FA6E71 48.05%, #FA6E72 48.44%, #FA6D72 48.83%, #FA6D73 49.22%, #FA6D74 49.61%, #FB6C75 50%, #FB6C75 50.39%, #FB6B76 50.78%, #FB6B77 51.17%, #FB6B77 51.56%, #FB6A78 51.95%, #FB6A79 52.34%, #FB697A 52.73%, #FB697A 53.12%, #FB697B 53.52%, #FB687C 53.91%, #FB687C 54.3%, #FB677D 54.69%, #FB677E 55.08%, #FB677F 55.47%, #FB667F 55.86%, #FB6680 56.25%, #FB6581 56.64%, #FB6581 57.03%, #FB6582 57.42%, #FB6483 57.81%, #FB6484 58.2%, #FB6384 58.59%, #FB6385 58.98%, #FB6386 59.37%, #FB6286 59.77%, #FB6287 60.16%, #FB6188 60.55%, #FC6189 60.94%, #FC6189 61.33%, #FC608A 61.72%, #FC608B 62.11%, #FC5F8B 62.5%, #FC5F8C 62.89%, #FC5F8D 63.28%, #FC5E8E 63.67%, #FC5E8E 64.06%, #FC5D8F 64.45%, #FC5D90 64.84%, #FC5D90 65.23%, #FC5C91 65.62%, #FC5C92 66.02%, #FC5B93 66.41%, #FC5B93 66.8%, #FC5B94 67.19%, #FC5A95 67.58%, #FC5A95 67.97%, #FC5996 68.36%, #FC5997 68.75%, #FC5998 69.14%, #FC5898 69.53%, #FC5899 69.92%, #FC579A 70.31%, #FC579A 70.7%, #FC579B 71.09%, #FC569C 71.48%, #FC569D 71.87%, #FD559D 72.27%, #FD559E 72.66%, #FD559F 73.05%, #FD549F 73.44%, #FD54A0 73.83%, #FD53A1 74.22%, #FD53A2 74.61%, #FD53A2 75%, #FD52A3 75.39%, #FD52A4 75.78%, #FD51A4 76.17%, #FD51A5 76.56%, #FD51A6 76.95%, #FD50A7 77.34%, #FD50A7 77.73%, #FD4FA8 78.12%, #FD4FA9 78.52%, #FD4FA9 78.91%, #FD4EAA 79.3%, #FD4EAB 79.69%, #FD4DAC 80.08%, #FD4DAC 80.47%, #FD4DAD 80.86%, #FD4CAE 81.25%, #FD4CAE 81.64%, #FD4BAF 82.03%, #FD4BB0 82.42%, #FD4BB1 82.81%, #FD4AB1 83.2%, #FE4AB2 83.59%, #FE49B3 83.98%, #FE49B3 84.37%, #FE49B4 84.77%, #FE48B5 85.16%, #FE48B6 85.55%, #FE47B6 85.94%, #FE47B7 86.33%, #FE47B8 86.72%, #FE46B8 87.11%, #FE46B9 87.5%, #FE45BA 87.89%, #FE45BB 88.28%, #FE45BB 88.67%, #FE44BC 89.06%, #FE44BD 89.45%, #FE43BD 89.84%, #FE43BE 90.23%, #FE43BF 90.62%, #FE42C0 91.02%, #FE42C0 91.41%, #FE42C1 91.8%, #FE41C2 92.19%, #FE41C2 92.58%, #FE40C3 92.97%, #FE40C4 93.36%, #FE40C5 93.75%, #FE3FC5 94.14%, #FF3FC6 94.53%, #FF3EC7 94.92%, #FF3EC7 95.31%, #FF3EC8 95.7%, #FF3DC9 96.09%, #FF3DCA 96.48%, #FF3CCA 96.87%, #FF3CCB 97.27%, #FF3CCC 97.66%, #FF3BCC 98.05%, #FF3BCD 98.44%, #FF3ACE 98.83%, #FF3ACF 99.22%, #FF3ACF 99.61%, #FF39D0 100%);
 }
 
 @utility custom-container {
@@ -72,6 +73,14 @@
   background-clip: text;
 }
 
+@utility text-gradient-OrangeRed {
+  color: transparent;
+  background: var(--background-image-gradient-OrangeRed);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
 * {
   font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased
@@ -85,13 +94,23 @@ body {
   background-color: #000000;
 }
 
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='23' height='12' viewBox='0 0 23 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_773_7241' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='0' y='0' width='23' height='12'%3E%3Cpath d='M0.104004 0.0117188H22.448V11.7717H0.104004V0.0117188Z' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_773_7241)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.8269 0C22.4991 0 22.9033 0.937125 21.7089 2.11313L12.7726 10.927C12.1784 11.515 11.2046 11.5089 10.6166 10.927L1.68019 2.11313C0.498067 0.943251 0.896193 0 2.56832 0H20.8269Z' fill='black'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 97% center;
+  background-size: 18px;
+}
+
 header {
   transition: 0.4s all ease;
 }
 
 .bg-dark {
   background-image: url('./assets/dark-bg.png');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 
@@ -140,7 +159,7 @@ header {
 }
 
 header.active-header {
-  padding: 16px 32px;
+  padding: 16px 0px;
 }
 
 header.active-header .desktop-logo {
@@ -160,7 +179,7 @@ header.active-header .desktop-logo {
 .ribbon span {
   position: absolute;
   display: block;
-  width: 400px;
+  width: 310px;
   padding: 5px 0;
   background: linear-gradient(90deg, rgba(255, 200, 78, 0.75) 9.64%, rgba(250, 58, 25, 0.75) 90.67%);
   font-weight: 700;
@@ -175,8 +194,8 @@ header.active-header .desktop-logo {
 
 .ribbon-top-left span {
   right: -25px;
-  top: 60px;
-  transform: rotate(-45deg);
+  top: 50px;
+  transform: rotate(-35deg);
 }
 
 .dark-text-custom {
