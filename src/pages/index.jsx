@@ -132,9 +132,9 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="mb-8" id="courses">
-                <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] z-50 ">
-                    <div className="border-t border-[#252525]">
+            <section className="mb-8 lg:scroll-mt-[90px]" id="courses">
+                <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] z-50 border-t border-[#252525]">
+                    <div className="">
                         <h2 className="text-white font-bold sm:text-[26.39px] text-2xl relative  inline-block z-10 my-[38px] stroke-heading">Our Courses</h2>
                     </div>
                     <div className="flex flex-col gap-[32px]">

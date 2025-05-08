@@ -65,7 +65,7 @@ const HomeHeader = () => {
 
                 {/* Mobile Menu (Dropdown) */}
                 {isOpen && (
-                    <nav className="lg:hidden fixed w-full h-full top-0 left-0 right-0 bottom-0 bg-noise-pattern z-50 sm:py-[48px] py-[32px] px-4 sm:px-[32px]">
+                    <nav className="lg:hidden fixed w-full h-full top-0 left-0 right-0 bottom-0 bg-noise-pattern z-50 sm:py-[48px] py-[32px] px-4 sm:px-[32px] bg-black">
                         <div className="flex items-center justify-end">
                             <button className="lg:hidden flex items-center justify-center p-3 w-[60px] h-[60px] menu-icon bg-chinese-Black border border-davys-Grey focus:outline-none cursor-pointer shadow-[0px_4px_0px_#000000]" onClick={() => setIsOpen(!isOpen)}>
                                 <img src={isOpen ? CloseIcon : MenuIcon} alt="CloseIcon" className="w-7 h-7" />
@@ -74,7 +74,7 @@ const HomeHeader = () => {
 
                         <ul className="flex flex-col justify-center items-center gap-[34px] relative">
                             <div className="menu-ellipse"></div>
-                            <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300">Courses</a></li>
+                            <li className="text-center inline-flex items-center"><a href="#courses" className="text-white inline-flex items-center justify-center font-bold text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300">Courses</a></li>
                             <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300">Testimonials</a></li>
                             <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-medium text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300 [text-shadow:0px_4px_0px_#000000]">Contact us</a></li>
                         </ul>
