@@ -30,7 +30,7 @@ const TestimonialCarousel = ({ testimonials }) => {
         >
             {testimonials.map((item, i) => (
                 <SwiperSlide  className="h-auto-swiper" key={i}>
-                    <div className="flex flex-col justify-between h-full">
+                    <div className="flex flex-col justify-between h-full sm:gap-2 gap-y-[50px]">
                         <div>
                             <img
                                 src={item.reviewImg}

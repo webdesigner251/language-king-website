@@ -26,7 +26,7 @@ const HomeHeader = () => {
 
     return (
         <header className={`text-white sm:py-[32px] py-[32px] z-50  ${
-            isSticky ? 'sm:sticky sm:top-0 sm:bg-black sm:shadow-md active-header' : 'bg-transparent relative'
+            isSticky ? 'lg:sticky lg:top-0 lg:bg-black lg:shadow-md active-header' : 'bg-transparent relative'
           }`}>
             <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
                 <div className="flex items-center justify-between relative">

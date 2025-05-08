@@ -223,36 +223,36 @@ const Home = () => {
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
                     <div className="bg-[#252525] px-4 sm:px-8 ">
                         <div className="sm:py-10 py-7">
-                            <h2 className="sm:text-2xl text-[22px] font-bold text-white text-left mb-4">Try these FREE video lessons</h2>
+                            <h2 className="sm:text-2xl text-[24px] leading-normal font-bold text-white text-left mb-4">Try these FREE video lessons</h2>
 
-                            <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-[28px]">
+                            <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-[28px] gap-[32px]">
                                 <div className="relative">
                                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                                         <img src={VideoImg1} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold 2xl:text-[24px] sm:text-[22px] text-lg sm:leading-[1.3] leading-[28px]">Impact of Read Aloud on Reading Module</h3>
-                                    <span className="text-white/60 mt-[6px] block text-base font-medium">PTE MasterClass</span>
+                                    <h3 className="text-white font-bold 2xl:text-[24px] text-[22px] sm:leading-[1.3] leading-[28px]">Impact of Read Aloud on Reading Module</h3>
+                                    <span className="text-white/60 sm:mt-[6px] mt-[4px] block text-base font-medium">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                                         <img src={VideoImg2} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold 2xl:text-[24px] sm:text-[22px] text-lg sm:leading-[1.3] leading-[28px]">Poor score in Write Essay</h3>
-                                    <span className="text-white/60 mt-[6px] block text-base font-medium">PTE MasterClass</span>
+                                    <h3 className="text-white font-bold 2xl:text-[24px] text-[22px] sm:leading-[1.3] leading-[28px]">Poor score in Write Essay</h3>
+                                    <span className="text-white/60 sm:mt-[6px] mt-[4px] block text-base font-medium">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                                         <img src={VideoImg3} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold 2xl:text-[24px] sm:text-[22px] text-lg sm:leading-[1.3] leading-[28px]">Dialogue vs Segment</h3>
-                                    <span className="text-white/60 mt-[6px] block text-base font-medium">PTE MasterClass</span>
+                                    <h3 className="text-white font-bold 2xl:text-[24px] text-[22px] sm:leading-[1.3] leading-[28px]">Dialogue vs Segment</h3>
+                                    <span className="text-white/60 sm:mt-[6px] mt-[4px] block text-base font-medium">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                                         <img src={VideoImg4} alt="image" className="w-full" />
                                     </div>
-                                    <h3 className="text-white font-bold 2xl:text-[24px] sm:text-[22px] text-lg sm:leading-[1.3] leading-[28px]">PTE vs IELTS</h3>
-                                    <span className="text-white/60 mt-[6px] block text-base font-medium">PTE MasterClass</span>
+                                    <h3 className="text-white font-bold 2xl:text-[24px] text-[22px] sm:leading-[1.3] leading-[28px]">PTE vs IELTS</h3>
+                                    <span className="text-white/60 sm:mt-[6px] mt-[4px] block text-base font-medium">PTE MasterClass</span>
                                 </div>
                             </div>
                         </div>

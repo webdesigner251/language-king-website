@@ -24,8 +24,8 @@ const MainHeader = () => {
     }, []);
 
     return (
-        <header className={`text-white sm:py-[32px] py-[32px] sticky z-50 top-0 active-header ${
-            isSticky ? ' bg-black' : 'bg-noise-pattern'
+        <header className={`text-white sm:py-[32px] py-[32px] z-50 active-header ${
+            isSticky ? 'lg:sticky lg:top-0 lg:bg-black lg:shadow-md' : 'bg-noise-pattern relative'
           }`}>
             <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
                 <div className="flex items-center justify-between relative">
