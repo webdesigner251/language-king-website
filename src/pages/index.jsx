@@ -18,7 +18,6 @@ import Icon5 from '../assets/icons/whatsapp-icon.svg';
 import Icon6 from '../assets/icons/live-icon.svg';
 import Icon7 from '../assets/icons/badge-icon.svg';
 // import CallbackForm from "../components/callback-popup";
-
 import ReviewImg1 from '../assets/testimonial-01.png';
 import ReviewImg2 from '../assets/testimonial-02.png';
 import ReviewImg3 from '../assets/testimonial-03.png';
@@ -94,7 +93,7 @@ const Home = () => {
     // };
 
     return (
-        <main className="bg-dark">
+        <>
             <section className="banner-wrapper mt-[-150px] relative">
                 <img src={HomeBanner} alt="HomeBanner" className="absolute w-full h-full top-0 left-0 right-0 bottom-0 object-cover" />
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full z-10">
@@ -109,7 +108,7 @@ const Home = () => {
                                 Helped many students, now it's your turn!
                             </p>
                         </div>
-                        <div className="mt-[48px] flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[640px]">
+                        <div className="mt-[48px] flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[600px]">
                             <a
                                 href="#"
                                 className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 py-3 sm:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10"
@@ -133,14 +132,15 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="mb-8" id="">
+            <section className="mb-8" id="courses">
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] z-50 ">
                     <div className="border-t border-[#252525]">
                         <h2 className="text-white font-bold sm:text-[26.39px] text-2xl relative  inline-block z-10 my-[38px] stroke-heading">Our Courses</h2>
                     </div>
-                    <div className="flex flex-col gap-[32px] bg-black">
-                        <div className="course-drop-shadow bg-course-green-bg hover:bg-course-green-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
+                    <div className="flex flex-col gap-[32px]">
+                        <div className="bg-course-green-bg hover:bg-course-green-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
                             <div className="ribbon ribbon-top-left z-10"><span>New course!</span></div>
+                            
                             <div className="overflow-hidden relative z-0 max-h-[450px]">
                                 <img src={CourseImg1} alt="CourseImg1" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
                             </div>
@@ -223,7 +223,7 @@ const Home = () => {
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
                     <div className="bg-[#252525] px-4 sm:px-8 ">
                         <div className="sm:py-10 py-7">
-                            <h2 className="text-2xl font-bold text-white text-left mb-4">Try these FREE video lessons</h2>
+                            <h2 className="sm:text-2xl text-[22px] font-bold text-white text-left mb-4">Try these FREE video lessons</h2>
 
                             <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-[28px]">
                                 <div className="relative">
@@ -324,8 +324,7 @@ const Home = () => {
                     <BookFreeTrail />
                 </div>
             </section>
-
-        </main>
+        </>
     );
 };
 

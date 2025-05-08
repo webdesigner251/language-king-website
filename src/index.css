@@ -83,7 +83,8 @@
 
 * {
   font-family: "Inter", sans-serif;
-  -webkit-font-smoothing: antialiased
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 /* body::-webkit-scrollbar {
@@ -91,7 +92,19 @@
 } */
 
 body {
-  background-color: #000000;
+  min-height: 100vh;
+  background: #111;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  position: relative;
+  z-index: 1;
 }
 
 select {
@@ -108,8 +121,8 @@ header {
   transition: 0.4s all ease;
 }
 
-.bg-dark {
-  background-image: url('./assets/dark-bg.png');
+.bg-noise-pattern {
+  background-image: url('./assets/background-noise.png');
   background-size: contain;
   background-position: center;
 }
@@ -159,7 +172,7 @@ header {
 }
 
 header.active-header {
-  padding: 16px 0px;
+  padding: 19px 0px;
 }
 
 header.active-header .desktop-logo {
@@ -204,6 +217,7 @@ header.active-header .desktop-logo {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .course-drop-shadow {
@@ -225,13 +239,12 @@ header.active-header .desktop-logo {
 }
 
 .banner-wrapper {
-  /* max-height: 71vh; */
-  min-height: 86vh;
   padding: 200px 0 100px 0;
   display: flex;
   justify-content: center;
   width: 100%;
   align-items: center;
+  min-height: 95vh;
 }
 
 /* lg:text-[72px] sm:text-[58px] text-[36px] lg:leading-[77px] sm:leading-[66px] leading-[40px] */
@@ -288,7 +301,7 @@ header.active-header .desktop-logo {
   }
 
   .banner-wrapper {
-    min-height: 80vh;
+    min-height: 100vh;
   }
 }
 
@@ -311,6 +324,10 @@ header.active-header .desktop-logo {
     font-size: 3rem;
     line-height: 55px;
   }
+
+  .banner-wrapper {
+    height: auto;
+  }
 }
 
 @media (max-width: 640px) {
@@ -321,8 +338,8 @@ header.active-header .desktop-logo {
   }
 
   header.active-header .desktop-logo {
-    height: 100px;
-    left: -20%;
+    height: 153.17px;
+    top: -60px;
   }
 }
 

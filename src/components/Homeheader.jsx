@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Textlogo from "../assets/text-logo.svg";
 import Logo from "../assets/Logo.svg";
 import LogoMenu from "../assets/logo-menu.svg";
@@ -24,15 +25,15 @@ const HomeHeader = () => {
     }, []);
 
     return (
-        <header className={`text-white sm:py-[32px] py-[32px] sticky z-50 top-0 ${
-            isSticky ? 'active-header bg-black' : 'bg-transparent'
+        <header className={`text-white sm:py-[32px] py-[32px] z-50  ${
+            isSticky ? 'sm:sticky sm:top-0 sm:bg-black sm:shadow-md active-header' : 'bg-transparent relative'
           }`}>
             <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
                 <div className="flex items-center justify-between relative">
                     {/* Left Logo */}
-                    <div className="xl:w-[40%] w-[30%] lg:flex hidden">
+                    <Link to="/" className="xl:w-[40%] w-[30%] lg:flex hidden">
                         <img src={Textlogo} alt="Logo" className="w-40" />
-                    </div>
+                    </Link>
 
                     {/* Right Logo */}
                     <div className="xl:w-[20%] sm:w-[50%] w-[50%] relative logo-wrapper">
@@ -50,7 +51,7 @@ const HomeHeader = () => {
                         {/* Desktop Navigation */}
                         <nav className="hidden lg:flex justify-end items-center ">
                             <ul className="flex 2xl:gap-[77px] xl:gap-[62px] gap-[32px]">
-                                <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold 2xl:text-[20px] text-[16px] border-b-2 border-transparent hover:border-white transition-all duration-300">Courses</a></li>
+                                <li className="text-center inline-flex items-center"><a href="#courses" className="text-white inline-flex items-center justify-center font-bold 2xl:text-[20px] text-[16px] border-b-2 border-transparent hover:border-white transition-all duration-300">Courses</a></li>
                                 <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold 2xl:text-[20px] text-[16px] border-b-2 border-transparent hover:border-white transition-all duration-300">Testimonials</a></li>
                                 <li className="text-center inline-flex items-center">
                                     <a href="#" className={`relative inline-flex items-center justify-center 2xl:px-[22px] 2xl:py-[10.8px] px-[15px] py-[9px] font-bold 2xl:text-[18px] text-[16px] transition-all duration-300 header-btn min-w-[180px] z-10 ${ isSticky ? 'primary-btn bg-gradient-primary text-black border-none' : 'text-white border border-white/25 hover:border-white bg-black' } `}>
@@ -64,7 +65,7 @@ const HomeHeader = () => {
 
                 {/* Mobile Menu (Dropdown) */}
                 {isOpen && (
-                    <nav className="lg:hidden fixed w-full h-full top-0 left-0 right-0 bottom-0 bg-dark z-50 sm:py-[48px] py-[32px] px-4 sm:px-[32px]">
+                    <nav className="lg:hidden fixed w-full h-full top-0 left-0 right-0 bottom-0 bg-noise-pattern z-50 sm:py-[48px] py-[32px] px-4 sm:px-[32px]">
                         <div className="flex items-center justify-end">
                             <button className="lg:hidden flex items-center justify-center p-3 w-[60px] h-[60px] menu-icon bg-chinese-Black border border-davys-Grey focus:outline-none cursor-pointer shadow-[0px_4px_0px_#000000]" onClick={() => setIsOpen(!isOpen)}>
                                 <img src={isOpen ? CloseIcon : MenuIcon} alt="CloseIcon" className="w-7 h-7" />

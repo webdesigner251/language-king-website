@@ -25,7 +25,7 @@ const MainHeader = () => {
 
     return (
         <header className={`text-white sm:py-[32px] py-[32px] sticky z-50 top-0 active-header ${
-            isSticky ? ' bg-black' : 'bg-transparent'
+            isSticky ? ' bg-black' : 'bg-noise-pattern'
           }`}>
             <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
                 <div className="flex items-center justify-between relative">
@@ -64,7 +64,7 @@ const MainHeader = () => {
 
                 {/* Mobile Menu (Dropdown) */}
                 {isOpen && (
-                    <nav className="lg:hidden fixed w-full h-full top-0 left-0 right-0 bottom-0 bg-dark z-50 sm:py-[48px] py-[32px] px-4 sm:px-[32px]">
+                    <nav className="lg:hidden fixed w-full h-full top-0 left-0 right-0 bottom-0 bg-noise-pattern z-50 sm:py-[48px] py-[32px] px-4 sm:px-[32px]">
                         <div className="flex items-center justify-end">
                             <button className="lg:hidden flex items-center justify-center p-3 w-[60px] h-[60px] menu-icon bg-chinese-Black border border-davys-Grey focus:outline-none cursor-pointer shadow-[0px_4px_0px_#000000]" onClick={() => setIsOpen(!isOpen)}>
                                 <img src={isOpen ? CloseIcon : MenuIcon} alt="CloseIcon" className="w-7 h-7" />

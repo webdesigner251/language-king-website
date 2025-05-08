@@ -4,7 +4,7 @@ import avatar from '../assets/avatar-img.png';
 const PTEMasterClass = () => {
     return (
         <>
-            <main className="bg-dark">
+            <main className="bg-noise-pattern">
                 <section className="pt-[120px] pb-[60px] relative">
                     <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full z-10">
                         <div className="max-w-[830px]">

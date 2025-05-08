@@ -12,11 +12,15 @@ function App() {
 
   return (
     <>
-       {isHomePage ? < MainHeader/> : <HomeHeader />}
-      <Routes>
-        <Route path="/language-king-website" element={<Home />} />
-        <Route path="/pte-masterclass" element={<PteMasterClass />} />
-      </Routes>
+      {isHomePage ? <HomeHeader /> : <MainHeader />}
+      
+      <main className='relative h-full pb-4'>
+        <div className='bg-noise-pattern absolute inset-0'></div>
+        <Routes>
+          <Route path="/language-king-website" element={<Home />} />
+          <Route path="/pte-masterclass" element={<PteMasterClass />} />
+        </Routes>
+      </main>
       <Footer />
     </>
   );
