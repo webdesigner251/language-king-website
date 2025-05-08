@@ -18,7 +18,7 @@ function App() {
         <div className='bg-noise-pattern absolute inset-0'></div>
         <Routes>
           <Route path="/language-king-website" element={<Home />} />
-          <Route path="/pte-masterclass" element={<PteMasterClass />} />
+          <Route path="language-king-website/pte-masterclass" element={<PteMasterClass />} />
         </Routes>
       </main>
       <Footer />
