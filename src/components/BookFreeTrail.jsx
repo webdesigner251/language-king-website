@@ -33,7 +33,7 @@ const BookFreeTrail = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="md:border-s-3 border-[#2A2A2A] lg:ps-[60px] md:ps-[40px]">
+                    <div className="md:border-s-3 border-[#2A2A2A] lg:ps-[40px] md:ps-[40px]">
                         <h2 className="font-bold lg:text-[42px] text-4xl text-gradient-OrangeRed border-b-2 border-[#2A2A2A] pb-5">Book a FREE Trial Class</h2>
                         <p className="font-normal text-white/75 lg:text-[22px] text-xl pt-7">Please fill out the below form. Our team will be in touch shortly.</p>
                         <form className="sm:pt-6 pt-4">

@@ -49,7 +49,7 @@ const TestimonialCarousel = ({ testimonials }) => {
                                 />
                                 <div>
                                     <h4 className="font-medium text-white/60 2xl:text-2xl text-[22px] 2xl:mb-2 mb-1">{item.name}</h4>
-                                    <span className="font-light text-[#D8D8D8] 2xl:text-lg text-base">{item.subtitle}</span>
+                                    <span className="font-normal text-[#D8D8D8] 2xl:text-lg text-base">{item.subtitle}</span>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-3">
