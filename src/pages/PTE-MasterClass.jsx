@@ -52,7 +52,6 @@ const PTEMasterClass = () => {
         },
     ];
 
-
     return (
         <>
             <div className="bg-black/50">
@@ -111,7 +110,7 @@ const PTEMasterClass = () => {
                 </section>
 
                 <section className="">
-                    <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full ">
+                    <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full">
                         <div className="grid grid-cols-3 items-center">
                             <hr className="border-[#252525]" />
                             <span className="font-normal 2xl:text-2xl lg:text-xl text-base text-white/60 text-center">
