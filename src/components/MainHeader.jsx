@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Textlogo from "../assets/text-logo.svg";
 import Logo from "../assets/Logo.svg";
 import LogoMenu from "../assets/logo-menu.svg";
@@ -30,9 +31,9 @@ const MainHeader = () => {
             <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
                 <div className="flex items-center justify-between relative">
                     {/* Left Logo */}
-                    <div className="xl:w-[40%] w-[30%] lg:flex hidden">
+                    <Link to="/language-king-website" className="xl:w-[40%] w-[30%] lg:flex hidden">
                         <img src={Textlogo} alt="Logo" className="w-40" />
-                    </div>
+                    </Link>
 
                     {/* Right Logo */}
                     <div className="xl:w-[20%] sm:w-[50%] w-[50%] relative logo-wrapper">
