@@ -6,34 +6,34 @@ const BookFreeTrail = () => {
     return (
         <>
             <div className="bg-[#121212] px-4 py-6 sm:px-[32px] sm:py-[44px] border-[1.5px] border-white/10 transition-all duration-300 ease group relative">
-                <div className="grid md:grid-cols-2 md::gap-[60px] gap-[40px] items-stretch justify-content-between">
-                    <div className="md:block hidden">
+                <div className="flex md:flex-nowrap flex-wrap md::gap-[60px] gap-[40px] items-stretch justify-content-between">
+                    <div className="md:block hidden md:w-[49%]">
                         <img src={personImage} alt="personImage" className="w-full rounded-[11px]" />
                         <h2 className="font-bold text-white lg:text-[40px] text-3xl mt-[32px]">What’s covered in class:</h2>
                         <div className="grid lg:grid-cols-2 grid-cols-1 mt-[42px] gap-7 ">
-                            <div className="flex items-center gap-4 text-white font-medium lg:text-2xl text-xl">
-                                <img src={checklist} alt="checklist" className="w-6 h-6" />
+                            <div className="flex items-center gap-4 text-white font-medium lg:text-[22px] text-xl">
+                                <img src={checklist} alt="checklist" className="w-[26px] h-[26px]" />
                                 Basic Introduction
                             </div>
-                            <div className="flex items-center gap-4 text-white font-medium lg:text-2xl text-xl">
-                                <img src={checklist} alt="checklist" className="w-6 h-6" />
+                            <div className="flex items-center gap-4 text-white font-medium lg:text-[22px] text-xl">
+                                <img src={checklist} alt="checklist" className="w-[26px] h-[26px]" />
                                 Test Format & Overview
                             </div>
-                            <div className="flex items-center gap-4 text-white font-medium lg:text-2xl text-xl">
-                                <img src={checklist} alt="checklist" className="w-6 h-6" />
+                            <div className="flex items-center gap-4 text-white font-medium lg:text-[22px] text-xl">
+                                <img src={checklist} alt="checklist" className="w-[26px] h-[26px]" />
                                 Level of English
                             </div>
-                            <div className="flex items-center gap-4 text-white font-medium lg:text-2xl text-xl">
-                                <img src={checklist} alt="checklist" className="w-6 h-6" />
+                            <div className="flex items-center gap-4 text-white font-medium lg:text-[22px] text-xl">
+                                <img src={checklist} alt="checklist" className="w-[26px] h-[26px]" />
                                 Scorecard Analysis
                             </div>
-                            <div className="flex items-center gap-4 text-white font-medium lg:text-2xl text-xl">
-                                <img src={checklist} alt="checklist" className="w-6 h-6" />
+                            <div className="flex items-center gap-4 text-white font-medium lg:text-[22px] text-xl">
+                                <img src={checklist} alt="checklist" className="w-[26px] h-[26px]" />
                                 And more!
                             </div>
                         </div>
                     </div>
-                    <div className="md:border-s-3 border-[#2A2A2A] lg:ps-[40px] md:ps-[40px]">
+                    <div className="md:border-s-3 md:w-[51%] border-[#2A2A2A] lg:ps-[40px] md:ps-[40px]">
                         <h2 className="font-bold lg:text-[42px] text-4xl text-gradient-OrangeRed border-b-2 border-[#2A2A2A] pb-5">Book a FREE Trial Class</h2>
                         <p className="font-normal text-white/75 lg:text-[22px] text-xl pt-7">Please fill out the below form. Our team will be in touch shortly.</p>
                         <form className="sm:pt-6 pt-4">

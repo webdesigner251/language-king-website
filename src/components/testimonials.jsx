@@ -54,7 +54,7 @@ const TestimonialCarousel = ({ testimonials }) => {
                             </div>
                             <div className="flex flex-col gap-3">
                                 <div className="flex items-center 2xl:text-base text-sm font-light text-white gap-3">
-                                    <img src={item.sourceIcon} alt="source" className="w-[18px]" /> {item.time}
+                                    <img src={item.sourceIcon} alt="source" className="w-[22px]" /> {item.time}
                                 </div>
                                 <div className="flex">
                                     {[...Array(item.rating)].map((_, idx) => (

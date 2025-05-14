@@ -264,16 +264,7 @@ header.active-header .desktop-logo {
   z-index: -1;
 }
 
-.banner-wrapper {
-  padding: 200px 0 100px 0;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  align-items: center;
-  min-height: 95vh;
-}
 
-/* lg:text-[72px] sm:text-[58px] text-[36px] lg:leading-[77px] sm:leading-[66px] leading-[40px] */
 
 .main-heading {
   font-size: 4.2rem;
@@ -321,11 +312,6 @@ header.active-header .desktop-logo {
   }
 }
 
-@media (max-width: 1440px) {
-  .banner-wrapper {
-    min-height: 100vh;
-  }
-}
 
 @media (max-width: 1280px) {
   .desktop-logo {
@@ -354,9 +340,6 @@ header.active-header .desktop-logo {
     line-height: 55px;
   }
 
-  .banner-wrapper {
-    height: auto;
-  }
 
 }
 
@@ -396,9 +379,6 @@ header.active-header .desktop-logo {
     line-height: 48px;
   }
 
-  .banner-wrapper {
-    padding: 200px 0px 50px 0px;
-  }
 }
 
 @media (max-width: 480px) {

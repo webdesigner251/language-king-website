@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import HomeBanner from '../assets/Homepage-banner.png';
 import avatar from '../assets/avatar-img.png';
 import AppleIcon from '../assets/icons/apple-icon.svg'
@@ -56,6 +57,15 @@ import Thailand1 from '../assets/flags/Thailand1.png'
 import Brazil1 from '../assets/flags/Brazil1.png'
 import freeLesson from '../assets/course/free-lesson.png'
 import video from '../assets/videos/placeholder-video.mp4'
+import Support1 from '../assets/course/support-1.png'
+import Support2 from '../assets/course/support-2.png'
+import Support3 from '../assets/course/support-3.png'
+import Support4 from '../assets/course/support-4.png'
+import Support5 from '../assets/course/support-5.png'
+import Support6 from '../assets/course/support-6.png'
+import divider3 from '../assets/course/Group.png'
+import CourseImg1 from '../assets/course-img1.png';
+import CourseImg3 from '../assets/course-img3.png';
 
 const PTEMasterClass = () => {
     const courseData = [
@@ -164,11 +174,48 @@ const PTEMasterClass = () => {
 
     const [showVideo, setShowVideo] = useState(false);
 
+    const supportData = [
+        {
+            image: Support1,
+            title: 'Live 24/7 Support',
+            description: 'Chat with your tutor to answer questions and solve problems in real-time.'
+        },
+        {
+            image: Support2,
+            title: 'Personalized plans',
+            description: 'Get a personalized plan to get your desired score in specific time.'
+        },
+        {
+            image: Support3,
+            title: 'Online Classes with Feedback',
+            description: 'Learn timed and real-time test tricks from top-notch tutors. Get feedback, learn with other students, ask doubts, and much more.'
+        },
+        {
+            image: Support4,
+            title: 'Missed a Class',
+            description: 'Don’t worry we got you covered. Class recordings are available 24/7 for instant access.'
+        },
+        {
+            image: Support5,
+            title: 'Online Classes with Feedback',
+            description: 'Learn timed and real-time test tricks from top-notch tutors. Get feedback, learn with other students, ask doubts, and much more.'
+        },
+        {
+            image: Support6,
+            title: 'Missed a Class',
+            description: 'Don’t worry we got you covered. Class recordings are available 24/7 for instant access.'
+        }
+    ];
+
+    const grouped = [];
+    for (let i = 0; i < supportData.length; i += 2) {
+        grouped.push(supportData.slice(i, i + 2));
+    }
+
     return (
         <>
             <div className="bg-black/50 relative h-full">
-                {/* <div className='bg-[url(./assets/background-noise.png)] bg-size-[350%] bg-center'></div> */}
-                <section className="pt-[220px] pb-[60px] mt-[-150px] relative min-h-[95vh] flex flex-column justify-center items-center">
+                <section className="pt-[320px] pb-[60px] mt-[-150px] relative flex flex-column justify-center items-center">
                     <img src={HomeBanner} alt="HomeBanner" className="absolute w-full h-full top-0 left-0 right-0 bottom-0 object-cover" />
                     <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full relative z-10">
                         <div className="grid lg:grid-cols-2 items-end">
@@ -399,46 +446,13 @@ const PTEMasterClass = () => {
                     <div className="custom-container mx-auto px-4 sm:px-[32px] w-full">
                         <div className="flex lg:flex-nowrap flex-wrap items-center lg:py-[80px] py-[70px] border-y-2 border-[#252525] sm:gap-[25px] gap-[35px]">
                             <div className="lg:w-[77%] tab-content relative">
-                                {/* <img
-                                    src={freeLesson}
-                                    alt="PTE Response"
-                                    className="w-full h-auto animate-fade-in"
-                                /> */}
-                                {/* <video
-                                    src={video}
-                                    controls
-                                    autoPlay={false}
-                                    loop
-                                    muted={false}
-                                    className="w-full h-auto rounded-md shadow-lg"
-                                >
-                                    Your browser does not support the video tag.
-                                </video> */}
-
-                                {/* <a href="#" className='flex gap-2 text-xl'>
-                                    <svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.8689 10.7426L0.630859 20.5043L0.63086 0.980957L14.8689 10.7426Z" fill="url(#paint0_linear_1020_7271)" />
-                                        <defs>
-                                            <linearGradient id="paint0_linear_1020_7271" x1="14.8689" y1="-0.529178" x2="12.0969" y2="23.8573" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#17FFBA" />
-                                                <stop offset="0.130208" stop-color="#76B4C8" />
-                                                <stop offset="1" stop-color="#2F57A7" />
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-
-                                    Watch a part of How to Tease Continuation
-                                </a> */}
-
                                 {!showVideo ? (
                                     <>
-                                        {/* Image + Watch Button */}
                                         <img
                                             src={freeLesson}
                                             alt="PTE Response"
                                             className="w-full h-auto animate-fade-in"
                                         />
-
                                         <button
                                             onClick={() => setShowVideo(true)}
                                             className="flex gap-3 text-xl absolute bottom-5 left-5 bg-black/90 px-5 py-3 items-center text-white"
@@ -469,7 +483,6 @@ const PTEMasterClass = () => {
                                                     </linearGradient>
                                                 </defs>
                                             </svg>
-
                                             Watch a part of How to Tease Continuation
                                         </button>
                                     </>
@@ -508,13 +521,98 @@ const PTEMasterClass = () => {
                     </div>
                 </section >
 
-                <section className="">
-                    <div className="custom-container mx-auto px-4 sm:px-[32px] w-full">
+                <section className="custom-container sm:px-[32px] px-4">
+                    <div className='pb-[80px] border-y-2 border-[#252525]'>
+                        <div className="mx-auto 2xl:px-[135px] md:px-[100px] sm:px-[50px] px-4 w-full bg-[#FFDD74]">
+                            <div className='pt-[52px] mb-[-30px]'>
+                                <h2 className='text-black 2xl:text-[40px] text-5xl leading-normal font-bold'>Support </h2>
+                                <p className='text-black 2xl:text-[32px] text-3xl leading-7 font-normal'>In Every Possible Way</p>
+                            </div>
+                            {grouped.map((row, rowIndex) => (
+                                <div key={rowIndex}>
+                                    {rowIndex !== 0 && (
+                                        <div className="relative">
+                                            <img src={divider3} alt="Divider" className="w-full opacity-30 absolute left-0 right-0 bottom-0" />
+                                        </div>
+                                    )}
 
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] py-[70px]">
+                                        {row.map((item, index) => (
+                                            <div key={index}>
+                                                <img src={item.image} alt={item.title} className="rounded-[10px] mb-6 w-full" />
+                                                <h4 className="text-black text-2xl md:text-3xl font-bold mb-2">{item.title}</h4>
+                                                <p className="text-black text-lg md:text-xl">{item.description}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </section>
 
-            </div >
+                <section className="mb-8 pt-[58px] lg:scroll-mt-[90px]" id="courses">
+                    <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] z-50">
+                        <div className="pb-[30px]">
+                            <h2 className="text-3xl font-semibold text-white text-left">Check out some other courses</h2>
+                        </div>
+                        <div className="flex flex-col gap-[32px]">
+                            <div className="bg-course-green-bg hover:bg-course-green-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
+                                <div className="ribbon ribbon-top-left z-10"><span>New course!</span></div>
+
+                                <div className="overflow-hidden relative z-0 max-h-[450px]">
+                                    <img src={CourseImg1} alt="CourseImg1" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
+                                </div>
+                                <div className="lg:py-[16px]">
+                                    <h2 className="text-[#52D34E] [text-shadow:0px_5px_0px_#000000] font-bold md:text-[24px] inline-block sm:text-2xl text-lg">NAATI CCL Fast Track Course</h2>
+                                    <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] my-[12px]">Need to clear the test in 3 days, we’ve got you covered!</h2>
+                                    <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-0">
+                                        This is a super fast-paced course. It’s geared for speed, designed for those who need to clear the test on urgent basis, and do whatever it takes to clear it.
+                                    </p>
+                                    <div className="flex items-center gap-3 my-[12px]">
+                                        <img src={avatar} alt="avatar" className="w-[50px] h-[50px] rounded-full border-4 border-white/10" />
+                                        <h3 className="text-base font-light text-white/60">Taught by <span className="text-white font-semibold">Abhishek</span></h3>
+                                    </div>
+                                    <div className="pt-[12px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
+                                        <Link to="/pte-masterclass" className="primary-btn bg-gradient-GreenBtn inline-flex justify-center items-center text-center text-white px-3 py-3 lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_4px_rgba(0,0,0,0.25),_0px_3px_4px_rgba(0,0,0,0.25)]">
+                                            Take the Course
+                                        </Link>
+                                        <Link to="/pte-masterclass" className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-3 py-3 lg:w-[50%] w-full font-semibold sm:text-xl text-lg z-10 transition-all duration-300 ease hover:bg-white/10 shadow-[0px_4px_4px_rgba(0,0,0,0.25),_0px_3px_4px_rgba(0,0,0,0.25)]">
+                                            View Details
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="course-drop-shadow bg-course-black-bg hover:bg-course-black-hover-bg border-[1.5px] border-[#333434] grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
+                                <div className="overflow-hidden relative z-0 max-h-[450px]">
+                                    <img src={CourseImg3} alt="CourseImg3" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
+                                </div>
+                                <div className="lg:py-[16px]">
+                                    <h2 className="dark-text-custom font-bold md:text-[26px] block sm:text-2xl text-lg">PTE Master Handbook</h2>
+                                    <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] my-[8px]">PTE 79+ in 7 days
+                                        Crack PTE in 1  attempt</h2>
+                                    <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-0">
+                                        Learn exactly what students did to achieve their desired band. This book explains the exam structure, target scores, key tasks to focus on, and the 7-day strategy you need to follow to go from 5 to 8 each as quickly as possible.
+                                    </p>
+                                    <div className="flex items-center gap-3 my-[12px]">
+                                        <img src={avatar} alt="avatar" className="w-[50px] h-[50px] rounded-full border-4 border-white/10" />
+                                        <h3 className="text-base font-light text-white/60">Taught by <span className="text-white font-semibold">Abhishek</span></h3>
+                                    </div>
+                                    <div className="pt-[12px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
+                                        <a href="#" className="primary-btn bg-gradient-dark leading-[28px] inline-flex justify-center items-center text-center text-white px-3 py-3 lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_4px_rgba(0,0,0,0.25),_0px_3px_4px_rgba(0,0,0,0.25)]">
+                                            Free E-Book
+                                        </a>
+                                        <a href="#" className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-3 py-3 lg:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all z-10 duration-300 ease hover:bg-white/10 shadow-[0px_4px_4px_rgba(0,0,0,0.25),_0px_3px_4px_rgba(0,0,0,0.25)]">
+                                            View Details
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </>
     )
 }

@@ -82,21 +82,11 @@ const testimonials = [
 
 const Home = () => {
 
-    // const [isCallbackOpen, setIsCallbackOpen] = useState(false);
-
-    // const openCallback = () => {
-    //     setIsCallbackOpen(true);
-    // };
-
-    // const closeCallback = () => {
-    //     setIsCallbackOpen(false);
-    // };
-
     return (
         <>
-            <section className="banner-wrapper mt-[-150px] relative">
+            <section className="banner-wrapper pt-[320px] pb-[160px] min-h-[100vh] mt-[-150px] relative flex items-center">
                 <img src={HomeBanner} alt="HomeBanner" className="absolute w-full h-full top-0 left-0 right-0 bottom-0 object-cover" />
-                <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full z-10">
+                <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full z-10 relative ">
                     <div className="max-w-[830px]">
                         <div className="flex flex-col 2xl:gap-6 gap-3">
                             <h2 className="text-gradient-primary font-bold 2xl:text-[32px] text-2xl"># Australia’s No.1</h2>

@@ -30,25 +30,25 @@ const Footer = () => {
                                         <h4 className="text-white font-bold 2xl:text-[24px] text-[22px]">Contact Us </h4>
                                         <ul className="flex flex-col gap-[22px]">
                                             <li>
-                                                <a href="mailto:info@languageking.com.au" className="flex items-center gap-5 text-[#919191] font-medium sm:text-lg text-lg">
+                                                <a href="mailto:info@languageking.com.au" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base ">
                                                     <img src={Email} className="w-8 h-8 " />
                                                     info@languageking.com.au
                                                 </a>
                                             </li>
                                             <li>
-                                                <span className="flex items-center gap-5 text-[#919191] font-medium sm:text-lg text-lg">
+                                                <span className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base ">
                                                     <img src={Map} className="w-8 h-8 " />
                                                     Online
                                                 </span>
                                             </li>
                                             <li>
-                                                <a href="tel:+61488876999" className="flex items-center gap-5 text-[#919191] font-medium sm:text-lg text-lg">
+                                                <a href="tel:+61488876999" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base ">
                                                     <img src={Phone} className="w-8 h-8 " />
                                                     +61 488 876 999
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="tel:+61488876999" className="flex items-start gap-5 text-[#919191] font-medium sm:text-lg text-lg">
+                                                <a href="tel:+61488876999" className="flex items-start gap-5 text-[#919191] font-medium sm:text-base text-lg">
                                                     <img src={Calender} className="w-8 h-8 " />
                                                     <span>
                                                         10 A.M to 7 P.M <br />
@@ -63,27 +63,27 @@ const Footer = () => {
                                         <h4 className="text-white font-bold 2xl:text-[24px] text-[22px]">About Us </h4>
                                         <ul className="flex flex-col sm:gap-[15px] gap-[14px]">
                                             <li>
-                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
+                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
                                                     Terms of Use
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
+                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
                                                     Privacy Policy
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
+                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
                                                     Refund Policy
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
+                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
                                                     Careers
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
+                                                <a href="#" className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80">
                                                     FAQs
                                                 </a>
                                             </li>
@@ -116,8 +116,8 @@ const Footer = () => {
                                         <ul className="flex sm:flex-col flex-wrap 2xl:gap-[22px] gap-[18px]">
                                             <li>
                                                 <a href="#" className="flex items-center gap-4 text-[#919191] group font-semibold text-xl transition-all duration-300 ease hover:text-white/80">
-                                                    <img src={AppleImg} alt="Image" className="group-hover:hidden flex 2xl-max-w-[150px] max-w-[140px] transition-all duration-300 ease" />
-                                                    <img src={AppleImg1} alt="Image" className="hidden group-hover:flex 2xl-max-w-[150px] max-w-[140px] transition-all duration-300 ease" />
+                                                    <img src={AppleImg} alt="Image" className="group-hover:hidden flex 2xl-max-w-[130px] max-w-[120px] transition-all duration-300 ease" />
+                                                    <img src={AppleImg1} alt="Image" className="hidden group-hover:flex 2xl-max-w-[130px] max-w-[120px] transition-all duration-300 ease" />
                                                 </a>
                                             </li>
                                             <li>
