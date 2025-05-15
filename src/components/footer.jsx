@@ -28,7 +28,7 @@ const Footer = () => {
                                 <div className="w-full flex lg:flex-nowrap flex-wrap justify-between sm:gap-8 gap-[33px]">
                                     <div className="lg:w-auto w-full flex flex-col  2xl:gap-[40px] gap-[22px]">
                                         <h4 className="text-white font-bold 2xl:text-[24px] text-[22px]">Contact Us </h4>
-                                        <ul className="flex flex-col gap-[22px]">
+                                        <ul className="flex flex-col gap-[18px]">
                                             <li>
                                                 <a href="mailto:info@languageking.com.au" className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base ">
                                                     <img src={Email} className="w-8 h-8 " />

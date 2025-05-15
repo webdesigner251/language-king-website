@@ -45,7 +45,7 @@ const TestimonialCarousel = ({ testimonials }) => {
                                 <img
                                     src={item.avatar}
                                     alt="Avatar"
-                                    className="2xl:w-[92px] w-[72px] 2xl:h-[92px] h-[72px] rounded-full object-cover"
+                                    className="2xl:w-[92px] sm:w-[72px] 2xl:h-[92px] sm:h-[72px] w-[62px] h-[62px] rounded-full object-cover"
                                 />
                                 <div>
                                     <h4 className="font-medium text-white/60 2xl:text-2xl text-[22px] 2xl:mb-2 mb-1">{item.name}</h4>

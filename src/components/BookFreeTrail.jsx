@@ -7,7 +7,7 @@ const BookFreeTrail = () => {
         <>
             <div className="bg-[#121212] px-4 py-6 sm:px-[32px] sm:py-[44px] border-[1.5px] border-white/10 transition-all duration-300 ease group relative">
                 <div className="flex md:flex-nowrap flex-wrap md::gap-[60px] gap-[40px] items-stretch justify-content-between">
-                    <div className="md:block hidden md:w-[49%]">
+                    <div className="md:block hidden md:w-[48%]">
                         <img src={personImage} alt="personImage" className="w-full rounded-[11px]" />
                         <h2 className="font-bold text-white lg:text-[40px] text-3xl mt-[32px]">What’s covered in class:</h2>
                         <div className="grid lg:grid-cols-2 grid-cols-1 mt-[42px] gap-7 ">

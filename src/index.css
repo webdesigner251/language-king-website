@@ -294,6 +294,10 @@ header.active-header .desktop-logo {
   height: auto !important;
 }
 
+.course-banner-gradient {
+background: linear-gradient(90deg, rgb(13 13 13), transparent 20%), linear-gradient(transparent 80%, rgb(13 13 13));
+}
+
 @media (max-width: 1600px) {
   .main-heading {
     font-size: 3.8rem;
@@ -375,7 +379,7 @@ header.active-header .desktop-logo {
   }
 
   .main-heading {
-    font-size: 2.4rem;
+    font-size: 36px;
     line-height: 48px;
   }
 
