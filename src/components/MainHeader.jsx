@@ -25,9 +25,8 @@ const MainHeader = () => {
     }, []);
 
     return (
-        <header className={`text-white sm:py-[32px] py-[32px] z-50 active-header ${
-            isSticky ? 'lg:sticky lg:top-0 lg:bg-black lg:shadow-md' : 'bg-noise-pattern relative'
-          }`}>
+        <header className={`text-white sm:py-[32px] py-[32px] z-50 active-header ${isSticky ? 'lg:sticky lg:top-0 lg:bg-black lg:shadow-md' : 'bg-noise-pattern relative'
+            }`}>
             <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
                 <div className="flex items-center justify-between relative">
                     {/* Left Logo */}
@@ -51,10 +50,14 @@ const MainHeader = () => {
                         {/* Desktop Navigation */}
                         <nav className="hidden lg:flex justify-end items-center ">
                             <ul className="flex 2xl:gap-[77px] xl:gap-[62px] gap-[32px]">
-                                <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold 2xl:text-[20px] text-[16px] border-b-2 border-transparent hover:border-white transition-all duration-300">Courses</a></li>
-                                <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold 2xl:text-[20px] text-[16px] border-b-2 border-transparent hover:border-white transition-all duration-300">Testimonials</a></li>
                                 <li className="text-center inline-flex items-center">
-                                    <a href="#" className={`relative inline-flex items-center justify-center 2xl:px-[22px] 2xl:py-[10.8px] px-[15px] py-[9px] font-bold 2xl:text-[18px] text-[16px] transition-all duration-300 header-btn min-w-[180px] z-10 ${ isSticky ? 'primary-btn bg-gradient-primary text-black border-none' : 'text-white border border-white/25 hover:border-white bg-black' } `}>
+                                    <a href="#courses" className="text-white inline-flex items-center justify-center font-bold 2xl:text-[20px] text-[16px] border-b-2 border-transparent hover:border-white transition-all duration-300">Courses</a>
+                                </li>
+                                <li className="text-center inline-flex items-center">
+                                    <Link to="/testimonials" className="text-white inline-flex items-center justify-center font-bold 2xl:text-[20px] text-[16px] border-b-2 border-transparent hover:border-white transition-all duration-300">Testimonials</Link>
+                                </li>
+                                <li className="text-center inline-flex items-center">
+                                    <a href="#" className={`relative inline-flex items-center justify-center 2xl:px-[22px] 2xl:py-[10.8px] px-[15px] py-[9px] font-bold 2xl:text-[18px] text-[16px] transition-all duration-300 header-btn min-w-[180px] z-10 ${isSticky ? 'primary-btn bg-gradient-primary text-black border-none' : 'text-white border border-white/25 hover:border-white bg-black'} `}>
                                         Get-a Callback
                                     </a>
                                 </li>
@@ -75,7 +78,7 @@ const MainHeader = () => {
                         <ul className="flex flex-col justify-center items-center gap-[34px] relative">
                             <div className="menu-ellipse"></div>
                             <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300">Courses</a></li>
-                            <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-bold text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300">Testimonials</a></li>
+                            <li className="text-center inline-flex items-center"><Link to="/testimonials" className="text-white inline-flex items-center justify-center font-bold text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300">Testimonials</Link></li>
                             <li className="text-center inline-flex items-center"><a href="#" className="text-white inline-flex items-center justify-center font-medium text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300 [text-shadow:0px_4px_0px_#000000]">Contact us</a></li>
                         </ul>
 

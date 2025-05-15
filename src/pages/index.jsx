@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import TestimonialCarousel from "../components/testimonials";
+import TestimonialCarousel from "../components/testimonials-carousel";
 import BookFreeTrail from "../components/BookFreeTrail";
 import CourseImg1 from '../assets/course-img1.png';
 import CourseImg2 from '../assets/course-img2.png';
@@ -17,7 +17,6 @@ import Icon4 from '../assets/icons/ai-icon.svg';
 import Icon5 from '../assets/icons/whatsapp-icon.svg';
 import Icon6 from '../assets/icons/live-icon.svg';
 import Icon7 from '../assets/icons/badge-icon.svg';
-// import CallbackForm from "../components/callback-popup";
 import ReviewImg1 from '../assets/testimonial-01.png';
 import ReviewImg2 from '../assets/testimonial-02.png';
 import ReviewImg3 from '../assets/testimonial-03.png';
@@ -84,7 +83,7 @@ const Home = () => {
 
     return (
         <>
-            <section className="banner-wrapper sm:pt-[320px] pt-[400px] sm:pb-[160px] pb-[40px] min-h-[100vh] mt-[-150px] relative flex items-center">
+            <section className="banner-wrapper sm:pt-[320px] pt-[400px] sm:pb-[160px] pb-[40px] min-h-[100vh] mt-[-150px] relative flex items-center overflow-hidden">
                 <img src={HomeBanner} alt="HomeBanner" className="scale-[1.1] absolute w-full h-full top-0 left-0 right-0 bottom-0 object-cover" />
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full z-10 relative ">
                     <div className="max-w-[830px]">
@@ -145,10 +144,10 @@ const Home = () => {
                                     <h3 className="text-base font-light text-white/60">Taught by <span className="text-white font-semibold">Abhishek</span></h3>
                                 </div>
                                 <div className="pt-[12px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
-                                    <Link to="/pte-masterclass" className="primary-btn bg-gradient-GreenBtn inline-flex justify-center items-center text-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]">
+                                    <Link to="/naaticcl" className="primary-btn bg-gradient-GreenBtn inline-flex justify-center items-center text-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]">
                                         Take the Course
                                     </Link>
-                                    <Link to="/pte-masterclass" className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg z-10 transition-all duration-300 ease hover:bg-white/10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]">
+                                    <Link to="/naaticcl" className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg z-10 transition-all duration-300 ease hover:bg-white/10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]">
                                         View Details
                                     </Link>
                                 </div>

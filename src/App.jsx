@@ -5,6 +5,8 @@ import MainHeader from './components/MainHeader';
 import Footer from './components/footer';
 import Home from './pages/index';
 import PteMasterClass from './pages/PTE-MasterClass';
+import NAATICCL from './pages/NAATI-CCL'
+import Testimonials from './pages/Testimonials';
 
 function App() {
   const location = useLocation();
@@ -19,6 +21,8 @@ function App() {
         <Routes>
           <Route path="/language-king-website" element={<Home />} />
           <Route path="/pte-masterclass" element={<PteMasterClass />} />
+          <Route path="/naaticcl" element={<NAATICCL />} />
+          <Route path="/testimonials" element={<Testimonials />} />
         </Routes>
       </main>
       <Footer />

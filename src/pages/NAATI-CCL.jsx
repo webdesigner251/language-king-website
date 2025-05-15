@@ -7,14 +7,14 @@ import avatar from '../assets/avatar-img.png';
 import AppleIcon from '../assets/icons/apple-icon.svg'
 import AndroidIcon from '../assets/icons/android-icon.svg'
 import WindowsIcon from '../assets/icons/windows-icon.svg'
-import Checkmark from '../assets/icons/blue-checkmark.svg'
-import Coursecover1 from '../assets/course/read-aloud.png'
-import Coursecover2 from '../assets/course/low-score.png'
-import Coursecover3 from '../assets/course/word-essay.png'
-import Coursecover4 from '../assets/course/integrated-task.png'
-import Coursecover5 from '../assets/course/master-reading.png'
-import Coursecover6 from '../assets/course/4-steps-rop.png'
-import Coursecover7 from '../assets/course/extra-words.png'
+import CheckmarkGreen from '../assets/icons/checkmark-green.svg'
+import Coursecover1 from '../assets/course/naati-course-1.png'
+import Coursecover2 from '../assets/course/naati-course-2.png'
+import Coursecover3 from '../assets/course/naati-course-3.png'
+import Coursecover4 from '../assets/course/naati-course-4.png'
+import Coursecover5 from '../assets/course/naati-course-5.png'
+import Coursecover6 from '../assets/course/naati-course-6.png'
+import Coursecover7 from '../assets/course/naati-course-7.png'
 import PTEResponse from '../assets/course/pte-res.png'
 import LandingTeacherImage1 from '../assets/course/landing-teacher-1.png'
 import LandingTeacherImage2 from '../assets/course/landing-teacher-2.png'
@@ -66,7 +66,7 @@ import Support4 from '../assets/course/support-4.png'
 import Support5 from '../assets/course/support-5.png'
 import Support6 from '../assets/course/support-6.png'
 import divider3 from '../assets/course/Group.png'
-import CourseImg1 from '../assets/course-img1.png';
+import CourseImg2 from '../assets/course-img2.png';
 import CourseImg3 from '../assets/course-img3.png';
 
 import facebookIcon from '../assets/icons/facebook-dark.svg'
@@ -77,42 +77,42 @@ import InstaIconLight from '../assets/icons/instagram-icon-light.svg'
 import TiktokIconLight from '../assets/icons/tiktok-icon-light.svg'
 
 
-const PTEMasterClass = () => {
+const NAATICCL = () => {
     const courseData = [
         {
-            title: "Read Aloud 1-Line Strategy",
+            title: "Can you take 2 Repeats?",
             image: Coursecover1,
-            description: "Find the truth behind 1-Line Strategy in Read Aloud, and who can use it.",
+            description: "Find the truth behind taking more than 1 Repeat in the exam. Can you still pass the test?",
         },
         {
-            title: "Low score after Nov 2024",
+            title: "Expired NAATI CCL!",
             image: Coursecover2,
-            description: "Learn how to attempt images without text and the answer to speaking till the end. Can you answer be checked by a person?",
+            description: "Enrolled Students need to contact AB for such urgent cases.",
         },
         {
-            title: "1 Word Essay Templates",
+            title: "Avoid Major Mistakes",
             image: Coursecover3,
-            description: "Can you use Old Essay Templates in 2025? Watch Ab discuss about human evaluation, use of templates, and much more.",
+            description: "Learn AB’s master techniques to avoid both: Major and Minor Mistakes.",
         },
         {
-            title: "Integrated tasks",
+            title: "Scoring Criteria",
             image: Coursecover4,
-            description: "Does Speaking affect your Reading & Listening Score ?",
+            description: "What constitutes as a pass or fail?",
         },
         {
-            title: "Master Reading Blanks",
+            title: "Free Re-Test",
             image: Coursecover5,
-            description: "Is “Grammar” really important in Reading & Writing Fill in the Blanks?",
+            description: "There are certain cases in which you can get a free re-test. Watch AB discuss such cases.",
         },
         {
-            title: "4 Step ROP Hack",
+            title: "Note-Taking",
             image: Coursecover6,
-            description: "Solve any Re-order paragraph with our 4 Step Master Techinique.",
+            description: "Which is the best technique for taking notes without making mistakes?",
         },
         {
-            title: "Extra words in WFD",
+            title: "Failed the NAATI CCL Test?",
             image: Coursecover7,
-            description: "Should you add extra words ? Can it lower score in Writing Module ? Let’s discuss what no one else will.",
+            description: "Let’s discuss what no one else will. What to do next?",
         },
     ];
 
@@ -239,7 +239,6 @@ const PTEMasterClass = () => {
         <>
             <div className="bg-black/20 relative h-full">
                 <section className="sm:pt-[320px] pt-[450px] pb-[60px] mt-[-150px] relative flex flex-column justify-center items-center">
-                    {/* <img src={HomeBanner} alt="HomeBanner" className="absolute w-full h-full top-0 left-0 right-0 bottom-0 object-cover" /> */}
                     <div className="sm:w-[66%] w-full top-0 right-0 lg:h-[75%] sm:h-[66%] h-[50%] absolute">
                         <img src={PTEBanner} alt="HomeBanner" className=" w-full h-full top-0 left-0 right-0 bottom-0 object-cover" />
                         <div className="course-banner-gradient absolute w-full h-full top-0 left-0 right-0 bottom-0"></div>
@@ -248,14 +247,13 @@ const PTEMasterClass = () => {
                         <div className="grid lg:grid-cols-2 items-end">
                             <div className="">
                                 <div className="flex flex-col 2xl:gap-6 gap-3">
-                                    <h2 className="text-[#0A8AF2] font-bold 2xl:text-[32px] text-2xl">PTE MasterClass</h2>
+                                    <h2 className="text-white font-bold 2xl:text-[32px] text-2xl"><span className='text-[#FFEE00]'>NAATI CCL</span> FAST <span className='text-[#52D34E]'>TRACK COURSE</span></h2>
                                     <h1 className="font-inter font-bold main-heading 2xl:mt-2 mt-0 text-white">
-                                        Missed your score! <br />
-                                        Clear in 2 weeks
+                                        Exam in 7 days? <br />
+                                        we’ve got you covered!
                                     </h1>
                                     <p className="md:text-lg sm:text-xl text-base font-normal max-w-[640px] text-white/75">
-                                        This is literally the best advice that I give every student. My strategies will teach you how to get 90 in each module. I’ve helped students out for 5+ years as a super-friendly teacher to get their desired score, now it’s your turn.
-                                    </p>
+                                        This is a super fast-paced course. It’s geared for speed, designed for those who need to clear the test on urgent basis, and do whatever it takes to clear it.                                    </p>
                                     <div className="flex items-center gap-3 my-[12px]">
                                         <img src={avatar} alt="avatar" className="w-[50px] h-[50px] rounded-full border-4 border-white/10" />
                                         <h3 className="text-base font-light text-white/60">Taught by <span className="text-white font-semibold">Abhishek</span></h3>
@@ -264,18 +262,17 @@ const PTEMasterClass = () => {
                                 <div className="sm:mt-[38px] mt-3 flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[600px]">
                                     <a
                                         href="#"
-                                        className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-secondary text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10"
+                                        className="primary-btn bg-gradient-GreenBtn inline-flex justify-center items-center text-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
                                     >
                                         Take the Course
                                     </a>
                                     <a href="#" className="align-middle inline-flex items-center gap-[25px] justify-center text-center bg-transparent border-[1.5px] border-[#333434] text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
                                         <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.6718 11.2245L0.647949 22.0227V0.42627L20.6718 11.2245Z" fill="url(#paint0_linear_814_2245)" />
+                                            <path d="M20.6718 11.2245L0.647949 22.0227V0.42627L20.6718 11.2245Z" fill="url(#paint0_linear_1094_2854)" />
                                             <defs>
-                                                <linearGradient id="paint0_linear_814_2245" x1="20.6718" y1="-1.24423" x2="18.2482" y2="25.8636" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#17FFBA" />
-                                                    <stop offset="0.130208" stop-color="#76B4C8" />
-                                                    <stop offset="1" stop-color="#2F57A7" />
+                                                <linearGradient id="paint0_linear_1094_2854" x1="0.647949" y1="11.2245" x2="20.6718" y2="11.2245" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#BFD34E" />
+                                                    <stop offset="1" stop-color="#52D34E" />
                                                 </linearGradient>
                                             </defs>
                                         </svg>
@@ -301,9 +298,9 @@ const PTEMasterClass = () => {
                         <div className="sm:grid grid-cols-3 justify-between flex items-center">
                             <hr className="border-[#252525] sm:w-auto w-[20%]" />
                             <span className="font-normal 2xl:text-2xl lg:text-xl text-base text-white/60 text-center sm:inline hidden">
-                                Helping 10K+ students get their desired scores
+                                Helping 5000+ students get their desired scores
                             </span>
-                            <span className='font-normal 2xl:text-2xl lg:text-xl text-base text-white/60 text-center sm:hidden block w-[320px]'>Now teaching <div className='text-white inline-block'>10K+ students!</div></span>
+                            <span className='font-normal 2xl:text-2xl lg:text-xl text-base text-white/60 text-center sm:hidden block w-[320px]'>Now teaching <div className='text-white inline-block'>2K+ students!</div></span>
                             <hr className="border-[#252525] sm:w-auto w-[20%]" />
 
                         </div>
@@ -313,7 +310,7 @@ const PTEMasterClass = () => {
                 <section className="py-[80px]">
                     <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-[32px] sm:gap-y-[58px] gap-[42px]">
-                            <h2 className="text-gradient-secondary font-bold sm:text-[30px] text-2xl sm:leading-[36px] leading-[32px] inline-block 2xl:max-w-[350px] lg:max-w-[300px]">
+                            <h2 className="text-[#52D34E] font-bold sm:text-[30px] text-2xl sm:leading-[36px] leading-[32px] inline-block 2xl:max-w-[350px] lg:max-w-[300px]">
                                 This course covers all 20 tasks with easy to understand video lessons and more.
                             </h2>
 
@@ -322,12 +319,11 @@ const PTEMasterClass = () => {
                                     <div className="flex items-start gap-1">
                                         <div className="border border-white/40 sm:px-[6px] sm:py-[7px] px-[5px] py-[6px] me-[9px]">
                                             <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M2.18724 5.9984C2.84642 6.33491 3.32419 6.66505 3.58908 7.23134C3.89223 7.90339 4.26872 8.61289 4.57197 9.28495C4.6835 9.42817 4.93813 9.47187 5.08123 9.37246C5.11616 9.30415 5.18939 9.34149 5.22433 9.27306C5.40225 9.10535 5.65352 8.97485 5.7582 8.76968C6.56807 7.54503 7.63594 6.53815 8.59227 5.38818C8.66214 5.25144 8.69708 5.18301 8.84006 5.0836C10.3755 3.8844 11.6529 2.46727 13.3383 1.51701C13.7325 1.2872 14.0536 1.02 14.4862 0.895959C15.4911 0.374321 16.6178 0.518383 17.5035 1.31538C17.9081 1.60811 17.995 2.3422 17.639 2.67776C17.4261 2.91402 17.2132 3.15017 16.8922 3.4174C16.1419 3.98285 15.3917 4.54817 14.7147 5.15095C13.7166 6.02097 12.7569 6.99675 11.9819 8.1531C11.2419 9.24101 10.3171 10.1485 9.53876 11.1306C9.11294 11.603 8.76034 12.1128 8.40787 12.6225C8.12515 12.9955 7.88072 13.4743 7.52477 13.81C5.99615 15.3574 6.24741 15.227 4.2417 14.6343C3.91384 14.5532 3.65583 14.3353 3.36286 14.1857C2.40731 13.5254 1.73789 12.6665 1.46276 11.5776C1.11099 10.2772 0.685965 8.93944 0.260933 7.6017C0.219191 7.32174 0.250692 7.07911 0.320526 6.94237C0.599827 6.39517 1.02904 6.09696 1.56981 5.94198C1.78612 5.87991 2.07908 6.02949 2.18724 5.9984Z" fill="url(#paint0_linear_1024_1236)" />
+                                                <path d="M2.18675 5.9984C2.84593 6.33491 3.32371 6.66505 3.58859 7.23134C3.89174 7.90339 4.26823 8.61289 4.57148 9.28495C4.68301 9.42817 4.93764 9.47187 5.08074 9.37246C5.11567 9.30415 5.18891 9.34149 5.22384 9.27306C5.40176 9.10535 5.65303 8.97485 5.75771 8.76968C6.56758 7.54503 7.63545 6.53815 8.59178 5.38818C8.66165 5.25144 8.69659 5.18301 8.83957 5.0836C10.375 3.8844 11.6524 2.46727 13.3378 1.51701C13.7321 1.2872 14.0531 1.02 14.4857 0.895959C15.4906 0.374321 16.6173 0.518383 17.503 1.31538C17.9076 1.60811 17.9945 2.3422 17.6385 2.67776C17.4256 2.91402 17.2127 3.15017 16.8917 3.4174C16.1414 3.98285 15.3912 4.54817 14.7142 5.15095C13.7161 6.02097 12.7564 6.99675 11.9815 8.1531C11.2415 9.24101 10.3166 10.1485 9.53827 11.1306C9.11245 11.603 8.75986 12.1128 8.40738 12.6225C8.12466 12.9955 7.88023 13.4743 7.52428 13.81C5.99566 15.3574 6.24693 15.227 4.24122 14.6343C3.91335 14.5532 3.65534 14.3353 3.36237 14.1857C2.40682 13.5254 1.7374 12.6665 1.46227 11.5776C1.1105 10.2772 0.685477 8.93944 0.260445 7.6017C0.218702 7.32174 0.250204 7.07911 0.320038 6.94237C0.599339 6.39517 1.02855 6.09696 1.56932 5.94198C1.78563 5.87991 2.0786 6.02949 2.18675 5.9984Z" fill="url(#paint0_linear_1094_484)" />
                                                 <defs>
-                                                    <linearGradient id="paint0_linear_1024_1236" x1="6.19843" y1="-4.57243" x2="18.847" y2="3.07249" gradientUnits="userSpaceOnUse">
-                                                        <stop stop-color="#17FFBA" />
-                                                        <stop offset="0.130208" stop-color="#76B4C8" />
-                                                        <stop offset="1" stop-color="#2F57A7" />
+                                                    <linearGradient id="paint0_linear_1094_484" x1="0.241699" y1="7.81757" x2="17.862" y2="7.81757" gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="#BFD34E" />
+                                                        <stop offset="1" stop-color="#52D34E" />
                                                     </linearGradient>
                                                 </defs>
                                             </svg>
@@ -354,7 +350,7 @@ const PTEMasterClass = () => {
                             </div>
 
                             <div className="lg:w-[28%] flex flex-col gap-y-[19px]">
-                                <h2 className="text-gradient-Bluedark font-bold sm:text-[30px] text-2xl sm:leading-[36px] leading-[32px] ">
+                                <h2 className="text-[#52D34E] font-bold sm:text-[30px] text-2xl sm:leading-[36px] leading-[32px] ">
                                     Watch AB grade students’ responses and give Feedback
                                 </h2>
                                 <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
@@ -373,7 +369,7 @@ const PTEMasterClass = () => {
                                                 onClick={() => setActiveTab(tab)}
                                                 className="flex gap-3 items-center group w-full text-left"
                                             >
-                                                <img src={Checkmark} alt="Checkmark" className="w-5" />
+                                                <img src={CheckmarkGreen} alt="Checkmark" className="w-5" />
                                                 <span className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${activeTab === tab ? 'text-white' : 'text-white/60 group-hover:text-white'
                                                     }`}>
                                                     {tab === 'band8' ? 'Band 8' :
@@ -393,7 +389,7 @@ const PTEMasterClass = () => {
                     <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full">
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-[32px] sm:gap-y-[58px] gap-[42px]">
                             <div>
-                                <h2 className="text-gradient-Bluedark font-semibold sm:text-[30px] text-2xl sm:leading-[36px] leading-[32px] inline-block 2xl:max-w-[410px] lg:max-w-[300px] mb-[30px]">
+                                <h2 className="text-[#52D34E] font-semibold sm:text-[30px] text-2xl sm:leading-[36px] leading-[32px] inline-block 2xl:max-w-[410px] lg:max-w-[300px] mb-[30px]">
                                     Having an instructor like AB bring you the real experience needed to get desired score.
                                 </h2>
                                 <div className="flex flex-col gap-[22px]">
@@ -524,7 +520,7 @@ const PTEMasterClass = () => {
                             </div>
 
                             <div className="lg:w-[28%] flex flex-col gap-y-[19px]">
-                                <h2 className="text-gradient-Bluedark font-bold 2xl:text-[40px] sm:text-[36px] text-2xl 2xl:leading-[50px] sm:leading-[42px] leading-[32px]">
+                                <h2 className="text-[#52D34E] font-bold 2xl:text-[40px] sm:text-[36px] text-2xl 2xl:leading-[50px] sm:leading-[42px] leading-[32px]">
                                     Try a Free Lesson <br />Real Quick
                                 </h2>
                                 <p className="font-light 2xl:text-xl sm:text-lg text-base leading-[24px] text-white/60">
@@ -536,7 +532,7 @@ const PTEMasterClass = () => {
                                 </p>
                                 <a
                                     href="#"
-                                    className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-secondary text-white px-3 sm:py-3 py-[14px] w-full font-semibold sm:text-xl text-lg relative z-10"
+                                    className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-GreenBtn  text-white px-3 sm:py-3 py-[14px] w-full font-semibold sm:text-xl text-lg relative z-10"
                                 >
                                     Take the course
                                 </a>
@@ -581,27 +577,25 @@ const PTEMasterClass = () => {
                             <h2 className="sm:text-3xl text-2xl leading-[1.2] font-semibold text-white text-left">Check out some other courses</h2>
                         </div>
                         <div className="flex flex-col gap-[32px]">
-                            <div className="bg-course-green-bg hover:bg-course-green-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
-                                <div className="ribbon ribbon-top-left z-10"><span>New course!</span></div>
-
+                            <div className="course-drop-shadow bg-course-blue-bg hover:bg-course-blue-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
                                 <div className="overflow-hidden relative z-0 max-h-[450px]">
-                                    <img src={CourseImg1} alt="CourseImg1" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
+                                    <img src={CourseImg2} alt="CourseIm21" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
                                 </div>
                                 <div className="lg:py-[16px]">
-                                    <h2 className="text-[#52D34E] [text-shadow:0px_5px_0px_#000000] font-bold md:text-[24px] inline-block sm:text-2xl text-lg">NAATI CCL Fast Track Course</h2>
-                                    <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] leading-[1.2] my-[12px]">Need to clear the test in 3 days, we’ve got you covered!</h2>
+                                    <h2 className="text-gradient-secondary font-bold md:text-[24px] inline-block sm:text-2xl text-lg">PTE Master Class</h2>
+                                    <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] leading-[1.2] my-[8px]">Missed your score by a few marks! Clear in 2 weeks</h2>
                                     <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-0">
-                                        This is a super fast-paced course. It’s geared for speed, designed for those who need to clear the test on urgent basis, and do whatever it takes to clear it.
+                                        This is literally the best advice that I give every student. My strategies will teach you how to get 90 in each module. I’ve helped students out for 5+ years as a super-friendly teacher to get their desired score, now it’s your turn.
                                     </p>
                                     <div className="sm:flex items-center gap-3 my-[12px] hidden">
                                         <img src={avatar} alt="avatar" className="w-[50px] h-[50px] rounded-full border-4 border-white/10" />
                                         <h3 className="text-base font-light text-white/60">Taught by <span className="text-white font-semibold">Abhishek</span></h3>
                                     </div>
                                     <div className="pt-[12px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
-                                        <Link to="/naaticcl" className="primary-btn bg-gradient-GreenBtn inline-flex justify-center items-center text-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]">
+                                        <Link to="/pte-masterclass" className="primary-btn bg-gradient-secondary leading-[28px] inline-flex justify-center items-center text-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]">
                                             Take the Course
                                         </Link>
-                                        <Link to="/naaticcl" className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg z-10 transition-all duration-300 ease hover:bg-white/10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]">
+                                        <Link to="/pte-masterclass" className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all z-10 duration-300 ease hover:bg-white/10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]">
                                             View Details
                                         </Link>
                                     </div>
@@ -641,4 +635,4 @@ const PTEMasterClass = () => {
     )
 }
 
-export default PTEMasterClass;
+export default NAATICCL;
