@@ -123,7 +123,7 @@ const Footer = () => {
                       <li>
                         <a
                           href="#"
-                          className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80"
+                          className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80"
                         >
                           PTE
                         </a>
@@ -131,7 +131,7 @@ const Footer = () => {
                       <li>
                         <a
                           href="#"
-                          className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80"
+                          className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80"
                         >
                           NAATI CCL
                         </a>
@@ -139,7 +139,7 @@ const Footer = () => {
                       <li>
                         <a
                           href="#"
-                          className="flex items-center gap-4 text-[#919191] font-medium 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80"
+                          className="flex items-center gap-4 text-[#919191] font-semibold 2xl:text-lg text-base transition-all duration-300 ease hover:text-white/80"
                         >
                           IELTS
                         </a>

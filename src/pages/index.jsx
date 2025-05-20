@@ -104,7 +104,7 @@ const Home = () => {
                             >
                                 Get a Callback
                             </a>
-                            <a href="#" className="align-middle inline-flex items-center gap-[18px] justify-center text-center bg-transparent border-2 border-Cadmium-Orange text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
+                            <Link to="/free-e-book" className="align-middle inline-flex items-center gap-[18px] justify-center text-center bg-transparent border-2 border-Cadmium-Orange text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10">
                                 <svg width="20" height="20" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M21.93 11.9998L0 23.9253V0.0742188L21.93 11.9998Z" fill="url(#paint0_linear_702_4078)" />
                                     <defs>
@@ -115,7 +115,7 @@ const Home = () => {
                                     </defs>
                                 </svg>
                                 Watch Free Lessons
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

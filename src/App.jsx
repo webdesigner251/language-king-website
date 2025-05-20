@@ -13,6 +13,7 @@ import PteMasterClass from "./pages/PTE-MasterClass";
 import NAATICCL from "./pages/NAATI-CCL";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
+import FreeEBook from "./pages/Free-E-book";
 
 function App() {
   const location = useLocation();
@@ -30,6 +31,7 @@ function App() {
           <Route path="/naaticcl" element={<NAATICCL />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/free-e-book" element={<FreeEBook />}></Route>
         </Routes>
       </main>
       <Footer />
