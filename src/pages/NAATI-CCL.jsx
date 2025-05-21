@@ -432,7 +432,7 @@ const NAATICCL = () => {
                     alt={`Image of ${course.title}`}
                     className="w-full h-auto object-contain"
                   />
-                  <p className="font-light 2xl:text-xl sm:text-lg text-base leading-[24px] text-white/60">
+                  <p className="font-normal sm:text-base text-sm leading-[24px] text-white/60">
                     {course.description}
                   </p>
                 </div>
@@ -457,12 +457,10 @@ const NAATICCL = () => {
                   Watch AB grade students’ responses and give Feedback
                 </h2>
                 <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
-                  One of the best ways to learn what works and what doesn’t is
-                  to simply see it for yourself on real world, existing
-                  websites.
+                 One of the best ways to learn what  works and what doesn’t is to simply see if you are making the same mistakes.
                 </p>
 
-                <p className="font-normal 2xl:text-[22px] sm:text-lg text-sm leading-[24px] text-white/60">
+                <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
                   We’ll review sites like:
                 </p>
 
@@ -515,12 +513,12 @@ const NAATICCL = () => {
                     <img
                       src={facebookIcon}
                       alt="facebookIcon"
-                      className="w-10 h-10 group-hover:hidden transition-all duration-300 ease"
+                      className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
                     />
                     <img
                       src={facebookIconLight}
                       alt="facebookIcon"
-                      className="w-10 h-10 hidden group-hover:flex transition-all duration-300 ease"
+                      className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                     />
                     <div>
                       <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
@@ -535,12 +533,12 @@ const NAATICCL = () => {
                     <img
                       src={InstaIcon}
                       alt="InstaIcon"
-                      className="w-10 h-10 group-hover:hidden transition-all duration-300 ease"
+                      className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
                     />
                     <img
                       src={InstaIconLight}
                       alt="facebookIcon"
-                      className="w-10 h-10 hidden group-hover:flex transition-all duration-300 ease"
+                      className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                     />
                     <div>
                       <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
@@ -555,12 +553,12 @@ const NAATICCL = () => {
                     <img
                       src={TiktokIcon}
                       alt="TiktokIcon"
-                      className="w-10 h-10 group-hover:hidden transition-all duration-300 ease"
+                      className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
                     />
                     <img
                       src={TiktokIconLight}
                       alt="facebookIcon"
-                      className="w-10 h-10 hidden group-hover:flex transition-all duration-300 ease"
+                      className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                     />
                     <div>
                       <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
@@ -586,7 +584,7 @@ const NAATICCL = () => {
                     alt={`Image of ${course.title}`}
                     className="w-full h-auto object-contain"
                   />
-                  <p className="font-light 2xl:text-xl sm:text-lg text-sm leading-[28px] text-white/60">
+                  <p className="font-normal sm:text-base text-sm leading-[24px] text-white/60">
                     {course.description}
                   </p>
                 </div>
@@ -693,20 +691,20 @@ const NAATICCL = () => {
                   Try a Free Lesson <br />
                   Real Quick
                 </h2>
-                <p className="font-light 2xl:text-xl sm:text-lg text-base leading-[24px] text-white/60">
+                <p className="font-light 2xl:text-xl sm:text-lg text-sm leading-[28px] text-white/60">
                   Watch AB guiding a student and a funny interaction between
                   them.
                 </p>
 
-                <p className="font-light 2xl:text-[22px] sm:text-lg text-sm leading-[24px] text-white/60">
+                <p className="font-light 2xl:text-xl sm:text-lg text-sm leading-[28px] text-white/60">
                   As an expert - AB guides his students through various hurdles,
                   by providing insightful feedback.
                 </p>
                 <a
                   href="#"
-                  className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-GreenBtn  text-white px-3 sm:py-3 py-[14px] w-full font-semibold sm:text-xl text-lg relative z-10"
+                  className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-GreenBtn  text-white px-3 sm:py-3 py-[14px] w-full font-bold sm:text-xl text-lg relative z-10"
                 >
-                  Take the course
+                  Take the Course
                 </a>
               </div>
             </div>
@@ -736,7 +734,7 @@ const NAATICCL = () => {
                     </div>
                   )}
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:py-[80px] py-[50px]">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:pt-[80px] sm:pb-[120px] py-[50px]">
                     {row.map((item, index) => (
                       <div key={index}>
                         <img

@@ -313,10 +313,10 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <section className="sm:py-[50px]">
+      <section className="pt-[50px] md:pb-[100px] sm:pb-[80px] ">
         <div className="custom-container mx-auto px-0 sm:px-[32px] w-full relative z-10">
           <div className="flex md:flex-nowrap flex-wrap gap-[50px] ">
-            <div className="lg:w-[60%] md:w-[50%] w-full md:flex hidden ps-8 flex-col gap-[200px]">
+            <div className="lg:w-[60%] md:w-[50%] w-full md:flex hidden ps-8 flex-col gap-[150px]">
               <div className="md:max-w-[720px] max-w-[560px]">
                 <img
                   src={ContactImage1}
@@ -335,14 +335,14 @@ const Contact = () => {
                 <img
                   src={ContactImage3}
                   alt="ContactImage1"
-                  className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[4deg] w-full"
+                  className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[3deg] w-full"
                 />
               </div>
               <div className="md:max-w-[720px] max-w-[560px]">
                 <img
                   src={ContactImage4}
                   alt="ContactImage1"
-                  className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[-7deg] w-full"
+                  className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[4.5deg] w-full"
                 />
               </div>
             </div>
@@ -368,12 +368,12 @@ const Contact = () => {
                   <img
                     src={facebookIcon}
                     alt="facebookIcon"
-                    className="w-10 h-10 group-hover:hidden transition-all duration-300 ease"
+                    className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
                   />
                   <img
                     src={facebookIconLight}
                     alt="facebookIcon"
-                    className="w-10 h-10 hidden group-hover:flex transition-all duration-300 ease"
+                    className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                   />
                   <div>
                     <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
@@ -388,12 +388,12 @@ const Contact = () => {
                   <img
                     src={InstaIcon}
                     alt="InstaIcon"
-                    className="w-10 h-10 group-hover:hidden transition-all duration-300 ease"
+                    className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
                   />
                   <img
                     src={InstaIconLight}
                     alt="facebookIcon"
-                    className="w-10 h-10 hidden group-hover:flex transition-all duration-300 ease"
+                    className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                   />
                   <div>
                     <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
@@ -408,12 +408,12 @@ const Contact = () => {
                   <img
                     src={TiktokIcon}
                     alt="TiktokIcon"
-                    className="w-10 h-10 group-hover:hidden transition-all duration-300 ease"
+                    className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
                   />
                   <img
                     src={TiktokIconLight}
                     alt="facebookIcon"
-                    className="w-10 h-10 hidden group-hover:flex transition-all duration-300 ease"
+                    className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                   />
                   <div>
                     <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">

@@ -83,7 +83,7 @@ const Home = () => {
 
     return (
         <>
-            <section className="banner-wrapper sm:pt-[320px] pt-[400px] sm:pb-[160px] pb-[40px] min-h-[100vh] mt-[-150px] relative flex items-center overflow-hidden">
+            <section className="banner-wrapper sm:pt-[320px] pt-[400px] sm:pb-[200px] pb-[40px] min-h-[100vh] mt-[-150px] relative flex items-center overflow-hidden">
                 <img src={HomeBanner} alt="HomeBanner" className="scale-[1.1] absolute w-full h-full top-0 left-0 right-0 bottom-0 object-cover" />
                 <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full z-10 relative ">
                     <div className="max-w-[830px]">
@@ -92,7 +92,7 @@ const Home = () => {
                             <h1 className="font-inter font-bold main-heading 2xl:mt-2 mt-0 text-white">
                                 PTE, IELTS & NAATI CCL  Coaching Institute
                             </h1>
-                            <p className="md:text-xl sm:text-xl text-base font-light max-w-[650px] text-white/75">
+                            <p className="md:text-lg text-base font-light max-w-[600px] text-white/75">
                                 Join 10,000+ satisfied students in achieving their desired Test Scores.
                                 Helped many students, now it's your turn!
                             </p>

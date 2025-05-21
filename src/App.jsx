@@ -23,7 +23,7 @@ function App() {
     <>
       {isHomePage ? <HomeHeader /> : <MainHeader />}
 
-      <main className="relative h-full pb-4">
+      <main className="relative h-full">
         <div className="bg-noise-pattern absolute inset-0"></div>
         <Routes>
           <Route path="/language-king-website" element={<Home />} />

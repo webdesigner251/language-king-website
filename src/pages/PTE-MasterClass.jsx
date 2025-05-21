@@ -291,7 +291,7 @@ const PTEMasterClass = () => {
                     Missed your score! <br />
                     Clear in 2 weeks
                   </h1>
-                  <p className="md:text-lg sm:text-xl text-base font-normal max-w-[640px] text-white/75">
+                  <p className="sm:text-base text-sm font-normal max-w-[600px] text-white/75">
                     This is literally the best advice that I give every student.
                     My strategies will teach you how to get 90 in each module.
                     I’ve helped students out for 5+ years as a super-friendly
@@ -436,7 +436,7 @@ const PTEMasterClass = () => {
                     alt={`Image of ${course.title}`}
                     className="w-full h-auto object-contain"
                   />
-                  <p className="font-light 2xl:text-xl sm:text-lg text-base leading-[24px] text-white/60">
+                  <p className="font-normal sm:text-base text-sm leading-[24px] text-white/60">
                     {course.description}
                   </p>
                 </div>
@@ -466,7 +466,7 @@ const PTEMasterClass = () => {
                   websites.
                 </p>
 
-                <p className="font-normal 2xl:text-[22px] sm:text-lg text-sm leading-[24px] text-white/60">
+                <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
                   We’ll review sites like:
                 </p>
 
@@ -479,19 +479,18 @@ const PTEMasterClass = () => {
                       >
                         <img src={Checkmark} alt="Checkmark" className="w-5" />
                         <span
-                          className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${
-                            activeTab === tab
-                              ? "text-white"
-                              : "text-white/60 group-hover:text-white"
-                          }`}
+                          className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${activeTab === tab
+                            ? "text-white"
+                            : "text-white/60 group-hover:text-white"
+                            }`}
                         >
                           {tab === "band8"
                             ? "Band 8"
                             : tab === "band7"
-                            ? "Band 7"
-                            : tab === "band65"
-                            ? "Band 6.5"
-                            : "And others!"}
+                              ? "Band 7"
+                              : tab === "band65"
+                                ? "Band 6.5"
+                                : "And others!"}
                         </span>
                       </button>
                     </li>
@@ -515,12 +514,12 @@ const PTEMasterClass = () => {
                     <img
                       src={facebookIcon}
                       alt="facebookIcon"
-                      className="w-10 h-10 group-hover:hidden transition-all duration-300 ease"
+                      className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
                     />
                     <img
                       src={facebookIconLight}
                       alt="facebookIcon"
-                      className="w-10 h-10 hidden group-hover:flex transition-all duration-300 ease"
+                      className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                     />
                     <div>
                       <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
@@ -535,12 +534,12 @@ const PTEMasterClass = () => {
                     <img
                       src={InstaIcon}
                       alt="InstaIcon"
-                      className="w-10 h-10 group-hover:hidden transition-all duration-300 ease"
+                      className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
                     />
                     <img
                       src={InstaIconLight}
                       alt="facebookIcon"
-                      className="w-10 h-10 hidden group-hover:flex transition-all duration-300 ease"
+                      className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                     />
                     <div>
                       <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
@@ -555,12 +554,12 @@ const PTEMasterClass = () => {
                     <img
                       src={TiktokIcon}
                       alt="TiktokIcon"
-                      className="w-10 h-10 group-hover:hidden transition-all duration-300 ease"
+                      className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
                     />
                     <img
                       src={TiktokIconLight}
                       alt="facebookIcon"
-                      className="w-10 h-10 hidden group-hover:flex transition-all duration-300 ease"
+                      className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                     />
                     <div>
                       <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
@@ -586,7 +585,7 @@ const PTEMasterClass = () => {
                     alt={`Image of ${course.title}`}
                     className="w-full h-auto object-contain"
                   />
-                  <p className="font-light 2xl:text-xl sm:text-lg text-sm leading-[28px] text-white/60">
+                  <p className="font-normal sm:text-base text-sm leading-[24px] text-white/60">
                     {course.description}
                   </p>
                 </div>
@@ -693,12 +692,12 @@ const PTEMasterClass = () => {
                   Try a Free Lesson <br />
                   Real Quick
                 </h2>
-                <p className="font-light 2xl:text-xl sm:text-lg text-base leading-[24px] text-white/60">
+                <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
                   Watch AB guiding a student and a funny interaction between
                   them.
                 </p>
 
-                <p className="font-light 2xl:text-[22px] sm:text-lg text-sm leading-[24px] text-white/60">
+                <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
                   As an expert - AB guides his students through various hurdles,
                   by providing insightful feedback.
                 </p>
@@ -736,7 +735,7 @@ const PTEMasterClass = () => {
                     </div>
                   )}
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:py-[80px] py-[50px]">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:pt-[80px] sm:pb-[120px] py-[50px]">
                     {row.map((item, index) => (
                       <div key={index}>
                         <img
