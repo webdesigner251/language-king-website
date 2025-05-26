@@ -77,15 +77,17 @@ const Testimonials = () => {
         <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full relative z-10">
           <div className="grid lg:grid-cols-2 xl:gap-[120px] gap-[90px]">
             <div>
-              <h1 className="font-inter font-bold main-heading 2xl:mt-2 mt-0 text-white">
-                Why Students Love Learning With Us
-              </h1>
-              <img
-                src={PlaceholerImage}
-                alt="PlaceholerImage"
-                className="lg:hidden block w-full py-[50px]"
-              />
-              <hr className="border-y-[#252525] my-[40px] lg:block hidden  border-2" />
+              <div className="lg:max-w-[580px]">
+                <h1 className="font-inter font-bold main-heading 2xl:mt-2 mt-0 text-white">
+                  Why Students Love Learning With Us
+                </h1>
+                <img
+                  src={PlaceholerImage}
+                  alt="PlaceholerImage"
+                  className="lg:hidden block w-full py-[50px]"
+                />
+                <hr className="border-y-[#252525] my-[40px] lg:block hidden border-2" />
+              </div>
               <div className="relative ps-[30px] text-[#B7B7B7] md:text-lg sm:text-base text-sm lg:max-w-[600px]">
                 <img src={QuoteIcon} alt="QuoteIcon" className=" -ml-7" />
                 When I started my journey I really thought that it would be
@@ -119,7 +121,7 @@ const Testimonials = () => {
 
       <section className="sm:py-[30px] pt-[25px]">
         <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full relative z-10">
-          <div className="grid grid-cols-2 items-center border-b border-[#252525] py-[16px]">
+          <div className="flex gap-4 justify-between items-center border-b border-[#252525] py-[16px]">
             <h2 className="sm:text-3xl text-[22px] leading-normal font-bold text-white text-left">
               PTE Hall of Fame
             </h2>
@@ -220,12 +222,12 @@ const Testimonials = () => {
 
       <section className="sm:py-[30px] pt-[25px]">
         <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full relative z-10">
-          <div className="grid grid-cols-2 items-center border-b border-[#252525] py-[16px]">
+          <div className="flex gap-4 justify-between items-center border-b border-[#252525] py-[16px]">
             <h2 className="sm:text-3xl text-[22px] leading-normal font-bold text-white text-left">
               NAATI CCL Results
             </h2>
             <div className="flex gap-3 justify-end items-center  relative">
-              <button className="custom-prev w-10 h-10 p-[15px] cursor-pointer flex items-center justify-center bg-[#1A1A1A] border-none rounded">
+              <button className="custom-prev-new w-10 h-10 p-[15px] cursor-pointer flex items-center justify-center bg-[#1A1A1A] border-none rounded">
                 <svg
                   width="12"
                   height="20"
@@ -242,7 +244,7 @@ const Testimonials = () => {
                   />
                 </svg>
               </button>
-              <button className="custom-next w-10 h-10 p-[15px] cursor-pointer flex items-center justify-center bg-[#1A1A1A] border-none rounded">
+              <button className="custom-next-new w-10 h-10 p-[15px] cursor-pointer flex items-center justify-center bg-[#1A1A1A] border-none rounded">
                 <svg
                   width="12"
                   height="20"
@@ -265,8 +267,8 @@ const Testimonials = () => {
             <Swiper
               modules={[Navigation]}
               navigation={{
-                nextEl: ".custom-next",
-                prevEl: ".custom-prev",
+                nextEl: ".custom-next-new",
+                prevEl: ".custom-prev-new",
               }}
               spaceBetween={20}
               slidesPerView={1.2}
@@ -411,7 +413,7 @@ const Testimonials = () => {
                   </form>
                 </div>
                 <div className="lg:my-[80px] my-[50px]">
-                  <h3 className="text-white font-bold md:text-2xl sm:text-xl text-lg">
+                  <h3 className="text-white font-bold md:text-[22px] sm:text-xl text-lg">
                     Why Language King?
                   </h3>
                   <ul className="mt-5 sm:ps-5 max-w-[700px]">

@@ -43,13 +43,16 @@ const MainHeader = () => {
           </Link>
 
           {/* Right Logo */}
-          <div className="xl:w-[20%] sm:w-[50%] w-[50%] relative logo-wrapper">
+          <Link
+            to="/"
+            className="xl:w-[20%] sm:w-[50%] w-[50%] relative logo-wrapper"
+          >
             <img
               src={Logo}
               alt="Logo"
               className="xl:ml-0 ml-[-27%] desktop-logo"
             />
-          </div>
+          </Link>
 
           <div className="xl:w-[40%] w-[50%] flex justify-end items-center">
             {/* Hamburger Menu - Visible on Mobile */}
@@ -121,6 +124,7 @@ const MainHeader = () => {
               <li className="text-center inline-flex items-center">
                 <a
                   href="#"
+                  onClick={() => setIsOpen(false)}
                   className="text-white inline-flex items-center justify-center font-bold text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300"
                 >
                   Courses
@@ -129,6 +133,7 @@ const MainHeader = () => {
               <li className="text-center inline-flex items-center">
                 <Link
                   to="/testimonials"
+                  onClick={() => setIsOpen(false)}
                   className="text-white inline-flex items-center justify-center font-bold text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300"
                 >
                   Testimonials
@@ -137,6 +142,7 @@ const MainHeader = () => {
               <li className="text-center inline-flex items-center">
                 <Link
                   to="/contact"
+                  onClick={() => setIsOpen(false)}
                   className="text-white inline-flex items-center justify-center font-medium text-[32px] border-b-2 border-transparent hover:border-white transition-all duration-300 [text-shadow:0px_4px_0px_#000000]"
                 >
                   Contact us

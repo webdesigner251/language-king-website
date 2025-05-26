@@ -164,15 +164,17 @@ const NAATICCL = () => {
     },
   ];
 
-  const tabs = ["band8", "band7", "band65", "others"];
-  const [activeTab, setActiveTab] = useState("band8");
+  const tabs = ["tab1", "tab2", "tab3", "tab4", "tab5"];
+  const [activeTab, setActiveTab] = useState("tab1");
 
   const tabImages = {
-    band8: PTEResponse,
-    band7: PTEResponse1,
-    band65: PTEResponse,
-    others: PTEResponse1,
+    tab1: PTEResponse,
+    tab2: PTEResponse1,
+    tab3: PTEResponse,
+    tab4: PTEResponse1,
+    tab5: PTEResponse,
   };
+
   // Auto slide every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
@@ -269,7 +271,7 @@ const NAATICCL = () => {
   return (
     <>
       <div className="bg-black/20 relative h-full">
-        <section className="sm:pt-[320px] pt-[450px] pb-[60px] mt-[-150px] relative flex flex-column justify-center items-center">
+        <section className="sm:pt-[270px] pt-[450px] sm:pb-[100px] pb-[60px] mt-[-150px] relative flex flex-column justify-center items-center">
           <div className="sm:w-[66%] w-full top-0 right-0 lg:h-[75%] sm:h-[66%] h-[50%] absolute">
             <img
               src={PTEBanner}
@@ -290,7 +292,7 @@ const NAATICCL = () => {
                     Exam in 7 days? <br />
                     we’ve got you covered!
                   </h1>
-                  <p className="md:text-lg sm:text-xl text-base font-normal max-w-[640px] text-white/75">
+                  <p className="md:text-lg sm:text-xl text-base font-normal max-w-[660px] text-white/75">
                     This is a super fast-paced course. It’s geared for speed,
                     designed for those who need to clear the test on urgent
                     basis, and do whatever it takes to clear it.{" "}
@@ -301,7 +303,7 @@ const NAATICCL = () => {
                       alt="avatar"
                       className="w-[50px] h-[50px] rounded-full border-4 border-white/10"
                     />
-                    <h3 className="text-base font-light text-white/60">
+                    <h3 className="sm:text-lg text-base font-light text-white/60">
                       Taught by{" "}
                       <span className="text-white font-semibold">Abhishek</span>
                     </h3>
@@ -457,7 +459,8 @@ const NAATICCL = () => {
                   Watch AB grade students’ responses and give Feedback
                 </h2>
                 <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
-                 One of the best ways to learn what  works and what doesn’t is to simply see if you are making the same mistakes.
+                  One of the best ways to learn what works and what doesn’t is
+                  to simply see if you are making the same mistakes.
                 </p>
 
                 <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
@@ -483,12 +486,14 @@ const NAATICCL = () => {
                               : "text-white/60 group-hover:text-white"
                           }`}
                         >
-                          {tab === "band8"
+                          {tab === "tab1"
                             ? "Major Mistakes"
-                            : tab === "band7"
+                            : tab === "tab2"
                             ? "Minor Mistakes"
-                            : tab === "band65"
+                            : tab === "tab3"
                             ? "How to avoid them"
+                            : tab === "tab4"
+                            ? "Repeat Policy Pro Tip!"
                             : "and much more!"}
                         </span>
                       </button>
@@ -713,7 +718,7 @@ const NAATICCL = () => {
 
         <section className="custom-container sm:px-[32px] px-4">
           <div className="pb-[80px] border-y-2 border-[#252525]">
-            <div className="mx-auto 2xl:px-[135px] md:px-[100px] sm:px-[50px] px-4 w-full bg-[#FFDD74]">
+            <div className="mx-auto 2xl:px-[135px] md:px-[100px] sm:px-[50px] px-4 w-full bg-[#FFDD74] pb-[30px]">
               <div className="sm:pt-[52px] pt-[12px] sm:mb-[-30px] mb-[-20px]">
                 <h2 className="text-black 2xl:text-[40px] sm:text-5xl text-[28px] leading-normal sm:font-bold font-extrabold">
                   Support{" "}
@@ -734,7 +739,7 @@ const NAATICCL = () => {
                     </div>
                   )}
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:pt-[80px] sm:pb-[120px] py-[50px]">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:pt-[60px] sm:pb-[70px] py-[50px]">
                     {row.map((item, index) => (
                       <div key={index}>
                         <img

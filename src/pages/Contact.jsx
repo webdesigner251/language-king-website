@@ -16,7 +16,7 @@ import TiktokIconLight from "../assets/icons/tiktok-icon-light.svg";
 const faqs = [
   {
     question: "1. Do you offer refunds?",
-    answer: `We don’t offer any refund in any given circumstances. Nevertheless, a refund is possible, in case, you are charged extra due to a technical problem. The refund request should be initiated within 24 hours by sending an email with all the details on <strong><a href="mailto:info@languageeking.com.au">info@languageeking.com.au</a></strong>`,
+    answer: `We don’t offer any refund in any given circumstances. Nevertheless, a refund is possible, in case, you are charged extra due to a technical problem. The refund request should be initiated within 24 hours by sending an email with all the details on <strong class="text-white"><a href="mailto:info@languageking.com.au">info@languageking.com.au</a></strong>`,
   },
   {
     question:
@@ -152,7 +152,7 @@ const Contact = () => {
                         <option value="Other Inquiry">OTHER INQUIRY</option>
                       </select>
                     </div>
-                    <span className="font-normal text-[#949AA4] md:text-base sm:text-sm text-xs py-3 block">
+                    <span className="font-normal text-[#838383] md:text-[15px] sm:text-sm text-xs py-3 block">
                       Your information will be used to consider and fulfill your
                       request and will be handled pursuant to our{" "}
                       <a href="#" className="">
@@ -292,7 +292,7 @@ const Contact = () => {
                         <option value="Other Inquiry">OTHER INQUIRY</option>
                       </select>
                     </div>
-                    <span className="font-normal text-[#949AA4] md:text-base sm:text-sm text-xs py-3 block">
+                    <span className="font-normal text-[#838383] md:text-[15px] sm:text-sm text-xs py-3 block">
                       Your information will be used to consider and fulfill your
                       request and will be handled pursuant to our{" "}
                       <a href="#" className="">
@@ -356,15 +356,15 @@ const Contact = () => {
                   <div key={idx} className="mb-4 3xl:text-xl text-lg">
                     <h3 className="text-white font-bold">{faq.question}</h3>
                     <p
-                      className="pt-1 text-white font-light leading-[24px]"
+                      className="pt-1 text-[#cacaca] text-base font-normal leading-[24px]"
                       dangerouslySetInnerHTML={{ __html: faq.answer }}
                     />
                   </div>
                 ))}
               </div>
 
-              <div className="flex flex-col gap-[22px] mt-[120px]">
-                <div className="bg-[#1A1A1A] p-[14px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+              <div className="flex flex-col items-start gap-[22px] mt-[120px]">
+                <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[35px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                   <img
                     src={facebookIcon}
                     alt="facebookIcon"
@@ -384,7 +384,7 @@ const Contact = () => {
                     </span>
                   </div>
                 </div>
-                <div className="bg-[#1A1A1A] p-[14px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[35px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                   <img
                     src={InstaIcon}
                     alt="InstaIcon"
@@ -404,7 +404,7 @@ const Contact = () => {
                     </span>
                   </div>
                 </div>
-                <div className="bg-[#1A1A1A] p-[14px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[35px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                   <img
                     src={TiktokIcon}
                     alt="TiktokIcon"

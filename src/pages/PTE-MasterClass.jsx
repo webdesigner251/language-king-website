@@ -270,7 +270,7 @@ const PTEMasterClass = () => {
   return (
     <>
       <div className="bg-black/20 relative h-full">
-        <section className="sm:pt-[320px] pt-[450px] pb-[60px] mt-[-150px] relative flex flex-column justify-center items-center">
+        <section className="sm:pt-[270px] pt-[450px] sm:pb-[100px] pb-[60px] mt-[-150px] relative flex flex-column justify-center items-center">
           {/* <img src={HomeBanner} alt="HomeBanner" className="absolute w-full h-full top-0 left-0 right-0 bottom-0 object-cover" /> */}
           <div className="sm:w-[66%] w-full top-0 right-0 lg:h-[75%] sm:h-[66%] h-[50%] absolute">
             <img
@@ -283,7 +283,7 @@ const PTEMasterClass = () => {
           <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full relative z-10">
             <div className="grid lg:grid-cols-2 items-end">
               <div className="">
-                <div className="flex flex-col 2xl:gap-6 gap-3">
+                <div className="flex flex-col 2xl:gap-4 gap-3">
                   <h2 className="text-[#0A8AF2] font-bold 2xl:text-[32px] text-2xl">
                     PTE MasterClass
                   </h2>
@@ -291,7 +291,7 @@ const PTEMasterClass = () => {
                     Missed your score! <br />
                     Clear in 2 weeks
                   </h1>
-                  <p className="sm:text-base text-sm text-[18px] leading-[28px] max-w-[600px] text-white/75">
+                  <p className="md:text-lg sm:text-xl text-base font-normal max-w-[660px] text-white/75">
                     This is literally the best advice that I give every student.
                     My strategies will teach you how to get 90 in each module.
                     I’ve helped students out for 5+ years as a super-friendly
@@ -303,9 +303,11 @@ const PTEMasterClass = () => {
                       alt="avatar"
                       className="w-[50px] h-[50px] rounded-full border-4 border-white/10"
                     />
-                    <h3 className="text-base font-light text-white/60">
+                    <h3 className="sm:text-lg text-base font-light text-white/60">
                       Taught by{" "}
-                      <span className="text-white font-size: font-semibold">Abhishek</span>
+                      <span className="text-white font-size: font-semibold">
+                        Abhishek
+                      </span>
                     </h3>
                   </div>
                 </div>
@@ -479,18 +481,19 @@ const PTEMasterClass = () => {
                       >
                         <img src={Checkmark} alt="Checkmark" className="w-5" />
                         <span
-                          className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${activeTab === tab
-                            ? "text-white"
-                            : "text-white/60 group-hover:text-white"
-                            }`}
+                          className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${
+                            activeTab === tab
+                              ? "text-white"
+                              : "text-white/60 group-hover:text-white"
+                          }`}
                         >
                           {tab === "band8"
                             ? "Band 8"
                             : tab === "band7"
-                              ? "Band 7"
-                              : tab === "band65"
-                                ? "Band 6.5"
-                                : "And others!"}
+                            ? "Band 7"
+                            : tab === "band65"
+                            ? "Band 6.5"
+                            : "And others!"}
                         </span>
                       </button>
                     </li>
@@ -714,7 +717,7 @@ const PTEMasterClass = () => {
 
         <section className="custom-container sm:px-[32px] px-4">
           <div className="pb-[80px] border-y-2 border-[#252525]">
-            <div className="mx-auto 2xl:px-[135px] md:px-[100px] sm:px-[50px] px-4 w-full bg-[#FFDD74]">
+            <div className="mx-auto 2xl:px-[135px] md:px-[100px] sm:px-[50px] px-4 w-full bg-[#FFDD74] pb-[30px]">
               <div className="sm:pt-[52px] pt-[12px] sm:mb-[-30px] mb-[-20px]">
                 <h2 className="text-black 2xl:text-[40px] sm:text-5xl text-[28px] leading-normal sm:font-bold font-extrabold">
                   Support{" "}
@@ -735,7 +738,7 @@ const PTEMasterClass = () => {
                     </div>
                   )}
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:pt-[80px] sm:pb-[120px] py-[50px]">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:pt-[60px] sm:pb-[70px] py-[50px]">
                     {row.map((item, index) => (
                       <div key={index}>
                         <img
