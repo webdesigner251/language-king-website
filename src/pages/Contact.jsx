@@ -317,28 +317,28 @@ const Contact = () => {
         <div className="custom-container mx-auto px-0 sm:px-[32px] w-full relative z-10">
           <div className="flex md:flex-nowrap flex-wrap gap-[50px] ">
             <div className="lg:w-[60%] md:w-[50%] w-full md:flex hidden ps-8 flex-col gap-[150px]">
-              <div className="md:max-w-[720px] max-w-[560px]">
+              <div className="md:max-w-[740px] max-w-[560px]">
                 <img
                   src={ContactImage1}
                   alt="ContactImage1"
                   className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[4deg] w-full"
                 />
               </div>
-              <div className="md:max-w-[720px] max-w-[560px]">
+              <div className="md:max-w-[740px] max-w-[560px]">
                 <img
                   src={ContactImage2}
                   alt="ContactImage1"
                   className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[-7deg] w-full"
                 />
               </div>
-              <div className="md:max-w-[720px] max-w-[560px]">
+              <div className="md:max-w-[740px] max-w-[560px]">
                 <img
                   src={ContactImage3}
                   alt="ContactImage1"
                   className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[3deg] w-full"
                 />
               </div>
-              <div className="md:max-w-[720px] max-w-[560px]">
+              <div className="md:max-w-[740px] max-w-[560px]">
                 <img
                   src={ContactImage4}
                   alt="ContactImage1"
