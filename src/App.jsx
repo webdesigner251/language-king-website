@@ -17,7 +17,8 @@ import FreeEBook from "./pages/Free-E-book";
 
 function App() {
   const location = useLocation();
-  const isHomePage = location.pathname === "/";
+  const isHomePage =
+    location.pathname === "/" || location.pathname === "/language-king-website";
 
   return (
     <>
