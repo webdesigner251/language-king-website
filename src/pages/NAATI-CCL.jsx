@@ -453,7 +453,7 @@ const NAATICCL = () => {
               </div>
 
               <div className="lg:w-[28%] flex flex-col gap-y-[19px]">
-                <h2 className="text-[#52D34E] font-bold sm:text-[30px] text-2xl sm:leading-[36px] leading-[32px] ">
+                <h2 className="text-[#52D34E] font-bold sm:text-[40px] text-2xl sm:leading-[36px] leading-[32px] ">
                   Watch AB grade students’ responses and give Feedback
                 </h2>
                 <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
@@ -484,12 +484,12 @@ const NAATICCL = () => {
                           }`}
                         >
                           {tab === "band8"
-                            ? "Band 8"
+                            ? "Major Mistakes"
                             : tab === "band7"
-                            ? "Band 7"
+                            ? "Minor Mistakes"
                             : tab === "band65"
-                            ? "Band 6.5"
-                            : "And others!"}
+                            ? "How to avoid them"
+                            : "and much more!"}
                         </span>
                       </button>
                     </li>

@@ -85,7 +85,7 @@ const Testimonials = () => {
                 alt="PlaceholerImage"
                 className="lg:hidden block w-full py-[50px]"
               />
-              <hr className="border-y-[#252525] my-[40px] lg:block hidden" />
+              <hr className="border-y-[#252525] my-[40px] lg:block hidden  border-2" />
               <div className="relative ps-[30px] text-[#B7B7B7] md:text-lg sm:text-base text-sm lg:max-w-[600px]">
                 <img src={QuoteIcon} alt="QuoteIcon" className=" -ml-7" />
                 When I started my journey I really thought that it would be

@@ -160,12 +160,12 @@ const Footer = () => {
                           <img
                             src={AppleImg}
                             alt="Image"
-                            className="group-hover:hidden flex 2xl-max-w-[130px] max-w-[120px] transition-all duration-300 ease"
+                            className="group-hover:hidden flex 2xl-max-w-[130px] max-w-[130px] transition-all duration-300 ease"
                           />
                           <img
                             src={AppleImg1}
                             alt="Image"
-                            className="hidden group-hover:flex 2xl-max-w-[130px] max-w-[120px] transition-all duration-300 ease"
+                            className="hidden group-hover:flex 2xl-max-w-[130px] max-w-[130px] transition-all duration-300 ease"
                           />
                         </a>
                       </li>

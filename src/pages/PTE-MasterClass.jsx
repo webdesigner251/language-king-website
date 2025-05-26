@@ -250,15 +250,15 @@ const PTEMasterClass = () => {
     },
     {
       image: Support5,
-      title: "Online Classes with Feedback",
+      title: "Watch PTE Band 8 Tips & Tricks",
       description:
-        "Learn timed and real-time test tricks from top-notch tutors. Get feedback, learn with other students, ask doubts, and much more.",
+        "Watch pre-recorded video lectures covering all 20 tasks-from Basic to Advanced Strategies, Updated Templates, and Latest Tips and Tricks.",
     },
     {
       image: Support6,
-      title: "Missed a Class",
+      title: "Study Material",
       description:
-        "Don’t worry we got you covered. Class recordings are available 24/7 for instant access.",
+        "Carefully curated resources including Templates, Prediction File,Question Bank, and Real Exam Questions.",
     },
   ];
 
@@ -291,7 +291,7 @@ const PTEMasterClass = () => {
                     Missed your score! <br />
                     Clear in 2 weeks
                   </h1>
-                  <p className="sm:text-base text-sm font-normal max-w-[600px] text-white/75">
+                  <p className="sm:text-base text-sm text-[18px] leading-[28px] max-w-[600px] text-white/75">
                     This is literally the best advice that I give every student.
                     My strategies will teach you how to get 90 in each module.
                     I’ve helped students out for 5+ years as a super-friendly
@@ -305,7 +305,7 @@ const PTEMasterClass = () => {
                     />
                     <h3 className="text-base font-light text-white/60">
                       Taught by{" "}
-                      <span className="text-white font-semibold">Abhishek</span>
+                      <span className="text-white font-size: font-semibold">Abhishek</span>
                     </h3>
                   </div>
                 </div>
