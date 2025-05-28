@@ -29,11 +29,11 @@ import Star from '../assets/icons/star.svg'
 import Google from '../assets/icons/google.svg'
 import HomeBanner from '../assets/Homepage-banner.png'
 import GrainIMG from '../assets/testimonial-grain.png'
-
+import video from "../assets/videos/placeholder-video.mp4";
 
 const testimonials = [
     {
-        reviewImg: ReviewImg1,
+        reviewImg: video,
         text: "I’m getting a lot of nutrients in one scoop",
         avatar: Avatar1,
         name: "Natalia",
@@ -44,7 +44,7 @@ const testimonials = [
         starIcon: Star,
     },
     {
-        reviewImg: ReviewImg2,
+        reviewImg: video,
         text: "It’s kind of slipped into our recruitment stream so easily There’s no effort needed... ",
         avatar: Avatar2,
         name: "Jenny",
@@ -55,7 +55,7 @@ const testimonials = [
         starIcon: Star,
     },
     {
-        reviewImg: ReviewImg3,
+        reviewImg: video,
         // text: `All of our hiring team said that it saves them hours. <span>We’re getting feedback within 20-30 minutes from interviews now, which is ideal for recruiting team that works with time to hire targets.</span>`,
         text: `All of our hiring team said that it saves them hours. <span class="text-white/50">We’re getting feedback within 20-30 minutes from interviews now, which is ideal for recruiting team that works with time to hire targets.</span>`,
         avatar: Avatar3,
@@ -67,7 +67,7 @@ const testimonials = [
         starIcon: Star,
     },
     {
-        reviewImg: ReviewImg4,
+        reviewImg: video,
         text: `There is a clear impact on time saved. <span class="text-white/50">We saved 53 hours per month across our recruiting team.</span>`,
         avatar: Avatar4,
         name: "Priyanka",
@@ -220,28 +220,28 @@ const Home = () => {
                                         <img src={VideoImg1} alt="image" className="w-full" />
                                     </div>
                                     <h3 className="text-white font-bold 2xl:text-[24px] text-[22px] sm:leading-[1.3] leading-[28px]">Impact of Read Aloud on Reading Module</h3>
-                                    <span className="text-white/60 sm:mt-[6px] mt-[4px] block text-base font-medium">PTE MasterClass</span>
+                                    <span className="text-white/60 sm:mt-[6px] mt-[4px] block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                                         <img src={VideoImg2} alt="image" className="w-full" />
                                     </div>
                                     <h3 className="text-white font-bold 2xl:text-[24px] text-[22px] sm:leading-[1.3] leading-[28px]">Poor score in Write Essay</h3>
-                                    <span className="text-white/60 sm:mt-[6px] mt-[4px] block text-base font-medium">PTE MasterClass</span>
+                                    <span className="text-white/60 sm:mt-[6px] mt-[4px] block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                                         <img src={VideoImg3} alt="image" className="w-full" />
                                     </div>
                                     <h3 className="text-white font-bold 2xl:text-[24px] text-[22px] sm:leading-[1.3] leading-[28px]">Dialogue vs Segment</h3>
-                                    <span className="text-white/60 sm:mt-[6px] mt-[4px] block text-base font-medium">PTE MasterClass</span>
+                                    <span className="text-white/60 sm:mt-[6px] mt-[4px] block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                                 <div className="relative">
                                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                                         <img src={VideoImg4} alt="image" className="w-full" />
                                     </div>
                                     <h3 className="text-white font-bold 2xl:text-[24px] text-[22px] sm:leading-[1.3] leading-[28px]">PTE vs IELTS</h3>
-                                    <span className="text-white/60 sm:mt-[6px] mt-[4px] block text-base font-medium">PTE MasterClass</span>
+                                    <span className="text-white/60 sm:mt-[6px] mt-[4px] block text-base font-semibold">PTE MasterClass</span>
                                 </div>
                             </div>
                         </div>
@@ -298,7 +298,7 @@ const Home = () => {
                             <div className="sm:py-[32px] py-7 flex justify-between items-center">
                                 <h2 className="sm:text-3xl text-2xl font-bold text-white text-left">Testimonials</h2>
                                 <div className="flex items-center justify-end">
-                                    <a href="#" className="bg-black2 2xl:p-[16px] sm:p-[12px] p-[9px] 2xl:min-w-[166px] sm:min-w-[140px] min-w-[100px] text-center rounded-[6px] text-white 2xl:text-[22px] sm:text-lg text-base font-semibold ">View all</a>
+                                    <Link to="/testimonials" className="bg-black2 2xl:p-[16px] sm:p-[12px] p-[9px] 2xl:min-w-[166px] sm:min-w-[140px] min-w-[100px] text-center rounded-[6px] text-white 2xl:text-[22px] sm:text-lg text-base font-semibold ">View all</Link>
                                 </div>
                             </div>
                             <TestimonialCarousel testimonials={testimonials} />

@@ -11,7 +11,7 @@ const TestimonialCarousel = ({ testimonials }) => {
             spaceBetween={12}
             slidesPerView={1}
             loop={true}
-            pagination={true} 
+            pagination={true}
             modules={[Pagination]}
             breakpoints={{
                 767: {
@@ -29,15 +29,16 @@ const TestimonialCarousel = ({ testimonials }) => {
             }}
         >
             {testimonials.map((item, i) => (
-                <SwiperSlide  className="h-auto-swiper" key={i}>
+                <SwiperSlide className="h-auto-swiper" key={i}>
                     <div className="flex flex-col justify-between h-full sm:gap-2 gap-y-[50px]">
                         <div>
-                            <img
+                            <video
                                 src={item.reviewImg}
-                                alt="User"
+                                controls
+                                autoPlay="false"
                                 className="sm:max-h-[280px] h-auto w-full object-cover rounded-[10px] mb-[24px]"
-                            />
-                            <p className="text-paraGray font-light 2xl:text-[25px] text-lg 2xl:leading-[36px] leading-normal md:mb-[40px] sm:mb-[30px] mb-8" dangerouslySetInnerHTML={{ __html: item.text }}>                                
+                            ></video>
+                            <p className="text-paraGray font-light 2xl:text-[25px] text-lg 2xl:leading-[36px] leading-normal md:mb-[40px] sm:mb-[30px] mb-8" dangerouslySetInnerHTML={{ __html: item.text }}>
                             </p>
                         </div>
                         <div className="2xl:pt-[64px] md:pt-[52px] sm:pt-[42px] pt-8 border-t border-[#3D3D3D] flex flex-col 2xl:gap-y-[58px] md:gap-y-[42px] gap-7">

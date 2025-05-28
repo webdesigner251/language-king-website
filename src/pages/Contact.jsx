@@ -101,7 +101,7 @@ const Contact = () => {
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="name"
-                        className="text-black font-medium md:text-lg sm:text-base text-sm mb-[6px]"
+                        className="text-black font-semibold md:text-base text-sm mb-[6px]"
                       >
                         Full Name*
                       </label>
@@ -110,13 +110,13 @@ const Contact = () => {
                         name="name"
                         id=""
                         placeholder="Your first & last name"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base"
+                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base tracking-[0.4px]"
                       />
                     </div>
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="phone"
-                        className="text-black font-medium md:text-lg sm:text-base text-sm mb-[6px]"
+                        className="text-black font-semibold md:text-base text-sm mb-[6px]"
                       >
                         Phone Number*
                       </label>
@@ -125,20 +125,20 @@ const Contact = () => {
                         name="phone"
                         id=""
                         placeholder="Mobile number e.g: 0444786999"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base"
+                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base tracking-[0.4px]"
                       />
                     </div>
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="couse"
-                        className="text-black font-medium md:text-lg sm:text-base text-sm mb-[6px]"
+                        className="text-black font-semibold md:text-base text-sm mb-[6px]"
                       >
                         Course Interested in*
                       </label>
                       <select
                         name="couse"
                         id="Select an option"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base relative"
+                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base tracking-[0.4px] relative"
                       >
                         <option
                           value="default"
@@ -228,7 +228,7 @@ const Contact = () => {
                 </div>
               </div>
               {/* Desktop Form */}
-              <div className="lg:w-[40%] md:w-[50%] w-full md:block hidden">
+              <div className="lg:w-[35%] md:w-[50%] w-full md:block hidden">
                 <div className="bg-white rounded-[9px] md:p-[44px] sm:p-5 p-4 ">
                   <p
                     className="font-normal leading-[22px] tracking-[0.011em] text-black lg:text-lg sm:text-base text-sm"
@@ -241,7 +241,7 @@ const Contact = () => {
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="name"
-                        className="text-black font-medium md:text-lg sm:text-base text-sm mb-[6px]"
+                        className="text-black font-semibold md:text-base text-sm mb-[6px]"
                       >
                         Full Name*
                       </label>
@@ -250,13 +250,13 @@ const Contact = () => {
                         name="name"
                         id=""
                         placeholder="Your first & last name"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base"
+                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base tracking-[0.4px]"
                       />
                     </div>
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="phone"
-                        className="text-black font-medium md:text-lg sm:text-base text-sm mb-[6px]"
+                        className="text-black font-semibold md:text-base text-sm mb-[6px]"
                       >
                         Phone Number*
                       </label>
@@ -265,20 +265,20 @@ const Contact = () => {
                         name="phone"
                         id=""
                         placeholder="Mobile number e.g: 0444786999"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base"
+                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base tracking-[0.4px]"
                       />
                     </div>
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="couse"
-                        className="text-black font-medium md:text-lg sm:text-base text-sm mb-[6px]"
+                        className="text-black font-semibold md:text-base text-sm mb-[6px]"
                       >
                         Course Interested in*
                       </label>
                       <select
                         name="couse"
                         id="Select an option"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base relative"
+                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base tracking-[0.4px] relative"
                       >
                         <option
                           value="default"
@@ -295,7 +295,7 @@ const Contact = () => {
                     <span className="font-normal text-[#838383] md:text-[15px] sm:text-sm text-xs py-3 block">
                       Your information will be used to consider and fulfill your
                       request and will be handled pursuant to our{" "}
-                      <a href="#" className="">
+                      <a href="#" className="underline">
                         Privacy Policy.
                       </a>
                     </span>
@@ -404,7 +404,7 @@ const Contact = () => {
                     </span>
                   </div>
                 </div>
-                <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[35px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[45px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                   <img
                     src={TiktokIcon}
                     alt="TiktokIcon"

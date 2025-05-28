@@ -258,7 +258,7 @@ const PTEMasterClass = () => {
       image: Support6,
       title: "Study Material",
       description:
-        "Carefully curated resources including Templates, Prediction File,Question Bank, and Real Exam Questions.",
+        "Carefully curated resources including Templates , Prediction File , Question Bank , and Real Exam Questions.",
     },
   ];
 
@@ -481,19 +481,18 @@ const PTEMasterClass = () => {
                       >
                         <img src={Checkmark} alt="Checkmark" className="w-5" />
                         <span
-                          className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${
-                            activeTab === tab
-                              ? "text-white"
-                              : "text-white/60 group-hover:text-white"
-                          }`}
+                          className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${activeTab === tab
+                            ? "text-white"
+                            : "text-white/60 group-hover:text-white"
+                            }`}
                         >
                           {tab === "band8"
                             ? "Band 8"
                             : tab === "band7"
-                            ? "Band 7"
-                            : tab === "band65"
-                            ? "Band 6.5"
-                            : "And others!"}
+                              ? "Band 7"
+                              : tab === "band65"
+                                ? "Band 6.5"
+                                : "And others!"}
                         </span>
                       </button>
                     </li>
@@ -512,8 +511,8 @@ const PTEMasterClass = () => {
                   Having an instructor like AB bring you the real experience
                   needed to get desired score.
                 </h2>
-                <div className="flex flex-col gap-[22px]">
-                  <div className="bg-[#1A1A1A] p-[14px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                <div className="flex flex-col items-start gap-[22px]">
+                  <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[25px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                     <img
                       src={facebookIcon}
                       alt="facebookIcon"
@@ -533,7 +532,7 @@ const PTEMasterClass = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="bg-[#1A1A1A] p-[14px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                  <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[25px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                     <img
                       src={InstaIcon}
                       alt="InstaIcon"
@@ -553,7 +552,7 @@ const PTEMasterClass = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="bg-[#1A1A1A] p-[14px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                  <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[25px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                     <img
                       src={TiktokIcon}
                       alt="TiktokIcon"
@@ -635,14 +634,16 @@ const PTEMasterClass = () => {
         <section className="video-wrapper">
           <div className="custom-container mx-auto px-4 sm:px-[32px] w-full">
             <div className="flex lg:flex-nowrap flex-wrap items-center lg:py-[80px] py-[70px] mb-[70px] border-y-2 border-[#252525] sm:gap-[25px] gap-[35px]">
-              <div className="lg:w-[77%] tab-content relative">
+              <div className="lg:w-[77%] w-full tab-content relative">
                 {!showVideo ? (
                   <>
-                    <img
-                      src={freeLesson}
-                      alt="PTE Response"
-                      className="w-full h-auto animate-fade-in"
-                    />
+                    <div onClick={() => setShowVideo(true)} className="cursor-pointer">
+                      <img
+                        src={freeLesson}
+                        alt="PTE Response"
+                        className="w-full h-auto animate-fade-in"
+                      />
+                    </div>
                     <button
                       onClick={() => setShowVideo(true)}
                       className="flex w-auto text-left gap-3 sm:text-xl absolute sm:bottom-5 sm:left-5 bottom-1 left-1 bg-black/90 sm:px-5 sm:py-3 items-center text-white px-3 py-2 xs:text-base text-sm"
@@ -678,7 +679,6 @@ const PTEMasterClass = () => {
                     </button>
                   </>
                 ) : (
-                  // Video Element
                   <video
                     src={video}
                     controls
@@ -690,7 +690,7 @@ const PTEMasterClass = () => {
                 )}
               </div>
 
-              <div className="lg:w-[28%] flex flex-col gap-y-[19px]">
+              <div className="lg:w-[28%] w-full flex flex-col gap-y-[19px]">
                 <h2 className="text-gradient-Bluedark font-bold 2xl:text-[40px] sm:text-[36px] text-2xl 2xl:leading-[50px] sm:leading-[42px] leading-[32px]">
                   Try a Free Lesson <br />
                   Real Quick
@@ -706,9 +706,9 @@ const PTEMasterClass = () => {
                 </p>
                 <a
                   href="#"
-                  className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-secondary text-white px-3 sm:py-3 py-[14px] w-full font-semibold sm:text-xl text-lg relative z-10"
+                  className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-secondary text-white px-[50px] sm:py-3 py-[14px] font-semibold sm:text-xl text-lg relative z-10 max-w-max"
                 >
-                  Take the course
+                  Take the Course
                 </a>
               </div>
             </div>

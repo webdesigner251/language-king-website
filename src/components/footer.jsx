@@ -18,7 +18,7 @@ const Footer = () => {
       <footer className="bg-noise-pattern pt-[32px]">
         <div className="custom-container mx-auto py-0 px-0 sm:px-[32px]">
           <div className="border border-[#333434] mb-[38px] sm:border-x-1 border-x-0">
-            <div className="bg-[#1A1A1A] sm:p-[38px] p-4 border-b border-[#333434]">
+            <div className="bg-[#1A1A1A] sm:py-[32px] sm:px-[38px] p-4 border-b border-[#333434]">
               <div className="flex xl:flex-nowrap flex-wrap sm:gap-8 gap-[33px]">
                 <div className="w-full flex lg:flex-nowrap flex-wrap justify-between sm:gap-8 gap-[33px]">
                   <div className="lg:w-auto w-full flex flex-col  2xl:gap-[40px] gap-[22px]">
@@ -432,18 +432,13 @@ const Footer = () => {
           </div>
 
           <div className="sm:pb-[54px] pb-6 sm:px-0 px-4">
-            <h5 className="2xl:text-[20px] font-normal sm:text-lg text-sm text-[#8B8C8D]">
+            <h5 className="2xl:text-[20px] font-light sm:text-lg text-sm text-[#8B8C8D] tracking-[0.3px]">
               Disclaimer - Language King is an independent coaching provider for
               the NAATI CCL and PTE tests. We are not affiliated with, endorsed
               by, or sponsored by NAATI or PTE. All test applications must be
               made directly with NAATI or PTE.
             </h5>
           </div>
-          {/* <div className="text-center sm:py-[48px] px-4 py-6">
-                            <a href="#" className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 py-3 2xl:min-w-[398px] sm:min-w-[306px] min-w-full font-bold sm:text-xl text-lg relative z-10">
-                                Get a Callback
-                            </a>
-                        </div> */}
         </div>
       </footer>
     </>

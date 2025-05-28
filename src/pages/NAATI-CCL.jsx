@@ -480,21 +480,20 @@ const NAATICCL = () => {
                           className="w-5"
                         />
                         <span
-                          className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${
-                            activeTab === tab
+                          className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${activeTab === tab
                               ? "text-white"
                               : "text-white/60 group-hover:text-white"
-                          }`}
+                            }`}
                         >
                           {tab === "tab1"
                             ? "Major Mistakes"
                             : tab === "tab2"
-                            ? "Minor Mistakes"
-                            : tab === "tab3"
-                            ? "How to avoid them"
-                            : tab === "tab4"
-                            ? "Repeat Policy Pro Tip!"
-                            : "and much more!"}
+                              ? "Minor Mistakes"
+                              : tab === "tab3"
+                                ? "How to avoid them"
+                                : tab === "tab4"
+                                  ? "Repeat Policy Pro Tip!"
+                                  : "and much more!"}
                         </span>
                       </button>
                     </li>
@@ -636,14 +635,16 @@ const NAATICCL = () => {
         <section className="video-wrapper">
           <div className="custom-container mx-auto px-4 sm:px-[32px] w-full">
             <div className="flex lg:flex-nowrap flex-wrap items-center lg:py-[80px] py-[70px] mb-[70px] border-y-2 border-[#252525] sm:gap-[25px] gap-[35px]">
-              <div className="lg:w-[77%] tab-content relative">
+              <div className="lg:w-[77%] w-full tab-content relative">
                 {!showVideo ? (
                   <>
-                    <img
-                      src={freeLesson}
-                      alt="PTE Response"
-                      className="w-full h-auto animate-fade-in"
-                    />
+                    <div onClick={() => setShowVideo(true)} className="cursor-pointer">
+                      <img
+                        src={freeLesson}
+                        alt="PTE Response"
+                        className="w-full h-auto animate-fade-in"
+                      />
+                    </div>
                     <button
                       onClick={() => setShowVideo(true)}
                       className="flex w-auto text-left gap-3 sm:text-xl absolute sm:bottom-5 sm:left-5 bottom-1 left-1 bg-black/90 sm:px-5 sm:py-3 items-center text-white px-3 py-2 xs:text-base text-sm"
@@ -679,7 +680,6 @@ const NAATICCL = () => {
                     </button>
                   </>
                 ) : (
-                  // Video Element
                   <video
                     src={video}
                     controls
@@ -691,7 +691,7 @@ const NAATICCL = () => {
                 )}
               </div>
 
-              <div className="lg:w-[28%] flex flex-col gap-y-[19px]">
+              <div className="lg:w-[28%] w-full flex flex-col gap-y-[19px]">
                 <h2 className="text-[#52D34E] font-bold 2xl:text-[40px] sm:text-[36px] text-2xl 2xl:leading-[50px] sm:leading-[42px] leading-[32px]">
                   Try a Free Lesson <br />
                   Real Quick
@@ -707,7 +707,7 @@ const NAATICCL = () => {
                 </p>
                 <a
                   href="#"
-                  className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-GreenBtn  text-white px-3 sm:py-3 py-[14px] w-full font-bold sm:text-xl text-lg relative z-10"
+                  className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-GreenBtn  text-white px-[50px] sm:py-3 py-[14px] font-bold sm:text-xl text-lg relative z-10 max-w-max"
                 >
                   Take the Course
                 </a>

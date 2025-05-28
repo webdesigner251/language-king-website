@@ -77,8 +77,8 @@ const Testimonials = () => {
         <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full relative z-10">
           <div className="grid lg:grid-cols-2 xl:gap-[120px] gap-[90px]">
             <div>
-              <div className="lg:max-w-[580px]">
-                <h1 className="font-inter font-bold main-heading 2xl:mt-2 mt-0 text-white">
+              <div className="2xl:max-w-[590px] xl:max-w-[525px] lg:max-w-[440px]">
+                <h1 className="font-inter font-bold 2xl:text-[65px] xl:text-[58px] lg:text-[48px] md:text-[42px] text-[38px] leading-[normal] inline-block 2xl:mt-2 mt-0 text-white">
                   Why Students Love Learning With Us
                 </h1>
                 <img
@@ -86,7 +86,7 @@ const Testimonials = () => {
                   alt="PlaceholerImage"
                   className="lg:hidden block w-full py-[50px]"
                 />
-                <hr className="border-y-[#252525] my-[40px] lg:block hidden border-1" />
+                <hr className="border-1 border-y-[#252525] my-[40px] lg:block hidden border-max-width" />
               </div>
               <div className="relative ps-[30px] text-[#B7B7B7] md:text-lg sm:text-base text-sm lg:max-w-[600px]">
                 <img src={QuoteIcon} alt="QuoteIcon" className=" -ml-7" />
@@ -126,7 +126,7 @@ const Testimonials = () => {
               PTE Hall of Fame
             </h2>
             <div className="flex gap-3 justify-end items-center  relative">
-              <button className="custom-prev w-10 h-10 p-[15px] cursor-pointer flex items-center justify-center bg-[#1A1A1A] border-none rounded">
+              <button className="custom-prev w-10 h-10 p-[15px] cursor-pointer flex items-center justify-center bg-[#1A1A1A] hover:bg-white/10 transition-all duration-300 ease-in-out border-none rounded">
                 <svg
                   width="12"
                   height="20"
@@ -143,7 +143,7 @@ const Testimonials = () => {
                   />
                 </svg>
               </button>
-              <button className="custom-next w-10 h-10 p-[15px] cursor-pointer flex items-center justify-center bg-[#1A1A1A] border-none rounded">
+              <button className="custom-next w-10 h-10 p-[15px] cursor-pointer flex items-center justify-center bg-[#1A1A1A] hover:bg-white/10 transition-all duration-300 ease-in-out border-none rounded">
                 <svg
                   width="12"
                   height="20"
@@ -227,7 +227,7 @@ const Testimonials = () => {
               NAATI CCL Results
             </h2>
             <div className="flex gap-3 justify-end items-center  relative">
-              <button className="custom-prev-new w-10 h-10 p-[15px] cursor-pointer flex items-center justify-center bg-[#1A1A1A] border-none rounded">
+              <button className="custom-prev-new w-10 h-10 p-[15px] cursor-pointer flex items-center justify-center bg-[#1A1A1A] hover:bg-white/10 transition-all duration-300 ease-in-out border-none rounded">
                 <svg
                   width="12"
                   height="20"
@@ -244,7 +244,7 @@ const Testimonials = () => {
                   />
                 </svg>
               </button>
-              <button className="custom-next-new w-10 h-10 p-[15px] cursor-pointer flex items-center justify-center bg-[#1A1A1A] border-none rounded">
+              <button className="custom-next-new w-10 h-10 p-[15px] cursor-pointer flex items-center justify-center bg-[#1A1A1A] hover:bg-white/10 transition-all duration-300 ease-in-out border-none rounded">
                 <svg
                   width="12"
                   height="20"
@@ -324,7 +324,7 @@ const Testimonials = () => {
       <section className="pt-[30px]">
         <div className="custom-container mx-auto  px-4 sm:px-[32px] w-full relative z-10">
           <div className="sm:border-y border-t border-[#252525] md:pt-[100px] sm:pt-[70px] pt-[60px] sm:pb-[54px]">
-            <div className="flex md:flex-nowrap flex-wrap gap-[50px]">
+            <div className="flex md:flex-nowrap flex-wrap gap-[50px] md:px-[50px] px-4">
               <div className="lg:w-[60%] md:w-[50%] w-full">
                 <h2 class="lg:text-[52px] sm:text-[42px] text-[32px] leading-[1.2] font-bold text-white text-left">
                   Get in touch with us
@@ -417,7 +417,7 @@ const Testimonials = () => {
                     Why Language King?
                   </h3>
                   <ul className="mt-5 sm:ps-5 max-w-[700px]">
-                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
+                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-2">
                       <img
                         src={CheckmarkGray}
                         alt="CheckmarkGray"
@@ -426,7 +426,7 @@ const Testimonials = () => {
                       Learn from 8 each tutors. The best way to crack any exam
                       is to learn from the person who has cracked it.
                     </li>
-                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
+                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-2">
                       <img
                         src={CheckmarkGray}
                         alt="CheckmarkGray"
@@ -436,7 +436,7 @@ const Testimonials = () => {
                       strategies from carefully designed video lectures by
                       Abhishek, PTE & NAATI Master Trainer.
                     </li>
-                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
+                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-2">
                       <img
                         src={CheckmarkGray}
                         alt="CheckmarkGray"
@@ -446,7 +446,7 @@ const Testimonials = () => {
                       fit your busy schedule, learn from the comfort of your
                       home while sipping coffee.
                     </li>
-                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
+                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-2">
                       <img
                         src={CheckmarkGray}
                         alt="CheckmarkGray"

@@ -136,7 +136,7 @@ const FreeEBook = () => {
   };
   return (
     <>
-      <section className="sm:pt-[160px] pt-[60px] sm:pb-[60px] pb-[40px] relative flex flex-column justify-center items-center">
+      <section className="2xl:pt-[140px] sm:pt-[100px] pt-[60px] sm:pb-[60px] pb-[40px] relative flex flex-column justify-center items-center">
         <div className="sm:bg-transparent bg-gradient-FadetoBlack h-full w-full absolute top-0 z-10 lg:hidden block"></div>
         <img
           src={BannerBg}
@@ -144,12 +144,12 @@ const FreeEBook = () => {
           className="absolute w-full h-full top-0 left-0 right-0 bottom-0 object-cover"
         />
         <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full z-10 relative ">
-          <div className="flex xl:gap-x-[190px] gap-x-[140px] sm:flex-nowrap flex-wrap">
+          <div className="flex 2xl:gap-x-[190px] xl:gap-x-[100px] gap-x-[140px] sm:flex-nowrap flex-wrap">
             <div className="sm:w-[20%] w-full sm:inline flex justify-center">
               <img
                 src={NewTipsImage}
                 alt="NewTipsImage"
-                className="h-auto lg:max-w-[290px] max-w-[250px]"
+                className="h-auto 2xl:max-w-[290px] xl:max-w-[250px] max-w-[200px]"
               />
               <span className="uppercase font-semibold text-white/50 sm:block hidden">
                 LEARN FROM THE EXPERT + MORE:
@@ -240,7 +240,7 @@ const FreeEBook = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex sm:flex-nowrap flex-wrap lg:mt-[120px] sm:mt-[80px] mt-[25px] items-center sm:gap-0 gap-[20px]">
+                <div className="flex sm:flex-nowrap flex-wrap  2xl:mt-[120px] sm:mt-[80px] mt-[25px] items-center sm:gap-0 gap-[20px]">
                   <div className="sm:w-[25%] w-full">
                     <span className="text-white md:text-lg sm:text-base text-sm font-semibold">
                       Other Books
@@ -289,7 +289,7 @@ const FreeEBook = () => {
             <div className="lg:w-[60%] w-full sm:inline hidden">
               <div className="bg-[#1B1B1B] mb-[33px] rounded-[10px] xl:py-[44px] py-8 xl:px-[38px] px-6 flex items-center justify-between">
                 <div>
-                  <h3 className="text-white font-bold 2xl:text-[50px] xl:text-[46px] text-[38px] leading-[1.2]">
+                  <h3 className="text-white font-bold lg:text-[36px] text-[32px] leading-[42px] mb-1">
                     E-Book Only
                   </h3>
                   <span className="text-[#B8B8B8] font-normal text-xl">
@@ -346,15 +346,15 @@ const FreeEBook = () => {
                 </div>
               </div>
 
-              <div className="border-4 border-[#F18C2D] rounded-[6px]">
+              <div className="border-4 border-[#F18C2D] rounded-[6px] bg-[#1B1B1B]">
                 <div className="flex xl:p-[32px] p-6 xl:gap-[42px] gap-[28px] border-b-2 border-white border-dashed">
                   <img
                     src={Rectangle}
                     alt="Rectangle"
-                    className="w-[30%] h-[300px] object-cover"
+                    className="w-[25%] h-[300px] object-cover"
                   />
                   <div className="w-[70%]">
-                    <h3 className="text-[#F3F2F3] 2xl:text-[50px] xl:text-[46px] text-[38px] font-bold">
+                    <h3 className="text-[#F3F2F3] lg:text-[36px] text-[32px] leading-[42px] font-bold">
                       6 Month AI Portal
                     </h3>
                     <ul className="text-xl text-[#B8B8B8] font-normal mt-1">
@@ -369,7 +369,7 @@ const FreeEBook = () => {
                       </h4>
                       <div className="flex items-center gap-[45px] justify-between">
                         <h4 className="text-[#F0AB0F] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold ">
-                          $0.99
+                          $99
                         </h4>
                         <div className="flex items-center">
                           <button
@@ -430,7 +430,7 @@ const FreeEBook = () => {
                     </div>
                     <div className="flex 2xl:gap-[45px] gap-[32px]">
                       <h4 className="text-[#00FEFC] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold ">
-                        + $0.99
+                        + $9
                       </h4>
                       <div className="flex items-center">
                         <button
@@ -484,7 +484,7 @@ const FreeEBook = () => {
               <div className="bg-[#1B1B1B] xl:p-[42px] sm:p-8 px-4 py-6 rounded-[10px]">
                 <div className="sm:block hidden">
                   <div className="flex justify-between gap-4">
-                    <h4 className="font-semibold text-white xl:text-[26px] text-xl">
+                    <h4 className="font-semibold text-white xl:text-xl text-lg">
                       6 Month AI Portal
                     </h4>
                     <div className="">
@@ -497,7 +497,7 @@ const FreeEBook = () => {
                     </div>
                   </div>
                   <div className="flex justify-between gap-4">
-                    <h4 className="font-semibold text-white xl:text-[26px] text-xl">
+                    <h4 className="font-semibold text-white xl:text-xl text-lg">
                       Prediction File
                     </h4>
                     <div className="">
@@ -510,14 +510,14 @@ const FreeEBook = () => {
                   <div className="max-w-[400px]">
                     <div className="flex justify-between gap-4 items-center">
                       <div className="w-auto flex-auto">
-                        <h4 className="font-semibold text-white xl:text-[26px] text-xl inline">
+                        <h4 className="font-semibold text-white xl:text-xl text-lg inline">
                           Your total:{" "}
                         </h4>
-                        <span className="text-[#B0B0B0] font-bold xl:text-2xl text-xl ps-4">
+                        <span className="text-[#B0B0B0] font-bold xl:text-xl text-lg ps-4">
                           $152
                         </span>
                       </div>
-                      <span className="text-[#F0AB0F] font-medium xl:text-[26px] text-xl">
+                      <span className="text-[#F0AB0F] font-medium xl:text-xl text-lg">
                         Saving $33!
                       </span>
                     </div>
