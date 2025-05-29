@@ -5,7 +5,8 @@ import Russia1 from "../assets/flags/Russia1.png";
 import Avatarnew from "../assets/avatar6.png";
 import CheckmarkGray from "../assets/icons/checkmark-gray.svg";
 import PinkQuote from "../assets/icons/pink-quote.svg";
-
+import VideoPlayer from "../components/videoPlayer";
+import video from "../assets/videos/placeholder-video.mp4";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
@@ -22,6 +23,7 @@ const slidesData = [
     image: PlaceholerImage,
     avatar: Avatarnew,
     flag: Russia1,
+    video: video,
   },
   {
     id: 2,
@@ -31,6 +33,7 @@ const slidesData = [
     image: PlaceholerImage,
     avatar: Avatarnew,
     flag: Russia1,
+    video: video,
   },
   {
     id: 3,
@@ -40,6 +43,7 @@ const slidesData = [
     image: PlaceholerImage,
     avatar: Avatarnew,
     flag: Russia1,
+    video: video,
   },
   {
     id: 4,
@@ -49,6 +53,7 @@ const slidesData = [
     image: PlaceholerImage,
     avatar: Avatarnew,
     flag: Russia1,
+    video: video,
   },
   {
     id: 5,
@@ -58,6 +63,7 @@ const slidesData = [
     image: PlaceholerImage,
     avatar: Avatarnew,
     flag: Russia1,
+    video: video,
   },
   {
     id: 6,
@@ -67,6 +73,7 @@ const slidesData = [
     image: PlaceholerImage,
     avatar: Avatarnew,
     flag: Russia1,
+    video: video,
   },
 ];
 
@@ -81,11 +88,18 @@ const Testimonials = () => {
                 <h1 className="font-inter font-bold 2xl:text-[65px] xl:text-[58px] lg:text-[48px] md:text-[42px] text-[38px] leading-[normal] inline-block 2xl:mt-2 mt-0 text-white">
                   Why Students Love Learning With Us
                 </h1>
-                <img
+                {/* <img
                   src={PlaceholerImage}
                   alt="PlaceholerImage"
                   className="lg:hidden block w-full py-[50px]"
-                />
+                /> */}
+
+                <div className="lg:hidden block w-full py-[50px]">
+                  <VideoPlayer
+                    videoSrc={video}
+                    thumbnail={PlaceholerImage}
+                  />
+                </div>
                 <hr className="border-1 border-y-[#252525] my-[40px] lg:block hidden border-max-width" />
               </div>
               <div className="relative ps-[30px] text-[#B7B7B7] md:text-lg sm:text-base text-sm lg:max-w-[600px]">
@@ -109,10 +123,9 @@ const Testimonials = () => {
               </div>
             </div>
             <div className="lg:block hidden">
-              <img
-                src={PlaceholerImage}
-                alt="PlaceholerImage"
-                className="w-full"
+              <VideoPlayer
+                videoSrc={video}
+                thumbnail={PlaceholerImage}
               />
             </div>
           </div>
@@ -180,12 +193,13 @@ const Testimonials = () => {
                 <SwiperSlide key={item.id}>
                   <div>
                     <div className="relative">
-                      <img
-                        src={item.image}
-                        alt="Slide"
-                        className="rounded-[10px] w-full sm:h-[240px] h-auto object-cover"
-                      />
-                      <div className="absolute inset-0 bg-black opacity-35 rounded-[10px]"></div>
+                      <div className="rounded-[10px] w-full sm:h-[240px] h-auto object-cover relative z-10">
+                        <VideoPlayer
+                          videoSrc={item.video}
+                          thumbnail={item.image}
+                        />
+                      </div>
+                      {/* <div className="absolute inset-0 bg-black opacity-35 rounded-[10px]"></div> */}
                     </div>
                     <p className="truncate text-white md:text-xl sm:text-lg text-base my-2">
                       {item.title}
@@ -281,12 +295,18 @@ const Testimonials = () => {
                 <SwiperSlide key={item.id}>
                   <div>
                     <div className="relative">
-                      <img
+                      <div className="rounded-[10px] w-full sm:h-[240px] h-auto object-cover relative z-10">
+                        <VideoPlayer
+                          videoSrc={item.video}
+                          thumbnail={item.image}
+                        />
+                      </div>
+                      {/* <img
                         src={item.image}
                         alt="Slide"
                         className="rounded-[10px] w-full sm:h-[240px] h-auto object-cover"
                       />
-                      <div className="absolute inset-0 bg-black opacity-35 rounded-[10px]"></div>
+                      <div className="absolute inset-0 bg-black opacity-35 rounded-[10px]"></div> */}
                     </div>
                     <p className="truncate text-white md:text-xl sm:text-lg text-base my-2">
                       {item.title}
@@ -345,7 +365,7 @@ const Testimonials = () => {
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="name"
-                        className="text-black font-medium md:text-lg sm:text-base text-sm mb-[6px]"
+                        className="text-black font-bold text-sm mb-[6px]"
                       >
                         Full Name*
                       </label>
@@ -360,7 +380,7 @@ const Testimonials = () => {
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="phone"
-                        className="text-black font-medium md:text-lg sm:text-base text-sm mb-[6px]"
+                        className="text-black font-bold text-sm mb-[6px]"
                       >
                         Phone Number*
                       </label>
@@ -375,7 +395,7 @@ const Testimonials = () => {
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="couse"
-                        className="text-black font-medium md:text-lg sm:text-base text-sm mb-[6px]"
+                        className="text-black font-bold text-sm mb-[6px]"
                       >
                         Course Interested in*
                       </label>
@@ -399,7 +419,7 @@ const Testimonials = () => {
                     <span className="font-normal text-[#949AA4] md:text-base sm:text-sm text-xs py-3 block">
                       Your information will be used to consider and fulfill your
                       request and will be handled pursuant to our{" "}
-                      <a href="#" className="">
+                      <a href="#" className="underline">
                         Privacy Policy.
                       </a>
                     </span>
@@ -485,7 +505,7 @@ const Testimonials = () => {
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="name"
-                        className="text-black font-medium md:text-lg sm:text-base text-sm mb-[6px]"
+                        className="text-black font-bold text-sm mb-[6px]"
                       >
                         Full Name*
                       </label>
@@ -500,7 +520,7 @@ const Testimonials = () => {
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="phone"
-                        className="text-black font-medium md:text-lg sm:text-base text-sm mb-[6px]"
+                        className="text-black font-bold text-sm mb-[6px]"
                       >
                         Phone Number*
                       </label>
@@ -515,7 +535,7 @@ const Testimonials = () => {
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="couse"
-                        className="text-black font-medium md:text-lg sm:text-base text-sm mb-[6px]"
+                        className="text-black font-bold text-sm mb-[6px]"
                       >
                         Course Interested in*
                       </label>
@@ -539,7 +559,7 @@ const Testimonials = () => {
                     <span className="font-normal text-[#949AA4] md:text-base sm:text-sm text-xs py-3 block">
                       Your information will be used to consider and fulfill your
                       request and will be handled pursuant to our{" "}
-                      <a href="#" className="">
+                      <a href="#" className="underline">
                         Privacy Policy.
                       </a>
                     </span>

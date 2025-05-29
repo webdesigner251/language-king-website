@@ -450,7 +450,7 @@ const PTEMasterClass = () => {
         <section className="">
           <div className="custom-container mx-auto px-4 sm:px-[32px] w-full">
             <div className="flex lg:flex-nowrap flex-wrap items-center lg:py-[100px] py-[70px] border-y-2 border-[#252525] sm:gap-[50px] gap-[35px]">
-              <div className="lg:w-[77%] tab-content">
+              <div className="lg:w-[79%] tab-content">
                 <img
                   src={tabImages[activeTab]}
                   alt="PTE Response"
@@ -458,7 +458,7 @@ const PTEMasterClass = () => {
                 />
               </div>
 
-              <div className="lg:w-[28%] flex flex-col gap-y-[19px]">
+              <div className="lg:w-[26%] flex flex-col gap-y-[19px]">
                 <h2 className="text-gradient-Bluedark font-bold sm:text-[30px] text-2xl sm:leading-[36px] leading-[32px] ">
                   Watch AB grade students’ responses and give Feedback
                 </h2>
@@ -512,7 +512,7 @@ const PTEMasterClass = () => {
                   needed to get desired score.
                 </h2>
                 <div className="flex flex-col items-start gap-[22px]">
-                  <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[25px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                  <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[45px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                     <img
                       src={facebookIcon}
                       alt="facebookIcon"
@@ -524,7 +524,7 @@ const PTEMasterClass = () => {
                       className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                     />
                     <div>
-                      <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+                      <h4 className="font-aileron sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
                         Join the Facebook Community
                       </h4>
                       <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block">
@@ -532,7 +532,7 @@ const PTEMasterClass = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[25px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                  <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[45px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                     <img
                       src={InstaIcon}
                       alt="InstaIcon"
@@ -544,7 +544,7 @@ const PTEMasterClass = () => {
                       className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                     />
                     <div>
-                      <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+                      <h4 className="font-aileron sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
                         Follow us on Instagram
                       </h4>
                       <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block">
@@ -552,7 +552,7 @@ const PTEMasterClass = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[25px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                  <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[45px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                     <img
                       src={TiktokIcon}
                       alt="TiktokIcon"
@@ -564,7 +564,7 @@ const PTEMasterClass = () => {
                       className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                     />
                     <div>
-                      <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+                      <h4 className="font-aileron sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
                         Explore our content on TikTok
                       </h4>
                       <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block">

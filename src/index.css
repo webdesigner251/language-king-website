@@ -1,7 +1,14 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Aileron";
+  src: url('./assets/fonts/Aileron-Heavy.otf'),format('oft');
+  font-weight: 900;
+}
+
 @theme {
   --font-family: "Inter", sans-serif;
+  --font-aileron: "Aileron";
   --color-green: #D7FF53;
   --color-Cadmium-Orange: #F18C2B;
   --color-gray7: #111111;
@@ -112,6 +119,10 @@
   font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
+}
+
+.font-aileron {
+    font-family: var(--font-aileron) !important;
 }
 
 /* body::-webkit-scrollbar {

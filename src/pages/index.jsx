@@ -34,6 +34,7 @@ import video from "../assets/videos/placeholder-video.mp4";
 const testimonials = [
     {
         reviewImg: video,
+        thumbnail: ReviewImg1,
         text: "I’m getting a lot of nutrients in one scoop",
         avatar: Avatar1,
         name: "Natalia",
@@ -45,6 +46,7 @@ const testimonials = [
     },
     {
         reviewImg: video,
+        thumbnail: ReviewImg2,
         text: "It’s kind of slipped into our recruitment stream so easily There’s no effort needed... ",
         avatar: Avatar2,
         name: "Jenny",
@@ -56,7 +58,7 @@ const testimonials = [
     },
     {
         reviewImg: video,
-        // text: `All of our hiring team said that it saves them hours. <span>We’re getting feedback within 20-30 minutes from interviews now, which is ideal for recruiting team that works with time to hire targets.</span>`,
+        thumbnail: ReviewImg3,       
         text: `All of our hiring team said that it saves them hours. <span class="text-white/50">We’re getting feedback within 20-30 minutes from interviews now, which is ideal for recruiting team that works with time to hire targets.</span>`,
         avatar: Avatar3,
         name: "Mark",
@@ -68,6 +70,7 @@ const testimonials = [
     },
     {
         reviewImg: video,
+        thumbnail: ReviewImg4,
         text: `There is a clear impact on time saved. <span class="text-white/50">We saved 53 hours per month across our recruiting team.</span>`,
         avatar: Avatar4,
         name: "Priyanka",
@@ -129,7 +132,7 @@ const Home = () => {
                     <div className="flex flex-col gap-[32px]">
                         <div className="bg-course-green-bg hover:bg-course-green-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
                             <div className="ribbon ribbon-top-left z-10"><span>New course!</span></div>
-                            
+
                             <div className="overflow-hidden relative z-0 max-h-[450px]">
                                 <img src={CourseImg1} alt="CourseImg1" className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]" />
                             </div>
@@ -185,7 +188,7 @@ const Home = () => {
                             </div>
                             <div className="lg:py-[16px]">
                                 <h2 className="dark-text-custom font-bold md:text-[24px] inline-block sm:text-2xl text-lg">PTE Master Handbook</h2>
-                                <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] leading-[1.2] my-[8px]">PTE 79+ in 7 days <br/>
+                                <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] leading-[1.2] my-[8px]">PTE 79+ in 7 days <br />
                                     Crack PTE in 1  attempt</h2>
                                 <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-0">
                                     Learn exactly what students did to achieve their desired band. This book explains the exam structure, target scores, key tasks to focus on, and the 7-day strategy you need to follow to go from 5 to 8 each as quickly as possible.

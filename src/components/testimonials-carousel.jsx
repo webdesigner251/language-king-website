@@ -1,4 +1,4 @@
-import React from "react";
+import VideoPlayer from "./videoPlayer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from 'swiper/modules';
 
@@ -32,12 +32,12 @@ const TestimonialCarousel = ({ testimonials }) => {
                 <SwiperSlide className="h-auto-swiper" key={i}>
                     <div className="flex flex-col justify-between h-full sm:gap-2 gap-y-[50px]">
                         <div>
-                            <video
-                                src={item.reviewImg}
-                                controls
-                                autoPlay="false"
-                                className="sm:max-h-[280px] h-auto w-full object-cover rounded-[10px] mb-[24px]"
-                            ></video>
+                            <div className="w-3xl:h-[290px] h-[250px] mb-[24px]">
+                                <VideoPlayer
+                                    videoSrc={item.reviewImg}
+                                    thumbnail={item.thumbnail}
+                                />
+                            </div>
                             <p className="text-paraGray font-light 2xl:text-[25px] text-lg 2xl:leading-[36px] leading-normal md:mb-[40px] sm:mb-[30px] mb-8" dangerouslySetInnerHTML={{ __html: item.text }}>
                             </p>
                         </div>

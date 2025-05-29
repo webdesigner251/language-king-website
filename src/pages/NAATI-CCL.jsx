@@ -512,8 +512,8 @@ const NAATICCL = () => {
                   Having an instructor like AB bring you the real experience
                   needed to get desired score.
                 </h2>
-                <div className="flex flex-col gap-[22px]">
-                  <div className="bg-[#1A1A1A] p-[14px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                <div className="flex flex-col items-start gap-[22px]">
+                  <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[45px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                     <img
                       src={facebookIcon}
                       alt="facebookIcon"
@@ -525,7 +525,7 @@ const NAATICCL = () => {
                       className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                     />
                     <div>
-                      <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+                      <h4 className="font-aileron sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
                         Join the Facebook Community
                       </h4>
                       <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block">
@@ -533,7 +533,7 @@ const NAATICCL = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="bg-[#1A1A1A] p-[14px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                  <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[45px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                     <img
                       src={InstaIcon}
                       alt="InstaIcon"
@@ -545,7 +545,7 @@ const NAATICCL = () => {
                       className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                     />
                     <div>
-                      <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+                      <h4 className="font-aileron sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
                         Follow us on Instagram
                       </h4>
                       <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block">
@@ -553,7 +553,7 @@ const NAATICCL = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="bg-[#1A1A1A] p-[14px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                  <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[45px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                     <img
                       src={TiktokIcon}
                       alt="TiktokIcon"
@@ -565,7 +565,7 @@ const NAATICCL = () => {
                       className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                     />
                     <div>
-                      <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+                      <h4 className="font-aileron sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
                         Explore our content on TikTok
                       </h4>
                       <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block">

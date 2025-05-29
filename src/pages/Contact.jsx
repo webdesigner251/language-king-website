@@ -80,9 +80,9 @@ const Contact = () => {
       <section className="">
         <div className="custom-container mx-auto  px-4 sm:px-[32px] w-full relative z-10">
           <div className=" md:pt-[100px] sm:pt-[70px] pt-[60px] sm:pb-[54px]">
-            <div className="flex md:flex-nowrap flex-wrap gap-[50px]">
+            <div className="flex md:flex-nowrap justify-between flex-wrap gap-[50px]">
               <div className="lg:w-[60%] md:w-[50%] w-full">
-                <h2 class="lg:text-[52px] sm:text-[42px] text-[32px] leading-[1.2] font-bold text-white text-left">
+                <h2 class="lg:text-[52px] sm:text-[42px] text-[32px] leading-[1.2] -mt-[10px] font-bold text-white text-left">
                   Get in touch with us
                 </h2>
                 <p className="relative text-[#B7B7B7] text-lg max-w-[600px] my-3">
@@ -101,7 +101,7 @@ const Contact = () => {
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="name"
-                        className="text-black font-semibold md:text-base text-sm mb-[6px]"
+                        className="text-black font-bold text-sm mb-[6px]"
                       >
                         Full Name*
                       </label>
@@ -116,7 +116,7 @@ const Contact = () => {
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="phone"
-                        className="text-black font-semibold md:text-base text-sm mb-[6px]"
+                        className="text-black font-bold text-sm mb-[6px]"
                       >
                         Phone Number*
                       </label>
@@ -131,7 +131,7 @@ const Contact = () => {
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="couse"
-                        className="text-black font-semibold md:text-base text-sm mb-[6px]"
+                        className="text-black font-bold text-sm mb-[6px]"
                       >
                         Course Interested in*
                       </label>
@@ -155,7 +155,7 @@ const Contact = () => {
                     <span className="font-normal text-[#838383] md:text-[15px] sm:text-sm text-xs py-3 block">
                       Your information will be used to consider and fulfill your
                       request and will be handled pursuant to our{" "}
-                      <a href="#" className="">
+                      <a href="#" className="underline">
                         Privacy Policy.
                       </a>
                     </span>
@@ -241,7 +241,7 @@ const Contact = () => {
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="name"
-                        className="text-black font-semibold md:text-base text-sm mb-[6px]"
+                        className="text-black font-bold text-sm mb-[6px]"
                       >
                         Full Name*
                       </label>
@@ -256,7 +256,7 @@ const Contact = () => {
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="phone"
-                        className="text-black font-semibold md:text-base text-sm mb-[6px]"
+                        className="text-black font-bold text-sm mb-[6px]"
                       >
                         Phone Number*
                       </label>
@@ -271,7 +271,7 @@ const Contact = () => {
                     <div className="flex flex-col mb-4">
                       <label
                         htmlFor="couse"
-                        className="text-black font-semibold md:text-base text-sm mb-[6px]"
+                        className="text-black font-bold text-sm mb-[6px]"
                       >
                         Course Interested in*
                       </label>
@@ -317,28 +317,28 @@ const Contact = () => {
         <div className="custom-container mx-auto px-0 sm:px-[32px] w-full relative z-10">
           <div className="flex md:flex-nowrap flex-wrap gap-[50px] ">
             <div className="lg:w-[60%] md:w-[50%] w-full md:flex hidden ps-8 flex-col gap-[150px]">
-              <div className="md:max-w-[740px] max-w-[560px]">
+              <div className="lg:max-w-[740px] max-w-[560px]">
                 <img
                   src={ContactImage1}
                   alt="ContactImage1"
                   className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[4deg] w-full"
                 />
               </div>
-              <div className="md:max-w-[740px] max-w-[560px]">
+              <div className="lg:max-w-[740px] max-w-[560px]">
                 <img
                   src={ContactImage2}
                   alt="ContactImage1"
                   className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[-7deg] w-full"
                 />
               </div>
-              <div className="md:max-w-[740px] max-w-[560px]">
+              <div className="lg:max-w-[740px] max-w-[560px]">
                 <img
                   src={ContactImage3}
                   alt="ContactImage1"
                   className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[3deg] w-full"
                 />
               </div>
-              <div className="md:max-w-[740px] max-w-[560px]">
+              <div className="lg:max-w-[740px] max-w-[560px]">
                 <img
                   src={ContactImage4}
                   alt="ContactImage1"
@@ -376,7 +376,7 @@ const Contact = () => {
                     className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                   />
                   <div>
-                    <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+                    <h4 className="font-aileron sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
                       Join the Facebook Community
                     </h4>
                     <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block">
@@ -396,7 +396,7 @@ const Contact = () => {
                     className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                   />
                   <div>
-                    <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+                    <h4 className="font-aileron sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
                       Follow us on Instagram
                     </h4>
                     <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block">
@@ -416,7 +416,7 @@ const Contact = () => {
                     className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                   />
                   <div>
-                    <h4 className="sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+                    <h4 className="font-aileron sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
                       Explore our content on TikTok
                     </h4>
                     <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block">
