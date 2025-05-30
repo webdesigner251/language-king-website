@@ -9,11 +9,11 @@ import VideoPlayer from "../components/videoPlayer";
 import video from "../assets/videos/placeholder-video.mp4";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/navigation";
+import GetInTouch from "../components/Get-in-touch";
 
-// Data array
+// Testimonials slides Data array
 const slidesData = [
   {
     id: 1,
@@ -98,6 +98,9 @@ const Testimonials = () => {
                   <VideoPlayer
                     videoSrc={video}
                     thumbnail={PlaceholerImage}
+                    wrapperClassName="rounded-[10px]"
+                    videoClassName="rounded-[10px]"
+                    thumbnailClassName="rounded-[10px]"
                   />
                 </div>
                 <hr className="border-1 border-y-[#252525] my-[40px] lg:block hidden border-max-width" />
@@ -126,6 +129,9 @@ const Testimonials = () => {
               <VideoPlayer
                 videoSrc={video}
                 thumbnail={PlaceholerImage}
+                wrapperClassName="rounded-[10px]"
+                videoClassName="rounded-[10px]"
+                thumbnailClassName="rounded-[10px]"
               />
             </div>
           </div>
@@ -193,10 +199,13 @@ const Testimonials = () => {
                 <SwiperSlide key={item.id}>
                   <div>
                     <div className="relative">
-                      <div className="rounded-[10px] w-full sm:h-[240px] h-auto object-cover relative z-10">
+                      <div className="rounded-[10px] w-full sm:h-[200px] h-auto object-cover relative z-10">
                         <VideoPlayer
                           videoSrc={item.video}
                           thumbnail={item.image}
+                          wrapperClassName="rounded-[10px]"
+                          videoClassName="rounded-[10px]"
+                          thumbnailClassName="rounded-[10px]"
                         />
                       </div>
                       {/* <div className="absolute inset-0 bg-black opacity-35 rounded-[10px]"></div> */}
@@ -295,18 +304,15 @@ const Testimonials = () => {
                 <SwiperSlide key={item.id}>
                   <div>
                     <div className="relative">
-                      <div className="rounded-[10px] w-full sm:h-[240px] h-auto object-cover relative z-10">
+                      <div className="rounded-[10px] w-full sm:h-[200px] h-auto object-cover relative z-10">
                         <VideoPlayer
                           videoSrc={item.video}
                           thumbnail={item.image}
+                          wrapperClassName="rounded-[10px]"
+                          videoClassName="rounded-[10px]"
+                          thumbnailClassName="rounded-[10px]"
                         />
                       </div>
-                      {/* <img
-                        src={item.image}
-                        alt="Slide"
-                        className="rounded-[10px] w-full sm:h-[240px] h-auto object-cover"
-                      />
-                      <div className="absolute inset-0 bg-black opacity-35 rounded-[10px]"></div> */}
                     </div>
                     <p className="truncate text-white md:text-xl sm:text-lg text-base my-2">
                       {item.title}
@@ -353,84 +359,8 @@ const Testimonials = () => {
                   Contact us on xxxxxxxxx/ xxxxxxxxx
                 </p>
                 {/* Mobile Form */}
-                <div className="bg-white rounded-[9px] md:p-[44px] sm:p-5 p-4 md:hidden block">
-                  <p
-                    className="font-normal leading-[22px] tracking-[0.011em] text-black lg:text-lg sm:text-base text-sm"
-                    style={{ textShadow: "1px 1px 0px rgba(0, 0, 0, 0.3)" }}
-                  >
-                    Please fill out the below form. Our team will be in touch
-                    shortly.
-                  </p>
-                  <form className="sm:pt-6 pt-4">
-                    <div className="flex flex-col mb-4">
-                      <label
-                        htmlFor="name"
-                        className="text-black font-bold text-sm mb-[6px]"
-                      >
-                        Full Name*
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        id=""
-                        placeholder="Your first & last name"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base"
-                      />
-                    </div>
-                    <div className="flex flex-col mb-4">
-                      <label
-                        htmlFor="phone"
-                        className="text-black font-bold text-sm mb-[6px]"
-                      >
-                        Phone Number*
-                      </label>
-                      <input
-                        type="tel"
-                        name="phone"
-                        id=""
-                        placeholder="Mobile number e.g: 0444786999"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base"
-                      />
-                    </div>
-                    <div className="flex flex-col mb-4">
-                      <label
-                        htmlFor="couse"
-                        className="text-black font-bold text-sm mb-[6px]"
-                      >
-                        Course Interested in*
-                      </label>
-                      <select
-                        name="couse"
-                        id="Select an option"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base relative"
-                      >
-                        <option
-                          value="default"
-                          defaultValue={"Select an option"}
-                        >
-                          Select an option
-                        </option>
-                        <option value="PTE">PTE</option>
-                        <option value="NAATI CCL">NAATI CCL</option>
-                        <option value="IELTS">IELTS</option>
-                        <option value="Other Inquiry">OTHER INQUIRY</option>
-                      </select>
-                    </div>
-                    <span className="font-normal text-[#949AA4] md:text-base sm:text-sm text-xs py-3 block">
-                      Your information will be used to consider and fulfill your
-                      request and will be handled pursuant to our{" "}
-                      <a href="#" className="underline">
-                        Privacy Policy.
-                      </a>
-                    </span>
-                    <button
-                      type="submit"
-                      href="#"
-                      className="align-middle inline-flex items-center justify-center text-center primary-btn bg-[#E42552] text-white px-3 py-4 w-full font-bold sm:text-xl text-lg relative z-10 mt-4 rounded-md"
-                    >
-                      Get In Touch
-                    </button>
-                  </form>
+                <div className="md:hidden block">
+                  <GetInTouch />
                 </div>
                 <div className="lg:my-[80px] my-[50px]">
                   <h3 className="text-white font-bold md:text-[22px] sm:text-xl text-lg">
@@ -493,85 +423,7 @@ const Testimonials = () => {
               </div>
               {/* Desktop Form */}
               <div className="lg:w-[40%] md:w-[50%] w-full md:block hidden">
-                <div className="bg-white rounded-[9px] md:p-[44px] sm:p-5 p-4 ">
-                  <p
-                    className="font-normal leading-[22px] tracking-[0.011em] text-black lg:text-lg sm:text-base text-sm"
-                    style={{ textShadow: "1px 1px 0px rgba(0, 0, 0, 0.3)" }}
-                  >
-                    Please fill out the below form. Our team will be in touch
-                    shortly.
-                  </p>
-                  <form className="sm:pt-6 pt-4">
-                    <div className="flex flex-col mb-4">
-                      <label
-                        htmlFor="name"
-                        className="text-black font-bold text-sm mb-[6px]"
-                      >
-                        Full Name*
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        id=""
-                        placeholder="Your first & last name"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base"
-                      />
-                    </div>
-                    <div className="flex flex-col mb-4">
-                      <label
-                        htmlFor="phone"
-                        className="text-black font-bold text-sm mb-[6px]"
-                      >
-                        Phone Number*
-                      </label>
-                      <input
-                        type="tel"
-                        name="phone"
-                        id=""
-                        placeholder="Mobile number e.g: 0444786999"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base"
-                      />
-                    </div>
-                    <div className="flex flex-col mb-4">
-                      <label
-                        htmlFor="couse"
-                        className="text-black font-bold text-sm mb-[6px]"
-                      >
-                        Course Interested in*
-                      </label>
-                      <select
-                        name="couse"
-                        id="Select an option"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base relative"
-                      >
-                        <option
-                          value="default"
-                          defaultValue={"Select an option"}
-                        >
-                          Select an option
-                        </option>
-                        <option value="PTE">PTE</option>
-                        <option value="NAATI CCL">NAATI CCL</option>
-                        <option value="IELTS">IELTS</option>
-                        <option value="Other Inquiry">OTHER INQUIRY</option>
-                      </select>
-                    </div>
-                    <span className="font-normal text-[#949AA4] md:text-base sm:text-sm text-xs py-3 block">
-                      Your information will be used to consider and fulfill your
-                      request and will be handled pursuant to our{" "}
-                      <a href="#" className="underline">
-                        Privacy Policy.
-                      </a>
-                    </span>
-                    <button
-                      type="submit"
-                      href="#"
-                      className="align-middle inline-flex items-center justify-center text-center primary-btn bg-[#E42552] text-white px-3 py-4 w-full font-bold sm:text-xl text-lg relative z-10 mt-4 rounded-md"
-                    >
-                      Get In Touch
-                    </button>
-                  </form>
-                </div>
+                <GetInTouch />
               </div>
             </div>
           </div>

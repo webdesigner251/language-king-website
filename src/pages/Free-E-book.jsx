@@ -7,10 +7,11 @@ import Book1 from "../assets/ebook/book1.png";
 import Book2 from "../assets/ebook/book2.png";
 import Book3 from "../assets/ebook/book3.png";
 import Book4 from "../assets/ebook/book4.png";
-import video from "../assets/videos/placeholder-video.mp4";
+// import video from "../assets/videos/placeholder-video.mp4";
 import BGgradient from "../assets/ebook/gradient.png";
 import Rectangle from "../assets/ebook/rectangle.png";
 import badge from "../assets/ebook/badge.png";
+import Plus from '../assets/icons/plus.svg'
 
 const faqs = [
   {
@@ -123,10 +124,10 @@ const MinusIcon = () => (
 );
 
 const FreeEBook = () => {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
-  const increment = () => setCount((prev) => prev + 1);
-  const decrement = () => setCount((prev) => (prev > 0 ? prev - 1 : 0));
+  // const increment = () => setCount((prev) => prev + 1);
+  // const decrement = () => setCount((prev) => (prev > 0 ? prev - 1 : 0));
 
   // FAq section
   const [openIndex, setOpenIndex] = useState(0);
@@ -134,6 +135,9 @@ const FreeEBook = () => {
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
+  const [selected, setSelected] = useState("ebook");
+
   return (
     <>
       <section className="2xl:pt-[140px] sm:pt-[100px] pt-[60px] sm:pb-[60px] pb-[40px] relative flex flex-column justify-center items-center">
@@ -300,7 +304,7 @@ const FreeEBook = () => {
                   <h4 className="text-[#00FEFC] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold ">
                     $0.99
                   </h4>
-                  <div className="flex items-center">
+                  {/* <div className="flex items-center">
                     <button
                       onClick={decrement}
                       className="xl:w-[44px] xl:h-[44px] w-[36px] h-[36px] p-2 cursor-pointer rounded-full bg-[#3D3D3D] text-white text-center flex items-center justify-center"
@@ -342,7 +346,7 @@ const FreeEBook = () => {
                         />
                       </svg>
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
@@ -351,18 +355,20 @@ const FreeEBook = () => {
                   <img
                     src={Rectangle}
                     alt="Rectangle"
-                    className="w-[25%] h-[300px] object-cover"
+                    className="w-3xl:w-[25%] w-[30%] h-[300px] object-cover"
                   />
-                  <div className="w-[70%]">
-                    <h3 className="text-[#F3F2F3] lg:text-[36px] text-[32px] leading-[42px] font-bold">
-                      6 Month AI Portal
-                    </h3>
-                    <ul className="text-xl text-[#B8B8B8] font-normal mt-1">
-                      <li className="py-[2px]">- 10 Full Mock Tests</li>
-                      <li className="py-[2px]">- 20 Sectional Tests</li>
-                      <li className="py-[2px]">- 5000+ Exam Questions</li>
-                      <li className="py-[2px]">- 5 Books Included</li>
-                    </ul>
+                  <div className="w-3xl:w-[70%] w-[70%] flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-[#F3F2F3] lg:text-[36px] text-[32px] leading-[42px] font-bold">
+                        6 Month AI Portal
+                      </h3>
+                      <ul className="text-xl text-[#B8B8B8] font-normal mt-1">
+                        <li className="py-[2px]">- 10 Full Mock Tests</li>
+                        <li className="py-[2px]">- 20 Sectional Tests</li>
+                        <li className="py-[2px]">- 5000+ Exam Questions</li>
+                        <li className="py-[2px]">- 5 Books Included</li>
+                      </ul>
+                    </div>
                     <div className="flex justify-end items-center 2xl:gap-[60px] gap-[30px] mt-[25px]">
                       <h4 className="text-[#B0B0B0] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold line-through">
                         $129
@@ -371,49 +377,6 @@ const FreeEBook = () => {
                         <h4 className="text-[#F0AB0F] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold ">
                           $99
                         </h4>
-                        <div className="flex items-center">
-                          <button
-                            onClick={decrement}
-                            className="xl:w-[44px] xl:h-[44px] w-[36px] h-[36px] p-2 cursor-pointer rounded-full bg-[#3D3D3D] text-white text-center flex items-center justify-center"
-                          >
-                            <svg
-                              width="33"
-                              height="5"
-                              viewBox="0 0 33 5"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M30.2632 4.75123C30.259 4.75123 30.2548 4.75123 30.2548 4.75123L2.44968 4.62931C1.39028 4.62511 0.532668 3.76329 0.541077 2.70389C0.545281 1.64869 1.40289 0.795288 2.45809 0.795288C2.45809 0.795288 2.46229 0.795288 2.4665 0.795288L30.2716 0.917203C31.331 0.921407 32.1844 1.78322 32.1802 2.84262C32.176 3.89782 31.3184 4.75123 30.2632 4.75123Z"
-                                fill="white"
-                              />
-                            </svg>
-                          </button>
-
-                          <span className="text-[#F0AB0F] 2xl:text-[42px] xl:text-[36px] text-[30px] 2xl:px-3 px-4 font-semibold text-center">
-                            {count}
-                          </span>
-
-                          <button
-                            onClick={increment}
-                            className="xl:w-[44px] xl:h-[44px] w-[36px] h-[36px] p-2 cursor-pointer rounded-full bg-[#3D3D3D] text-white text-center flex items-center justify-center"
-                          >
-                            <svg
-                              width="29"
-                              height="29"
-                              viewBox="0 0 29 29"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M15.9009 1.47397C15.9009 0.999 15.5071 0.605225 15.0118 0.605225H13.2703C12.7588 0.605225 12.3813 0.999 12.3813 1.47397V12.9259H0.929288C0.454323 12.9259 0.0605469 13.3197 0.0605469 13.815V15.5565C0.0605469 16.0721 0.454323 16.4455 0.929288 16.4455H12.3813V27.8975C12.3813 28.3765 12.775 28.7703 13.2703 28.7703H15.0118C15.5274 28.7703 15.9009 28.3765 15.9009 27.8975V16.4455H27.3528C27.8319 16.4455 28.2256 16.0518 28.2256 15.5565V13.815C28.2256 13.3035 27.8319 12.9259 27.3528 12.9259H15.9009V1.47397Z"
-                                fill="white"
-                              />
-                            </svg>
-                          </button>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -421,60 +384,21 @@ const FreeEBook = () => {
                 <div className="p-[32px]">
                   <div className="flex justify-between  items-center md:gap-[42px] gap-[28px]">
                     <div>
-                      <h3 className="text-white font-bold 2xl:text-[50px] xl:text-[46px] text-[38px] leading-[1.2]">
+                      <h3 className="text-white font-bold w-3xl:text-[50px] 2xl:text-[46px] text-[38px] leading-[1.2]">
                         + Prediction File{" "}
                       </h3>
                       <span className="text-[#B8B8B8] font-normal 2xl:text-xl xl:text-lg text-base">
                         Get monthly updates for 6 months
                       </span>
                     </div>
-                    <div className="flex 2xl:gap-[45px] gap-[32px]">
+                    <div className="flex 2xl:gap-[45px] gap-[32px] items-center">
+                      <button className="flex items-center gap-3 bg-[#45595A] rounded-[10px] px-4 py-2 text-white font-semibold text-lg cursor-pointer">
+                        Add
+                        <img src={Plus} alt="plus-icon" className="h-5" />
+                      </button>
                       <h4 className="text-[#00FEFC] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold ">
                         + $9
                       </h4>
-                      <div className="flex items-center">
-                        <button
-                          onClick={decrement}
-                          className="xl:w-[44px] xl:h-[44px] w-[36px] h-[36px] p-2 cursor-pointer rounded-full bg-[#3D3D3D] text-white text-center flex items-center justify-center"
-                        >
-                          <svg
-                            width="33"
-                            height="5"
-                            viewBox="0 0 33 5"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M30.2632 4.75123C30.259 4.75123 30.2548 4.75123 30.2548 4.75123L2.44968 4.62931C1.39028 4.62511 0.532668 3.76329 0.541077 2.70389C0.545281 1.64869 1.40289 0.795288 2.45809 0.795288C2.45809 0.795288 2.46229 0.795288 2.4665 0.795288L30.2716 0.917203C31.331 0.921407 32.1844 1.78322 32.1802 2.84262C32.176 3.89782 31.3184 4.75123 30.2632 4.75123Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </button>
-
-                        <span className="text-[#B0B0B0]2xl:text-[42px] xl:text-[36px] text-[30px] 2xl:px-3 px-4 text-white font-semibold text-center">
-                          {count}
-                        </span>
-
-                        <button
-                          onClick={increment}
-                          className="xl:w-[44px] xl:h-[44px] w-[36px] h-[36px] p-2 cursor-pointer rounded-full bg-[#3D3D3D] text-white text-center flex items-center justify-center"
-                        >
-                          <svg
-                            width="29"
-                            height="29"
-                            viewBox="0 0 29 29"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M15.9009 1.47397C15.9009 0.999 15.5071 0.605225 15.0118 0.605225H13.2703C12.7588 0.605225 12.3813 0.999 12.3813 1.47397V12.9259H0.929288C0.454323 12.9259 0.0605469 13.3197 0.0605469 13.815V15.5565C0.0605469 16.0721 0.454323 16.4455 0.929288 16.4455H12.3813V27.8975C12.3813 28.3765 12.775 28.7703 13.2703 28.7703H15.0118C15.5274 28.7703 15.9009 28.3765 15.9009 27.8975V16.4455H27.3528C27.8319 16.4455 28.2256 16.0518 28.2256 15.5565V13.815C28.2256 13.3035 27.8319 12.9259 27.3528 12.9259H15.9009V1.47397Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </button>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -488,10 +412,10 @@ const FreeEBook = () => {
                       6 Month AI Portal
                     </h4>
                     <div className="">
-                      <span className="text-[#B0B0B0] font-bold xl:text-2xl text-lg me-8">
+                      <span className="text-[#B0B0B0] font-bold xl:text-xl leading-[32px] text-lg me-8">
                         $129
                       </span>
-                      <span className="text-[#F0AB0F] font-bold xl:text-2xl text-lg">
+                      <span className="text-[#F0AB0F] font-bold xl:text-xl leading-[32px] text-lg">
                         $99
                       </span>
                     </div>
@@ -501,7 +425,7 @@ const FreeEBook = () => {
                       Prediction File
                     </h4>
                     <div className="">
-                      <span className="text-[#F0AB0F] font-bold xl:text-2xl text-lg">
+                      <span className="text-[#F0AB0F] font-bold xl:text-xl leading-[32px] text-lg">
                         $9
                       </span>
                     </div>
@@ -530,8 +454,22 @@ const FreeEBook = () => {
                   </div>
                 </div>
                 <div className="sm:hidden block">
-                  <div className="border-4 mb-4 border-[#707070] rounded-[6px] bg-[#1B1B1B] py-[24px] px-[12px] flex gap-5 justify-between items-center">
-                    <div className="">
+                  {/* E-Book Only Box */}
+                  <div
+                    onClick={() => setSelected("ebook")}
+                    className={`mb-4 border-4 rounded-[6px] py-[24px] px-[12px] flex gap-5 justify-between items-center cursor-pointer transition-all duration-300
+          ${selected === "ebook"
+                        ? "border-[#F18C2D] bg-[#0A0A09]"
+                        : "border-[#707070] bg-[#1B1B1B]"}`}
+                  >
+                    <div className="flex gap-2 items-start">
+                      {selected === "ebook" && (
+                        <img
+                          src={badge}
+                          alt="Selected Badge"
+                          className="object-contain w-7 h-7"
+                        />
+                      )}
                       <div className="flex flex-col">
                         <h3 className="text-[#F3F2F3] mb-0 2xl:text-[50px] xl:text-[46px] md:text-[38px] sm:text-[26px] text-xl font-bold">
                           E-Book Only
@@ -541,38 +479,47 @@ const FreeEBook = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="">
+                    <div>
                       <button
                         type="button"
-                        className="align-middle inline-flex items-center justify-center text-center primary-btn bg-[#3E3E3D] text-[#BFDF6A] px-8 py-4 font-bold sm:text-xl text-lg relative z-10 rounded-[50px] hover-full-rounded-btn"
+                        className={`align-middle inline-flex items-center justify-center text-center primary-btn px-8 py-4 font-bold sm:text-xl text-lg relative z-10 rounded-[50px] hover-full-rounded-btn
+              ${selected === "ebook" ? "bg-gradient-GreenBlue text-black" : "bg-[#3E3E3D] text-[#BFDF6A]"}`}
                       >
                         $0.99
                       </button>
                     </div>
                   </div>
 
-                  <div className="border-4 border-[#F18C2D] rounded-[6px] bg-[#0A0A09] py-[24px] px-[12px] flex gap-5 justify-between items-center">
-                    <div className="">
-                      <div className="flex  gap-2">
+                  {/* 6 Month AI Portal Box */}
+                  <div
+                    onClick={() => setSelected("portal")}
+                    className={`border-4 rounded-[6px] py-[24px] px-[12px] flex gap-5 justify-between items-center cursor-pointer transition-all duration-300
+          ${selected === "portal"
+                        ? "border-[#F18C2D] bg-[#0A0A09]"
+                        : "border-[#707070] bg-[#1B1B1B]"}`}
+                  >
+                    <div className="flex gap-2 items-start">
+                      {selected === "portal" && (
                         <img
                           src={badge}
-                          alt="Rectangle"
+                          alt="Selected Badge"
                           className="object-contain w-7 h-7"
                         />
-                        <div className="flex flex-col">
-                          <h3 className="text-[#F3F2F3] mb-0 2xl:text-[50px] xl:text-[46px] md:text-[38px] sm:text-[26px] text-xl font-bold">
-                            6 Month AI Portal
-                          </h3>
-                          <p className="text-sm text-[#B8B8B8] font-normal my-0">
-                            Prediction File + 5 Books
-                          </p>
-                        </div>
+                      )}
+                      <div className="flex flex-col">
+                        <h3 className="text-[#F3F2F3] mb-0 2xl:text-[50px] xl:text-[46px] md:text-[38px] sm:text-[26px] text-xl font-bold">
+                          6 Month AI Portal
+                        </h3>
+                        <p className="text-sm text-[#B8B8B8] font-normal my-0">
+                          Prediction File + 5 Books
+                        </p>
                       </div>
                     </div>
-                    <div className="">
+                    <div>
                       <button
                         type="button"
-                        className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-GreenBlue text-black px-8 py-4 font-bold sm:text-xl text-lg relative z-10 rounded-[50px] hover-full-rounded-btn"
+                        className={`align-middle inline-flex items-center justify-center text-center primary-btn px-8 py-4 font-bold sm:text-xl text-lg relative z-10 rounded-[50px] hover-full-rounded-btn
+              ${selected === "portal" ? "bg-gradient-GreenBlue text-black" : "bg-[#3E3E3D] text-[#BFDF6A]"}`}
                       >
                         $119
                       </button>
@@ -646,9 +593,8 @@ const FreeEBook = () => {
               {faqs.map((faq, index) => (
                 <div
                   key={index}
-                  className={`py-4 ${
-                    index !== faqs.length - 1 ? "border-b border-[#9D9B9B]" : ""
-                  }`}
+                  className={`py-4 ${index !== faqs.length - 1 ? "border-b border-[#9D9B9B]" : ""
+                    }`}
                 >
                   <button
                     onClick={() => toggleFAQ(index)}

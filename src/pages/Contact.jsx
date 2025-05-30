@@ -4,14 +4,14 @@ import ContactImage1 from "../assets/contact/contact1.png";
 import ContactImage2 from "../assets/contact/contact2.png";
 import ContactImage3 from "../assets/contact/contact3.png";
 import ContactImage4 from "../assets/contact/contact4.png";
-import ContactMobile from "../assets/contact/contactMobile.png";
-
+import ContactMobileImage from "../assets/contact/contactMobile.png";
 import facebookIcon from "../assets/icons/facebook-dark.svg";
 import InstaIcon from "../assets/icons/instagram-dark.svg";
 import TiktokIcon from "../assets/icons/tiktok-dark.svg";
 import facebookIconLight from "../assets/icons/facebook-icon-light.svg";
 import InstaIconLight from "../assets/icons/instagram-icon-light.svg";
 import TiktokIconLight from "../assets/icons/tiktok-icon-light.svg";
+import GetInTouch from "../components/Get-in-touch";
 
 const faqs = [
   {
@@ -89,84 +89,8 @@ const Contact = () => {
                   Contact us on xxxxxxxxx/ xxxxxxxxx
                 </p>
                 {/* Mobile Form */}
-                <div className="bg-white rounded-[9px] md:p-[44px] sm:p-5 p-4 md:hidden block">
-                  <p
-                    className="font-normal leading-[22px] tracking-[0.011em] text-black lg:text-lg sm:text-base text-sm"
-                    style={{ textShadow: "1px 1px 0px rgba(0, 0, 0, 0.3)" }}
-                  >
-                    Please fill out the below form. Our team will be in touch
-                    shortly.
-                  </p>
-                  <form className="sm:pt-6 pt-4">
-                    <div className="flex flex-col mb-4">
-                      <label
-                        htmlFor="name"
-                        className="text-black font-bold text-sm mb-[6px]"
-                      >
-                        Full Name*
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        id=""
-                        placeholder="Your first & last name"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base tracking-[0.4px]"
-                      />
-                    </div>
-                    <div className="flex flex-col mb-4">
-                      <label
-                        htmlFor="phone"
-                        className="text-black font-bold text-sm mb-[6px]"
-                      >
-                        Phone Number*
-                      </label>
-                      <input
-                        type="tel"
-                        name="phone"
-                        id=""
-                        placeholder="Mobile number e.g: 0444786999"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base tracking-[0.4px]"
-                      />
-                    </div>
-                    <div className="flex flex-col mb-4">
-                      <label
-                        htmlFor="couse"
-                        className="text-black font-bold text-sm mb-[6px]"
-                      >
-                        Course Interested in*
-                      </label>
-                      <select
-                        name="couse"
-                        id="Select an option"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base tracking-[0.4px] relative"
-                      >
-                        <option
-                          value="default"
-                          defaultValue={"Select an option"}
-                        >
-                          Select an option
-                        </option>
-                        <option value="PTE">PTE</option>
-                        <option value="NAATI CCL">NAATI CCL</option>
-                        <option value="IELTS">IELTS</option>
-                        <option value="Other Inquiry">OTHER INQUIRY</option>
-                      </select>
-                    </div>
-                    <span className="font-normal text-[#838383] md:text-[15px] sm:text-sm text-xs py-3 block">
-                      Your information will be used to consider and fulfill your
-                      request and will be handled pursuant to our{" "}
-                      <a href="#" className="underline">
-                        Privacy Policy.
-                      </a>
-                    </span>
-                    <button
-                      type="submit"
-                      href="#"
-                      className="align-middle inline-flex items-center justify-center text-center primary-btn bg-[#E42552] text-white px-3 py-4 w-full font-bold sm:text-xl text-lg relative z-10 mt-4 rounded-md"
-                    >
-                      Get In Touch
-                    </button>
-                  </form>
+                <div className="md:hidden block">
+                  <GetInTouch/>
                 </div>
                 <div className="lg:my-[80px] my-[50px]">
                   <h3 className="text-white font-bold md:text-2xl sm:text-xl text-lg">
@@ -227,92 +151,16 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
+
               {/* Desktop Form */}
               <div className="lg:w-[35%] md:w-[50%] w-full md:block hidden">
-                <div className="bg-white rounded-[9px] md:p-[44px] sm:p-5 p-4 ">
-                  <p
-                    className="font-normal leading-[22px] tracking-[0.011em] text-black lg:text-lg sm:text-base text-sm"
-                    style={{ textShadow: "1px 1px 0px rgba(0, 0, 0, 0.3)" }}
-                  >
-                    Please fill out the below form. Our team will be in touch
-                    shortly.
-                  </p>
-                  <form className="sm:pt-6 pt-4">
-                    <div className="flex flex-col mb-4">
-                      <label
-                        htmlFor="name"
-                        className="text-black font-bold text-sm mb-[6px]"
-                      >
-                        Full Name*
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        id=""
-                        placeholder="Your first & last name"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base tracking-[0.4px]"
-                      />
-                    </div>
-                    <div className="flex flex-col mb-4">
-                      <label
-                        htmlFor="phone"
-                        className="text-black font-bold text-sm mb-[6px]"
-                      >
-                        Phone Number*
-                      </label>
-                      <input
-                        type="tel"
-                        name="phone"
-                        id=""
-                        placeholder="Mobile number e.g: 0444786999"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base tracking-[0.4px]"
-                      />
-                    </div>
-                    <div className="flex flex-col mb-4">
-                      <label
-                        htmlFor="couse"
-                        className="text-black font-bold text-sm mb-[6px]"
-                      >
-                        Course Interested in*
-                      </label>
-                      <select
-                        name="couse"
-                        id="Select an option"
-                        className="border-2 rounded-md border-[#949AA5] bg-white py-[16px] px-[24px] 2xl:text-lg text-base tracking-[0.4px] relative"
-                      >
-                        <option
-                          value="default"
-                          defaultValue={"Select an option"}
-                        >
-                          Select an option
-                        </option>
-                        <option value="PTE">PTE</option>
-                        <option value="NAATI CCL">NAATI CCL</option>
-                        <option value="IELTS">IELTS</option>
-                        <option value="Other Inquiry">OTHER INQUIRY</option>
-                      </select>
-                    </div>
-                    <span className="font-normal text-[#838383] md:text-[15px] sm:text-sm text-xs py-3 block">
-                      Your information will be used to consider and fulfill your
-                      request and will be handled pursuant to our{" "}
-                      <a href="#" className="underline">
-                        Privacy Policy.
-                      </a>
-                    </span>
-                    <button
-                      type="submit"
-                      href="#"
-                      className="align-middle inline-flex items-center justify-center text-center primary-btn bg-[#E42552] text-white px-3 py-4 w-full font-bold sm:text-xl text-lg relative z-10 mt-4 rounded-md"
-                    >
-                      Get In Touch
-                    </button>
-                  </form>
-                </div>
+                <GetInTouch/>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section className="pt-[50px] md:pb-[100px] sm:pb-[80px] ">
         <div className="custom-container mx-auto px-0 sm:px-[32px] w-full relative z-10">
           <div className="flex md:flex-nowrap flex-wrap gap-[50px] ">
@@ -432,7 +280,7 @@ const Contact = () => {
 
       <section className="bg-gradient-redBlack md:hidden pt-[50px] -mb-[48px]">
         <img
-          src={ContactMobile}
+          src={ContactMobileImage}
           alt="contactMobile"
           className="w-full h-auto"
         />

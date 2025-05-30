@@ -252,13 +252,13 @@ const PTEMasterClass = () => {
       image: Support5,
       title: "Watch PTE Band 8 Tips & Tricks",
       description:
-        "Watch pre-recorded video lectures covering all 20 tasks-from Basic to Advanced Strategies, Updated Templates, and Latest Tips and Tricks.",
+        "Watch pre-recorded video lectures covering all 20 tasks—from Basic to Advanced Strategies, Updated Templates, and Latest Tips and Tricks.",
     },
     {
       image: Support6,
       title: "Study Material",
       description:
-        "Carefully curated resources including Templates , Prediction File , Question Bank , and Real Exam Questions.",
+        "Carefully curated resources including Templates, Prediction File, Question Bank, and Real Exam Questions.",
     },
   ];
 
@@ -459,7 +459,7 @@ const PTEMasterClass = () => {
               </div>
 
               <div className="lg:w-[26%] flex flex-col gap-y-[19px]">
-                <h2 className="text-gradient-Bluedark font-bold sm:text-[30px] text-2xl sm:leading-[36px] leading-[32px] ">
+                <h2 className="text-gradient-Bluedark font-bold sm:text-[30px] text-2xl sm:leading-[36px] leading-[32px] max-w-[320px]">
                   Watch AB grade students’ responses and give Feedback
                 </h2>
                 <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
@@ -718,11 +718,11 @@ const PTEMasterClass = () => {
         <section className="custom-container sm:px-[32px] px-4">
           <div className="pb-[80px] border-y-2 border-[#252525]">
             <div className="mx-auto 2xl:px-[135px] md:px-[100px] sm:px-[50px] px-4 w-full bg-[#FFDD74] pb-[30px]">
-              <div className="sm:pt-[52px] pt-[12px] sm:mb-[-30px] mb-[-20px]">
+              <div className="sm:pt-[52px] pt-[12px]">
                 <h2 className="text-black 2xl:text-[40px] sm:text-5xl text-[28px] leading-normal sm:font-bold font-extrabold">
                   Support{" "}
                 </h2>
-                <p className="text-black 2xl:text-[32px] sm:text-3xl text-[28px] leading-7 font-normal">
+                <p className="text-black xl:text-[44px] md:text-3xl text-[28px] leading-7 font-normal mt-2">
                   In Every Possible Way
                 </p>
               </div>
@@ -874,6 +874,12 @@ const PTEMasterClass = () => {
           </div>
         </section>
       </div>
+      <a
+        href="#"
+        className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-secondary text-white px-3 sm:py-3 py-[14px] w-full font-semibold sm:text-xl text-lg z-10 fixed bottom-0 left-0 right-0 md:hidden"
+      >
+        Take the Course
+      </a>
     </>
   );
 };

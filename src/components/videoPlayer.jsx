@@ -1,16 +1,23 @@
 import React, { useState } from "react";
 
-const VideoPlayer = ({ videoSrc, thumbnail }) => {
+const VideoPlayer = ({
+    videoSrc,
+    thumbnail,
+    wrapperClassName = '',
+    videoClassName = '',
+    thumbnailClassName = '',
+    playButtonClassName = ''
+}) => {
     const [isPlaying, setIsPlaying] = useState(false);
 
     return (
-        <div className="relative w-full h-full rounded-[10px] overflow-hidden">
+        <div className={`relative w-full h-full overflow-hidden ${wrapperClassName}`}>
             {isPlaying ? (
                 <video
                     src={videoSrc}
                     controls
                     autoPlay
-                    className="w-full h-full object-cover rounded-[10px]"
+                    className={`w-full h-full object-cover ${videoClassName}`}
                 />
             ) : (
                 <div
@@ -20,10 +27,10 @@ const VideoPlayer = ({ videoSrc, thumbnail }) => {
                     <img
                         src={thumbnail}
                         alt="Video thumbnail"
-                        className="w-full h-full object-cover rounded-[10px]"
+                        className={`w-full h-full object-cover  ${thumbnailClassName}`}
                     />
                     <div className="absolute inset-0 flex items-center justify-center transition">
-                        <div className="w-16 h-16 bg-black/40 rounded-full flex items-center justify-center">
+                        <div className={`w-16 h-16 bg-black/40 rounded-full flex items-center justify-center ${playButtonClassName}`}>
                             <svg
                                 className="w-10 h-10 text-white"
                                 fill="currentColor"
@@ -39,4 +46,4 @@ const VideoPlayer = ({ videoSrc, thumbnail }) => {
     );
 };
 
-export default VideoPlayer
+export default VideoPlayer;

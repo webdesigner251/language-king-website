@@ -32,10 +32,13 @@ const TestimonialCarousel = ({ testimonials }) => {
                 <SwiperSlide className="h-auto-swiper" key={i}>
                     <div className="flex flex-col justify-between h-full sm:gap-2 gap-y-[50px]">
                         <div>
-                            <div className="w-3xl:h-[290px] h-[250px] mb-[24px]">
+                            <div className="w-3xl:h-[290px] h-[220px] mb-[24px]">
                                 <VideoPlayer
                                     videoSrc={item.reviewImg}
                                     thumbnail={item.thumbnail}
+                                    wrapperClassName="rounded-[10px]"
+                                    videoClassName="rounded-[10px]"
+                                    thumbnailClassName="rounded-[10px]"
                                 />
                             </div>
                             <p className="text-paraGray font-light 2xl:text-[25px] text-lg 2xl:leading-[36px] leading-normal md:mb-[40px] sm:mb-[30px] mb-8" dangerouslySetInnerHTML={{ __html: item.text }}>

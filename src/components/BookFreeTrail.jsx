@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-// import IntlTelInput from 'intl-tel-input/react';
 import personImage from '../assets/person.png'
 import checklist from '../assets/icons/checkmark.svg'
+import PhoneInput from './PhoneInput';
 
 const BookFreeTrail = () => {
     const [formData, setFormData] = useState({
@@ -100,9 +100,9 @@ const BookFreeTrail = () => {
                             </div>
 
                             <div className="flex flex-col mb-4">
-                                <label htmlFor="phone" className="text-white font-semibold text-lg mb-[6px]">
+                                {/* <label htmlFor="phone" className="text-white font-semibold text-lg mb-[6px]">
                                     Phone Number*
-                                </label>                               
+                                </label>
                                 <input
                                     type="tel"
                                     name="phone"
@@ -113,7 +113,17 @@ const BookFreeTrail = () => {
                                         }`}
                                 />
 
-                                {errors.phone && <span className="text-red-500 text-sm mt-1">{errors.phone}</span>}
+                                {errors.phone && <span className="text-red-500 text-sm mt-1">{errors.phone}</span>} */}
+                                <label htmlFor="phone" className="text-white font-semibold text-lg mb-[6px] block">
+                                    Phone Number*
+                                </label>
+                                <PhoneInput
+                                    formData={formData}
+                                    setFormData={setFormData}
+                                    errors={errors}
+                                    inputClassName="w-full"
+                                />
+
                             </div>
 
                             <div className="flex flex-col mb-4">
@@ -124,10 +134,15 @@ const BookFreeTrail = () => {
                                     name="course"
                                     value={formData.course}
                                     onChange={handleChange}
-                                    className={`bg-white py-[16px] px-[24px] 2xl:text-xl text-lg border ${errors.course ? 'border-red-500' : 'border-[#949AA5]'
-                                        }`}
+                                    className={`bg-white py-[16px] px-[24px] 2xl:text-xl text-lg border 
+      ${errors.course ? 'border-red-500' : 'border-[#949AA5]'} 
+      ${formData.course === 'default' ? 'text-[#919191]' : 'text-black'}
+      focus:outline-none
+    `}
                                 >
-                                    <option value="default" disabled>Select an option</option>
+                                    <option value="default" disabled>
+                                        Select an option
+                                    </option>
                                     <option value="PTE">PTE</option>
                                     <option value="NAATI CCL">NAATI CCL</option>
                                     <option value="IELTS">IELTS</option>
@@ -135,6 +150,7 @@ const BookFreeTrail = () => {
                                 </select>
                                 {errors.course && <span className="text-red-500 text-sm mt-1">{errors.course}</span>}
                             </div>
+
 
                             <span className="font-normal text-[#949AA4] text-base py-3 block">
                                 Your information will be used to consider and fulfill your request and will be handled pursuant to our{' '}
