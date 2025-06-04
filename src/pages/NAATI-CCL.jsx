@@ -1,8 +1,6 @@
-import React from "react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import PTEBanner from "../assets/pte-banner.png";
-import HomeBanner from "../assets/Homepage-banner.png";
 import avatar from "../assets/avatar-img.png";
 import AppleIcon from "../assets/icons/apple-icon.svg";
 import AndroidIcon from "../assets/icons/android-icon.svg";
@@ -125,7 +123,7 @@ const NAATICCL = () => {
       title: "Helped Many Students",
       image: LandingTeacherImage1,
       description:
-        "AB’s goal is to help students get their desired score, and he has a proven track record of making that happen.",
+        "AB's goal is to help students get their desired score, and he has a proven track record of making that happen.",
     },
     {
       title: "5+ Years in Results Delivered",
@@ -186,7 +184,7 @@ const NAATICCL = () => {
     }, 5000); // 5 seconds
 
     return () => clearInterval(interval); // cleanup on unmount
-  }, []);
+  });
 
   const students = [
     { name: "Natalie", country: "Russia", flag: Russia1, image: Russia },
@@ -247,7 +245,7 @@ const NAATICCL = () => {
       image: Support4,
       title: "Missed a Class",
       description:
-        "Don’t worry we got you covered. Class recordings are available 24/7 for instant access.",
+        "Don't worry we got you covered. Class recordings are available 24/7 for instant access.",
     },
     {
       image: Support5,
@@ -259,7 +257,7 @@ const NAATICCL = () => {
       image: Support6,
       title: "Missed a Class",
       description:
-        "Don’t worry we got you covered. Class recordings are available 24/7 for instant access.",
+        "Don't worry we got you covered. Class recordings are available 24/7 for instant access.",
     },
   ];
 
@@ -290,7 +288,7 @@ const NAATICCL = () => {
                   </h2>
                   <h1 className="font-inter font-bold main-heading 2xl:mt-2 mt-0 text-white">
                     Exam in 7 days? <br />
-                    we’ve got you covered!
+                    we've got you covered!
                   </h1>
                   <p className="md:text-lg sm:text-xl text-base font-normal max-w-[660px] text-white/75">
                     This is a super fast-paced course. It’s geared for speed,
@@ -345,7 +343,7 @@ const NAATICCL = () => {
                         </linearGradient>
                       </defs>
                     </svg>
-                    Watch FREE Lessons
+                    Watch a Free Lessons
                   </a>
                 </div>
               </div>
@@ -376,7 +374,8 @@ const NAATICCL = () => {
             <div className="sm:grid grid-cols-3 justify-between flex items-center">
               <hr className="border-[#252525] sm:w-auto w-[20%]" />
               <span className="font-normal 2xl:text-2xl lg:text-xl text-base text-white/60 text-center sm:inline hidden">
-                Helping 5000+ students get their desired scores
+                Helped <strong className="text-white">5000+</strong> students
+                pass the exam
               </span>
               <span className="font-normal 2xl:text-2xl lg:text-xl text-base text-white/60 text-center sm:hidden block w-[320px]">
                 Now teaching{" "}
@@ -464,7 +463,7 @@ const NAATICCL = () => {
                 </p>
 
                 <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
-                  We’ll review sites like:
+                  We'll be covering in detail:
                 </p>
 
                 <ul className="tab-links">
@@ -480,20 +479,21 @@ const NAATICCL = () => {
                           className="w-5"
                         />
                         <span
-                          className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${activeTab === tab
-                            ? "text-white"
-                            : "text-white/60 group-hover:text-white"
-                            }`}
+                          className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${
+                            activeTab === tab
+                              ? "text-white"
+                              : "text-white/60 group-hover:text-white"
+                          }`}
                         >
                           {tab === "tab1"
                             ? "Major Mistakes"
                             : tab === "tab2"
-                              ? "Minor Mistakes"
-                              : tab === "tab3"
-                                ? "How to avoid them"
-                                : tab === "tab4"
-                                  ? "Repeat Policy Pro Tip!"
-                                  : "and much more!"}
+                            ? "Minor Mistakes"
+                            : tab === "tab3"
+                            ? "How to avoid them"
+                            : tab === "tab4"
+                            ? "Repeat Policy Pro Tip!"
+                            : "and much more!"}
                         </span>
                       </button>
                     </li>
@@ -638,7 +638,10 @@ const NAATICCL = () => {
               <div className="lg:w-[77%] w-full tab-content relative">
                 {!showVideo ? (
                   <>
-                    <div onClick={() => setShowVideo(true)} className="cursor-pointer">
+                    <div
+                      onClick={() => setShowVideo(true)}
+                      className="cursor-pointer"
+                    >
                       <img
                         src={freeLesson}
                         alt="PTE Response"
@@ -691,26 +694,27 @@ const NAATICCL = () => {
                 )}
               </div>
 
-              <div className="lg:w-[28%] w-full flex flex-col gap-y-[19px]">
-                <h2 className="text-[#52D34E] font-bold 2xl:text-[40px] sm:text-[36px] text-2xl 2xl:leading-[50px] sm:leading-[42px] leading-[32px]">
-                  Try a Free Lesson <br />
-                  Real Quick
-                </h2>
-                <p className="font-light 2xl:text-xl sm:text-lg text-sm leading-[28px] text-white/60">
-                  Watch AB guiding a student and a funny interaction between
-                  them.
-                </p>
+              <div className="lg:w-[28%] w-full ">
+                <div className="max-w-[350px] flex flex-col gap-y-[19px]">
+                  <h2 className="text-[#52D34E] font-bold 2xl:text-[40px] sm:text-[36px] text-2xl 2xl:leading-[50px] sm:leading-[42px] leading-[32px]">
+                    Try a Free Lesson Real Quick
+                  </h2>
+                  <p className="font-normal sm:text-lg text-sm leading-[24px] text-white/60">
+                    Watch AB guiding a student and a funny interaction between
+                    them.
+                  </p>
 
-                <p className="font-light 2xl:text-xl sm:text-lg text-sm leading-[28px] text-white/60">
-                  As an expert - AB guides his students through various hurdles,
-                  by providing insightful feedback.
-                </p>
-                <a
-                  href="#"
-                  className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-GreenBtn  text-white px-[50px] sm:py-3 py-[14px] font-bold sm:text-xl text-lg relative z-10 max-w-max"
-                >
-                  Take the Course
-                </a>
+                  <p className="font-normal sm:text-lg text-sm leading-[24px] text-white/60">
+                    As an expert - AB guides his students through various
+                    hurdles, by providing insightful feedback.
+                  </p>
+                  <a
+                    href="#"
+                    className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-GreenBtn  text-white px-[50px] sm:py-3 py-[14px] font-bold sm:text-xl text-lg relative z-10 w-full"
+                  >
+                    Take the Course
+                  </a>
+                </div>
               </div>
             </div>
           </div>

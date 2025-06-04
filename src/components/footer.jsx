@@ -53,7 +53,7 @@ const Footer = () => {
                       <li>
                         <a
                           href="tel:+61488876999"
-                          className="flex items-start gap-5 text-[#919191] font-semibold sm:text-base text-lg"
+                          className="flex items-start gap-5 text-[#919191] font-semibold text-base"
                         >
                           <img src={Calender} className="w-8 h-8 " />
                           <span>

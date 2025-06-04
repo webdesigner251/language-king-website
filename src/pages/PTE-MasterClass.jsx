@@ -348,7 +348,7 @@ const PTEMasterClass = () => {
                         </linearGradient>
                       </defs>
                     </svg>
-                    Watch FREE Lessons
+                    Watch a Free Lessons
                   </a>
                 </div>
               </div>
@@ -379,7 +379,8 @@ const PTEMasterClass = () => {
             <div className="sm:grid grid-cols-3 justify-between flex items-center">
               <hr className="border-[#252525] sm:w-auto w-[20%]" />
               <span className="font-normal 2xl:text-2xl lg:text-xl text-base text-white/60 text-center sm:inline hidden">
-                Helping 10K+ students get their desired scores
+                Helped <strong className="text-white">10K+ students</strong> get
+                their desired scores
               </span>
               <span className="font-normal 2xl:text-2xl lg:text-xl text-base text-white/60 text-center sm:hidden block w-[320px]">
                 Now teaching{" "}
@@ -464,12 +465,11 @@ const PTEMasterClass = () => {
                 </h2>
                 <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
                   One of the best ways to learn what works and what doesn’t is
-                  to simply see it for yourself on real world, existing
-                  websites.
+                  to simply review other students’ responses and scores.
                 </p>
 
                 <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
-                  We’ll review sites like:
+                  We'll review scores for:
                 </p>
 
                 <ul className="tab-links">
@@ -481,18 +481,19 @@ const PTEMasterClass = () => {
                       >
                         <img src={Checkmark} alt="Checkmark" className="w-5" />
                         <span
-                          className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${activeTab === tab
-                            ? "text-white"
-                            : "text-white/60 group-hover:text-white"
-                            }`}
+                          className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${
+                            activeTab === tab
+                              ? "text-white"
+                              : "text-white/60 group-hover:text-white"
+                          }`}
                         >
                           {tab === "band8"
                             ? "Band 8"
                             : tab === "band7"
-                              ? "Band 7"
-                              : tab === "band65"
-                                ? "Band 6.5"
-                                : "And others!"}
+                            ? "Band 7"
+                            : tab === "band65"
+                            ? "Band 6.5"
+                            : "And others!"}
                         </span>
                       </button>
                     </li>
@@ -637,7 +638,10 @@ const PTEMasterClass = () => {
               <div className="lg:w-[77%] w-full tab-content relative">
                 {!showVideo ? (
                   <>
-                    <div onClick={() => setShowVideo(true)} className="cursor-pointer">
+                    <div
+                      onClick={() => setShowVideo(true)}
+                      className="cursor-pointer"
+                    >
                       <img
                         src={freeLesson}
                         alt="PTE Response"
@@ -690,26 +694,27 @@ const PTEMasterClass = () => {
                 )}
               </div>
 
-              <div className="lg:w-[28%] w-full flex flex-col gap-y-[19px]">
-                <h2 className="text-gradient-Bluedark font-bold 2xl:text-[40px] sm:text-[36px] text-2xl 2xl:leading-[50px] sm:leading-[42px] leading-[32px]">
-                  Try a Free Lesson <br />
-                  Real Quick
-                </h2>
-                <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
-                  Watch AB guiding a student and a funny interaction between
-                  them.
-                </p>
+              <div className="lg:w-[28%] w-full">
+                <div className="max-w-[345px] flex flex-col gap-y-[19px]">
+                  <h2 className="text-gradient-Bluedark font-bold 2xl:text-[40px] sm:text-[36px] text-2xl 2xl:leading-[50px] sm:leading-[42px] leading-[32px]">
+                    Try a Free Lesson Real Quick
+                  </h2>
+                  <p className="font-normal sm:text-lg text-sm leading-[24px] text-white/60">
+                    Watch AB guiding a student and a funny interaction between
+                    them.
+                  </p>
 
-                <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
-                  As an expert - AB guides his students through various hurdles,
-                  by providing insightful feedback.
-                </p>
-                <a
-                  href="#"
-                  className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-secondary text-white px-[50px] sm:py-3 py-[14px] font-semibold sm:text-xl text-lg relative z-10 max-w-max"
-                >
-                  Take the Course
-                </a>
+                  <p className="font-normal sm:text-lg text-sm leading-[24px] text-white/60">
+                    As an expert - AB guides his students through various
+                    hurdles, by providing insightful feedback.
+                  </p>
+                  <a
+                    href="#"
+                    className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-secondary text-white px-[50px] sm:py-3 py-[14px] font-semibold sm:text-xl text-lg relative z-10 w-full"
+                  >
+                    Take the Course
+                  </a>
+                </div>
               </div>
             </div>
           </div>

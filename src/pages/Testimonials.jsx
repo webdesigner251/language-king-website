@@ -82,10 +82,10 @@ const Testimonials = () => {
     <>
       <section className="md:pt-[100px] pt-[60px] md:pb-[77px] pb-8">
         <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full relative z-10">
-          <div className="grid lg:grid-cols-2 xl:gap-[120px] gap-[90px]">
+          <div className="grid items-start lg:grid-cols-2 xl:gap-[120px] gap-[90px]">
             <div>
               <div className="2xl:max-w-[590px] xl:max-w-[525px] lg:max-w-[440px]">
-                <h1 className="font-inter font-bold 2xl:text-[65px] xl:text-[58px] lg:text-[48px] md:text-[42px] text-[38px] leading-[normal] inline-block 2xl:mt-2 mt-0 text-white">
+                <h1 className="font-inter font-bold 2xl:text-[62px] xl:text-[55px] lg:text-[46px] md:text-[42px] text-[38px] leading-[normal] inline-block 2xl:mt-2 mt-0 text-white">
                   Why Students Love Learning With Us
                 </h1>
                 {/* <img
@@ -125,7 +125,7 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:block hidden">
+            <div className="lg:block hidden h-auto">
               <VideoPlayer
                 videoSrc={video}
                 thumbnail={PlaceholerImage}
@@ -188,7 +188,7 @@ const Testimonials = () => {
                 nextEl: ".custom-next",
                 prevEl: ".custom-prev",
               }}
-              spaceBetween={20}
+              spaceBetween={30}
               slidesPerView={1.2}
               breakpoints={{
                 640: { slidesPerView: 2 },
@@ -199,7 +199,7 @@ const Testimonials = () => {
                 <SwiperSlide key={item.id}>
                   <div>
                     <div className="relative">
-                      <div className="rounded-[10px] w-full sm:h-[200px] h-auto object-cover relative z-10">
+                      <div className="rounded-[10px] w-full sm:h-[250px] h-auto object-cover relative z-10">
                         <VideoPlayer
                           videoSrc={item.video}
                           thumbnail={item.image}
@@ -293,7 +293,7 @@ const Testimonials = () => {
                 nextEl: ".custom-next-new",
                 prevEl: ".custom-prev-new",
               }}
-              spaceBetween={20}
+              spaceBetween={30}
               slidesPerView={1.2}
               breakpoints={{
                 640: { slidesPerView: 2 },
@@ -304,7 +304,7 @@ const Testimonials = () => {
                 <SwiperSlide key={item.id}>
                   <div>
                     <div className="relative">
-                      <div className="rounded-[10px] w-full sm:h-[200px] h-auto object-cover relative z-10">
+                      <div className="rounded-[10px] w-full sm:h-[250px] h-auto object-cover relative z-10">
                         <VideoPlayer
                           videoSrc={item.video}
                           thumbnail={item.image}
@@ -355,7 +355,7 @@ const Testimonials = () => {
                 <h2 class="lg:text-[52px] sm:text-[42px] text-[32px] leading-[1.2] font-bold text-white text-left">
                   Get in touch with us
                 </h2>
-                <p className="relative text-[#B7B7B7] text-lg max-w-[600px] my-3">
+                <p className="relative text-[#B7B7B7] text-lg max-w-[600px] my-2">
                   Contact us on xxxxxxxxx/ xxxxxxxxx
                 </p>
                 {/* Mobile Form */}
@@ -367,7 +367,7 @@ const Testimonials = () => {
                     Why Language King?
                   </h3>
                   <ul className="mt-5 sm:ps-5 max-w-[700px]">
-                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-2">
+                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
                       <img
                         src={CheckmarkGray}
                         alt="CheckmarkGray"
@@ -376,7 +376,7 @@ const Testimonials = () => {
                       Learn from 8 each tutors. The best way to crack any exam
                       is to learn from the person who has cracked it.
                     </li>
-                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-2">
+                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
                       <img
                         src={CheckmarkGray}
                         alt="CheckmarkGray"
@@ -386,7 +386,7 @@ const Testimonials = () => {
                       strategies from carefully designed video lectures by
                       Abhishek, PTE & NAATI Master Trainer.
                     </li>
-                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-2">
+                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
                       <img
                         src={CheckmarkGray}
                         alt="CheckmarkGray"
@@ -396,7 +396,7 @@ const Testimonials = () => {
                       fit your busy schedule, learn from the comfort of your
                       home while sipping coffee.
                     </li>
-                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-2">
+                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
                       <img
                         src={CheckmarkGray}
                         alt="CheckmarkGray"

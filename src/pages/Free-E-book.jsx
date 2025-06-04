@@ -11,7 +11,7 @@ import Book4 from "../assets/ebook/book4.png";
 import BGgradient from "../assets/ebook/gradient.png";
 import Rectangle from "../assets/ebook/rectangle.png";
 import badge from "../assets/ebook/badge.png";
-import Plus from '../assets/icons/plus.svg'
+import Plus from "../assets/icons/plus.svg";
 
 const faqs = [
   {
@@ -140,7 +140,7 @@ const FreeEBook = () => {
 
   return (
     <>
-      <section className="2xl:pt-[140px] sm:pt-[100px] pt-[60px] sm:pb-[60px] pb-[40px] relative flex flex-column justify-center items-center">
+      <section className="2xl:pt-[140px] sm:pt-[100px] pt-[60px] sm:pb-[60px] pb-[40px] relative flex flex-column justify-center items-center lg:mt-0 sm:mt-8 mt-6">
         <div className="sm:bg-transparent bg-gradient-FadetoBlack h-full w-full absolute top-0 z-10 lg:hidden block"></div>
         <img
           src={BannerBg}
@@ -185,7 +185,7 @@ const FreeEBook = () => {
                           Free E-book
                         </span>
                       </h1>
-                      <p className="font-light xl:text-xl md:text-lg sm:text-base text-sm text-white mt-3">
+                      <p className="font-light md:text-lg leading-[28px] sm:text-base text-sm text-white mt-3">
                         Learn how to solve PTE Reading Blanks with confidence,
                         master linkers, starters, and connectors, test your
                         skills with an interactive quiz, and boost your score
@@ -291,7 +291,7 @@ const FreeEBook = () => {
         <div className="custom-container mx-auto sm:py-[64px] py-[40px] px-4 sm:px-[32px] w-full z-10 relative ">
           <div className="flex lg:flex-nowrap flex-wrap 2xl:gap-[150px] lg:gap-[80px] gap-[40px]">
             <div className="lg:w-[60%] w-full sm:inline hidden">
-              <div className="bg-[#1B1B1B] mb-[33px] rounded-[10px] xl:py-[44px] py-8 xl:px-[38px] px-6 flex items-center justify-between">
+              <div className="bg-[#1B1B1B] mb-[33px] rounded-[10px] xl:py-[34px] py-8 xl:px-[38px] px-6 flex items-center justify-between">
                 <div>
                   <h3 className="text-white font-bold lg:text-[36px] text-[32px] leading-[42px] mb-1">
                     E-Book Only
@@ -355,9 +355,9 @@ const FreeEBook = () => {
                   <img
                     src={Rectangle}
                     alt="Rectangle"
-                    className="w-3xl:w-[25%] w-[30%] h-[300px] object-cover"
+                    className="w-3xl:w-[27%] w-[32%] object-cover"
                   />
-                  <div className="w-3xl:w-[70%] w-[70%] flex flex-col justify-between">
+                  <div className="w-3xl:w-[70%] w-[68%] flex flex-col justify-between">
                     <div>
                       <h3 className="text-[#F3F2F3] lg:text-[36px] text-[32px] leading-[42px] font-bold">
                         6 Month AI Portal
@@ -384,7 +384,7 @@ const FreeEBook = () => {
                 <div className="p-[32px]">
                   <div className="flex justify-between  items-center md:gap-[42px] gap-[28px]">
                     <div>
-                      <h3 className="text-white font-bold w-3xl:text-[50px] 2xl:text-[46px] text-[38px] leading-[1.2]">
+                      <h3 className="text-white font-bold sm:text-[38px] text-[32px] leading-[1.2]">
                         + Prediction File{" "}
                       </h3>
                       <span className="text-[#B8B8B8] font-normal 2xl:text-xl xl:text-lg text-base">
@@ -458,9 +458,11 @@ const FreeEBook = () => {
                   <div
                     onClick={() => setSelected("ebook")}
                     className={`mb-4 border-4 rounded-[6px] py-[24px] px-[12px] flex gap-5 justify-between items-center cursor-pointer transition-all duration-300
-          ${selected === "ebook"
-                        ? "border-[#F18C2D] bg-[#0A0A09]"
-                        : "border-[#707070] bg-[#1B1B1B]"}`}
+          ${
+            selected === "ebook"
+              ? "border-[#F18C2D] bg-[#0A0A09]"
+              : "border-[#707070] bg-[#1B1B1B]"
+          }`}
                   >
                     <div className="flex gap-2 items-start">
                       {selected === "ebook" && (
@@ -483,7 +485,11 @@ const FreeEBook = () => {
                       <button
                         type="button"
                         className={`align-middle inline-flex items-center justify-center text-center primary-btn px-8 py-4 font-bold sm:text-xl text-lg relative z-10 rounded-[50px] hover-full-rounded-btn
-              ${selected === "ebook" ? "bg-gradient-GreenBlue text-black" : "bg-[#3E3E3D] text-[#BFDF6A]"}`}
+              ${
+                selected === "ebook"
+                  ? "bg-gradient-GreenBlue text-black"
+                  : "bg-[#3E3E3D] text-[#BFDF6A]"
+              }`}
                       >
                         $0.99
                       </button>
@@ -494,9 +500,11 @@ const FreeEBook = () => {
                   <div
                     onClick={() => setSelected("portal")}
                     className={`border-4 rounded-[6px] py-[24px] px-[12px] flex gap-5 justify-between items-center cursor-pointer transition-all duration-300
-          ${selected === "portal"
-                        ? "border-[#F18C2D] bg-[#0A0A09]"
-                        : "border-[#707070] bg-[#1B1B1B]"}`}
+          ${
+            selected === "portal"
+              ? "border-[#F18C2D] bg-[#0A0A09]"
+              : "border-[#707070] bg-[#1B1B1B]"
+          }`}
                   >
                     <div className="flex gap-2 items-start">
                       {selected === "portal" && (
@@ -519,7 +527,11 @@ const FreeEBook = () => {
                       <button
                         type="button"
                         className={`align-middle inline-flex items-center justify-center text-center primary-btn px-8 py-4 font-bold sm:text-xl text-lg relative z-10 rounded-[50px] hover-full-rounded-btn
-              ${selected === "portal" ? "bg-gradient-GreenBlue text-black" : "bg-[#3E3E3D] text-[#BFDF6A]"}`}
+              ${
+                selected === "portal"
+                  ? "bg-gradient-GreenBlue text-black"
+                  : "bg-[#3E3E3D] text-[#BFDF6A]"
+              }`}
                       >
                         $119
                       </button>
@@ -593,20 +605,22 @@ const FreeEBook = () => {
               {faqs.map((faq, index) => (
                 <div
                   key={index}
-                  className={`py-4 ${index !== faqs.length - 1 ? "border-b border-[#9D9B9B]" : ""
-                    }`}
+                  className={`py-4 ${
+                    index !== faqs.length - 1 ? "border-b border-[#9D9B9B]" : ""
+                  }`}
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="flex justify-between gap-4 w-full text-left items-center"
+                    className="flex justify-between items-center w-full text-left gap-4"
                   >
-                    <span className="md:text-[22px] sm:text-xl text-lg font-bold leading-[28px] text-white">
+                    <span className="md:text-[22px] sm:text-xl text-lg font-bold leading-[28px] text-white w-[calc(100%-28px)] sm:w-[calc(100%-35px)]">
                       {faq.question}
                     </span>
-                    <span className="sm:w-[35px] w-[28px]">
+                    <span className="w-[28px] sm:w-[35px] basis-[28px] sm:basis-[35px] flex items-center justify-center">
                       {openIndex === index ? <MinusIcon /> : <PlusIcon />}
                     </span>
                   </button>
+
                   {openIndex === index && faq.answer && (
                     <div className="sm:mt-4 mt-2 md:text-lg sm:text-lg font-medium text-base text-white/50 max-w-[93%]">
                       {faq.answer}
