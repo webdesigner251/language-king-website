@@ -125,7 +125,7 @@ const BookFreeTrail = () => {
                   placeholder="Your first & last name"
                   value={formData.name}
                   onChange={handleChange}
-                  className={`placeholder:text-[#919191] bg-white py-[16px] px-[24px] 2xl:text-xl text-lg border ${
+                  className={`placeholder:text-[#919191] bg-white py-[16px] px-[24px] sm:text-lg text-base border ${
                     errors.name ? "border-red-500" : "border-[#949AA5]"
                   }`}
                 />
@@ -191,7 +191,7 @@ const BookFreeTrail = () => {
                   name="course"
                   value={formData.course}
                   onChange={handleChange}
-                  className={`bg-white py-[16px] px-[24px] 2xl:text-xl text-lg border 
+                  className={`bg-white py-[16px] px-[24px] sm:text-lg text-base border 
       ${errors.course ? "border-red-500" : "border-[#949AA5]"} 
       ${formData.course === "default" ? "text-[#919191]" : "text-black"}
       focus:outline-none

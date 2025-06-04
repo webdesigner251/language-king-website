@@ -62,7 +62,7 @@ const PhoneInput = ({ formData, setFormData, errors, inputClassName = "" }) => {
         id="phone"
         ref={inputRef}
         onChange={handleChange}
-        className={`placeholder:text-[#919191] bg-white py-[16px] px-[24px] 2xl:text-xl text-lg w-full
+        className={`placeholder:text-[#919191] bg-white py-[16px] px-[24px] sm:text-lg text-base w-full
           ${errors.phone ? "border-red-500" : "border-[#949AA5]"} border 
           ${inputClassName}`}
       />
