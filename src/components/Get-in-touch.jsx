@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PhoneInput from "./PhoneInput";
+import CustomDropdown from "./custom-dropdown";
 
 const GetInTouch = () => {
   const [formData, setFormData] = useState({
@@ -111,23 +112,14 @@ const GetInTouch = () => {
           >
             Course Interested in*
           </label>
-          <select
-            name="course"
-            value={formData.course}
-            onChange={handleChange}
-            className={`border-2 rounded-md bg-white py-[16px] px-[24px] sm:text-lg text-base
-      ${errors.course ? "border-red-500" : "border-[#949AA5]"} 
-      ${formData.course === "default" ? "text-[#919191]" : "text-black"}
-    `}
-          >
-            <option value="default" disabled>
-              Select an option
-            </option>
-            <option value="PTE">PTE</option>
-            <option value="NAATI CCL">NAATI CCL</option>
-            <option value="IELTS">IELTS</option>
-            <option value="Other Inquiry">OTHER INQUIRY</option>
-          </select>
+          <CustomDropdown
+            selected={formData.course}
+            onChange={(value) =>
+              setFormData((prev) => ({ ...prev, course: value }))
+            }
+            error={errors.course}
+          />
+
           {errors.course && (
             <span className="text-red-500 text-sm mt-1 flex items-center gap-1">
               <svg

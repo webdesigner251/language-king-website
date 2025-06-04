@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import personImage from "../assets/person.png";
 import checklist from "../assets/icons/checkmark.svg";
 import PhoneInput from "./PhoneInput";
+import CustomDropdown from "./custom-dropdown";
 
 const BookFreeTrail = () => {
   const [formData, setFormData] = useState({
@@ -187,24 +188,17 @@ const BookFreeTrail = () => {
                 >
                   Course Interested in*
                 </label>
-                <select
-                  name="course"
-                  value={formData.course}
-                  onChange={handleChange}
-                  className={`bg-white py-[16px] px-[24px] sm:text-lg text-base border 
-      ${errors.course ? "border-red-500" : "border-[#949AA5]"} 
-      ${formData.course === "default" ? "text-[#919191]" : "text-black"}
-      focus:outline-none
-    `}
-                >
-                  <option value="default" disabled>
-                    Select an option
-                  </option>
-                  <option value="PTE">PTE</option>
-                  <option value="NAATI CCL">NAATI CCL</option>
-                  <option value="IELTS">IELTS</option>
-                  <option value="Other Inquiry">OTHER INQUIRY</option>
-                </select>
+
+                <CustomDropdown
+                  selected={formData.course}
+                  onChange={(value) =>
+                    setFormData((prev) => ({ ...prev, course: value }))
+                  }
+                  error={errors.course}
+                  buttonClassName="bg-white"
+                  listClassName="rounded-[0px]"
+                />
+
                 {errors.course && (
                   <span className="text-red-500 text-sm mt-1 flex items-center gap-1">
                     <svg
