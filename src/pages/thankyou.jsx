@@ -1,3 +1,5 @@
+// This is only to show the design for client remove after everything done
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import TestimonialCarousel from "../components/testimonials-carousel";
@@ -34,6 +36,8 @@ import checklist from "../assets/icons/checkmark.svg";
 import video from "../assets/videos/placeholder-video.mp4";
 import VideoModal from "../components/videoModal";
 import CallbackForm from "../components/callback-popup";
+import Thankyou from "../components/Thankyou";
+
 const testimonials = [
   {
     reviewImg: video,
@@ -108,7 +112,7 @@ const videoItems = [
   },
 ];
 
-const Home = () => {
+const Home2 = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeVideo, setActiveVideo] = useState(null);
 
@@ -140,12 +144,12 @@ const Home = () => {
               </p>
             </div>
             <div className="mt-[48px] flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[600px]">
-              <Link
-                to="/home2"
+              <a
+                href="#"
                 className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 sm:py-3 py-[14px] sm:w-[50%] w-full sm:font-semibold font-bold sm:text-xl text-lg relative z-10"
               >
                 Get a Callback
-              </Link>
+              </a>
               <Link
                 to="/free-e-book"
                 className="align-middle inline-flex items-center gap-[18px] justify-center text-center bg-transparent border-2 border-Cadmium-Orange text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10"
@@ -276,7 +280,7 @@ const Home = () => {
                 </div>
                 <div className="pt-[12px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
                   <Link
-                    onClick={openPopup}
+                    to="/pte-masterclass"
                     className="primary-btn bg-gradient-secondary leading-[28px] inline-flex justify-center items-center text-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
                   >
                     Take the Course
@@ -325,12 +329,12 @@ const Home = () => {
                   </h3>
                 </div>
                 <div className="pt-[12px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
-                  <Link
-                    to="/free-e-book"
+                  <a
+                    href="#"
                     className="primary-btn bg-gradient-dark leading-[28px] inline-flex justify-center items-center text-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
                   >
                     Free E-Book
-                  </Link>
+                  </a>
                   <a
                     href="#"
                     className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all z-10 duration-300 ease hover:bg-white/10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
@@ -583,16 +587,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="md:border-s-3 md:w-[51.50%] border-[#2A2A2A] lg:ps-[70px] md:ps-[70px]">
-                <h2 className="font-bold lg:text-[42px] text-4xl text-gradient-OrangeRed border-b-2 border-[#2A2A2A] pb-5">
-                  Book a FREE Trial Class
-                </h2>
-                <p className="font-normal text-white/75 lg:text-[22px] text-xl pt-7">
-                  Please fill out the below form. Our team will be in touch
-                  shortly.
-                </p>
-                <div className="sm:pt-6 pt-4">
-                  <BookFreeTrail />
-                </div>
+                <Thankyou />
               </div>
             </div>
           </div>
@@ -602,4 +597,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home2;

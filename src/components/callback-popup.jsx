@@ -1,73 +1,32 @@
-import React from 'react';
+import React from "react";
+import BookFreeTrail from "./BookFreeTrail";
+import CloseIcon from "../assets/close.svg"; // Custom close icon
 
 const CallbackForm = ({ onClose }) => {
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50" onClick={onClose}>
-      <div className="bg-black p-6 rounded-lg w-full max-w-md relative" onClick={(e) => e.stopPropagation()}>
-        <div className="flex justify-between items-center mb-4">
+    <div
+      className="fixed h-full top-0 bottom-0 left-0 right-0 inset-0 z-[51] bg-black/90 flex items-center justify-center"
+      onClick={onClose}
+    >
+      <div
+        className="bg-[#121212] p-6  w-full sm:max-w-xl max-w-[90%] relative max-h-[90%] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex justify-between items-center border-b-2 border-[#2A2A2A] pb-6">
           <h2 className="text-white text-2xl font-bold">Get-a-Callback</h2>
-          <button onClick={onClose} className="text-white text-2xl">
-            ×
+          <button
+            onClick={onClose}
+            className="flex items-center justify-center sm:p-3 p-2 sm:w-[40px] sm:h-[40px]  w-[30px] h-[30px]  bg-chinese-Black border border-davys-Grey focus:outline-none cursor-pointer shadow-[0px_4px_0px_#000000] text-white"
+          >
+            <img src={CloseIcon} alt="CloseIcon" className="w-7 h-7" />
           </button>
         </div>
-        <p className="text-gray-400 mb-6">
+        <p className="font-normal text-white/75 lg:text-lg sm:text-base text-sm pt-6">
           Please fill out the below form. Our team will be in touch shortly.
         </p>
-
-        <form>
-          <div className="mb-4">
-            <label className="block text-white text-sm font-bold mb-2" htmlFor="fullName">
-              Full Name*
-            </label>
-            <input
-              type="text"
-              id="fullName"
-              className="w-full p-2 bg-gray-800 text-white border border-gray-700 rounded"
-              placeholder="Your first name & last name"
-            />
-          </div>
-
-          <div className="mb-4">
-            <label className="block text-white text-sm font-bold mb-2" htmlFor="phoneNumber">
-              Phone Number*
-            </label>
-            <div className="flex items-center">
-              <select className="p-2 bg-gray-800 text-white border border-gray-700 rounded-l">
-                <option value="+61">🇦🇺 +61</option>
-              </select>
-              <input
-                type="tel"
-                id="phoneNumber"
-                className="w-full p-2 bg-gray-800 text-white border border-gray-700 rounded-r"
-                placeholder="Mobile number e.g: 0444786999"
-              />
-            </div>
-          </div>
-
-          <div className="mb-4">
-            <label className="block text-white text-sm font-bold mb-2" htmlFor="course">
-              Course Interested in*
-            </label>
-            <select
-              id="course"
-              className="w-full p-2 bg-gray-800 text-gray-400 border border-gray-700 rounded"
-            >
-              <option>Select an option</option>
-            </select>
-          </div>
-
-          <p className="text-gray-500 text-sm mb-6">
-            Your information will be used to consider and fulfill your request and will be handled
-            pursuant to our Privacy Policy.
-          </p>
-
-          <button
-            type="submit"
-            className="w-full bg-gradient-to-r from-yellow-500 to-pink-500 text-white font-bold py-2 px-4 rounded"
-          >
-            Get In Touch
-          </button>
-        </form>
+        <div className="sm:pt-6 pt-4">
+          <BookFreeTrail />
+        </div>
       </div>
     </div>
   );

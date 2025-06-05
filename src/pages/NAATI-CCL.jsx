@@ -517,18 +517,18 @@ const NAATICCL = () => {
                     <img
                       src={facebookIcon}
                       alt="facebookIcon"
-                      className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
+                      className="w-10 h-10 group-hover:hidden transition-all duration-300 ease"
                     />
                     <img
                       src={facebookIconLight}
                       alt="facebookIcon"
-                      className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
+                      className="w-10 h-10 hidden group-hover:flex transition-all duration-300 ease"
                     />
                     <div>
-                      <h4 className="font-aileron sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+                      <h4 className="font-aileron text-sm text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
                         Join the Facebook Community
                       </h4>
-                      <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block">
+                      <span className="text-[12px] text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block leading-[14px] mt-1">
                         facebook.com/languageking
                       </span>
                     </div>
@@ -537,18 +537,18 @@ const NAATICCL = () => {
                     <img
                       src={InstaIcon}
                       alt="InstaIcon"
-                      className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
+                      className="w-10 h-10 group-hover:hidden transition-all duration-300 ease"
                     />
                     <img
                       src={InstaIconLight}
                       alt="facebookIcon"
-                      className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
+                      className="w-10 h-10 hidden group-hover:flex transition-all duration-300 ease"
                     />
                     <div>
-                      <h4 className="font-aileron sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+                      <h4 className="font-aileron text-sm text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
                         Follow us on Instagram
                       </h4>
-                      <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block">
+                      <span className="text-[12px] text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block leading-[14px] mt-1">
                         instagram.com/languageking
                       </span>
                     </div>
@@ -557,18 +557,18 @@ const NAATICCL = () => {
                     <img
                       src={TiktokIcon}
                       alt="TiktokIcon"
-                      className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
+                      className="w-10 h-10 group-hover:hidden transition-all duration-300 ease"
                     />
                     <img
                       src={TiktokIconLight}
                       alt="facebookIcon"
-                      className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
+                      className="w-10 h-10 hidden group-hover:flex transition-all duration-300 ease"
                     />
                     <div>
-                      <h4 className="font-aileron sm:text-lg text-base text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+                      <h4 className="font-aileron text-sm text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
                         Explore our content on TikTok
                       </h4>
-                      <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block">
+                      <span className="text-[12px] text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block leading-[14px] mt-1">
                         tiktok.com/@languageking
                       </span>
                     </div>

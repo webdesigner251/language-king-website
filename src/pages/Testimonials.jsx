@@ -88,11 +88,6 @@ const Testimonials = () => {
                 <h1 className="font-inter font-bold 2xl:text-[62px] xl:text-[55px] lg:text-[46px] md:text-[42px] text-[38px] leading-[normal] inline-block 2xl:mt-2 mt-0 text-white">
                   Why Students Love Learning With Us
                 </h1>
-                {/* <img
-                  src={PlaceholerImage}
-                  alt="PlaceholerImage"
-                  className="lg:hidden block w-full py-[50px]"
-                /> */}
 
                 <div className="lg:hidden block w-full py-[50px]">
                   <VideoPlayer
@@ -125,7 +120,7 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:block hidden h-auto">
+            <div className="lg:block hidden h-auto aspect-video">
               <VideoPlayer
                 videoSrc={video}
                 thumbnail={PlaceholerImage}
@@ -199,7 +194,7 @@ const Testimonials = () => {
                 <SwiperSlide key={item.id}>
                   <div>
                     <div className="relative">
-                      <div className="rounded-[10px] w-full sm:h-[250px] h-auto object-cover relative z-10">
+                      <div className="rounded-[10px] w-full aspect-video h-auto object-cover relative z-10">
                         <VideoPlayer
                           videoSrc={item.video}
                           thumbnail={item.image}
@@ -304,7 +299,7 @@ const Testimonials = () => {
                 <SwiperSlide key={item.id}>
                   <div>
                     <div className="relative">
-                      <div className="rounded-[10px] w-full sm:h-[250px] h-auto object-cover relative z-10">
+                      <div className="rounded-[10px] w-full aspect-video h-auto object-cover relative z-10">
                         <VideoPlayer
                           videoSrc={item.video}
                           thumbnail={item.image}
@@ -350,8 +345,8 @@ const Testimonials = () => {
       <section className="pt-[30px]">
         <div className="custom-container mx-auto  px-4 sm:px-[32px] w-full relative z-10">
           <div className="sm:border-y border-t border-[#252525] md:pt-[100px] sm:pt-[70px] pt-[60px] sm:pb-[54px]">
-            <div className="flex md:flex-nowrap flex-wrap gap-[50px] md:px-[50px] px-4">
-              <div className="lg:w-[60%] md:w-[50%] w-full">
+            <div className="flex md:flex-nowrap justify-center flex-wrap gap-[50px]">
+              <div className="xl:w-[60%] md:w-[50%] w-full">
                 <h2 class="lg:text-[52px] sm:text-[42px] text-[32px] leading-[1.2] font-bold text-white text-left">
                   Get in touch with us
                 </h2>
@@ -359,7 +354,7 @@ const Testimonials = () => {
                   Contact us on xxxxxxxxx/ xxxxxxxxx
                 </p>
                 {/* Mobile Form */}
-                <div className="md:hidden block">
+                <div className="md:hidden block pt-3">
                   <GetInTouch />
                 </div>
                 <div className="lg:my-[80px] my-[50px]">
@@ -422,7 +417,7 @@ const Testimonials = () => {
                 </div>
               </div>
               {/* Desktop Form */}
-              <div className="lg:w-[40%] md:w-[50%] w-full md:block hidden">
+              <div className="xl:w-[35%] md:w-[45%] w-full md:block hidden">
                 <GetInTouch />
               </div>
             </div>

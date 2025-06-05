@@ -137,6 +137,7 @@ const FreeEBook = () => {
   };
 
   const [selected, setSelected] = useState("ebook");
+  const [selectedBox, setSelectedBox] = useState("aiportal");
 
   return (
     <>
@@ -290,115 +291,93 @@ const FreeEBook = () => {
         />
         <div className="custom-container mx-auto sm:py-[64px] py-[40px] px-4 sm:px-[32px] w-full z-10 relative ">
           <div className="flex lg:flex-nowrap flex-wrap 2xl:gap-[150px] lg:gap-[80px] gap-[40px]">
+            {/* Desktop Box */}
             <div className="lg:w-[60%] w-full sm:inline hidden">
-              <div className="bg-[#1B1B1B] mb-[33px] rounded-[10px] xl:py-[34px] py-8 xl:px-[38px] px-6 flex items-center justify-between">
-                <div>
-                  <h3 className="text-white font-bold lg:text-[36px] text-[32px] leading-[42px] mb-1">
-                    E-Book Only
-                  </h3>
-                  <span className="text-[#B8B8B8] font-normal text-xl">
-                    Get 7-days Free Trial
-                  </span>
-                </div>
-                <div className="flex 2xl:gap-[45px] gap-[32px]">
-                  <h4 className="text-[#00FEFC] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold ">
-                    $0.99
-                  </h4>
-                  {/* <div className="flex items-center">
-                    <button
-                      onClick={decrement}
-                      className="xl:w-[44px] xl:h-[44px] w-[36px] h-[36px] p-2 cursor-pointer rounded-full bg-[#3D3D3D] text-white text-center flex items-center justify-center"
-                    >
-                      <svg
-                        width="33"
-                        height="5"
-                        viewBox="0 0 33 5"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M30.2632 4.75123C30.259 4.75123 30.2548 4.75123 30.2548 4.75123L2.44968 4.62931C1.39028 4.62511 0.532668 3.76329 0.541077 2.70389C0.545281 1.64869 1.40289 0.795288 2.45809 0.795288C2.45809 0.795288 2.46229 0.795288 2.4665 0.795288L30.2716 0.917203C31.331 0.921407 32.1844 1.78322 32.1802 2.84262C32.176 3.89782 31.3184 4.75123 30.2632 4.75123Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </button>
-
-                    <span className="text-[#B0B0B0] 2xl:text-[42px] xl:text-[36px] text-[30px] 2xl:px-3 px-4 font-semibold text-center">
-                      {count}
+              <div
+                onClick={() => setSelectedBox("ebook")}
+                className={`cursor-pointer border-4 bg-[#1B1B1B] mb-[33px]  rounded-[10px] ${
+                  selectedBox === "ebook"
+                    ? "border-[#F18C2D]"
+                    : "border-[#1B1B1B]"
+                }`}
+              >
+                {/* E-Book Box content here */}
+                <div className=" xl:py-[34px] py-8 xl:px-[38px] px-6 flex items-center justify-between">
+                  <div>
+                    <h3 className="text-white font-bold lg:text-[36px] text-[32px] leading-[42px] mb-1">
+                      E-Book Only
+                    </h3>
+                    <span className="text-[#B8B8B8] font-normal text-xl">
+                      Get 7-days Free Trial
                     </span>
-
-                    <button
-                      onClick={increment}
-                      className="xl:w-[44px] xl:h-[44px] w-[36px] h-[36px] p-2 cursor-pointer rounded-full bg-[#3D3D3D] text-white text-center flex items-center justify-center"
-                    >
-                      <svg
-                        width="29"
-                        height="29"
-                        viewBox="0 0 29 29"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M15.9009 1.47397C15.9009 0.999 15.5071 0.605225 15.0118 0.605225H13.2703C12.7588 0.605225 12.3813 0.999 12.3813 1.47397V12.9259H0.929288C0.454323 12.9259 0.0605469 13.3197 0.0605469 13.815V15.5565C0.0605469 16.0721 0.454323 16.4455 0.929288 16.4455H12.3813V27.8975C12.3813 28.3765 12.775 28.7703 13.2703 28.7703H15.0118C15.5274 28.7703 15.9009 28.3765 15.9009 27.8975V16.4455H27.3528C27.8319 16.4455 28.2256 16.0518 28.2256 15.5565V13.815C28.2256 13.3035 27.8319 12.9259 27.3528 12.9259H15.9009V1.47397Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </button>
-                  </div> */}
+                  </div>
+                  <div className="flex 2xl:gap-[45px] gap-[32px]">
+                    <h4 className="text-[#00FEFC] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold ">
+                      $0.99
+                    </h4>
+                  </div>
                 </div>
               </div>
 
-              <div className="border-4 border-[#F18C2D] rounded-[6px] bg-[#1B1B1B]">
-                <div className="flex xl:p-[32px] p-6 xl:gap-[42px] gap-[28px] border-b-2 border-white border-dashed">
-                  <img
-                    src={Rectangle}
-                    alt="Rectangle"
-                    className="w-3xl:w-[27%] w-[32%] object-cover"
-                  />
-                  <div className="w-3xl:w-[70%] w-[68%] flex flex-col justify-between">
-                    <div>
-                      <h3 className="text-[#F3F2F3] lg:text-[36px] text-[32px] leading-[42px] font-bold">
-                        6 Month AI Portal
-                      </h3>
-                      <ul className="text-xl text-[#B8B8B8] font-normal mt-1">
-                        <li className="py-[2px]">- 10 Full Mock Tests</li>
-                        <li className="py-[2px]">- 20 Sectional Tests</li>
-                        <li className="py-[2px]">- 5000+ Exam Questions</li>
-                        <li className="py-[2px]">- 5 Books Included</li>
-                      </ul>
-                    </div>
-                    <div className="flex justify-end items-center 2xl:gap-[60px] gap-[30px] mt-[25px]">
-                      <h4 className="text-[#B0B0B0] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold line-through">
-                        $129
-                      </h4>
-                      <div className="flex items-center gap-[45px] justify-between">
-                        <h4 className="text-[#F0AB0F] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold ">
-                          $99
+              <div
+                onClick={() => setSelectedBox("aiportal")}
+                className={`cursor-pointer border-4 ${
+                  selectedBox === "aiportal"
+                    ? "border-[#F18C2D]"
+                    : "border-[#1B1B1B]"
+                } rounded-[6px] bg-[#1B1B1B]`}
+              >
+                {/* AI Portal Box content here */}
+                <div className=" ">
+                  <div className="flex xl:p-[32px] p-6 xl:gap-[42px] gap-[28px] border-b-2 border-white border-dashed">
+                    <img
+                      src={Rectangle}
+                      alt="Rectangle"
+                      className="w-3xl:w-[27%] w-[32%] object-cover"
+                    />
+                    <div className="w-3xl:w-[70%] w-[68%] flex flex-col justify-between">
+                      <div>
+                        <h3 className="text-[#F3F2F3] lg:text-[36px] text-[32px] leading-[42px] font-bold">
+                          6 Month AI Portal
+                        </h3>
+                        <ul className="text-xl text-[#B8B8B8] font-normal mt-1">
+                          <li className="py-[2px]">- 10 Full Mock Tests</li>
+                          <li className="py-[2px]">- 20 Sectional Tests</li>
+                          <li className="py-[2px]">- 5000+ Exam Questions</li>
+                          <li className="py-[2px]">- 5 Books Included</li>
+                        </ul>
+                      </div>
+                      <div className="flex justify-end items-center 2xl:gap-[60px] gap-[30px] mt-[25px]">
+                        <h4 className="text-[#B0B0B0] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold line-through">
+                          $129
                         </h4>
+                        <div className="flex items-center gap-[45px] justify-between">
+                          <h4 className="text-[#F0AB0F] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold ">
+                            $99
+                          </h4>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="p-[32px]">
-                  <div className="flex justify-between  items-center md:gap-[42px] gap-[28px]">
-                    <div>
-                      <h3 className="text-white font-bold sm:text-[38px] text-[32px] leading-[1.2]">
-                        + Prediction File{" "}
-                      </h3>
-                      <span className="text-[#B8B8B8] font-normal 2xl:text-xl xl:text-lg text-base">
-                        Get monthly updates for 6 months
-                      </span>
-                    </div>
-                    <div className="flex 2xl:gap-[45px] gap-[32px] items-center">
-                      <button className="flex items-center gap-3 bg-[#45595A] rounded-[10px] px-4 py-2 text-white font-semibold text-lg cursor-pointer">
-                        Add
-                        <img src={Plus} alt="plus-icon" className="h-5" />
-                      </button>
-                      <h4 className="text-[#00FEFC] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold ">
-                        + $9
-                      </h4>
+                  <div className="p-[32px]">
+                    <div className="flex justify-between  items-center md:gap-[42px] gap-[28px]">
+                      <div>
+                        <h3 className="text-white font-bold sm:text-[38px] text-[32px] leading-[1.2]">
+                          + Prediction File{" "}
+                        </h3>
+                        <span className="text-[#B8B8B8] font-normal 2xl:text-xl xl:text-lg text-base">
+                          Get monthly updates for 6 months
+                        </span>
+                      </div>
+                      <div className="flex 2xl:gap-[45px] gap-[32px] items-center">
+                        <button className="flex items-center gap-3 bg-[#45595A] rounded-[10px] px-4 py-2 text-white font-semibold text-lg cursor-pointer">
+                          Add
+                          <img src={Plus} alt="plus-icon" className="h-5" />
+                        </button>
+                        <h4 className="text-[#00FEFC] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold ">
+                          + $9
+                        </h4>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -453,6 +432,7 @@ const FreeEBook = () => {
                     </span>
                   </div>
                 </div>
+                {/* Mobile Box */}
                 <div className="sm:hidden block">
                   {/* E-Book Only Box */}
                   <div

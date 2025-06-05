@@ -14,11 +14,13 @@ import NAATICCL from "./pages/NAATI-CCL";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import FreeEBook from "./pages/Free-E-book";
+import Home2 from "./pages/thankyou";
 
 function App() {
   const location = useLocation();
   const isHomePage =
-    location.pathname === "/" || location.pathname === "/language-king-website/";
+    location.pathname === "/" ||
+    location.pathname === "/language-king-website/";
 
   return (
     <>
@@ -33,6 +35,7 @@ function App() {
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/free-e-book" element={<FreeEBook />}></Route>
+          <Route path="/home2" element={<Home2 />}></Route>
         </Routes>
       </main>
       <Footer />
