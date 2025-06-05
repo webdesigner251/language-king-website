@@ -29,7 +29,7 @@ const VideoPlayer = ({
           <img
             src={thumbnail}
             alt="Video thumbnail"
-            className={`w-full h-full object-cover  ${thumbnailClassName}`}
+            className={`w-full h-full onject-cover ${thumbnailClassName}`}
           />
           <div className="absolute inset-0 flex items-center justify-center transition">
             <div

@@ -34,9 +34,14 @@ import checklist from "../assets/icons/checkmark.svg";
 import video from "../assets/videos/placeholder-video.mp4";
 import VideoModal from "../components/videoModal";
 import CallbackForm from "../components/callback-popup";
+import Video1 from "../assets/videos/VID-20250605-WA0001.mp4";
+import Video2 from "../assets/videos/VID-20250605-WA0002.mp4";
+import Video3 from "../assets/videos/VID-20250605-WA0003.mp4";
+import Video4 from "../assets/videos/VID-20250605-WA0004.mp4";
+
 const testimonials = [
   {
-    reviewImg: video,
+    reviewImg: Video1,
     thumbnail: ReviewImg1,
     text: "I’m getting a lot of nutrients in one scoop",
     avatar: Avatar1,
@@ -48,7 +53,7 @@ const testimonials = [
     starIcon: Star,
   },
   {
-    reviewImg: video,
+    reviewImg: Video2,
     thumbnail: ReviewImg2,
     text: "It’s kind of slipped into our recruitment stream so easily There’s no effort needed... ",
     avatar: Avatar2,
@@ -60,7 +65,7 @@ const testimonials = [
     starIcon: Star,
   },
   {
-    reviewImg: video,
+    reviewImg: Video3,
     thumbnail: ReviewImg3,
     text: `All of our hiring team said that it saves them hours. <span class="text-white/50">We’re getting feedback within 20-30 minutes from interviews now, which is ideal for recruiting team that works with time to hire targets.</span>`,
     avatar: Avatar3,
@@ -72,7 +77,7 @@ const testimonials = [
     starIcon: Star,
   },
   {
-    reviewImg: video,
+    reviewImg: Video4,
     thumbnail: ReviewImg4,
     text: `There is a clear impact on time saved. <span class="text-white/50">We saved 53 hours per month across our recruiting team.</span>`,
     avatar: Avatar4,
