@@ -6,7 +6,11 @@ import Avatarnew from "../assets/avatar6.png";
 import CheckmarkGray from "../assets/icons/checkmark-gray.svg";
 import PinkQuote from "../assets/icons/pink-quote.svg";
 import VideoPlayer from "../components/videoPlayer";
-import video from "../assets/videos/placeholder-video.mp4";
+// import video from "../assets/videos/placeholder-video.mp4";
+import Video1 from "../assets/videos/VID-20250605-WA0001.mp4";
+import Video2 from "../assets/videos/VID-20250605-WA0002.mp4";
+import Video3 from "../assets/videos/VID-20250605-WA0003.mp4";
+import Video4 from "../assets/videos/VID-20250605-WA0004.mp4";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -23,7 +27,7 @@ const slidesData = [
     image: PlaceholerImage,
     avatar: Avatarnew,
     flag: Russia1,
-    video: video,
+    video: Video1,
   },
   {
     id: 2,
@@ -33,7 +37,7 @@ const slidesData = [
     image: PlaceholerImage,
     avatar: Avatarnew,
     flag: Russia1,
-    video: video,
+    video: Video2,
   },
   {
     id: 3,
@@ -43,7 +47,7 @@ const slidesData = [
     image: PlaceholerImage,
     avatar: Avatarnew,
     flag: Russia1,
-    video: video,
+    video: Video3,
   },
   {
     id: 4,
@@ -53,7 +57,7 @@ const slidesData = [
     image: PlaceholerImage,
     avatar: Avatarnew,
     flag: Russia1,
-    video: video,
+    video: Video4,
   },
   {
     id: 5,
@@ -63,7 +67,7 @@ const slidesData = [
     image: PlaceholerImage,
     avatar: Avatarnew,
     flag: Russia1,
-    video: video,
+    video: Video1,
   },
   {
     id: 6,
@@ -73,7 +77,7 @@ const slidesData = [
     image: PlaceholerImage,
     avatar: Avatarnew,
     flag: Russia1,
-    video: video,
+    video: Video2,
   },
 ];
 
@@ -89,9 +93,9 @@ const Testimonials = () => {
                   Why Students Love Learning With Us
                 </h1>
 
-                <div className="lg:hidden block w-full py-[50px]">
+                <div className="lg:hidden aspect-3/2 block w-full py-[50px]">
                   <VideoPlayer
-                    videoSrc={video}
+                    videoSrc={Video1}
                     thumbnail={PlaceholerImage}
                     wrapperClassName="rounded-[10px]"
                     videoClassName="rounded-[10px]"
@@ -120,9 +124,9 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:block hidden h-auto aspect-video">
+            <div className="lg:block hidden h-auto aspect-3/2">
               <VideoPlayer
-                videoSrc={video}
+                videoSrc={Video1}
                 thumbnail={PlaceholerImage}
                 wrapperClassName="rounded-[10px]"
                 videoClassName="rounded-[10px]"
@@ -299,12 +303,12 @@ const Testimonials = () => {
                 <SwiperSlide key={item.id}>
                   <div>
                     <div className="relative">
-                      <div className="rounded-[10px] w-full aspect-video h-auto object-cover relative z-10">
+                      <div className="rounded-[10px] w-full aspect-3/2 object-cover relative z-10">
                         <VideoPlayer
                           videoSrc={item.video}
                           thumbnail={item.image}
                           wrapperClassName="rounded-[10px]"
-                          videoClassName="rounded-[10px]"
+                          videoClassName="rounded-[10px] object-contain"
                           thumbnailClassName="rounded-[10px]"
                         />
                       </div>
