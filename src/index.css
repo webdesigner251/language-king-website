@@ -336,7 +336,7 @@ header.active-header .desktop-logo {
 .iti--separate-dial-code input[type=text],
 .iti--separate-dial-code input[type=tel] {
   padding-right: 12px !important;
-  padding-left: 120px !important;
+  padding-left: 110px !important;
 }
 
 .iti__arrow {
@@ -457,6 +457,23 @@ header.active-header .desktop-logo {
     line-height: 48px;
   }
 
+
+  .iti__selected-flag {
+    padding: 0 12px 0 18px !important;
+  }
+
+  .iti--allow-dropdown input,
+  .iti--allow-dropdown input[type=text],
+  .iti--allow-dropdown input[type=tel],
+  .iti--separate-dial-code input,
+  .iti--separate-dial-code input[type=text],
+  .iti--separate-dial-code input[type=tel] {
+    padding-left: 90px !important;
+  }
+
+  .iti__flag {
+    transform: scale(1.3);
+  }
 }
 
 @media (max-width: 480px) {

@@ -93,13 +93,13 @@ const Testimonials = () => {
                   Why Students Love Learning With Us
                 </h1>
 
-                <div className="lg:hidden aspect-3/2 block w-full py-[50px]">
+                <div className="lg:hidden aspect-16/9 block w-full py-[50px]">
                   <VideoPlayer
                     videoSrc={Video1}
                     thumbnail={PlaceholerImage}
-                    wrapperClassName="rounded-[10px]"
-                    videoClassName="rounded-[10px]"
-                    thumbnailClassName="rounded-[10px]"
+                    wrapperClassName="rounded-[10px] h-auto"
+                    videoClassName="rounded-[10px] h-auto"
+                    thumbnailClassName="rounded-[10px] h-auto"
                   />
                 </div>
                 <hr className="border-1 border-y-[#252525] my-[40px] lg:block hidden border-max-width" />
@@ -124,7 +124,7 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:block hidden h-auto aspect-3/2">
+            <div className="lg:block hidden aspect-16/9">
               <VideoPlayer
                 videoSrc={Video1}
                 thumbnail={PlaceholerImage}
@@ -202,9 +202,9 @@ const Testimonials = () => {
                         <VideoPlayer
                           videoSrc={item.video}
                           thumbnail={item.image}
-                          wrapperClassName="rounded-[10px]"
-                          videoClassName="rounded-[10px] object-cover"
-                          thumbnailClassName="rounded-[10px]"
+                          wrapperClassName="rounded-[10px] h-full"
+                          videoClassName="rounded-[10px] object-contain h-full"
+                          thumbnailClassName="rounded-[10px] h-full"
                         />
                       </div>
                       {/* <div className="absolute inset-0 bg-black opacity-35 rounded-[10px]"></div> */}
@@ -303,13 +303,13 @@ const Testimonials = () => {
                 <SwiperSlide key={item.id}>
                   <div>
                     <div className="relative">
-                      <div className="rounded-[10px] w-full aspect-3/2 object-cover relative z-10">
+                      <div className="rounded-[10px] w-full aspect-3/2 h-auto object-cover object-center relative z-10">
                         <VideoPlayer
                           videoSrc={item.video}
                           thumbnail={item.image}
-                          wrapperClassName="rounded-[10px]"
-                          videoClassName="rounded-[10px] object-contain"
-                          thumbnailClassName="rounded-[10px]"
+                          wrapperClassName="rounded-[10px] h-full"
+                          videoClassName="rounded-[10px] object-contain h-full"
+                          thumbnailClassName="rounded-[10px] h-full"
                         />
                       </div>
                     </div>
@@ -349,12 +349,12 @@ const Testimonials = () => {
       <section className="pt-[30px]">
         <div className="custom-container mx-auto  px-4 sm:px-[32px] w-full relative z-10">
           <div className="sm:border-y border-t border-[#252525] md:pt-[100px] sm:pt-[70px] pt-[60px] sm:pb-[54px]">
-            <div className="flex md:flex-nowrap justify-center flex-wrap gap-[50px]">
-              <div className="xl:w-[60%] md:w-[50%] w-full">
-                <h2 class="lg:text-[52px] sm:text-[42px] text-[32px] leading-[1.2] font-bold text-white text-left">
+            <div className="flex md:flex-nowrap justify-between flex-wrap lg:gap-[50px] gap-[30px]">
+              <div className="xl:w-[60%] lg:w-[55%] md:w-[50%] w-full">
+                <h2 class="lg:text-[52px] sm:text-[42px] text-[32px] leading-[1.2] -mt-[10px] font-bold text-white text-left lg:max-w-full md:max-w-[340px]">
                   Get in touch with us
                 </h2>
-                <p className="relative text-[#B7B7B7] text-lg max-w-[600px] my-2">
+                <p className="relative text-[#B7B7B7] text-lg max-w-[600px] my-3">
                   Contact us on xxxxxxxxx/ xxxxxxxxx
                 </p>
                 {/* Mobile Form */}
@@ -362,7 +362,7 @@ const Testimonials = () => {
                   <GetInTouch />
                 </div>
                 <div className="lg:my-[80px] my-[50px]">
-                  <h3 className="text-white font-bold md:text-[22px] sm:text-xl text-lg">
+                  <h3 className="text-white font-bold md:text-2xl sm:text-xl text-lg">
                     Why Language King?
                   </h3>
                   <ul className="mt-5 sm:ps-5 max-w-[700px]">
@@ -421,7 +421,7 @@ const Testimonials = () => {
                 </div>
               </div>
               {/* Desktop Form */}
-              <div className="xl:w-[35%] md:w-[45%] w-full md:block hidden">
+              <div className="xl:w-[35%] lg:w-[40%] md:w-[50%] w-full md:block hidden">
                 <GetInTouch />
               </div>
             </div>

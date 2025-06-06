@@ -364,7 +364,7 @@ const Home = () => {
                   <div key={index} className="relative">
                     <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
                       <div
-                        className="w-full h-[220px] 2xl:h-[200px] sm:h-[180px] cursor-pointer relative"
+                        className="w-full aspect-16/9 cursor-pointer relative"
                         onClick={() => {
                           setActiveVideo(item.videoSrc);
                           setIsModalOpen(true);

@@ -32,13 +32,23 @@ const TestimonialCarousel = ({ testimonials }) => {
         <SwiperSlide className="h-auto-swiper" key={i}>
           <div className="flex flex-col justify-between h-full sm:gap-2 gap-y-[50px]">
             <div>
-              <div className="aspect-3/2 relative w-full h-auto overflow-hidden rounded-[10px] mb-[24px]">
+              {/* <div className="aspect-3/2 relative w-full h-auto overflow-hidden rounded-[10px] mb-[24px]">
                 <VideoPlayer
                   videoSrc={item.reviewImg}
                   thumbnail={item.thumbnail}
-                  wrapperClassName="rounded-[10px]"
-                  videoClassName="rounded-[10px]"
-                  thumbnailClassName="rounded-[10px]"
+                  wrapperClassName="rounded-[10px] h-auto"
+                  videoClassName="rounded-[10px] object-contain"
+                  thumbnailClassName="rounded-[10px] h-auto"
+                />
+              </div> */}
+
+              <div className="rounded-[10px] w-full aspect-3/2 object-cover object-center relative z-10 mb-2">
+                <VideoPlayer
+                  videoSrc={item.reviewImg}
+                  thumbnail={item.thumbnail}
+                  wrapperClassName="rounded-[10px] h-full"
+                  videoClassName="rounded-[10px] object-contain h-full"
+                  thumbnailClassName="rounded-[10px] h-full"
                 />
               </div>
               <p

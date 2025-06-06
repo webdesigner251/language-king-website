@@ -13,7 +13,7 @@ const Thankyou = () => {
           alt="checkmark"
           className="mx-auto sm:w-[60px] w-[50px] mb-2 h-auto zoom-pulse"
         />
-        <h2 className="font-bold lg:text-[42px] text-4xl text-center text-gradient-OrangeRed py-2">
+        <h2 className="font-bold lg:text-[42px] text-4xl text-center text-[#00C360] py-2">
           Thank You!
         </h2>
         <h3 className="font-medium sm:text-xl text-lg text-white">
@@ -45,7 +45,7 @@ const Thankyou = () => {
               personalized trial class.
             </div>
 
-            <div className="bg-[#121212] rounded-2xl p-3 sm:max-w-[90%] max-w-[98%] w-full mx-auto flex flex-col justify-center">
+            <div className="bg-[#121212] rounded-2xl p-3  w-full mx-auto flex flex-col justify-center">
               <h4 className="font-bold md:text-2xl text-xl text-white  mx-auto pb-4 text-center">
                 Need immediate assistance?{" "}
               </h4>

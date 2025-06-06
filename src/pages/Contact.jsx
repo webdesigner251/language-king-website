@@ -80,9 +80,9 @@ const Contact = () => {
       <section className="">
         <div className="custom-container mx-auto  px-4 sm:px-[32px] w-full relative z-10">
           <div className=" md:pt-[100px] sm:pt-[70px] pt-[60px] sm:pb-[54px]">
-            <div className="flex md:flex-nowrap justify-between flex-wrap gap-[50px]">
-              <div className="xl:w-[60%] md:w-[50%] w-full">
-                <h2 class="lg:text-[52px] sm:text-[42px] text-[32px] leading-[1.2] -mt-[10px] font-bold text-white text-left xl:max-w-auto md:max-w-[340px]">
+            <div className="flex md:flex-nowrap justify-between flex-wrap lg:gap-[50px] gap-[30px]">
+              <div className="xl:w-[60%] lg:w-[55%] md:w-[50%] w-full">
+                <h2 class="lg:text-[52px] sm:text-[42px] text-[32px] leading-[1.2] -mt-[10px] font-bold text-white text-left lg:max-w-full md:max-w-[340px]">
                   Get in touch with us
                 </h2>
                 <p className="relative text-[#B7B7B7] text-lg max-w-[600px] my-3">
@@ -152,7 +152,7 @@ const Contact = () => {
                 </div>
               </div>
               {/* Desktop Form */}
-              <div className="xl:w-[35%] md:w-[45%] w-full md:block hidden">
+              <div className="xl:w-[35%] lg:w-[40%] md:w-[50%] w-full md:block hidden">
                 <GetInTouch />
               </div>
             </div>

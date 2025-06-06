@@ -12,14 +12,15 @@ const VideoPlayer = ({
 
   return (
     <div
-      className={`relative w-full h-full overflow-hidden ${wrapperClassName}`}
+      className={`relative w-full overflow-hidden bg-black ${wrapperClassName}`}
     >
       {isPlaying ? (
         <video
           src={videoSrc}
           controls
+          controlsList="nodownload"
           autoPlay
-          className={`w-full h-full  ${videoClassName}`}
+          className={`w-full  ${videoClassName}`}
         />
       ) : (
         <div
@@ -29,7 +30,7 @@ const VideoPlayer = ({
           <img
             src={thumbnail}
             alt="Video thumbnail"
-            className={`w-full h-full onject-cover ${thumbnailClassName}`}
+            className={`w-full onject-cover ${thumbnailClassName}`}
           />
           <div className="absolute inset-0 flex items-center justify-center transition">
             <div

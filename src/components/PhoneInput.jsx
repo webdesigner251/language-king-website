@@ -8,15 +8,14 @@ const PhoneInput = ({ formData, setFormData, errors, inputClassName = "" }) => {
   const itiRef = useRef(null);
 
   useEffect(() => {
-    const input = inputRef.current; // ✅ capture ref at effect start
-
+    const input = inputRef.current;
     if (!input) return;
 
     itiRef.current = intlTelInput(input, {
       initialCountry: "auto",
       preferredCountries: ["au", "in", "us"],
       geoIpLookup: (callback) => {
-        fetch("https://ipinfo.io/json?token=YOUR_TOKEN") // Replace with actual token
+        fetch("https://ipinfo.io/json?token=YOUR_TOKEN") // Replace with your actual token
           .then((res) => res.json())
           .then((data) => callback(data?.country || "au"))
           .catch(() => callback("au"));
@@ -25,31 +24,10 @@ const PhoneInput = ({ formData, setFormData, errors, inputClassName = "" }) => {
         "https://cdn.jsdelivr.net/npm/intl-tel-input@17/build/js/utils.js",
       autoPlaceholder: "polite",
       placeholderNumberType: "MOBILE",
-      nationalMode: true,
+      nationalMode: false,
     });
 
-    const updatePlaceholder = () => {
-      setTimeout(() => {
-        const input = inputRef.current;
-        const rawPlaceholder = input?.getAttribute("placeholder");
-
-        if (
-          rawPlaceholder &&
-          !rawPlaceholder.startsWith("Mobile number e.g:")
-        ) {
-          input.setAttribute(
-            "placeholder",
-            `Mobile number e.g: ${rawPlaceholder}`
-          );
-        }
-      }, 0);
-    };
-
-    updatePlaceholder();
-    input.addEventListener("countrychange", updatePlaceholder);
-
     return () => {
-      input.removeEventListener("countrychange", updatePlaceholder); // ✅ safe
       itiRef.current?.destroy();
     };
   }, []);
