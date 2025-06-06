@@ -348,7 +348,7 @@ const PTEMasterClass = () => {
                         </linearGradient>
                       </defs>
                     </svg>
-                    Watch a Free Lessons
+                    Watch a Free Lesson
                   </a>
                 </div>
               </div>
@@ -710,7 +710,7 @@ const PTEMasterClass = () => {
                   </p>
                   <a
                     href="#"
-                    className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-secondary text-white px-[50px] sm:py-3 py-[14px] font-semibold sm:text-xl text-lg relative z-10 w-full"
+                    className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-secondary text-white px-[50px] sm:py-[15.5px] py-[14px] font-normal leading-[24px] text-lg relative z-10 w-full"
                   >
                     Take the Course
                   </a>

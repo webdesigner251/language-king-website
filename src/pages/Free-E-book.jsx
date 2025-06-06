@@ -141,20 +141,20 @@ const FreeEBook = () => {
 
   return (
     <>
-      <section className="2xl:pt-[140px] sm:pt-[100px] pt-[60px] sm:pb-[60px] pb-[40px] relative flex flex-column justify-center items-center lg:mt-0 sm:mt-8 mt-6">
+      <section className="2xl:pt-[80px] sm:pt-[70px] pt-[60px] sm:pb-[60px] pb-[40px] relative flex flex-column justify-center items-center lg:mt-0 sm:mt-8 mt-6 min-h-[90vh] border-b border-[#707070]">
         <div className="sm:bg-transparent bg-gradient-FadetoBlack h-full w-full absolute top-0 z-10 lg:hidden block"></div>
         <img
           src={BannerBg}
           alt="BannerBg"
           className="absolute w-full h-full top-0 left-0 right-0 bottom-0 object-cover"
         />
-        <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full z-10 relative ">
-          <div className="flex 2xl:gap-x-[190px] xl:gap-x-[100px] gap-x-[140px] sm:flex-nowrap flex-wrap">
-            <div className="sm:w-[20%] w-full sm:inline flex justify-center">
+        <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full z-10 relative">
+          <div className="flex 2xl:gap-x-[100px] xl:gap-x-[100px] gap-x-[140px] sm:flex-nowrap flex-wrap">
+            <div className="sm:w-[20%] w-full flex flex-col justify-between">
               <img
                 src={NewTipsImage}
                 alt="NewTipsImage"
-                className="h-auto 2xl:max-w-[290px] xl:max-w-[250px] max-w-[200px]"
+                className="h-auto xl:max-w-[250px] max-w-[200px] -mt-[20px]"
               />
               <span className="uppercase font-semibold text-white/50 sm:block hidden">
                 LEARN FROM THE EXPERT + MORE:
@@ -176,105 +176,102 @@ const FreeEBook = () => {
               </div>
             </div>
             <div className="sm:w-[80%]">
-              <div className="flex flex-col justify-between h-full">
-                <div className="flex flex-col">
-                  <div className="flex lg:flex-nowrap flex-wrap gap-5 justify-between lg:pe-[30px]">
-                    <div className="lg:max-w-[70%] max-w-full">
-                      <h1 className="text-white main-heading font-bold">
-                        PTE Reading Blanks{" "}
-                        <span className="text-[#F1CD5A] block">
-                          Free E-book
-                        </span>
-                      </h1>
-                      <p className="font-light md:text-lg leading-[28px] sm:text-base text-sm text-white mt-3">
-                        Learn how to solve PTE Reading Blanks with confidence,
-                        master linkers, starters, and connectors, test your
-                        skills with an interactive quiz, and boost your score
-                        effortlessly
-                      </p>
-                    </div>
-                    <div className="lg:max-w-[30%] max-w-full lg:block hidden">
-                      <h2 className="text-white xl:text-lg text-base font-bold my-[25px]">
-                        YOU’LL LEARN HOW TO:
-                      </h2>
-                      <ul className="">
-                        <li className="flex items-center sm:leading-[1.5] leading-[1.4] sm:text-base text-sm text-white sm:gap-7 gap-4 py-2">
-                          <img
-                            src={CheckmarkYellow}
-                            alt="CheckmarkYellow"
-                            className="w-4"
-                          />
-                          Attempt R&W blanks
-                        </li>
-                        <li className="flex items-center sm:leading-[1.5] leading-[1.4] sm:text-base text-sm text-white sm:gap-7 gap-4 py-2">
-                          <img
-                            src={CheckmarkYellow}
-                            alt="CheckmarkYellow"
-                            className="w-4"
-                          />
-                          Difference b/w linkers, <br /> starters and <br />{" "}
-                          connectors
-                        </li>
-                        <li className="flex items-center sm:leading-[1.5] leading-[1.4] sm:text-base text-sm text-white sm:gap-7 gap-4 py-2">
-                          <img
-                            src={CheckmarkYellow}
-                            alt="CheckmarkYellow"
-                            className="w-4"
-                          />
-                          Quiz to test your learning
-                        </li>
-                      </ul>
-                    </div>
+              <div className="flex flex-col justify-between gap-y-[50px] h-full">
+                <div className="flex lg:flex-nowrap flex-wrap gap-5 justify-between lg:pe-[30px]">
+                  <div className="lg:max-w-[70%] max-w-full">
+                    <h1 className="text-white main-heading font-bold">
+                      PTE Reading Blanks{" "}
+                      <span className="text-[#F1CD5A] block">Free E-book</span>
+                    </h1>
+                    <p className="font-light md:text-lg leading-[28px] sm:text-base max-w-[800px] text-sm text-white mt-3">
+                      Learn how to solve PTE Reading Blanks with confidence,
+                      master linkers, starters, and connectors, test your skills
+                      with an interactive quiz, and boost your score
+                      effortlessly
+                    </p>
                   </div>
-                  <div className="flex lg:flex-nowrap flex-wrap sm:justify-start justify-center sm:mb-0 mb-[40px] max-w-[900px] lg:gap-[40px] sm:gap-7 gap-4 sm:mt-[80px] mt-[40px] sm:order-0 -order-1">
-                    <div className="relative rounded-lg sm:w-auto w-full ">
-                      <a
-                        href="#"
-                        className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 sm:py-3 py-[14px] sm:font-semibold font-bold sm:text-xl text-lg relative z-10 sm:min-w-[292px] sm:w-auto w-full rounded-lg "
-                      >
-                        Start 7-Day Trial
-                      </a>
-                    </div>
-                    <div>
-                      <h4 className="text-[#F1CD5A] xl:text-xl text-lg font-semibold sm:text-start text-center">
-                        Save $33 by using AI Portal + Prediction File + 6 Books
-                      </h4>
-                      <span className="uppercase font-semibold text-white/50 mt-[5px] sm:inline hidden">
-                        LEARN FROM THE EXPERT + MORE:
-                      </span>
-                    </div>
+                  <div className="lg:max-w-[30%] max-w-full lg:block hidden">
+                    <h2 className="text-white xl:text-lg text-base font-bold my-[25px]">
+                      YOU’LL LEARN HOW TO:
+                    </h2>
+                    <ul className="">
+                      <li className="flex items-center sm:leading-[1.5] leading-[1.4] sm:text-base text-sm text-white sm:gap-7 gap-4 py-2">
+                        <img
+                          src={CheckmarkYellow}
+                          alt="CheckmarkYellow"
+                          className="w-4"
+                        />
+                        Attempt R&W blanks
+                      </li>
+                      <li className="flex items-center sm:leading-[1.5] leading-[1.4] sm:text-base text-sm text-white sm:gap-7 gap-4 py-2">
+                        <img
+                          src={CheckmarkYellow}
+                          alt="CheckmarkYellow"
+                          className="w-4"
+                        />
+                        Difference b/w linkers, <br /> starters and connectors
+                      </li>
+                      <li className="flex items-center sm:leading-[1.5] leading-[1.4] sm:text-base text-sm text-white sm:gap-7 gap-4 py-2">
+                        <img
+                          src={CheckmarkYellow}
+                          alt="CheckmarkYellow"
+                          className="w-4"
+                        />
+                        Quiz to test your learning
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div className="flex sm:flex-nowrap flex-wrap  2xl:mt-[120px] sm:mt-[80px] mt-[25px] items-center sm:gap-0 gap-[20px]">
-                  <div className="sm:w-[25%] w-full">
-                    <span className="text-white md:text-lg sm:text-base text-sm font-semibold">
-                      Other Books
-                    </span>
-                    <h3 className="sm:text-base text-sm font-light text-white/60 leading-[1.2]">
-                      PTE Study Material
-                    </h3>
+                <div className="lg:max-w-[70%] max-w-full flex lg:flex-nowrap flex-wrap items-center sm:justify-start justify-center sm:mb-0 mb-[40px] lg:gap-[40px] sm:gap-7 gap-4 sm:order-0 -order-1 ">
+                  <div className="relative rounded-lg sm:w-auto w-full ">
+                    <a
+                      href="#"
+                      className="align-middle inline-flex items-center justify-center text-center primary-btn primary-btn-rounded bg-gradient-primary text-black px-3 sm:py-3 py-[14px] font-normal  sm:text-xl text-lg relative z-10 sm:min-w-[242px] sm:w-auto w-full rounded-lg "
+                    >
+                      Start 7-Day Trial
+                    </a>
                   </div>
-                  <div className="sm:w-[75%] w-full sm:grid grid-cols-4 flex justify-between gap-[20px]">
-                    <img
-                      src={Book1}
-                      alt="Book1"
-                      className="w-full h-auto max-w-[50px]"
-                    />
-                    <img
-                      src={Book2}
-                      alt="Book2"
-                      className="w-full h-auto max-w-[50px]"
-                    />
-                    <img
-                      src={Book3}
-                      alt="Book3"
-                      className="w-full h-auto max-w-[50px]"
-                    />
-                    <img
-                      src={Book4}
-                      alt="Book4"
-                      className="w-full h-auto max-w-[50px]"
-                    />
+                  <div>
+                    <h4 className="text-[#F1CD5A] text-lg font-semibold sm:text-start text-center">
+                      Save $33 by using AI Portal + Prediction File + 6 Books
+                    </h4>
+                    <span className="uppercase font-semibold text-white/50 text-[13px] mt-[5px] sm:inline hidden">
+                      See below
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-col justify-between">
+                  <div className="flex sm:flex-nowrap flex-wrap  mt-[25px] items-end sm:gap-0 gap-[20px]">
+                    <div className="sm:w-[25%] w-full">
+                      <span className="text-white md:text-lg sm:text-base text-sm font-semibold">
+                        Other Books
+                      </span>
+                      <h3 className="sm:text-base text-sm font-light text-white/60 leading-[1.2]">
+                        PTE Study Material
+                      </h3>
+                    </div>
+                    <div className="sm:w-[75%] w-full sm:grid grid-cols-4 flex justify-between gap-[20px]">
+                      <img
+                        src={Book1}
+                        alt="Book1"
+                        className="w-auto h-[61px] max-w-[50px]"
+                      />
+                      <img
+                        src={Book2}
+                        alt="Book2"
+                        className="w-auto h-[61px] max-w-[50px]"
+                      />
+                      <img
+                        src={Book3}
+                        alt="Book3"
+                        className="w-auto h-[61px] max-w-[50px]"
+                      />
+                      <img
+                        src={Book4}
+                        alt="Book4"
+                        className="w-auto h-[61px] max-w-[50px]"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -416,7 +413,7 @@ const FreeEBook = () => {
                         <h4 className="font-semibold text-white xl:text-xl text-lg inline">
                           Your total:{" "}
                         </h4>
-                        <span className="text-[#B0B0B0] font-bold xl:text-xl text-lg ps-4">
+                        <span className="text-[#B0B0B0] line-through font-bold xl:text-xl text-lg ps-4">
                           $152
                         </span>
                       </div>

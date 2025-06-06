@@ -343,7 +343,7 @@ const NAATICCL = () => {
                         </linearGradient>
                       </defs>
                     </svg>
-                    Watch a Free Lessons
+                    Watch a Free Lesson
                   </a>
                 </div>
               </div>
@@ -454,7 +454,7 @@ const NAATICCL = () => {
               </div>
 
               <div className="lg:w-[28%] flex flex-col gap-y-[19px]">
-                <h2 className="text-[#52D34E] font-bold sm:text-[40px] text-2xl sm:leading-[36px] leading-[32px] ">
+                <h2 className="text-[#52D34E] font-bold sm:text-[30px] text-2xl sm:leading-[36px] leading-[32px] max-w-[320px]">
                   Watch AB grade students’ responses and give Feedback
                 </h2>
                 <p className="font-normal 2xl:text-xl sm:text-lg text-sm leading-[24px] text-white/60">
@@ -695,7 +695,7 @@ const NAATICCL = () => {
               </div>
 
               <div className="lg:w-[28%] w-full ">
-                <div className="max-w-[350px] flex flex-col gap-y-[19px]">
+                <div className="max-w-[345px] flex flex-col gap-y-[19px]">
                   <h2 className="text-[#52D34E] font-bold 2xl:text-[40px] sm:text-[36px] text-2xl 2xl:leading-[50px] sm:leading-[42px] leading-[32px]">
                     Try a Free Lesson Real Quick
                   </h2>
@@ -710,7 +710,7 @@ const NAATICCL = () => {
                   </p>
                   <a
                     href="#"
-                    className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-GreenBtn  text-white px-[50px] sm:py-3 py-[14px] font-bold sm:text-xl text-lg relative z-10 w-full"
+                    className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-GreenBtn  text-white px-[50px] sm:py-[15.5px] py-[14px] font-normal leading-[24px] text-lg relative z-10 w-full"
                   >
                     Take the Course
                   </a>

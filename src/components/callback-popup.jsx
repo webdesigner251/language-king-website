@@ -13,15 +13,17 @@ const CallbackForm = ({ onClose }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-between items-center border-b-2 border-[#2A2A2A] pb-6">
-          <h2 className="text-white text-2xl font-bold">Get-a-Callback</h2>
+          <h2 className="text-white sm:text-[30px] text-2xl font-bold">
+            Get-a-Callback
+          </h2>
           <button
             onClick={onClose}
-            className="flex items-center justify-center sm:p-3 p-2 sm:w-[40px] sm:h-[40px]  w-[30px] h-[30px]  bg-chinese-Black border border-davys-Grey focus:outline-none cursor-pointer shadow-[0px_4px_0px_#000000] text-white"
+            className="flex items-center justify-center sm:p-3 p-2 sm:w-[47px] sm:h-[47px]  w-[30px] h-[30px]  bg-chinese-Black border border-davys-Grey focus:outline-none cursor-pointer shadow-[0px_4px_0px_#000000] text-white"
           >
             <img src={CloseIcon} alt="CloseIcon" className="w-7 h-7" />
           </button>
         </div>
-        <p className="font-normal text-white/75 lg:text-lg sm:text-base text-sm pt-6">
+        <p className="font-normal text-white/75 lg:text-xl ledaing-[24px] sm:text-base text-sm pt-6">
           Please fill out the below form. Our team will be in touch shortly.
         </p>
         <div className="sm:pt-6 pt-4">

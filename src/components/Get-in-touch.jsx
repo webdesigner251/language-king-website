@@ -114,6 +114,7 @@ const GetInTouch = () => {
           </label>
           <CustomDropdown
             selected={formData.course}
+            listClassName="rounded-md"
             onChange={(value) =>
               setFormData((prev) => ({ ...prev, course: value }))
             }

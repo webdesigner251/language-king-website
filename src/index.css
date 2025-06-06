@@ -180,6 +180,10 @@ header {
   transition: 0.3s all ease;
 }
 
+.primary-btn-rounded::before {
+  border-radius: 8px;
+}
+
 .primary-btn:hover::before {
   opacity: 0.3;
 }
@@ -350,6 +354,23 @@ header.active-header .desktop-logo {
 .iti__flag {
   transform: scale(1.5);
 }
+
+@keyframes zoomPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.09);
+  }
+}
+
+.zoom-pulse {
+  animation: zoomPulse 2s ease-in-out infinite;
+}
+
 
 @media (max-width: 1600px) {
   .main-heading {

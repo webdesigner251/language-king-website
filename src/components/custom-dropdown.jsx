@@ -18,7 +18,7 @@ const CustomDropdown = ({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className={`w-full text-left py-4 px-6 rounded-md border-2 sm:text-lg text-base c-dropdown ${
+        className={`w-full text-left py-4 px-6 border-2 sm:text-lg text-base c-dropdown ${
           error ? "border-red-500" : "border-[#949AA5]"
         } ${
           selected === "default" ? "text-[#919191]" : "text-black"

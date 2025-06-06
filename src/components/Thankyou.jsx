@@ -11,7 +11,7 @@ const Thankyou = () => {
         <img
           src={checkmark}
           alt="checkmark"
-          className="mx-auto sm:w-[60px] w-[50px] h-auto"
+          className="mx-auto sm:w-[60px] w-[50px] mb-2 h-auto zoom-pulse"
         />
         <h2 className="font-bold lg:text-[42px] text-4xl text-center text-gradient-OrangeRed py-2">
           Thank You!
@@ -20,13 +20,13 @@ const Thankyou = () => {
           We’ve received your information.
         </h3>
 
-        <div className="bg-[#252525] rounded-3xl sm:p-8 p-5 mt-6">
-          <h3 className="font-bold md:text-3xl text-2xl text-white border-b-2 border-[#3D3D3D] max-w-[80%] mx-auto pb-4">
+        <div className="bg-[#252525] rounded-3xl sm:p-7 p-5 mt-6">
+          <h3 className="font-bold md:text-3xl text-2xl text-white border-b-2 border-[#3D3D3D] max-w-[88%] mx-auto pb-4">
             What Happens Next?
           </h3>
 
           <div className="grid grid-cols-1 gap-7 mt-4 text-start">
-            <div className="flex items-start gap-4 text-white font-medium md:text-xl sm:text-lg text-base">
+            <div className="flex items-start gap-7 text-white font-medium md:text-xl sm:text-lg text-base">
               <img
                 src={CallIcon}
                 alt="checklist"
@@ -35,7 +35,7 @@ const Thankyou = () => {
               We’ll call you within 24 hours to discuss available time slots and
               book your preferred schedule.
             </div>
-            <div className="flex items-start gap-4 text-white font-medium md:text-xl sm:text-lg text-base">
+            <div className="flex items-start gap-7 text-white font-medium md:text-xl sm:text-lg text-base">
               <img
                 src={MemberIcon}
                 alt="checklist"
@@ -54,21 +54,21 @@ const Thankyou = () => {
                 <li>
                   <a
                     href="tel:+61488876999"
-                    className="flex items-center gap-4 text-white font-semibold sm:text-base text-sm"
+                    className="flex items-center gap-4 text-white font-semibold sm:text-lg text-sm"
                   >
                     <img src={PhoneICon} className="w-8" />
-                    +61 488 877 999 / +61 444 876 555
+                    +61 488 877 999 &nbsp; / &nbsp; +61 444 876 555
                   </a>
                 </li>
                 <li>
                   <a
                     href="tel:+61488876999"
-                    className="flex items-start gap-5 text-white font-semibold sm:text-base text-sm"
+                    className="flex items-start gap-5 text-white font-semibold sm:text-lg text-sm"
                   >
                     <img src={CalenderIcon} className="w-8" />
                     <span>
                       10 A.M to 7 P.M <br />
-                      <span className="italic text-[#ABAAA6] font-light block">
+                      <span className="italic text-[#abaaa6] font-normal block text-sm">
                         (Mon - Sun | Melbourne Time)
                       </span>
                     </span>

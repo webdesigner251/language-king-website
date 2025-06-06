@@ -25,13 +25,18 @@ const PhoneInput = ({ formData, setFormData, errors, inputClassName = "" }) => {
         "https://cdn.jsdelivr.net/npm/intl-tel-input@17/build/js/utils.js",
       autoPlaceholder: "polite",
       placeholderNumberType: "MOBILE",
-      nationalMode: false,
+      nationalMode: true,
     });
 
     const updatePlaceholder = () => {
       setTimeout(() => {
-        const rawPlaceholder = input.getAttribute("placeholder");
-        if (rawPlaceholder) {
+        const input = inputRef.current;
+        const rawPlaceholder = input?.getAttribute("placeholder");
+
+        if (
+          rawPlaceholder &&
+          !rawPlaceholder.startsWith("Mobile number e.g:")
+        ) {
           input.setAttribute(
             "placeholder",
             `Mobile number e.g: ${rawPlaceholder}`

@@ -16,6 +16,7 @@ const VideoModal = ({ isOpen, onClose, videoSrc }) => {
           src={videoSrc}
           controls
           autoPlay
+          controlsList="nodownload"
           className="intro w-full h-auto max-w-5xl mx-auto flex items-center justify-center z-50"
         />
       </div>

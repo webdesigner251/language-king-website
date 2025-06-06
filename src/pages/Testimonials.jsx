@@ -198,12 +198,12 @@ const Testimonials = () => {
                 <SwiperSlide key={item.id}>
                   <div>
                     <div className="relative">
-                      <div className="rounded-[10px] w-full aspect-video h-auto object-cover relative z-10">
+                      <div className="rounded-[10px] w-full aspect-3/2 h-auto object-cover object-center relative z-10">
                         <VideoPlayer
                           videoSrc={item.video}
                           thumbnail={item.image}
                           wrapperClassName="rounded-[10px]"
-                          videoClassName="rounded-[10px]"
+                          videoClassName="rounded-[10px] object-cover"
                           thumbnailClassName="rounded-[10px]"
                         />
                       </div>
