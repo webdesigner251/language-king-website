@@ -23,7 +23,7 @@ const CallbackForm = ({ onClose }) => {
             <img src={CloseIcon} alt="CloseIcon" className="w-7 h-7" />
           </button>
         </div>
-        <p className="font-normal text-white/75 lg:text-xl ledaing-[24px] sm:text-base text-sm pt-6">
+        <p className="font-normal text-white/75 lg:text-xl leading-[24px] sm:text-base text-sm pt-6">
           Please fill out the below form. Our team will be in touch shortly.
         </p>
         <div className="sm:pt-6 pt-4">

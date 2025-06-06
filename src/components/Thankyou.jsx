@@ -21,7 +21,7 @@ const Thankyou = () => {
         </h3>
 
         <div className="bg-[#252525] rounded-3xl sm:p-7 p-5 mt-6">
-          <h3 className="font-bold md:text-3xl text-2xl text-white border-b-2 border-[#3D3D3D] max-w-[88%] mx-auto pb-4">
+          <h3 className="font-bold md:text-[34px] tracking-[1px] text-2xl text-white border-b-2 border-[#3D3D3D] max-w-[88%] mx-auto pb-4">
             What Happens Next?
           </h3>
 
