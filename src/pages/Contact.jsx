@@ -152,7 +152,7 @@ const Contact = () => {
                 </div>
               </div>
               {/* Desktop Form */}
-              <div className="xl:w-[35%] lg:w-[40%] md:w-[50%] w-full md:block hidden">
+              <div className="xl:w-[40%] lg:w-[45%] md:w-[50%] w-full md:block hidden">
                 <GetInTouch />
               </div>
             </div>
@@ -164,28 +164,28 @@ const Contact = () => {
         <div className="custom-container mx-auto px-0 sm:px-[32px] w-full relative z-10">
           <div className="flex md:flex-nowrap flex-wrap gap-[50px] ">
             <div className="lg:w-[60%] md:w-[50%] w-full md:flex hidden ps-8 flex-col gap-[150px]">
-              <div className="lg:max-w-[740px] max-w-[560px]">
+              <div className="lg:max-w-[670px] max-w-[560px]">
                 <img
                   src={ContactImage1}
                   alt="ContactImage1"
                   className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[4deg] w-full"
                 />
               </div>
-              <div className="lg:max-w-[740px] max-w-[560px]">
+              <div className="lg:max-w-[670px] max-w-[560px]">
                 <img
                   src={ContactImage2}
                   alt="ContactImage1"
                   className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[-7deg] w-full"
                 />
               </div>
-              <div className="lg:max-w-[740px] max-w-[560px]">
+              <div className="lg:max-w-[670px] max-w-[560px]">
                 <img
                   src={ContactImage3}
                   alt="ContactImage1"
                   className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[3deg] w-full"
                 />
               </div>
-              <div className="lg:max-w-[740px] max-w-[560px]">
+              <div className="lg:max-w-[670px] max-w-[560px]">
                 <img
                   src={ContactImage4}
                   alt="ContactImage1"
@@ -211,62 +211,62 @@ const Contact = () => {
               </div>
 
               <div className="flex flex-col items-start gap-[22px] mt-[120px]">
-                <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[45px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[35px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                   <img
                     src={facebookIcon}
                     alt="facebookIcon"
-                    className="w-10 h-10 group-hover:hidden transition-all duration-300 ease"
+                    className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
                   />
                   <img
                     src={facebookIconLight}
                     alt="facebookIcon"
-                    className="w-10 h-10 hidden group-hover:flex transition-all duration-300 ease"
+                    className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                   />
                   <div>
-                    <h4 className="font-aileron text-sm text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+                    <h4 className="font-aileron sm:text-lg text-base  text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
                       Join the Facebook Community
                     </h4>
-                    <span className="text-[12px] text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block leading-[14px] mt-1">
+                    <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block leading-[14px] mt-1">
                       facebook.com/languageking
                     </span>
                   </div>
                 </div>
-                <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[45px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[35px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                   <img
                     src={InstaIcon}
                     alt="InstaIcon"
-                    className="w-10 h-10 group-hover:hidden transition-all duration-300 ease"
+                    className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
                   />
                   <img
                     src={InstaIconLight}
                     alt="facebookIcon"
-                    className="w-10 h-10 hidden group-hover:flex transition-all duration-300 ease"
+                    className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                   />
                   <div>
-                    <h4 className="font-aileron text-sm text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+                    <h4 className="font-aileron sm:text-lg text-base  text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
                       Follow us on Instagram
                     </h4>
-                    <span className="text-[12px] text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block leading-[14px] mt-1">
+                    <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block leading-[14px] mt-1">
                       instagram.com/languageking
                     </span>
                   </div>
                 </div>
-                <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[45px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[35px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                   <img
                     src={TiktokIcon}
                     alt="TiktokIcon"
-                    className="w-10 h-10 group-hover:hidden transition-all duration-300 ease"
+                    className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
                   />
                   <img
                     src={TiktokIconLight}
                     alt="facebookIcon"
-                    className="w-10 h-10 hidden group-hover:flex transition-all duration-300 ease"
+                    className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
                   />
                   <div>
-                    <h4 className="font-aileron text-sm text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+                    <h4 className="font-aileron sm:text-lg text-base  text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
                       Explore our content on TikTok
                     </h4>
-                    <span className="text-[12px] text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block leading-[14px] mt-1">
+                    <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block leading-[14px] mt-1">
                       tiktok.com/@languageking
                     </span>
                   </div>
@@ -277,7 +277,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="bg-gradient-redBlack md:hidden pt-[50px] -mb-[48px]">
+      <section className="bg-gradient-redBlack md:hidden pt-[50px] -mb-[40px] ">
         <img
           src={ContactMobileImage}
           alt="contactMobile"

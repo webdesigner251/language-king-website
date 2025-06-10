@@ -154,7 +154,7 @@ const FreeEBook = () => {
               <img
                 src={NewTipsImage}
                 alt="NewTipsImage"
-                className="h-auto xl:max-w-[250px] max-w-[200px] -mt-[20px]"
+                className="h-auto xl:max-w-[250px] max-w-[200px] -mt-[20px] sm:mx-0 mx-auto"
               />
               <span className="uppercase font-semibold text-white/50 sm:block hidden">
                 LEARN FROM THE EXPERT + MORE:
@@ -183,7 +183,7 @@ const FreeEBook = () => {
                       PTE Reading Blanks{" "}
                       <span className="text-[#F1CD5A] block">Free E-book</span>
                     </h1>
-                    <p className="font-light md:text-lg leading-[28px] sm:text-base max-w-[800px] text-sm text-white mt-3">
+                    <p className="font-light md:text-lg sm:leading-[28px] leading-[22px] sm:text-base max-w-[800px] text-sm text-white mt-3">
                       Learn how to solve PTE Reading Blanks with confidence,
                       master linkers, starters, and connectors, test your skills
                       with an interactive quiz, and boost your score
@@ -222,7 +222,7 @@ const FreeEBook = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="lg:max-w-[70%] max-w-full flex lg:flex-nowrap flex-wrap items-center sm:justify-start justify-center sm:mb-0 mb-[40px] lg:gap-[40px] sm:gap-7 gap-4 sm:order-0 -order-1 ">
+                <div className="lg:max-w-[70%] max-w-full flex lg:flex-nowrap flex-wrap items-center sm:justify-start justify-center lg:gap-[40px] sm:gap-7 gap-4 sm:order-0 -order-1 ">
                   <div className="relative rounded-lg sm:w-auto w-full ">
                     <a
                       href="#"
@@ -233,7 +233,10 @@ const FreeEBook = () => {
                   </div>
                   <div>
                     <h4 className="text-[#F1CD5A] text-lg font-semibold sm:text-start text-center">
-                      Save $33 by using AI Portal + Prediction File + 6 Books
+                      Save $33 by using AI Portal{" "}
+                      <span className="sm:inline hidden">
+                        + Prediction File + 6 Books
+                      </span>
                     </h4>
                     <span className="uppercase font-semibold text-white/50 text-[13px] mt-[5px] sm:inline hidden">
                       See below
@@ -241,7 +244,7 @@ const FreeEBook = () => {
                   </div>
                 </div>
                 <div className="flex flex-col justify-between">
-                  <div className="flex sm:flex-nowrap flex-wrap  mt-[25px] items-end sm:gap-0 gap-[20px]">
+                  <div className="flex sm:flex-nowrap flex-wrap sm:mt-[25px ] items-end sm:gap-0 gap-[20px]">
                     <div className="sm:w-[25%] w-full">
                       <span className="text-white md:text-lg sm:text-base text-sm font-semibold">
                         Other Books
@@ -450,7 +453,7 @@ const FreeEBook = () => {
                         />
                       )}
                       <div className="flex flex-col">
-                        <h3 className="text-[#F3F2F3] mb-0 2xl:text-[50px] xl:text-[46px] md:text-[38px] sm:text-[26px] text-xl font-bold">
+                        <h3 className="text-[#F3F2F3] mb-0 2xl:text-[50px] xl:text-[46px] md:text-[38px] sm:text-[26px] text-lg font-bold">
                           E-Book Only
                         </h3>
                         <p className="text-sm text-[#B8B8B8] font-normal my-0">
@@ -461,7 +464,7 @@ const FreeEBook = () => {
                     <div>
                       <button
                         type="button"
-                        className={`align-middle inline-flex items-center justify-center text-center primary-btn px-8 py-4 font-bold sm:text-xl text-lg relative z-10 rounded-[50px] hover-full-rounded-btn
+                        className={`align-middle inline-flex items-center justify-center text-center primary-btn px-4 py-2 font-bold sm:text-xl text-base relative z-10 rounded-[50px] hover-full-rounded-btn
               ${
                 selected === "ebook"
                   ? "bg-gradient-GreenBlue text-black"
@@ -492,7 +495,7 @@ const FreeEBook = () => {
                         />
                       )}
                       <div className="flex flex-col">
-                        <h3 className="text-[#F3F2F3] mb-0 2xl:text-[50px] xl:text-[46px] md:text-[38px] sm:text-[26px] text-xl font-bold">
+                        <h3 className="text-[#F3F2F3] mb-0 2xl:text-[50px] xl:text-[46px] md:text-[38px] sm:text-[26px] text-lg font-bold">
                           6 Month AI Portal
                         </h3>
                         <p className="text-sm text-[#B8B8B8] font-normal my-0">
@@ -503,7 +506,7 @@ const FreeEBook = () => {
                     <div>
                       <button
                         type="button"
-                        className={`align-middle inline-flex items-center justify-center text-center primary-btn px-8 py-4 font-bold sm:text-xl text-lg relative z-10 rounded-[50px] hover-full-rounded-btn
+                        className={`align-middle inline-flex items-center justify-center text-center primary-btn px-4 py-2 font-bold sm:text-xl text-base relative z-10 rounded-[50px] hover-full-rounded-btn
               ${
                 selected === "portal"
                   ? "bg-gradient-GreenBlue text-black"
@@ -552,14 +555,14 @@ const FreeEBook = () => {
                       className="rounded-md placeholder:text-[#707070] bg-white py-[16px] px-[24px] 2xl:text-lg text-base"
                     />
                   </div>
-                  <span className="font-normal text-[#949AA4] md:text-base sm:text-sm text-xs py-3 block">
+                  <span className="font-normal text-[#949AA4] md:text-base sm:text-sm text-xs sm:py-3  block">
                     Secure Checkout Powered by
                     <a href="#" className="underline">
                       Stripe
                     </a>
                   </span>
 
-                  <hr className="border-[#3D3D3D] mt-3 mb-[30px]" />
+                  <hr className="border-[#3D3D3D] mt-3 sm:mb-[30px] mb-4" />
                   <button
                     type="submit"
                     href="#"

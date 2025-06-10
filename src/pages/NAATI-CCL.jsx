@@ -17,7 +17,7 @@ import PTEResponse from "../assets/course/pte-res.png";
 import LandingTeacherImage1 from "../assets/course/landing-teacher-1.png";
 import LandingTeacherImage2 from "../assets/course/landing-teacher-2.png";
 import LandingTeacherImage3 from "../assets/course/landing-teacher-3.png";
-import LandingTeacherImage4 from "../assets/course/landing-teacher-4.png";
+import LandingTeacherImage4 from "../assets/course/landing-teacher-4-32a032e4.png";
 import LandingTeacherImage5 from "../assets/course/landing-teacher-5.png";
 import LandingTeacherImage6 from "../assets/course/landing-teacher-6.png";
 import LandingTeacherImage7 from "../assets/course/landing-teacher-7.png";
@@ -144,16 +144,16 @@ const NAATICCL = () => {
         "Author of popular book: NAATI CCL: Learn the Right Vocabulary",
     },
     {
-      title: "2x NAATI CCL",
-      image: LandingTeacherImage5,
-      description:
-        "Ab has cleared the NAATI CCL Test twice with only 3 days preparation. Learn all the exam-related tricks from him.",
-    },
-    {
       title: "PTE Certified Trainer",
       image: LandingTeacherImage6,
       description:
         "Successfully completed TRAIN THE TRAINER Workshop conducted by PTE Academic ULVI and PTE Home",
+    },
+    {
+      title: "2x NAATI CCL",
+      image: LandingTeacherImage5,
+      description:
+        "Ab has cleared the NAATI CCL Test twice with only 3 days preparation. Learn all the exam-related tricks from him.",
     },
     {
       title: "Need to Think",
@@ -316,7 +316,7 @@ const NAATICCL = () => {
                   </a>
                   <a
                     href="#"
-                    className="align-middle inline-flex items-center gap-[25px] justify-center text-center bg-transparent border-[1.5px] border-[#333434] text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10"
+                    className="align-middle inline-flex items-center gap-[18px] justify-center text-center bg-transparent border-[1.5px] border-[#333434] text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10"
                   >
                     <svg
                       width="21"
@@ -710,7 +710,7 @@ const NAATICCL = () => {
                   </p>
                   <a
                     href="#"
-                    className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-GreenBtn  text-white px-[50px] sm:py-[15.5px] py-[14px] font-normal leading-[24px] text-lg relative z-10 w-full"
+                    className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-GreenBtn  text-white px-[50px] sm:py-[15.5px] py-[14px] font-semibold leading-[24px] text-xl relative z-10 w-full"
                   >
                     Take the Course
                   </a>
@@ -743,7 +743,7 @@ const NAATICCL = () => {
                     </div>
                   )}
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:pt-[60px] sm:pb-[70px] py-[50px]">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:pt-[60px] sm:pb-[80px] py-[50px]">
                     {row.map((item, index) => (
                       <div key={index}>
                         <img

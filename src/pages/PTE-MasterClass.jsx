@@ -246,19 +246,19 @@ const PTEMasterClass = () => {
       image: Support4,
       title: "Missed a Class",
       description:
-        "Don’t worry we got you covered. Class recordings are available 24/7 for instant access.",
+        "Don't worry we got you covered. Class recordings are available 24/7 for instant access.",
     },
     {
       image: Support5,
-      title: "Watch PTE Band 8 Tips & Tricks",
+      title: "Online Classes with Feedback",
       description:
-        "Watch pre-recorded video lectures covering all 20 tasks—from Basic to Advanced Strategies, Updated Templates, and Latest Tips and Tricks.",
+        "Learn timed and real-time test tricks from top-notch tutors. Get feedback, learn with other students, ask doubts, and much more.",
     },
     {
       image: Support6,
-      title: "Study Material",
+      title: "Missed a Class",
       description:
-        "Carefully curated resources including Templates, Prediction File, Question Bank, and Real Exam Questions.",
+        "Don't worry we got you covered. Class recordings are available 24/7 for instant access.",
     },
   ];
 
@@ -320,7 +320,7 @@ const PTEMasterClass = () => {
                   </a>
                   <a
                     href="#"
-                    className="align-middle inline-flex items-center gap-[25px] justify-center text-center bg-transparent border-[1.5px] border-[#333434] text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10"
+                    className="align-middle inline-flex items-center gap-[18px] justify-center text-center bg-transparent border-[1.5px] border-[#333434] text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10"
                   >
                     <svg
                       width="21"
@@ -710,7 +710,7 @@ const PTEMasterClass = () => {
                   </p>
                   <a
                     href="#"
-                    className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-secondary text-white px-[50px] sm:py-[15.5px] py-[14px] font-normal leading-[24px] text-lg relative z-10 w-full"
+                    className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-secondary text-white px-[50px] sm:py-[15.5px] py-[14px] font-semibold leading-[24px] text-xl relative z-10 w-full"
                   >
                     Take the Course
                   </a>
@@ -743,7 +743,7 @@ const PTEMasterClass = () => {
                     </div>
                   )}
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:pt-[60px] sm:pb-[70px] py-[50px]">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:pt-[60px] sm:pb-[80px] py-[50px]">
                     {row.map((item, index) => (
                       <div key={index}>
                         <img

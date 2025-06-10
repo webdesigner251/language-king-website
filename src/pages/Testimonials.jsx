@@ -421,7 +421,7 @@ const Testimonials = () => {
                 </div>
               </div>
               {/* Desktop Form */}
-              <div className="xl:w-[35%] lg:w-[40%] md:w-[50%] w-full md:block hidden">
+              <div className="xl:w-[40%] lg:w-[45%] md:w-[50%] w-full md:block hidden">
                 <GetInTouch />
               </div>
             </div>

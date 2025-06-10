@@ -149,7 +149,7 @@ const Home = () => {
                 to="/home2"
                 className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 sm:py-3 py-[14px] sm:w-[50%] w-full sm:font-semibold font-bold sm:text-xl text-lg relative z-10"
               >
-                Get a Callback
+                Get-a Callback
               </Link>
               <Link
                 to="/free-e-book"
@@ -180,7 +180,7 @@ const Home = () => {
                     </linearGradient>
                   </defs>
                 </svg>
-                Watch Free Lessons
+                Watch FREE Lessons
               </Link>
             </div>
           </div>

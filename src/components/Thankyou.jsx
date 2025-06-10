@@ -1,4 +1,4 @@
-import checkmark from "../assets/icons/checkmark.svg";
+import checkmark from "../assets/icons/green-checkmark.svg";
 import CallIcon from "../assets/icons/call-icon.svg";
 import MemberIcon from "../assets/icons/member-icon.svg";
 import PhoneICon from "../assets/icons/landline-phone.svg";
@@ -16,37 +16,42 @@ const Thankyou = () => {
         <h2 className="font-bold lg:text-[42px] text-4xl text-center text-[#00C360] py-2">
           Thank You!
         </h2>
-        <h3 className="font-medium sm:text-xl text-lg text-white">
+        <h3 className="font-medium sm:text-xl text-base text-white">
           We’ve received your information.
         </h3>
 
-        <div className="bg-[#252525] rounded-3xl sm:p-7 p-5 mt-6">
-          <h3 className="font-bold md:text-[34px] tracking-[1px] text-2xl text-white border-b-2 border-[#3D3D3D] max-w-[88%] mx-auto pb-4">
+        <div className="bg-[#252525] rounded-[20px] sm:pt-5 sm:px-7 sm:pb-7 p-4 mt-6">
+          {/* <h3 className="font-bold md:text-[34px] tracking-[1px] text-2xl text-white border-b-2 border-[#3D3D3D] max-w-[88%] mx-auto pb-4">
             What Happens Next?
-          </h3>
+          </h3> */}
+          <div className="inline-flex items-center justify-center">
+            <h3 className="font-bold xl:text-[34px] md:text-[30px] text-2xl inline mx-auto tracking-[1px] relative  text-white border-text text-center">
+              What Happens Next?
+            </h3>
+          </div>
 
-          <div className="grid grid-cols-1 gap-7 mt-4 text-start">
-            <div className="flex items-start gap-7 text-white font-medium md:text-xl sm:text-lg text-base">
+          <div className="grid grid-cols-1 sm:gap-6 gap-4 mt-7 text-start">
+            <div className="flex items-start sm:gap-7 gap-5  text-white font-medium leading-normal xl:text-xl sm:text-lg text-base">
               <img
                 src={CallIcon}
                 alt="checklist"
-                className="w-[32px] h-[32px] mt-1"
+                className="sm:w-[32px] w-[28px] sm:h-[32px] h-[28px] mt-1"
               />
               We’ll call you within 24 hours to discuss available time slots and
               book your preferred schedule.
             </div>
-            <div className="flex items-start gap-7 text-white font-medium md:text-xl sm:text-lg text-base">
+            <div className="flex items-start sm:gap-7 gap-5  text-white font-medium leading-normal xl:text-xl sm:text-lg text-base">
               <img
                 src={MemberIcon}
                 alt="checklist"
-                className="w-[32px] h-[32px] mt-1"
+                className="sm:w-[32px] w-[28px] sm:h-[32px] h-[28px] mt-1"
               />
               Our team will review your course interest and prepare your
               personalized trial class.
             </div>
 
             <div className="bg-[#121212] rounded-2xl p-3  w-full mx-auto flex flex-col justify-center">
-              <h4 className="font-bold md:text-2xl text-xl text-white  mx-auto pb-4 text-center">
+              <h4 className="font-bold xl:text-2xl lg:text-[22px] md:text-[20px] text-xl text-white  mx-auto pb-4 text-center">
                 Need immediate assistance?{" "}
               </h4>
 

@@ -38,7 +38,7 @@ const CustomDropdown = ({
                 onChange(course);
                 setIsOpen(false);
               }}
-              className={`px-[10px] py-[5px] hover:bg-gray-100 cursor-pointer text-black ${itemClassName}`}
+              className={`px-[10px] py-[5px] bg-white hover:bg-yellow-300 cursor-pointer text-black ${itemClassName}`}
             >
               {course}
             </li>
