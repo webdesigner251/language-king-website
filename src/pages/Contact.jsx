@@ -231,7 +231,7 @@ const Contact = () => {
                     </span>
                   </div>
                 </div>
-                <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[35px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+                <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[45px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
                   <img
                     src={InstaIcon}
                     alt="InstaIcon"
