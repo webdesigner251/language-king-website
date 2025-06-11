@@ -383,6 +383,22 @@ header.active-header .desktop-logo {
   animation: zoomPulse 2s ease-in-out infinite;
 }
 
+.middle-border {
+  position: relative;
+}
+
+.middle-border::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  background-color: #2A2A2A;
+}
+
 
 @media (max-width: 1600px) {
   .main-heading {
@@ -406,7 +422,7 @@ header.active-header .desktop-logo {
 @media (max-width: 1280px) {
   .desktop-logo {
     height: 140px;
-    top: -50px;
+    top: -60px;
   }
 }
 

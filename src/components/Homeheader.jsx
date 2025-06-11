@@ -35,14 +35,14 @@ const HomeHeader = () => {
       <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
         <div className="flex items-center justify-between relative">
           {/* Left Logo */}
-          <Link to="/" className="xl:w-[40%] w-[30%] lg:flex hidden">
+          <Link to="/" className="xl:w-[40%] sm:w-[35%] lg:flex hidden">
             <img src={Textlogo} alt="Logo" className="w-40" />
           </Link>
 
           {/* Right Logo */}
           <Link
             to="/"
-            className="xl:w-[20%] sm:w-[50%] w-[50%] relative logo-wrapper"
+            className="xl:w-[20%] lg:w-[20%] w-[50%] relative logo-wrapper"
           >
             <img
               src={Logo}
@@ -51,7 +51,7 @@ const HomeHeader = () => {
             />
           </Link>
 
-          <div className="xl:w-[40%] w-[50%] flex justify-end items-center">
+          <div className="xl:w-[40%] sm:w-[35%] flex justify-end items-center">
             {/* Hamburger Menu - Visible on Mobile */}
             <button
               className="lg:hidden flex items-center justify-center p-3 w-[60px] h-[60px] menu-icon bg-chinese-Black border border-davys-Grey focus:outline-none cursor-pointer"

@@ -61,7 +61,7 @@ const Thankyou = () => {
                     href="tel:+61488876999"
                     className="flex items-center gap-4 text-white font-semibold sm:text-lg text-sm"
                   >
-                    <img src={PhoneICon} className="w-8" />
+                    <img src={PhoneICon} className="w-9" />
                     +61 488 877 999 &nbsp; / &nbsp; +61 444 876 555
                   </a>
                 </li>

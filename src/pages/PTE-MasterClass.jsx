@@ -228,19 +228,19 @@ const PTEMasterClass = () => {
       image: Support1,
       title: "Live 24/7 Support",
       description:
-        "Chat with your tutor to answer questions and solve problems in real-time.",
+        "Connect with expert tutors anytime, anywhere — get instant help, guidance, and problem-solving on demand.",
     },
     {
       image: Support2,
       title: "Personalized plans",
       description:
-        "Get a personalized plan to get your desired score in specific time.",
+        "Get a tailored study plan designed just for you — focused on your goals, timeline, and target score.",
     },
     {
       image: Support3,
       title: "Online Classes with Feedback",
       description:
-        "Learn timed and real-time test tricks from top-notch tutors. Get feedback, learn with other students, ask doubts, and much more.",
+        "Learn timed and real — time test tricks from top — notch tutors. Get feedback, learn with other students, ask doubts, and much more.",
     },
     {
       image: Support4,
@@ -250,15 +250,15 @@ const PTEMasterClass = () => {
     },
     {
       image: Support5,
-      title: "Online Classes with Feedback",
+      title: "Watch PTE Band 8 Tips & Tricks",
       description:
-        "Learn timed and real-time test tricks from top-notch tutors. Get feedback, learn with other students, ask doubts, and much more.",
+        "Watch pre-recorded video lectures covering all 20 tasks — from Basic to Advanced Strategies, Updated Templates, and Latest Tips and Tricks.",
     },
     {
       image: Support6,
-      title: "Missed a Class",
+      title: "Study Material",
       description:
-        "Don't worry we got you covered. Class recordings are available 24/7 for instant access.",
+        "Carefully curated resources including Templates, Prediction File, Question Bank, and Real Exam Questions.",
     },
   ];
 
@@ -743,7 +743,7 @@ const PTEMasterClass = () => {
                     </div>
                   )}
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:pt-[60px] sm:pb-[80px] py-[50px]">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-[50px] sm:pt-[60px] sm:pb-[90px] py-[50px]">
                     {row.map((item, index) => (
                       <div key={index}>
                         <img

@@ -534,8 +534,8 @@ const Home = () => {
       <section>
         <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
           <div className="bg-[#121212] px-4 py-6 sm:px-[32px] sm:py-[44px] border-[1.5px] border-white/10 transition-all duration-300 ease group relative">
-            <div className="flex md:flex-nowrap flex-wrap gap-[70px] items-stretch justify-content-between">
-              <div className="md:block hidden md:w-[47.50%]">
+            <div className="flex md:flex-nowrap flex-wrap gap-[130px] items-stretch justify-between middle-border">
+              <div className="md:block hidden md:w-[50%]">
                 <img
                   src={personImage}
                   alt="personImage"
@@ -587,7 +587,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="md:border-s-3 md:w-[51.50%] border-[#2A2A2A] lg:ps-[70px] md:ps-[70px]">
+              <div className="md:w-[50%]">
                 <h2 className="font-bold lg:text-[42px] text-4xl text-gradient-OrangeRed border-b-2 border-[#2A2A2A] pb-5">
                   Book a FREE Trial Class
                 </h2>
