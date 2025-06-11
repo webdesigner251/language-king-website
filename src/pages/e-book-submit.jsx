@@ -10,12 +10,10 @@ import Book4 from "../assets/ebook/book4.png";
 // import video from "../assets/videos/placeholder-video.mp4";
 import BGgradient from "../assets/ebook/gradient.png";
 import Rectangle from "../assets/ebook/rectangle.png";
-import badge from "../assets/ebook/badge.png";
 import Plus from "../assets/icons/plus.svg";
-import { Link } from "react-router-dom";
 
-// import checkmark from "../assets/icons/green-checkmark.svg";
-// import EmailIcon from "../assets/icons/green-email-icon.svg";
+import checkmark from "../assets/icons/green-checkmark.svg";
+import EmailIcon from "../assets/icons/green-email-icon.svg";
 
 const faqs = [
   {
@@ -127,7 +125,7 @@ const MinusIcon = () => (
   </svg>
 );
 
-const FreeEBook = () => {
+const FreeEBooksubmit = () => {
   // const [count, setCount] = useState(0);
 
   // const increment = () => setCount((prev) => prev + 1);
@@ -139,9 +137,6 @@ const FreeEBook = () => {
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-
-  const [selected, setSelected] = useState("ebook");
-  const [selectedBox, setSelectedBox] = useState("aiportal");
 
   return (
     <>
@@ -294,291 +289,6 @@ const FreeEBook = () => {
           className="w-full h-full object-cover absolute top-0 left-0 right-0"
         />
         <div className="custom-container mx-auto sm:py-[64px] py-[40px] px-4 sm:px-[32px] w-full z-10 relative ">
-          <div className="flex lg:flex-nowrap flex-wrap 2xl:gap-[150px] lg:gap-[80px] gap-[40px]">
-            {/* Desktop Box */}
-            <div className="lg:w-[60%] w-full sm:inline hidden">
-              <div
-                onClick={() => setSelectedBox("ebook")}
-                className={`cursor-pointer border-4 bg-[#1B1B1B] mb-[33px]  rounded-[10px] ${
-                  selectedBox === "ebook"
-                    ? "border-[#F18C2D]"
-                    : "border-[#1B1B1B]"
-                }`}
-              >
-                {/* E-Book Box content here */}
-                <div className=" xl:py-[34px] py-8 xl:px-[38px] px-6 flex items-center justify-between">
-                  <div>
-                    <h3 className="text-white font-bold lg:text-[36px] text-[32px] leading-[42px] mb-1">
-                      E-Book Only
-                    </h3>
-                    <span className="text-[#B8B8B8] font-normal text-xl">
-                      Get 7-days Free Trial
-                    </span>
-                  </div>
-                  <div className="flex 2xl:gap-[45px] gap-[32px]">
-                    <h4 className="text-[#00FEFC] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold ">
-                      $0.99
-                    </h4>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                onClick={() => setSelectedBox("aiportal")}
-                className={`cursor-pointer border-4 ${
-                  selectedBox === "aiportal"
-                    ? "border-[#F18C2D]"
-                    : "border-[#1B1B1B]"
-                } rounded-[6px] bg-[#1B1B1B]`}
-              >
-                {/* AI Portal Box content here */}
-                <div className=" ">
-                  <div className="flex xl:p-[32px] p-6 xl:gap-[42px] gap-[28px] border-b-2 border-white border-dashed">
-                    <img
-                      src={Rectangle}
-                      alt="Rectangle"
-                      className="w-3xl:w-[27%] w-[32%] object-cover"
-                    />
-                    <div className="w-3xl:w-[70%] w-[68%] flex flex-col justify-between">
-                      <div>
-                        <h3 className="text-[#F3F2F3] lg:text-[36px] text-[32px] leading-[42px] font-bold">
-                          6 Month AI Portal
-                        </h3>
-                        <ul className="text-xl text-[#B8B8B8] font-normal mt-1">
-                          <li className="py-[2px]">- 10 Full Mock Tests</li>
-                          <li className="py-[2px]">- 20 Sectional Tests</li>
-                          <li className="py-[2px]">- 5000+ Exam Questions</li>
-                          <li className="py-[2px]">- 5 Books Included</li>
-                        </ul>
-                      </div>
-                      <div className="flex justify-end items-center 2xl:gap-[60px] gap-[30px] mt-[25px]">
-                        <h4 className="text-[#B0B0B0] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold line-through">
-                          $129
-                        </h4>
-                        <div className="flex items-center gap-[45px] justify-between">
-                          <h4 className="text-[#F0AB0F] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold ">
-                            $99
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-[32px]">
-                    <div className="flex justify-between  items-center md:gap-[42px] gap-[28px]">
-                      <div>
-                        <h3 className="text-white font-bold sm:text-[38px] text-[32px] leading-[1.2]">
-                          + Prediction File{" "}
-                        </h3>
-                        <span className="text-[#B8B8B8] font-normal 2xl:text-xl xl:text-lg text-base">
-                          Get monthly updates for 6 months
-                        </span>
-                      </div>
-                      <div className="flex 2xl:gap-[45px] gap-[32px] items-center">
-                        <button className="flex items-center gap-3 bg-[#45595A] rounded-[10px] px-4 py-2 text-white font-semibold text-lg cursor-pointer">
-                          Add
-                          <img src={Plus} alt="plus-icon" className="h-5" />
-                        </button>
-                        <h4 className="text-[#00FEFC] 2xl:text-[42px] xl:text-[36px] text-[30px] font-bold ">
-                          + $9
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="lg:w-[40%] w-full">
-              <div className="bg-[#1B1B1B] xl:p-[42px] sm:p-8 px-4 py-6 rounded-[10px]">
-                <div className="sm:block hidden">
-                  <div className="flex justify-between gap-4">
-                    <h4 className="font-semibold text-white xl:text-xl text-lg">
-                      6 Month AI Portal
-                    </h4>
-                    <div className="">
-                      <span className="text-[#B0B0B0] font-bold xl:text-xl leading-[32px] text-lg me-8">
-                        $129
-                      </span>
-                      <span className="text-[#F0AB0F] font-bold xl:text-xl leading-[32px] text-lg">
-                        $99
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex justify-between gap-4">
-                    <h4 className="font-semibold text-white xl:text-xl text-lg">
-                      Prediction File
-                    </h4>
-                    <div className="">
-                      <span className="text-[#F0AB0F] font-bold xl:text-xl leading-[32px] text-lg">
-                        $9
-                      </span>
-                    </div>
-                  </div>
-                  <hr className="border-[#3D3D3D] my-[30px]" />
-                  <div className="max-w-[400px]">
-                    <div className="flex justify-between gap-4 items-center">
-                      <div className="w-auto flex-auto">
-                        <h4 className="font-semibold text-white xl:text-xl text-lg inline">
-                          Your total:{" "}
-                        </h4>
-                        <span className="text-[#B0B0B0] line-through font-bold xl:text-xl text-lg ps-4">
-                          $152
-                        </span>
-                      </div>
-                      <span className="text-[#F0AB0F] font-medium xl:text-xl text-lg">
-                        Saving $33!
-                      </span>
-                    </div>
-                    <h4 className="text-[#B0B0B0] font-bold xl:text-[72px] text-6xl leading-[1.1]">
-                      $119
-                    </h4>
-                    <span className="text-[#B0B0B0] font-bold text-base">
-                      (GST Included)
-                    </span>
-                  </div>
-                </div>
-                {/* Mobile Box */}
-                <div className="sm:hidden block">
-                  {/* E-Book Only Box */}
-                  <div
-                    onClick={() => setSelected("ebook")}
-                    className={`mb-4 border-4 rounded-[6px] py-[24px] px-[12px] flex gap-5 justify-between items-center cursor-pointer transition-all duration-300
-          ${
-            selected === "ebook"
-              ? "border-[#F18C2D] bg-[#0A0A09]"
-              : "border-[#707070] bg-[#1B1B1B]"
-          }`}
-                  >
-                    <div className="flex gap-2 items-start">
-                      {selected === "ebook" && (
-                        <img
-                          src={badge}
-                          alt="Selected Badge"
-                          className="object-contain w-7 h-7"
-                        />
-                      )}
-                      <div className="flex flex-col">
-                        <h3 className="text-[#F3F2F3] mb-0 2xl:text-[50px] xl:text-[46px] md:text-[38px] sm:text-[26px] text-lg font-bold">
-                          E-Book Only
-                        </h3>
-                        <p className="text-sm text-[#B8B8B8] font-normal my-0">
-                          Get 7-days Free Trial
-                        </p>
-                      </div>
-                    </div>
-                    <div>
-                      <button
-                        type="button"
-                        className={`align-middle inline-flex items-center justify-center text-center primary-btn px-4 py-2 font-bold sm:text-xl text-base relative z-10 rounded-[50px] hover-full-rounded-btn
-              ${
-                selected === "ebook"
-                  ? "bg-gradient-GreenBlue text-black"
-                  : "bg-[#3E3E3D] text-[#BFDF6A]"
-              }`}
-                      >
-                        $0.99
-                      </button>
-                    </div>
-                  </div>
-
-                  {/* 6 Month AI Portal Box */}
-                  <div
-                    onClick={() => setSelected("portal")}
-                    className={`border-4 rounded-[6px] py-[24px] px-[12px] flex gap-5 justify-between items-center cursor-pointer transition-all duration-300
-          ${
-            selected === "portal"
-              ? "border-[#F18C2D] bg-[#0A0A09]"
-              : "border-[#707070] bg-[#1B1B1B]"
-          }`}
-                  >
-                    <div className="flex gap-2 items-start">
-                      {selected === "portal" && (
-                        <img
-                          src={badge}
-                          alt="Selected Badge"
-                          className="object-contain w-7 h-7"
-                        />
-                      )}
-                      <div className="flex flex-col">
-                        <h3 className="text-[#F3F2F3] mb-0 2xl:text-[50px] xl:text-[46px] md:text-[38px] sm:text-[26px] text-lg font-bold">
-                          6 Month AI Portal
-                        </h3>
-                        <p className="text-sm text-[#B8B8B8] font-normal my-0">
-                          Prediction File + 5 Books
-                        </p>
-                      </div>
-                    </div>
-                    <div>
-                      <button
-                        type="button"
-                        className={`align-middle inline-flex items-center justify-center text-center primary-btn px-4 py-2 font-bold sm:text-xl text-base relative z-10 rounded-[50px] hover-full-rounded-btn
-              ${
-                selected === "portal"
-                  ? "bg-gradient-GreenBlue text-black"
-                  : "bg-[#3E3E3D] text-[#BFDF6A]"
-              }`}
-                      >
-                        $119
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <form className="sm:pt-6 pt-4">
-                  <div className="flex flex-col mb-4">
-                    <input
-                      type="text"
-                      name="name"
-                      id=""
-                      placeholder="Full Name"
-                      className="rounded-md placeholder:text-[#707070] bg-white py-[16px] px-[24px] 2xl:text-lg text-base"
-                    />
-                  </div>
-                  <div className="flex flex-col mb-4">
-                    <input
-                      type="email"
-                      name="email"
-                      id=""
-                      placeholder="Email Address"
-                      className="rounded-md placeholder:text-[#707070] bg-white py-[16px] px-[24px] 2xl:text-lg text-base"
-                    />
-                  </div>
-                  <div className="flex flex-col mb-4">
-                    <input
-                      type="tel"
-                      name="tel"
-                      id=""
-                      placeholder="Mobile number e.g: 0444786999"
-                      className="rounded-md placeholder:text-[#707070] bg-white py-[16px] px-[24px] 2xl:text-lg text-base"
-                    />
-                  </div>
-                  <div className="flex flex-col mb-4">
-                    <input
-                      type="tel"
-                      name="ccn"
-                      id=""
-                      placeholder="Card Number "
-                      className="rounded-md placeholder:text-[#707070] bg-white py-[16px] px-[24px] 2xl:text-lg text-base"
-                    />
-                  </div>
-                  <span className="font-normal text-[#949AA4] md:text-base sm:text-sm text-xs sm:py-3  block">
-                    Secure Checkout Powered by
-                    <a href="#" className="underline">
-                      Stripe
-                    </a>
-                  </span>
-
-                  <hr className="border-[#3D3D3D] mt-3 sm:mb-[30px] mb-4" />
-                  <Link
-                    // type="submit"
-                    to="/ebook-submit"
-                    className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-OrangeRed text-white px-3 py-4 w-full font-bold sm:text-xl text-lg relative z-10 rounded-sm"
-                  >
-                    Buy Now - $119
-                  </Link>
-                </form>
-              </div>
-            </div>
-          </div>
-          {/* 
           <div className="max-w-[550px] mx-auto bg-black rounded-xl px-7 py-7">
             <div className="text-center">
               <img
@@ -652,7 +362,7 @@ const FreeEBook = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
 
         <div className="border-y border-[#707070] relative z-10">
@@ -695,4 +405,4 @@ const FreeEBook = () => {
   );
 };
 
-export default FreeEBook;
+export default FreeEBooksubmit;

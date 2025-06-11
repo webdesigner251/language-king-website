@@ -449,6 +449,12 @@ header.active-header .desktop-logo {
 
 }
 
+@media (max-width: 767.99px) {
+  .middle-border::before {
+    display: none;
+  }
+}
+
 @media (max-width: 640px) {
 
   header.active-header .desktop-logo,

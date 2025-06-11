@@ -15,6 +15,7 @@ import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import FreeEBook from "./pages/Free-E-book";
 import Home2 from "./pages/thankyou";
+import FreeEBooksubmit from "./pages/e-book-submit";
 
 function App() {
   const location = useLocation();
@@ -36,6 +37,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/free-e-book" element={<FreeEBook />}></Route>
           <Route path="/home2" element={<Home2 />}></Route>
+          <Route path="/ebook-submit" element={<FreeEBooksubmit />}></Route>
         </Routes>
       </main>
       <Footer />
