@@ -13,7 +13,7 @@ const Thankyou = () => {
           alt="checkmark"
           className="mx-auto sm:w-[60px] w-[50px] mb-2 h-auto zoom-pulse"
         />
-        <h2 className="font-bold lg:text-[42px] text-4xl text-center text-[#00C360] py-2">
+        <h2 className="font-bold lg:text-[42px] sm:text-4xl text-3xl text-center text-[#00C360] py-2">
           Thank You!
         </h2>
         <h3 className="font-medium sm:text-xl text-base text-white">

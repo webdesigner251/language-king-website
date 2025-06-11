@@ -296,7 +296,7 @@ const FreeEBooksubmit = () => {
                 alt="checkmark"
                 className="mx-auto sm:w-[60px] w-[50px] mb-2 h-auto zoom-pulse"
               />
-              <h2 className="font-bold lg:text-[42px] text-4xl text-center text-[#00C360] py-2">
+              <h2 className="font-bold lg:text-[42px] sm:text-4xl text-3xl text-center text-[#00C360] py-2">
                 Payment Successful
               </h2>
               <h3 className="font-medium sm:text-xl text-base text-white">
@@ -337,7 +337,7 @@ const FreeEBooksubmit = () => {
 
               <a
                 href="#"
-                className="text-2xl text-black bg-[#00DD6C] w-full py-[14.5px] px-4 block mt-4 rounded-md font-bold"
+                className="sm:text-2xl text-lg text-black bg-[#00DD6C] w-full py-[14.5px] px-4 block mt-4 rounded-md font-bold"
               >
                 Download Receipt
               </a>
