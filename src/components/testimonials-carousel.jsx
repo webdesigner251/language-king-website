@@ -52,7 +52,7 @@ const TestimonialCarousel = ({ testimonials }) => {
                 />
               </div>
               <p
-                className="text-paraGray font-light 2xl:text-[25px] text-lg 2xl:leading-[36px] leading-normal md:mb-[40px] sm:mb-[30px] mb-8"
+                className="text-paraGray font-light text-lg leading-normal md:mb-[40px] sm:mb-[30px] mb-8"
                 dangerouslySetInnerHTML={{ __html: item.text }}
               ></p>
             </div>

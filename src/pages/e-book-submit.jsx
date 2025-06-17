@@ -294,24 +294,24 @@ const FreeEBooksubmit = () => {
               <img
                 src={checkmark}
                 alt="checkmark"
-                className="mx-auto sm:w-[60px] w-[50px] mb-2 h-auto zoom-pulse"
+                className="mx-auto sm:w-[53px] w-[50px] mb-2 h-auto zoom-pulse"
               />
-              <h2 className="font-bold lg:text-[42px] sm:text-4xl text-3xl text-center text-[#00C360] py-2">
+              <h2 className="font-bold xl:text-[32px] md:text-[30px] text-2xl text-center text-[#00C360] py-2">
                 Payment Successful
               </h2>
-              <h3 className="font-medium sm:text-xl text-base text-white">
+              <h3 className="font-medium sm:text-lg text-base text-white">
                 We’ve received your information
               </h3>
 
               <div className="pt-4 w-full">
-                <div className="grid grid-cols-2 py-[3px] w-full justify-between sm:text-base text-sm font-medium">
+                <div className="grid grid-cols-2 py-[2px] w-full justify-between sm:text-base text-sm font-medium">
                   <span className="text-[#B7B7B7] text-start">
                     Receipt Number:
                   </span>
                   <span className="text-[#E4FAE5] text-end">25393-0095</span>
                 </div>
 
-                <div className="grid grid-cols-2 py-[3px] w-full justify-between sm:text-base text-sm font-medium">
+                <div className="grid grid-cols-2 py-[2px] w-full justify-between sm:text-base text-sm font-medium">
                   <span className="text-[#B7B7B7] text-start">
                     Invoice Number
                   </span>
@@ -320,14 +320,14 @@ const FreeEBooksubmit = () => {
                   </span>
                 </div>
 
-                <div className="grid grid-cols-2 py-[3px] w-full justify-between sm:text-base text-sm font-medium">
+                <div className="grid grid-cols-2 py-[2px] w-full justify-between sm:text-base text-sm font-medium">
                   <span className="text-[#B7B7B7] text-start">
                     Payment Method
                   </span>
                   <span className="text-[#E4FAE5] text-end">Visa-4242</span>
                 </div>
 
-                <div className="grid grid-cols-2 py-[3px] w-full justify-between sm:text-base text-sm font-medium">
+                <div className="grid grid-cols-2 py-[2px] w-full justify-between sm:text-base text-sm font-medium">
                   <span className="text-[#B7B7B7] text-start">
                     Transaction ID:
                   </span>
@@ -337,20 +337,20 @@ const FreeEBooksubmit = () => {
 
               <a
                 href="#"
-                className="sm:text-2xl text-lg text-black bg-[#00DD6C] w-full py-[14.5px] px-4 block mt-4 rounded-md font-bold"
+                className="sm:text-lg text-base text-black bg-[#00DD6C] w-full py-[13px] px-4 block mt-4 rounded-md font-bold"
               >
                 Download Receipt
               </a>
 
               <div className="bg-[#252525] rounded-[20px] sm:pt-5 sm:px-7 sm:pb-7 p-4 mt-6">
                 <div className="inline-flex items-center justify-center">
-                  <h3 className="font-bold xl:text-[34px] md:text-[30px] text-2xl inline mx-auto tracking-[1px] relative  text-white border-text text-center">
+                  <h3 className="font-bold xl:text-[32px] md:text-[30px] text-2xl inline mx-auto tracking-[1px] relative  text-white border-text text-center">
                     What Happens Next?
                   </h3>
                 </div>
 
                 <div className="grid grid-cols-1 sm:gap-6 gap-4 mt-7 text-start">
-                  <div className="flex items-start sm:gap-7 gap-5  text-white font-medium leading-normal xl:text-xl sm:text-lg text-base">
+                  <div className="flex items-start sm:gap-6 gap-5 text-white font-medium 2xl:text-lg text-base 2xl:leading-[24px] leading-[22px]">
                     <img
                       src={EmailIcon}
                       alt="checklist"

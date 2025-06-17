@@ -240,7 +240,7 @@ const PTEMasterClass = () => {
       image: Support3,
       title: "Online Classes with Feedback",
       description:
-        "Learn timed and real - time test tricks from top - notch tutors. Get feedback, learn with other students, ask doubts, and much more.",
+        "Learn timed and real-time test tricks from top-notch tutors. Get feedback, learn with other students, ask doubts, and much more.",
     },
     {
       image: Support4,

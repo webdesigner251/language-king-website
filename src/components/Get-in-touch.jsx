@@ -213,7 +213,7 @@ const GetInTouch = () => {
                 onChange={(e) =>
                   setFormData({ ...formData, [e.target.name]: e.target.value })
                 }
-                className="border-2 border-[#949AA5] rounded-md bg-white py-[16px] sm:px-[24px] px-4 sm:text-lg text-base"
+                className="border-2 border-[#949AA5] rounded-md bg-white py-[13px] sm:px-[24px] px-4 sm:text-lg text-base"
               />
             </div>
 
@@ -229,7 +229,7 @@ const GetInTouch = () => {
                 formData={formData}
                 setFormData={setFormData}
                 errors={{}} // no validation errors
-                inputClassName="w-full border-2 rounded-md bg-white sm:text-lg text-base border-[#949AA5]"
+                wrapperClassName="w-full border-2 rounded-md bg-white sm:text-lg text-base border-[#949AA5]"
               />
             </div>
 
@@ -272,7 +272,7 @@ const GetInTouch = () => {
           </form>
         </div>
       ) : (
-        <div className="bg-[#121211] rounded-[20px] px-5 pt-6 pb-8 shadow-[0_0_44px_5px_rgba(255,176,193,0.7)]">
+        <div className="bg-[#121211] rounded-[15px] px-5 py-6 shadow-[0_0_44px_5px_rgba(255,176,193,0.7)]">
           <Thankyou />
         </div>
       )}

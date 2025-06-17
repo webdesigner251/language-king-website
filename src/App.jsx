@@ -14,7 +14,7 @@ import NAATICCL from "./pages/NAATI-CCL";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import FreeEBook from "./pages/Free-E-book";
-import Home2 from "./pages/thankyou";
+import Home2 from "./pages/thankyou"; // This page is for view purpose only to show the thankyou card design for client remove it when backend done.
 import FreeEBooksubmit from "./pages/e-book-submit";
 
 function App() {

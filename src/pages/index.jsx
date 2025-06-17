@@ -514,7 +514,7 @@ const Home = () => {
                 <div className="flex items-center justify-end">
                   <Link
                     to="/testimonials"
-                    className="bg-black2 2xl:p-[16px] sm:p-[12px] p-[9px] 2xl:min-w-[166px] sm:min-w-[140px] min-w-[100px] text-center rounded-[6px] text-white 2xl:text-[22px] sm:text-lg text-base font-semibold "
+                    className="bg-black2 sm:p-[12px] p-[9px] sm:min-w-[140px] min-w-[100px] text-center rounded-[6px] text-white sm:text-lg text-base font-semibold "
                   >
                     View all
                   </Link>

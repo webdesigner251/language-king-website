@@ -84,7 +84,7 @@ const slidesData = [
 const Testimonials = () => {
   return (
     <>
-      <section className="md:pt-[100px] pt-[60px] md:pb-[77px] pb-8">
+      <section className="md:pt-[220px] pt-[180px] md:pb-[77px] pb-8 mt-[-120px]">
         <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full relative z-10">
           <div className="grid items-start lg:grid-cols-2 xl:gap-[120px] gap-[90px]">
             <div>

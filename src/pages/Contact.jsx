@@ -77,7 +77,7 @@ const faqs = [
 const Contact = () => {
   return (
     <>
-      <section className="">
+      <section className="md:pt-[120px] pt-[100px] mt-[-120px]">
         <div className="custom-container mx-auto  px-4 sm:px-[32px] w-full relative z-10">
           <div className=" md:pt-[100px] sm:pt-[70px] pt-[60px] sm:pb-[54px]">
             <div className="flex md:flex-nowrap justify-between flex-wrap lg:gap-[50px] gap-[30px]">

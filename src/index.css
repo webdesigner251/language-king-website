@@ -352,7 +352,7 @@ header.active-header .desktop-logo {
   border-bottom: 6px solid #000000 !important;
 }
 
-.iti__flag {
+.iti__selected-flag .iti__flag {
   transform: scale(1.5);
 }
 
@@ -505,7 +505,7 @@ header.active-header .desktop-logo {
     padding-left: 90px !important;
   }
 
-  .iti__flag {
+  .iti__selected-flag .iti__flag {
     transform: scale(1.3);
   }
 }

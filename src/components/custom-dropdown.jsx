@@ -18,7 +18,7 @@ const CustomDropdown = ({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className={`w-full text-left py-[16px] sm:px-[24px] px-4 sm:text-lg text-base border-2 c-dropdown ${
+        className={`w-full text-left c-dropdown border-2 border-[#949AA5] py-[13px] sm:px-[24px] px-4 sm:text-lg text-base ${
           error ? "border-red-500" : "border-[#949AA5]"
         } ${
           selected === "default" ? "text-[#919191]" : "text-black"
@@ -38,7 +38,7 @@ const CustomDropdown = ({
                 onChange(course);
                 setIsOpen(false);
               }}
-              className={`px-[10px] py-[5px] bg-white hover:bg-yellow-300 cursor-pointer text-black ${itemClassName}`}
+              className={`px-3 py-1 bg-white hover:bg-yellow-300 text-base leading-normal cursor-pointer text-black ${itemClassName}`}
             >
               {course}
             </li>

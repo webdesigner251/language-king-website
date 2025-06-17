@@ -9,11 +9,11 @@ const CallbackForm = ({ onClose }) => {
       onClick={onClose}
     >
       <div
-        className="bg-[#121212] p-6  w-full sm:max-w-xl max-w-[90%] relative max-h-[90%] overflow-y-auto"
+        className="bg-[#121212] 2xl:p-6 px-[28px] py-[18px] w-full sm:max-w-xl max-w-[90%] relative sm:max-h-[95%] max-h-[90%] h-full overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex justify-between items-center border-b-2 border-[#2A2A2A] pb-6">
-          <h2 className="text-white sm:text-[30px] text-2xl font-bold">
+        <div className="flex justify-between items-center border-b-2 border-[#2A2A2A] pb-[18px]">
+          <h2 className="text-white 2xl:text-[30px] md:text-[28px] text-2xl font-bold">
             Get-a-Callback
           </h2>
           <button
@@ -23,7 +23,7 @@ const CallbackForm = ({ onClose }) => {
             <img src={CloseIcon} alt="CloseIcon" className="w-7 h-7" />
           </button>
         </div>
-        <p className="font-normal text-white/75 lg:text-xl leading-[24px] sm:text-base text-sm pt-6">
+        <p className="font-normal text-white/75 2xl:text-xl md:text-lg leading-[24px] sm:text-base text-sm pt-6">
           Please fill out the below form. Our team will be in touch shortly.
         </p>
         <div className="sm:pt-6 pt-4">
