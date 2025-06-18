@@ -175,7 +175,7 @@
 import React, { useState } from "react";
 import PhoneInput from "./PhoneInput";
 import CustomDropdown from "./custom-dropdown";
-import Thankyou from "./Thankyou";
+import ContactThankyou from "./Contact-thankyou";
 
 const GetInTouch = () => {
   const [formData, setFormData] = useState({
@@ -189,9 +189,9 @@ const GetInTouch = () => {
   return (
     <>
       {!isSubmitted ? (
-        <div className="bg-white rounded-[9px] md:p-[44px] sm:p-5 p-4">
+        <div className="bg-white rounded-[9px] 2xl:p-[44px] md:p-[31px] sm:p-5 p-4">
           <p
-            className="font-normal leading-[22px] tracking-[0.011em] text-black lg:text-lg sm:text-base text-sm"
+            className="max-w-[450px] font-normal leading-[22px] tracking-[0.011em] text-black lg:text-lg sm:text-base text-sm"
             style={{ textShadow: "1px 1px 0px rgba(0, 0, 0, 0.3)" }}
           >
             Please fill out the below form. Our team will be in touch shortly.
@@ -213,7 +213,7 @@ const GetInTouch = () => {
                 onChange={(e) =>
                   setFormData({ ...formData, [e.target.name]: e.target.value })
                 }
-                className="border-2 border-[#949AA5] rounded-md bg-white py-[13px] sm:px-[24px] px-4 sm:text-lg text-base"
+                className="border-2 border-[#949AA5] rounded-md bg-white py-[12px] sm:px-[18px] px-4 sm:text-lg text-base"
               />
             </div>
 
@@ -230,6 +230,7 @@ const GetInTouch = () => {
                 setFormData={setFormData}
                 errors={{}} // no validation errors
                 wrapperClassName="w-full border-2 rounded-md bg-white sm:text-lg text-base border-[#949AA5]"
+                inputClassName="py-[12px] sm:px-[18px] px-4"
               />
             </div>
 
@@ -247,12 +248,12 @@ const GetInTouch = () => {
                   setFormData((prev) => ({ ...prev, course: value }))
                 }
                 error={null}
-                buttonClassName="bg-white rounded-md"
+                buttonClassName="bg-white rounded-md border-2 py-[12px] sm:px-[18px] px-4"
               />
             </div>
 
             {/* Privacy Notice */}
-            <span className="font-normal text-[#949AA4] sm:text-sm text-xs py-3 block">
+            <span className="font-normal text-[#949AA4] sm:text-sm text-xs py-2 block">
               Your information will be used to consider and fulfill your request
               and will be handled pursuant to our{" "}
               <a href="#" className="underline">
@@ -265,7 +266,7 @@ const GetInTouch = () => {
             <button
               type="button"
               onClick={() => setIsSubmitted(true)}
-              className="align-middle inline-flex items-center justify-center text-center primary-btn bg-[#E42552] text-white px-3 py-4 w-full font-bold sm:text-xl text-lg relative z-10 mt-4 rounded-md"
+              className="align-middle inline-flex items-center justify-center text-center primary-btn bg-[#E42552] text-white px-3 py-4 w-full font-bold text-lg relative z-10 mt-4 rounded-md"
             >
               Get In Touch
             </button>
@@ -273,7 +274,7 @@ const GetInTouch = () => {
         </div>
       ) : (
         <div className="bg-[#121211] rounded-[15px] px-5 py-6 shadow-[0_0_44px_5px_rgba(255,176,193,0.7)]">
-          <Thankyou />
+          <ContactThankyou />
         </div>
       )}
     </>

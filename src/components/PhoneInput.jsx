@@ -75,6 +75,9 @@
 // export default PhoneInput;
 
 import React, { useState, useEffect, useRef } from "react";
+import AuFlag from "../assets/au-flag.jpg";
+import InFlag from "../assets/india-flag.png";
+import UsFlag from "../assets/us-flag.png";
 
 // Full country list or slice based on props
 const allCountries = [
@@ -82,25 +85,19 @@ const allCountries = [
     name: "Australia",
     code: "AU",
     dialCode: "+61",
-    flag: "https://flagcdn.com/w40/au.png",
+    flag: AuFlag,
   },
   {
     name: "India",
     code: "IN",
     dialCode: "+91",
-    flag: "https://flagcdn.com/w40/in.png",
+    flag: InFlag,
   },
   {
     name: "United States",
     code: "US",
     dialCode: "+1",
-    flag: "https://flagcdn.com/w40/us.png",
-  },
-  {
-    name: "Afghanistan",
-    code: "AF",
-    dialCode: "+93",
-    flag: "https://flagcdn.com/w40/af.png",
+    flag: UsFlag,
   },
 ];
 
@@ -192,7 +189,7 @@ const PhoneInput = ({
         placeholder="412 345 678"
         value={phoneNumber}
         onChange={handlePhoneNumberChange}
-        className={`flex-1 placeholder:text-[#919191] py-[13px] sm:px-[24px] px-4 sm:text-lg text-base outline-none ${inputClassName}`}
+        className={`flex-1 placeholder:text-[#919191] sm:text-lg text-base outline-none ${inputClassName}`}
       />
 
       {/* Dropdown */}

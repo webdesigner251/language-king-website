@@ -53,7 +53,7 @@ const BookFreeTrail = () => {
         <div className="flex flex-col mb-4">
           <label
             htmlFor="name"
-            className="text-white font-semibold 2xl:text-lg text-base mb-[6px]"
+            className="text-white font-semibold text-lg mb-[6px]"
           >
             Full Name*
           </label>
@@ -63,7 +63,7 @@ const BookFreeTrail = () => {
             placeholder="Your first & last name"
             value={formData.name}
             onChange={handleChange}
-            className={`placeholder:text-[#919191] bg-white py-[13px] px-[24px] sm:text-lg text-base border ${
+            className={`placeholder:text-[#919191] bg-white py-[16px] px-[24px] sm:text-lg text-base border ${
               errors.name ? "border-red-500" : "border-[#949AA5]"
             }`}
           />
@@ -106,7 +106,7 @@ const BookFreeTrail = () => {
                                 {errors.phone && <span className="text-red-500 text-sm mt-1">{errors.phone}</span>} */}
           <label
             htmlFor="phone"
-            className="text-white font-semibold sm:text-lg text-base mb-[6px] block"
+            className="text-white font-semibold text-lg mb-[6px] block"
           >
             Phone Number*
           </label>
@@ -114,14 +114,14 @@ const BookFreeTrail = () => {
             formData={formData}
             setFormData={setFormData}
             errors={errors}
-            inputClassName="w-full rounded-[0px]"
+            inputClassName="w-full rounded-[0px] py-[16px] sm:px-[24px] px-4"
           />
         </div>
 
         <div className="flex flex-col mb-4">
           <label
             htmlFor="course"
-            className="text-white font-semibold 2xl:text-lg text-base mb-[6px]"
+            className="text-white font-semibold text-lg mb-[6px]"
           >
             Course Interested in*
           </label>
@@ -132,7 +132,7 @@ const BookFreeTrail = () => {
               setFormData((prev) => ({ ...prev, course: value }))
             }
             error={errors.course}
-            buttonClassName="bg-white"
+            buttonClassName="bg-white border-0 py-[16px] sm:px-[24px] px-4"
             listClassName="rounded-[0px]"
           />
 
@@ -157,7 +157,7 @@ const BookFreeTrail = () => {
           )}
         </div>
 
-        <span className="font-normal text-[#949AA4] text-sm leading-[1.2] py-[10px] block">
+        <span className="font-normal text-[#949AA4] text-base py-3 block">
           Your information will be used to consider and fulfill your request and
           will be handled pursuant to our{" "}
           <a href="#" className="underline">
@@ -167,7 +167,7 @@ const BookFreeTrail = () => {
 
         <button
           type="submit"
-          className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-OrangeRed text-white px-3 py-4 w-full font-bold 2xl:text-xl text-lg relative z-10 mt-3"
+          className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-OrangeRed text-white px-3 py-4 w-full font-bold sm:text-xl text-lg relative z-10 mt-4"
         >
           Get In Touch
         </button>
