@@ -1,6 +1,6 @@
-import checkmark from "../assets/icons/green-checkmark.svg";
-import CallIcon from "../assets/icons/call-icon.svg";
-import MemberIcon from "../assets/icons/member-icon.svg";
+import checkmark from "../assets/icons/checkmark.svg";
+import CallIcon from "../assets/icons/call-icon-gradient.svg";
+import MemberIcon from "../assets/icons/member-icon-gradient.svg";
 import PhoneICon from "../assets/icons/landline-phone.svg";
 import CalenderIcon from "../assets/icons/calender-icon.svg";
 
@@ -15,7 +15,7 @@ const Thankyou = () => {
           className="mx-auto sm:w-[60px] w-[50px] mb-2 h-auto zoom-pulse"
         />
         {/* <h2 className="font-bold 2xl:text-[42px] md:text-[34px] text-3xl text-center text-[#00C360]"> */}
-        <h2 className="font-bold lg:text-[42px] sm:text-4xl text-3xl text-center text-[#00C360] py-2">
+        <h2 className="font-bold lg:text-[42px] sm:text-4xl text-3xl text-center text-gradient-OrangeRed py-2">
           Thank You!
         </h2>
 
@@ -69,7 +69,7 @@ const Thankyou = () => {
                   </a>
                 </li>
                 <li>
-                  <div className="flex items-center gap-4 text-white font-semibold sm:text-lg text-sm">
+                  <div className="flex gap-4 text-white font-semibold sm:text-lg text-sm">
                     <div className="w-10 h-full flex justify-center items-start">
                       <img src={CalenderIcon} className="w-7" />
                     </div>
