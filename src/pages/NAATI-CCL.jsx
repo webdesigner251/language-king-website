@@ -269,8 +269,108 @@ const NAATICCL = () => {
   return (
     <>
       <div className="bg-black/20 relative h-full">
-        <section className="sm:pt-[270px] pt-[450px] sm:pb-[100px] pb-[60px] mt-[-150px] relative flex flex-column justify-center items-center">
+        {/* <section className="sm:pt-[270px] pt-[450px] sm:pb-[100px] pb-[60px] mt-[-150px] relative flex flex-column justify-center items-center">
           <div className="sm:w-[66%] w-full top-0 right-0 lg:h-[75%] sm:h-[66%] h-[50%] absolute">
+            <img
+              src={PTEBanner}
+              alt="HomeBanner"
+              className=" w-full h-full top-0 left-0 right-0 bottom-0 object-cover"
+            />
+            <div className="course-banner-gradient absolute w-full h-full top-0 left-0 right-0 bottom-0"></div>
+          </div>
+          <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full relative z-10">
+            <div className="grid lg:grid-cols-2 items-end">
+              <div className="">
+                <div className="flex flex-col 2xl:gap-6 gap-3">
+                  <h2 className="text-white font-bold 2xl:text-[32px] text-2xl">
+                    <span className="text-[#FFEE00]">NAATI CCL</span> FAST{" "}
+                    <span className="text-[#52D34E]">TRACK COURSE</span>
+                  </h2>
+                  <h1 className="font-inter font-bold main-heading 2xl:mt-2 mt-0 text-white">
+                    Exam in 7 days? <br />
+                    we've got you covered!
+                  </h1>
+                  <p className="md:text-lg sm:text-xl text-base font-normal max-w-[660px] text-white/75">
+                    This is a super fast-paced course. It’s geared for speed,
+                    designed for those who need to clear the test on urgent
+                    basis, and do whatever it takes to clear it.{" "}
+                  </p>
+                  <div className="flex items-center gap-3 my-[12px]">
+                    <img
+                      src={avatar}
+                      alt="avatar"
+                      className="w-[50px] h-[50px] rounded-full border-4 border-white/10"
+                    />
+                    <h3 className="sm:text-lg text-base font-light text-white/60">
+                      Taught by{" "}
+                      <span className="text-white font-semibold">Abhishek</span>
+                    </h3>
+                  </div>
+                </div>
+                <div className="sm:mt-[38px] mt-3 flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[600px]">
+                  <a
+                    href="#"
+                    className="primary-btn bg-gradient-GreenBtn inline-flex justify-center items-center text-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
+                  >
+                    Take the Course
+                  </a>
+                  <a
+                    href="#"
+                    className="align-middle inline-flex items-center gap-[18px] justify-center text-center bg-transparent border-[1.5px] border-[#333434] text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10"
+                  >
+                    <svg
+                      width="21"
+                      height="23"
+                      viewBox="0 0 21 23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20.6718 11.2245L0.647949 22.0227V0.42627L20.6718 11.2245Z"
+                        fill="url(#paint0_linear_1094_2854)"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_1094_2854"
+                          x1="0.647949"
+                          y1="11.2245"
+                          x2="20.6718"
+                          y2="11.2245"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#BFD34E" />
+                          <stop offset="1" stop-color="#52D34E" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    Watch a Free Lesson
+                  </a>
+                </div>
+              </div>
+              <div className="text-end lg:block hidden">
+                <h4 className="font-normal text-[#A1A0A0] text-xl text-end">
+                  Devices Supported:
+                </h4>
+                <div className="max-w-[200px] ms-auto mt-[32px] flex justify-between items-center">
+                  <img src={AppleIcon} alt="AppleIcon" className="w-auto h-8" />
+                  <img
+                    src={AndroidIcon}
+                    alt="AndroidIcon"
+                    className="w-auto h-8"
+                  />
+                  <img
+                    src={WindowsIcon}
+                    alt="WindowsIcon"
+                    className="w-auto h-8"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> */}
+
+        <section className="sm:pt-[270px] pt-[450px] sm:pb-[100px] pb-[60px] mt-[-150px] relative flex flex-column justify-center items-center">
+          <div className=" w-full top-0 right-0  absolute">
             <img
               src={PTEBanner}
               alt="HomeBanner"
@@ -479,21 +579,20 @@ const NAATICCL = () => {
                           className="w-5"
                         />
                         <span
-                          className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${
-                            activeTab === tab
+                          className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${activeTab === tab
                               ? "text-white"
                               : "text-white/60 group-hover:text-white"
-                          }`}
+                            }`}
                         >
                           {tab === "tab1"
                             ? "Major Mistakes"
                             : tab === "tab2"
-                            ? "Minor Mistakes"
-                            : tab === "tab3"
-                            ? "How to avoid them"
-                            : tab === "tab4"
-                            ? "Repeat Policy Pro Tip!"
-                            : "and much more!"}
+                              ? "Minor Mistakes"
+                              : tab === "tab3"
+                                ? "How to avoid them"
+                                : tab === "tab4"
+                                  ? "Repeat Policy Pro Tip!"
+                                  : "and much more!"}
                         </span>
                       </button>
                     </li>

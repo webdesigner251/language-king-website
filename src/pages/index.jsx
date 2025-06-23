@@ -124,7 +124,8 @@ const Home = () => {
 
   return (
     <>
-      <section className="banner-wrapper sm:pt-[320px] pt-[400px] sm:pb-[200px] pb-[40px] min-h-[100vh] mt-[-150px] relative flex items-center overflow-hidden">
+      <section className="banner-wrapper min-h-[100vh] sm:pt-[270px] pt-[450px] sm:pb-[100px] pb-[60px] mt-[-150px] relative flex items-center overflow-hidden">
+        {/* <section className="banner-wrapper sm:pt-[320px] pt-[400px] sm:pb-[200px] pb-[40px] min-h-[100vh] mt-[-150px] relative flex items-center overflow-hidden"></section> */}
         <img
           src={HomeBanner}
           alt="HomeBanner"
