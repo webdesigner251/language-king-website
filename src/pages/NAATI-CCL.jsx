@@ -370,7 +370,15 @@ const NAATICCL = () => {
         </section> */}
 
         <section className="sm:pt-[270px] pt-[450px] sm:pb-[100px] pb-[60px] mt-[-150px] relative flex flex-column justify-center items-center">
-          <div className=" w-full top-0 right-0  absolute">
+          {/* <div className="sm:w-[66%] w-full top-0 right-0 lg:h-[75%] sm:h-[66%] h-[50%] absolute">
+            <img
+              src={PTEBanner} 
+              alt="HomeBanner"
+              className=" w-full h-full top-0 left-0 right-0 bottom-0 object-cover"
+            />
+            <div className="course-banner-gradient absolute w-full h-full top-0 left-0 right-0 bottom-0"></div>
+          </div> */}
+          <div className="2xl:w-[66%] w-full 2xl:h-[75%] sm:h-full h-[50%] top-0 right-0 bottom-0 absolute">
             <img
               src={PTEBanner}
               alt="HomeBanner"
@@ -382,7 +390,7 @@ const NAATICCL = () => {
             <div className="grid lg:grid-cols-2 items-end">
               <div className="">
                 <div className="flex flex-col 2xl:gap-6 gap-3">
-                  <h2 className="text-white font-bold 2xl:text-[32px] text-2xl">
+                  <h2 className="text-white font-bold 2xl:text-[28px] text-2xl">
                     <span className="text-[#FFEE00]">NAATI CCL</span> FAST{" "}
                     <span className="text-[#52D34E]">TRACK COURSE</span>
                   </h2>
@@ -407,16 +415,16 @@ const NAATICCL = () => {
                     </h3>
                   </div>
                 </div>
-                <div className="sm:mt-[38px] mt-3 flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[600px]">
+                <div className="sm:mt-[38px] mt-3 flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] lg:max-w-[600px] md:max-w-[80%]">
                   <a
                     href="#"
-                    className="primary-btn bg-gradient-GreenBtn inline-flex justify-center items-center text-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
+                    className="primary-btn bg-gradient-GreenBtn inline-flex justify-center items-center text-center text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
                   >
                     Take the Course
                   </a>
                   <a
                     href="#"
-                    className="align-middle inline-flex items-center gap-[18px] justify-center text-center bg-transparent border-[1.5px] border-[#333434] text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10"
+                    className="align-middle inline-flex items-center gap-[18px] justify-center text-center bg-[#111] border-[1.5px] border-[#333434] text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:bg-[#111]/80"
                   >
                     <svg
                       width="21"
@@ -568,7 +576,7 @@ const NAATICCL = () => {
 
                 <ul className="tab-links">
                   {tabs.map((tab) => (
-                    <li key={tab}>
+                    <li key={tab} className="py-[2px]">
                       <button
                         onClick={() => setActiveTab(tab)}
                         className="flex gap-3 items-center group w-full text-left"
@@ -579,9 +587,9 @@ const NAATICCL = () => {
                           className="w-5"
                         />
                         <span
-                          className={`font-medium 2xl:text-[22px] text-lg cursor-pointer transition-all duration-300 ease-in-out ${activeTab === tab
-                              ? "text-white"
-                              : "text-white/60 group-hover:text-white"
+                          className={`font-medium 2xl:text-xl sm:text-lg text-sm cursor-pointer transition-all duration-300 ease-in-out ${activeTab === tab
+                            ? "text-white"
+                            : "text-white/60 group-hover:text-white"
                             }`}
                         >
                           {tab === "tab1"
@@ -794,16 +802,16 @@ const NAATICCL = () => {
               </div>
 
               <div className="lg:w-[28%] w-full ">
-                <div className="max-w-[345px] flex flex-col gap-y-[19px]">
+                <div className="sm:max-w-[345px] flex flex-col gap-y-[19px]">
                   <h2 className="text-[#52D34E] font-bold 2xl:text-[40px] sm:text-[36px] text-2xl 2xl:leading-[50px] sm:leading-[42px] leading-[32px]">
                     Try a Free Lesson Real Quick
                   </h2>
-                  <p className="font-normal sm:text-lg text-sm leading-[24px] text-white/60">
+                  <p className="font-normal 2xl:text-xl 2xl:leading-[28px] sm:text-lg text-sm leading-[24px] text-white/60">
                     Watch AB guiding a student and a funny interaction between
                     them.
                   </p>
 
-                  <p className="font-normal sm:text-lg text-sm leading-[24px] text-white/60">
+                  <p className="font-normal 2xl:text-xl 2xl:leading-[28px] sm:text-lg text-sm leading-[24px] text-white/60">
                     As an expert - AB guides his students through various
                     hurdles, by providing insightful feedback.
                   </p>

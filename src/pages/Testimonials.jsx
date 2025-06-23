@@ -128,9 +128,9 @@ const Testimonials = () => {
               <VideoPlayer
                 videoSrc={Video1}
                 thumbnail={PlaceholerImage}
-                wrapperClassName="rounded-[10px]"
-                videoClassName="rounded-[10px]"
-                thumbnailClassName="rounded-[10px]"
+                wrapperClassName="rounded-[10px] h-full"
+                videoClassName="rounded-[10px] h-full"
+                thumbnailClassName="rounded-[10px] h-full"
               />
             </div>
           </div>

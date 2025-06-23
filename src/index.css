@@ -407,6 +407,12 @@ header.active-header .desktop-logo {
   }
 }
 
+@media (max-width: 1536px) {
+  .course-banner-gradient {
+    background: linear-gradient(90deg, rgb(13 13 13), transparent 50%), linear-gradient(transparent 80%, rgb(13 13 13));
+  }
+}
+
 @media (max-width: 1500px) {
   /* .header-btn {
     padding: 12px 20px;
