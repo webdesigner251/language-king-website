@@ -194,7 +194,7 @@ const GetInTouch = () => {
             className="max-w-[450px] font-normal leading-[22px] tracking-[0.011em] text-black lg:text-lg sm:text-base text-sm"
             style={{ textShadow: "1px 1px 0px rgba(0, 0, 0, 0.3)" }}
           >
-            Please fill out the below form. Our team will be in touch shortly.
+            {/* Please fill out the below form. Our team will be in touch shortly. */}
           </p>
           <form className="sm:pt-6 pt-4">
             {/* Full Name */}

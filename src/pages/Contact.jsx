@@ -96,7 +96,7 @@ const Contact = () => {
                   <h3 className="text-white font-bold md:text-2xl sm:text-xl text-lg">
                     Why Language King?
                   </h3>
-                  <ul className="mt-5 sm:ps-5 max-w-[700px]">
+                  <ul className="mt-5 sm:ps-5 gap-5 max-w-[700px]">
                     <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
                       <img
                         src={CheckmarkGray}

@@ -207,7 +207,7 @@ const Home2 = () => {
                 />
               </div>
               <div className="lg:py-[16px]">
-                <h2 className="text-[#52D34E] [text-shadow:0px_5px_0px_#000000] font-bold md:text-[24px] inline-block sm:text-2xl text-lg">
+                <h2 className="text-[#52D34E] [text-shadow:0px_5px_0px_#000000] font-bold md:text-[32px] inline-block sm:text-2xl text-lg">
                   NAATI CCL Fast Track Course
                 </h2>
                 <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] leading-[1.2] my-[12px]">

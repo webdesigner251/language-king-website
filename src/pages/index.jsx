@@ -414,17 +414,17 @@ const Home = () => {
       <section className="pb-8">
         <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
           <div className="bg-black1 flex flex-col sm:gap-[57px] gap-[42px] sm:leading-[auto] leading-[40px] border border-white/10 group md:px-[38px] sm:px-6 px-4 md:pt-[60px] md:pb-[85px] pt-6 pb-7  relative">
-            <h2 className="lg:text-[42px] sm:text-[40px] text-[32px] leading-[1.2] font-bold text-white text-left">
+            <h2 className="lg:text-[54px] sm:text-[40px] text-[32px] leading-[1.2] font-bold text-white text-left">
               What’s included in every Course
             </h2>
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-around gap-x-[20px] gap-y-[60px]">
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-around gap-x-[205px] gap-y-[30px] mt-[60px]">
               <div className="text-center">
                 <img
                   src={Icon1}
                   alt="Icon"
-                  className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]"
+                  className="mx-auto sm:mb-[]] mb-6 sm:max-w-[118px] max-w-[78px]"
                 />
-                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">
+                <span className="text-white/50 md:text-[20px] sm:text-lg text-sm block max-w-[270px] mx-auto">
                   <span className="block text-[#E9E9E9]">Video Lectures -</span>{" "}
                   Basic to advance
                 </span>
@@ -433,9 +433,9 @@ const Home = () => {
                 <img
                   src={Icon2}
                   alt="Icon"
-                  className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]"
+                  className="mx-auto sm:mb-[]] mb-6 sm:max-w-[118px] max-w-[78px]"
                 />
-                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">
+                <span className="text-white/50 md:text-[20px] sm:text-lg text-sm block max-w-[270px] mx-auto">
                   <span className="block text-[#E9E9E9]">Study Material -</span>{" "}
                   Templates and prediction file
                 </span>
@@ -444,9 +444,9 @@ const Home = () => {
                 <img
                   src={Icon3}
                   alt="Icon"
-                  className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]"
+                  className="mx-auto sm:mb-[]] mb-6 sm:max-w-[118px] max-w-[78px]"
                 />
-                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">
+                <span className="text-white/50 md:text-[20px] sm:text-lg text-sm block max-w-[270px] mx-auto">
                   <span className="block text-[#E9E9E9]">
                     Class Recordings -{" "}
                   </span>
@@ -457,9 +457,9 @@ const Home = () => {
                 <img
                   src={Icon4}
                   alt="Icon"
-                  className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]"
+                  className="mx-auto sm:mb-[]] mb-6 sm:max-w-[118px] max-w-[78px]"
                 />
-                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">
+                <span className="text-white/50 md:text-[20px] sm:text-lg text-sm block max-w-[270px] mx-auto">
                   <span className="block text-[#E9E9E9]">AI Portal -</span>Mock
                   Test & 5000+ exam questions
                 </span>
@@ -468,9 +468,9 @@ const Home = () => {
                 <img
                   src={Icon5}
                   alt="Icon"
-                  className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]"
+                  className="mx-auto sm:mb-[]] mb-6 sm:max-w-[118px] max-w-[78px]"
                 />
-                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">
+                <span className="text-white/50 md:text-[20px] sm:text-lg text-sm block max-w-[270px] mx-auto">
                   <span className="block text-[#E9E9E9]">Feedback -</span>
                   Ask an Expert
                 </span>
@@ -479,9 +479,9 @@ const Home = () => {
                 <img
                   src={Icon6}
                   alt="Icon"
-                  className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]"
+                  className="mx-auto sm:mb-[]] mb-6 sm:max-w-[118px] max-w-[78px]"
                 />
-                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">
+                <span className="text-white/50 md:text-[20px] sm:text-lg text-sm block max-w-[270px] mx-auto">
                   <span className="block text-[#E9E9E9]">Live Classes - </span>
                   Learn with other students
                 </span>
@@ -490,9 +490,9 @@ const Home = () => {
                 <img
                   src={Icon7}
                   alt="Icon"
-                  className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]"
+                  className="mx-auto sm:mb-[]] mb-6 sm:max-w-[118px] max-w-[78px]"
                 />
-                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">
+                <span className="text-white/50 md:text-[20px] sm:text-lg text-sm block max-w-[270px] mx-auto">
                   <span className="block text-[#E9E9E9]">
                     Expert Trainers -
                   </span>
@@ -589,12 +589,11 @@ const Home = () => {
                 </div>
               </div>
               <div className="md:w-[50%]">
-                <h2 className="font-bold lg:text-[42px] text-4xl text-gradient-OrangeRed border-b-2 border-[#2A2A2A] pb-5">
+                <h2 className="font-bold lg:text-[54px] text-4xl text-gradient-OrangeRed border-b-2 border-[#2A2A2A]">
                   Book a FREE Trial Class
                 </h2>
-                <p className="font-normal text-white/75 lg:text-[22px] text-xl pt-7">
-                  Please fill out the below form. Our team will be in touch
-                  shortly.
+                <p className="font-normal text-white/75 lg:text-[28px] text-xl pt-7 lg:w-[90%] w-100 my-2">
+                  Please fill out the below form. Our team will be in touch shortly.
                 </p>
                 <div className="sm:pt-6 pt-4">
                   <BookFreeTrail />

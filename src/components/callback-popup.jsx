@@ -117,13 +117,13 @@ const CallbackForm = ({ onClose }) => {
                 htmlFor="phone"
                 className="text-white font-semibold sm:text-lg text-base mb-[6px] block"
               >
-                Phone Number*
+                {/* Phone Number* */}
               </label>
               <PhoneInput
                 formData={formData}
                 setFormData={setFormData}
                 errors={errors}
-                inputClassName="w-full rounded-[0px] py-[13px] sm:px-[24px] px-4"
+                inputClassName="w-full mt-[100px] rounded-[0px] py-[13px] sm:px-[24px] px-4"
               />
             </div>
 

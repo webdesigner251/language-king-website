@@ -227,37 +227,37 @@ const NAATICCL = () => {
       image: Support1,
       title: "Live 24/7 Support",
       description:
-        "Connect with expert tutors anytime, anywhere — get instant help, guidance, and problem-solving on demand.",
+        "Chat with your tutor to answer questions and solve problems in real-time.",
     },
     {
       image: Support2,
       title: "Personalized plans",
       description:
-        "Get a tailored study plan designed just for you — focused on your goals, timeline, and target score.",
+        "Get a personalized plan to get your desired score in specific time.",
     },
     {
       image: Support3,
       title: "Online Classes with Feedback",
       description:
-        "Learn timed and real-time test tricks from top-notch tutors. Get feedback, learn with other students, ask doubts, and much more.",
+        "Learn tried-and-tested tips and tricks from 90 each tutors. Get feedback, learn with other students, ask doubts, and much more.",
     },
     {
       image: Support4,
       title: "Missed a Class",
       description:
-        "Don't worry we got you covered. Class recordings are available 24/7 for instant access.",
+        "Don’t worry we’ve got you covered. Class recordings are available 24/7 for instant access.",
     },
     {
       image: Support5,
-      title: "Watch PTE Band 8 Tips & Tricks",
+      title: "Online Classes with Feedback",
       description:
-        "Watch pre-recorded video lectures covering all 20 tasks — from Basic to Advanced Strategies, Updated Templates, and Latest Tips and Tricks.",
+        "Learn tried-and-tested tips and tricks from 90 each tutors. Get feedback, learn with other students, ask doubts, and much more.",
     },
     {
       image: Support6,
-      title: "Study Material",
+      title: "Missed a Class",
       description:
-        "Carefully curated resources including Templates, Prediction File, Question Bank, and Real Exam Questions.",
+        "Don’t worry we’ve got you covered. Class recordings are available 24/7 for instant access.",
     },
   ];
 

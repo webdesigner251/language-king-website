@@ -162,7 +162,7 @@ const PhoneInput = ({
           <path d="M7 10l5 5 5-5z" />
         </svg> */}
         <svg
-          className="ml-4 w-3 h-4"
+          className="ml-4 w-4 h-2"
           width="450"
           height="258"
           viewBox="0 0 450 258"
