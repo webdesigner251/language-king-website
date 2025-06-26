@@ -214,7 +214,7 @@ const NAATICCL = () => {
       image: Bangladesh,
     },
     { name: "Sudip", country: "Nepal", flag: Nepal1, image: Nepal },
-    { name: "Hyun-Ae", country: "S. Korea", flag: SKorea1, image: SKorea },
+    { name: "Deiji", country: "S. Korea", flag: SKorea1, image: SKorea },
     { name: "Natalie", country: "Iran", flag: Iran1, image: Iran },
     { name: "Natalie", country: "Thailand", flag: Thailand1, image: Thailand },
     { name: "Natalie", country: "Brazil", flag: Brazil1, image: Brazil },
