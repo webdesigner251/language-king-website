@@ -18,11 +18,9 @@ const CustomDropdown = ({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className={`w-full text-left c-dropdown border-[#949AA5] sm:text-lg text-base ${
-          error ? "border-red-500" : "border-[#949AA5]"
-        } ${
-          selected === "default" ? "text-[#919191]" : "text-black"
-        } ${buttonClassName}`}
+        className={`w-full text-left c-dropdown border-[#949AA5] sm:text-lg text-base ${error ? "border-red-500" : "border-[#949AA5]"
+          } ${selected === "default" ? "text-[#919191]" : "text-black"
+          } ${buttonClassName}`}
       >
         {selected === "default" ? "Select an option" : selected}
       </button>
@@ -38,7 +36,7 @@ const CustomDropdown = ({
                 onChange(course);
                 setIsOpen(false);
               }}
-              className={`px-4 py-3 bg-white hover:bg-[#F2F2F2] text-base leading-normal cursor-pointer text-black ${itemClassName}`}
+              className={`sm:px-4 sm:py-3 px-3 py-2 bg-white hover:bg-[#F2F2F2] text-base leading-normal cursor-pointer text-black ${itemClassName}`}
             >
               {course}
             </li>

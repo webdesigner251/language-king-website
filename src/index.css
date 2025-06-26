@@ -151,8 +151,8 @@ section {
   -moz-appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg width='23' height='12' viewBox='0 0 23 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_773_7241' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='0' y='0' width='23' height='12'%3E%3Cpath d='M0.104004 0.0117188H22.448V11.7717H0.104004V0.0117188Z' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_773_7241)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.8269 0C22.4991 0 22.9033 0.937125 21.7089 2.11313L12.7726 10.927C12.1784 11.515 11.2046 11.5089 10.6166 10.927L1.68019 2.11313C0.498067 0.943251 0.896193 0 2.56832 0H20.8269Z' fill='black'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: 97% center;
-  background-size: 16px;
+  background-position: 96% center;
+  background-size: 14px;
 }
 
 header {
@@ -193,7 +193,7 @@ header {
   position: absolute;
   width: 100%;
   height: 5px;
-  bottom: 5px;
+  bottom: 0px;
   background: linear-gradient(90deg, #FD4F2B 0%, #D7FF53 100%);
   left: 0;
   right: 0;
@@ -495,7 +495,7 @@ header.active-header .desktop-logo {
 
   .main-heading {
     font-size: 36px;
-    line-height: 48px;
+    line-height: 40px;
   }
 
 

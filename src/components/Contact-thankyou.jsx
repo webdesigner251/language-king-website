@@ -34,8 +34,7 @@ const ContactThankyou = () => {
                 alt="checklist"
                 className="sm:w-[32px] w-[28px] sm:h-[32px] h-[28px] mt-1"
               />
-              We’ll call you within 24 hours to discuss available time slots and
-              book your preferred schedule.
+              We’ll call you within 24 hours to discuss your preferred course, target score, and learning needs.
             </div>
             <div className="flex items-start sm:gap-6 gap-5 text-white font-medium 2xl:text-lg text-base 2xl:leading-[24px] leading-[22px]">
               <img
@@ -43,8 +42,7 @@ const ContactThankyou = () => {
                 alt="checklist"
                 className="sm:w-[32px] w-[28px] sm:h-[32px] h-[28px] mt-1"
               />
-              Our team will review your course interest and prepare your
-              personalized trial class.
+              Our team will review your course interest and create a personalized plan tailored to your goals.
             </div>
 
             <div className="bg-[#121212] rounded-2xl p-3  w-full mx-auto flex flex-col justify-center">

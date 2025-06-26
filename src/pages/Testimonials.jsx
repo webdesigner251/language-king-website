@@ -346,11 +346,11 @@ const Testimonials = () => {
         </div>
       </section>
 
-      <section className="pt-[30px]">
+      <section className="pt-[30px] sm:pb-0 pb-[30px]">
         <div className="custom-container mx-auto  px-4 sm:px-[32px] w-full relative z-10">
           <div className="sm:border-y border-t border-[#252525] md:pt-[100px] sm:pt-[70px] pt-[60px] sm:pb-[54px]">
             <div className="flex md:flex-nowrap justify-between flex-wrap lg:gap-[50px] gap-[30px]">
-              <div className="xl:w-[60%] lg:w-[55%] md:w-[50%] w-full">
+              <div className="2xl:w-[60%] lg:w-[55%] md:w-[50%] w-full">
                 <h2 class="lg:text-[52px] sm:text-[42px] text-[32px] leading-[1.2] -mt-[10px] font-bold text-white text-left lg:max-w-full md:max-w-[340px]">
                   Get in touch with us
                 </h2>
@@ -361,11 +361,11 @@ const Testimonials = () => {
                 <div className="md:hidden block pt-3">
                   <GetInTouch />
                 </div>
-                <div className="lg:my-[80px] my-[50px]">
+                <div className="lg:my-[60px] my-[50px]">
                   <h3 className="text-white font-bold md:text-2xl sm:text-xl text-lg">
                     Why Language King?
                   </h3>
-                  <ul className="mt-5 sm:ps-5 max-w-[700px]">
+                  <ul className="mt-5 sm:ps-5 gap-5 max-w-[690px]">
                     <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
                       <img
                         src={CheckmarkGray}
@@ -421,7 +421,7 @@ const Testimonials = () => {
                 </div>
               </div>
               {/* Desktop Form */}
-              <div className="xl:w-[40%] lg:w-[45%] md:w-[50%] w-full md:block hidden">
+              <div className="lg:w-[532px] md:w-[50%] w-full md:block hidden">
                 <GetInTouch />
               </div>
             </div>

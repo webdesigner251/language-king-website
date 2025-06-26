@@ -50,10 +50,10 @@ const BookFreeTrail = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <div className="flex flex-col mb-6">
+        <div className="flex flex-col mb-4">
           <label
             htmlFor="name"
-            className="text-white font-semibold text-lg mb-[6px] sm:text-[24px] text-[18px]"
+            className="text-white font-semibold sm:text-lg text-base mb-[6px]"
           >
             Full Name*
           </label>
@@ -63,9 +63,8 @@ const BookFreeTrail = () => {
             placeholder="Your first & last name"
             value={formData.name}
             onChange={handleChange}
-            className={`placeholder:text-[#919191] bg-white py-[16px] px-[24px] sm:text-[24px] text-[14px] text-base border ${
-              errors.name ? "border-red-500" : "border-[#949AA5]"
-            }`}
+            className={`placeholder:text-[#919191] bg-white py-[16px] px-[24px] sm:text-lg text-base border  ${errors.name ? "border-red-500" : "border-[#949AA5]"
+              }`}
           />
 
           {errors.name && (
@@ -89,7 +88,7 @@ const BookFreeTrail = () => {
           )}
         </div>
 
-        <div className="flex flex-col mb-6">
+        <div className="flex flex-col mb-4">
           {/* <label htmlFor="phone" className="text-white font-semibold 2xl:text-lg text-base mb-[6px]">
                                     Phone Number*
                                 </label>
@@ -106,7 +105,7 @@ const BookFreeTrail = () => {
                                 {errors.phone && <span className="text-red-500 text-sm mt-1">{errors.phone}</span>} */}
           <label
             htmlFor="phone"
-            className="text-white font-semibold text-lg mb-[6px] block sm:text-[24px] text-[18px]"  
+            className="text-white font-semibold sm:text-lg text-base mb-[6px] block"
           >
             Phone Number*
           </label>
@@ -114,14 +113,15 @@ const BookFreeTrail = () => {
             formData={formData}
             setFormData={setFormData}
             errors={errors}
+            wrapperClassName="border-0"
             inputClassName="w-full rounded-[0px] py-[16px] sm:px-[24px] px-4"
           />
         </div>
 
-        <div className="flex flex-col mb-6">
+        <div className="flex flex-col mb-4">
           <label
             htmlFor="course"
-            className="text-white font-semibold text-lg mb-[6px] sm:text-[24px] text-[18px]"
+            className="text-white font-semibold sm:text-lg text-base mb-[6px]"
           >
             Course Interested in*
           </label>
@@ -157,7 +157,7 @@ const BookFreeTrail = () => {
           )}
         </div>
 
-        <span className="font-normal text-[#949AA4] text-base py-3 block text-[20px] lg:w-[90%] w-100">
+        <span className="font-normal text-[#949AA4] sm:text-base text-sm py-3 block">
           Your information will be used to consider and fulfill your request and
           will be handled pursuant to our{" "}
           <a href="#" className="underline">

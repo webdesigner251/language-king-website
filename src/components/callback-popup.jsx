@@ -86,9 +86,8 @@ const CallbackForm = ({ onClose }) => {
                 placeholder="Your first & last name"
                 value={formData.name}
                 onChange={handleChange}
-                className={`placeholder:text-[#919191] bg-white py-[13px] sm:px-[24px] px-4 sm:text-lg text-base border ${
-                  errors.name ? "border-red-500" : "border-[#949AA5]"
-                }`}
+                className={`placeholder:text-[#919191] bg-white py-[13px] sm:px-[24px] px-4 sm:text-lg text-base ${errors.name ? "border-red-500 border" : "border-[#949AA5] border-0"
+                  }`}
               />
 
               {errors.name && (
@@ -115,15 +114,16 @@ const CallbackForm = ({ onClose }) => {
             <div className="flex flex-col mb-4">
               <label
                 htmlFor="phone"
-                className="text-white font-semibold sm:text-lg text-base mb-[6px] block"
+                className="text-white font-semibold 2xl:text-lg text-base mb-[6px] block"
               >
-                {/* Phone Number* */}
+                Phone Number*
               </label>
               <PhoneInput
                 formData={formData}
                 setFormData={setFormData}
                 errors={errors}
-                inputClassName="w-full mt-[100px] rounded-[0px] py-[13px] sm:px-[24px] px-4"
+                wrapperClassName="border-0"
+                inputClassName="w-full rounded-[0px] py-[13px] sm:px-[24px] px-4"
               />
             </div>
 
@@ -176,7 +176,7 @@ const CallbackForm = ({ onClose }) => {
 
             <button
               type="submit"
-              className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-OrangeRed text-white px-3 py-4 w-full font-bold 2xl:text-xl text-lg relative z-10 mt-3"
+              className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-OrangeRed text-white px-3 py-4 w-full font-bold 2xl:text-xl text-lg relative z-10 mt-3 mb-3"
             >
               Get In Touch
             </button>

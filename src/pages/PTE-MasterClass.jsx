@@ -215,7 +215,7 @@ const PTEMasterClass = () => {
       image: Bangladesh,
     },
     { name: "Sudip", country: "Nepal", flag: Nepal1, image: Nepal },
-    { name: "Hyun-Ae", country: "S. Korea", flag: SKorea1, image: SKorea },
+    { name: "Deiji", country: "S. Korea", flag: SKorea1, image: SKorea },
     { name: "Natalie", country: "Iran", flag: Iran1, image: Iran },
     { name: "Natalie", country: "Thailand", flag: Thailand1, image: Thailand },
     { name: "Natalie", country: "Brazil", flag: Brazil1, image: Brazil },
@@ -240,7 +240,7 @@ const PTEMasterClass = () => {
       image: Support3,
       title: "Online Classes with Feedback",
       description:
-        "Learn timed and real-time test tricks from top-notch tutors. Get feedback, learn with other students, ask doubts, and much more.",
+        "Learn tried-and-tested tips and tricks from 90 each tutors. Get feedback, learn with other students, ask doubts, and much more.",
     },
     {
       image: Support4,
@@ -319,7 +319,7 @@ const PTEMasterClass = () => {
                     </h3>
                   </div>
                 </div>
-                <div className="sm:mt-[38px] mt-3 flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] lg:max-w-[600px] md:max-w-[80%]">
+                <div className="sm:mt-[38px] mt-3 flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] lg:max-w-[600px] md:max-w-[82%]">
                   <a
                     href="#"
                     className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-secondary text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10"
@@ -384,17 +384,19 @@ const PTEMasterClass = () => {
 
         <section className="">
           <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full">
-            <div className="sm:grid grid-cols-3 justify-between flex items-center">
-              <hr className="border-[#252525] sm:w-auto w-[20%]" />
-              <span className="font-normal 2xl:text-2xl lg:text-xl text-base text-white/60 text-center sm:inline hidden">
-                Helped <strong className="text-white">10K+ students</strong> get
-                their desired scores
-              </span>
-              <span className="font-normal 2xl:text-2xl lg:text-xl text-base text-white/60 text-center sm:hidden block w-[320px]">
-                Now teaching{" "}
-                <div className="text-white inline-block">10K+ students!</div>
-              </span>
-              <hr className="border-[#252525] sm:w-auto w-[20%]" />
+            <div className="flex justify-between items-center relative">
+              {/* <hr className="border-[#252525] sm:w-auto w-[20%]" /> */}
+              <div className="text-center w-auto mx-auto z-10 relative bg-[#0c0c0c]/80 px-3">
+                <span className="font-normal lg:text-xl text-base text-white/60 text-center sm:inline hidden">
+                  Helped <strong className="text-white">10K+ students</strong> get
+                  their desired scores
+                </span>
+                <span className="font-normal lg:text-xl text-base text-white/60 text-center sm:hidden inline w-[320px]">
+                  Now teaching{" "}
+                  <div className="text-white inline-block">10K+ students!</div>
+                </span>
+              </div>
+              <hr className="border-[#252525] w-full absolute left-0 right-0 z-[-1]" />
             </div>
           </div>
         </section>
@@ -490,8 +492,8 @@ const PTEMasterClass = () => {
                         <img src={Checkmark} alt="Checkmark" className="w-5" />
                         <span
                           className={`font-medium 2xl:text-xl sm:text-lg text-sm cursor-pointer transition-all duration-300 ease-in-out ${activeTab === tab
-                              ? "text-white"
-                              : "text-white/60 group-hover:text-white"
+                            ? "text-white"
+                            : "text-white/60 group-hover:text-white"
                             }`}
                         >
                           {tab === "band8"
@@ -609,14 +611,14 @@ const PTEMasterClass = () => {
             <h3 className="text-white font-semibold text-2xl mb-[40px]">
               + AB has worked with most diverse students in the world like:
             </h3>
-            <div className="grid grid-cols-4 md:grid-cols-8 xl:grid-cols-16 2xl:gap-x-[32px] gap-x-[22px] gap-y-[45px]">
+            <div className="grid grid-cols-4 md:grid-cols-8 xl:grid-cols-16 gap-x-[20px] sm:gap-x-[22px] 2xl:gap-x-[32px]  gap-y-[45px]">
               {students.map((student, index) => (
                 <div key={index} className="flex flex-col items-center">
-                  <div className="sm:w-16 w-12 sm:h-16 h-12 relative">
+                  <div className="w-16 h-16 relative">
                     <img
                       src={student.flag}
                       alt={student.country}
-                      className="sm:w-5 w-3 sm:h-5 h-3 rounded-sm absolute top-0 right-0 z-0"
+                      className="w-5 h-5 rounded-sm absolute top-0 right-0 z-0"
                     />
                     <img
                       src={student.image}
@@ -626,10 +628,10 @@ const PTEMasterClass = () => {
                   </div>
 
                   <div className="flex flex-col items-center mt-3 text-center">
-                    <p className="2xl:text-lg sm:text-base text-sm leading-[1.3] text-white mb-0">
+                    <p className="2xl:text-lg text-base leading-[1.3] text-white mb-0">
                       {student.name}
                     </p>
-                    <span className="sm:text-sm text-xs mt-[3px] font-light text-[#FFED00]">
+                    <span className="text-sm mt-[3px] font-light text-[#FFED00]">
                       {student.country}
                     </span>
                   </div>

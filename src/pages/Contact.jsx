@@ -77,11 +77,11 @@ const faqs = [
 const Contact = () => {
   return (
     <>
-      <section className="md:pt-[70px] pt-[100px] mt-[-120px]">
-        <div className="custom-container mx-auto  px-4 sm:px-[32px] w-full relative z-10">
+      <section className="md:pt-[70px] pt-[100px] sm:mt-[-120px] mt-[-80px]">
+        <div className="custom-container mx-auto px-4 sm:px-[32px] w-full relative z-10">
           <div className=" md:pt-[100px] sm:pt-[70px] pt-[60px] sm:pb-[54px]">
             <div className="flex md:flex-nowrap justify-between flex-wrap lg:gap-[50px] gap-[30px]">
-              <div className="xl:w-[60%] lg:w-[55%] md:w-[50%] w-full">
+              <div className="2xl:w-[60%] lg:w-[55%] md:w-[50%] w-full">
                 <h2 class="lg:text-[52px] sm:text-[42px] text-[32px] leading-[1.2] -mt-[10px] font-bold text-white text-left lg:max-w-full md:max-w-[340px]">
                   Get in touch with us
                 </h2>
@@ -92,11 +92,11 @@ const Contact = () => {
                 <div className="md:hidden block pt-3">
                   <GetInTouch />
                 </div>
-                <div className="lg:my-[80px] my-[50px]">
+                <div className="lg:my-[60px] my-[50px]">
                   <h3 className="text-white font-bold md:text-2xl sm:text-xl text-lg">
                     Why Language King?
                   </h3>
-                  <ul className="mt-5 sm:ps-5 gap-5 max-w-[700px]">
+                  <ul className="mt-5 sm:ps-5 gap-5 max-w-[690px]">
                     <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
                       <img
                         src={CheckmarkGray}
@@ -152,7 +152,7 @@ const Contact = () => {
                 </div>
               </div>
               {/* Desktop Form */}
-              <div className="xl:w-[38%] lg:w-[45%] md:w-[50%] w-full md:block hidden">
+              <div className="lg:w-[532px] md:w-[50%] w-full md:block hidden">
                 <GetInTouch />
               </div>
             </div>
@@ -160,10 +160,10 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="pt-[50px] md:pb-[100px] sm:pb-[80px] ">
+      <section className="sm:pt-[50px] md:pb-[100px] sm:pb-[80px] ">
         <div className="custom-container mx-auto px-0 sm:px-[32px] w-full relative z-10">
           <div className="flex md:flex-nowrap flex-wrap gap-[50px] ">
-            <div className="lg:w-[60%] md:w-[50%] w-full md:flex hidden ps-8 flex-col gap-[150px]">
+            <div className="2xl:w-[60%] md:w-[50%] w-full md:flex hidden ps-8 flex-col gap-[150px]">
               <div className="lg:max-w-[670px] max-w-[560px]">
                 <img
                   src={ContactImage1}
@@ -193,7 +193,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="lg:w-[40%] md:w-[50%] w-full md:block hidden">
+            <div className="lg:w-[532px] md:w-[50%] w-full md:block hidden">
               <h3 className="uppercase text-white md:text-[25px] sm:text-xl text-lg font-bold pb-1 border-b-2 border-white">
                 FREQUENTLY ASKED QUESTIONS
               </h3>

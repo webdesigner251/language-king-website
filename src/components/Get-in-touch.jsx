@@ -194,9 +194,9 @@ const GetInTouch = () => {
             className="max-w-[450px] font-normal leading-[22px] tracking-[0.011em] text-black lg:text-lg sm:text-base text-sm"
             style={{ textShadow: "1px 1px 0px rgba(0, 0, 0, 0.3)" }}
           >
-            {/* Please fill out the below form. Our team will be in touch shortly. */}
+            Please fill out the below form. Our team will be in touch shortly.
           </p>
-          <form className="sm:pt-6 pt-4">
+          <form className="sm:pt-7 pt-4">
             {/* Full Name */}
             <div className="flex flex-col mb-4">
               <label
@@ -229,6 +229,7 @@ const GetInTouch = () => {
                 formData={formData}
                 setFormData={setFormData}
                 errors={{}} // no validation errors
+                flagwrapper="border-[#949AA5]"
                 wrapperClassName="w-full border-1 rounded-md bg-white sm:text-lg text-base border-[#949AA5]"
                 inputClassName="py-[12px] sm:px-[18px] px-4"
               />

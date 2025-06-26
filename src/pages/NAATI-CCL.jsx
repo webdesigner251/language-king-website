@@ -249,15 +249,15 @@ const NAATICCL = () => {
     },
     {
       image: Support5,
-      title: "Online Classes with Feedback",
+      title: "Watch PTE Band 8 Tips & Tricks",
       description:
-        "Learn tried-and-tested tips and tricks from 90 each tutors. Get feedback, learn with other students, ask doubts, and much more.",
+        "Watch pre-recorded video lectures covering all 20 tasks — from Basic to Advanced Strategies, Updated Templates, and Latest Tips and Tricks.",
     },
     {
       image: Support6,
-      title: "Missed a Class",
+      title: "Study Material",
       description:
-        "Don’t worry we’ve got you covered. Class recordings are available 24/7 for instant access.",
+        "Carefully curated resources including Templates, Prediction File, Question Bank, and Real Exam Questions.",
     },
   ];
 
@@ -390,11 +390,11 @@ const NAATICCL = () => {
             <div className="grid lg:grid-cols-2 items-end">
               <div className="">
                 <div className="flex flex-col 2xl:gap-6 gap-3">
-                  <h2 className="text-white font-bold 2xl:text-[28px] text-2xl">
+                  <h2 className="text-white font-bold 2xl:text-[28px] text-2xl ">
                     <span className="text-[#FFEE00]">NAATI CCL</span> FAST{" "}
                     <span className="text-[#52D34E]">TRACK COURSE</span>
                   </h2>
-                  <h1 className="font-inter font-bold main-heading 2xl:mt-2 mt-0 text-white">
+                  <h1 className="font-inter font-bold main-heading leading-[40px] 2xl:mt-2 mt-0 text-white">
                     Exam in 7 days? <br />
                     we've got you covered!
                   </h1>
@@ -415,7 +415,7 @@ const NAATICCL = () => {
                     </h3>
                   </div>
                 </div>
-                <div className="sm:mt-[38px] mt-3 flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] lg:max-w-[600px] md:max-w-[80%]">
+                <div className="sm:mt-[38px] mt-3 flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] lg:max-w-[600px] md:max-w-[82%]">
                   <a
                     href="#"
                     className="primary-btn bg-gradient-GreenBtn inline-flex justify-center items-center text-center text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
@@ -479,17 +479,19 @@ const NAATICCL = () => {
 
         <section className="">
           <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full">
-            <div className="sm:grid grid-cols-3 justify-between flex items-center">
-              <hr className="border-[#252525] sm:w-auto w-[20%]" />
-              <span className="font-normal 2xl:text-2xl lg:text-xl text-base text-white/60 text-center sm:inline hidden">
-                Helped <strong className="text-white">5000+</strong> students
-                pass the exam
-              </span>
-              <span className="font-normal 2xl:text-2xl lg:text-xl text-base text-white/60 text-center sm:hidden block w-[320px]">
-                Now teaching{" "}
-                <div className="text-white inline-block">2K+ students!</div>
-              </span>
-              <hr className="border-[#252525] sm:w-auto w-[20%]" />
+            <div className="flex justify-between items-center">
+              {/* <hr className="border-[#252525] sm:w-auto w-[20%]" /> */}
+              <div className="text-center w-auto mx-auto z-10 relative bg-[#0c0c0c]/80 px-3">
+                <span className="font-normal lg:text-xl text-base text-white/60 text-center sm:inline hidden">
+                  Helped <strong className="text-white">5000+</strong> students
+                  pass the exam
+                </span>
+                <span className="font-normal lg:text-xl text-base text-white/60 text-center sm:hidden inline w-[320px]">
+                  Now teaching{" "}
+                  <div className="text-white inline-block">2K+ students!</div>
+                </span>
+              </div>
+              <hr className="border-[#252525] w-full absolute left-0 right-0 z-[-1]" />
             </div>
           </div>
         </section>
@@ -704,19 +706,19 @@ const NAATICCL = () => {
           </div>
         </section>
 
-        <section className="pb-[90px]">
+        <section className="sm:pb-[90px] pb-[70px]">
           <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full">
             <h3 className="text-white font-semibold text-2xl mb-[40px]">
               + AB has worked with most diverse students in the world like:
             </h3>
-            <div className="grid grid-cols-4 md:grid-cols-8 xl:grid-cols-16 2xl:gap-x-[32px] gap-x-[22px] gap-y-[45px]">
+            <div className="grid grid-cols-4 md:grid-cols-8 xl:grid-cols-16 gap-x-[20px] sm:gap-x-[22px] 2xl:gap-x-[32px]  gap-y-[45px]">
               {students.map((student, index) => (
                 <div key={index} className="flex flex-col items-center">
-                  <div className="sm:w-16 w-12 sm:h-16 h-12 relative">
+                  <div className="w-16 h-16 relative">
                     <img
                       src={student.flag}
                       alt={student.country}
-                      className="sm:w-5 w-3 sm:h-5 h-3 rounded-sm absolute top-0 right-0 z-0"
+                      className="w-5 h-5 rounded-sm absolute top-0 right-0 z-0"
                     />
                     <img
                       src={student.image}
@@ -726,10 +728,10 @@ const NAATICCL = () => {
                   </div>
 
                   <div className="flex flex-col items-center mt-3 text-center">
-                    <p className="2xl:text-lg sm:text-base text-sm leading-[1.3] text-white mb-0">
+                    <p className="2xl:text-lg text-base leading-[1.3] text-white mb-0">
                       {student.name}
                     </p>
-                    <span className="sm:text-sm text-xs mt-[3px] font-light text-[#FFED00]">
+                    <span className="text-sm mt-[3px] font-light text-[#FFED00]">
                       {student.country}
                     </span>
                   </div>

@@ -145,7 +145,10 @@ const FreeEBook = () => {
 
   return (
     <>
-      <section className="2xl:pt-[80px] sm:pt-[70px] pt-[60px] sm:pb-[60px] pb-[40px] relative flex flex-column justify-center items-center lg:mt-0 sm:mt-8 mt-6 min-h-[90vh] border-b border-[#707070]">
+      <div className="bg-black w-full h-[120px] mt-[-120px]">
+
+      </div>
+      <section className="2xl:pt-[80px] sm:pt-[70px] pt-[60px] sm:pb-[60px] pb-[40px] relative flex flex-column justify-center items-center lg:mt-0 mt-0 min-h-[90vh] border-b border-[#707070]">
         <div className="sm:bg-transparent bg-gradient-FadetoBlack h-full w-full absolute top-0 z-10 lg:hidden block"></div>
         <img
           src={BannerBg}
@@ -299,11 +302,10 @@ const FreeEBook = () => {
             <div className="lg:w-[60%] w-full sm:inline hidden">
               <div
                 onClick={() => setSelectedBox("ebook")}
-                className={`cursor-pointer border-4 bg-[#1B1B1B] mb-[33px]  rounded-[10px] ${
-                  selectedBox === "ebook"
-                    ? "border-[#F18C2D]"
-                    : "border-[#1B1B1B]"
-                }`}
+                className={`cursor-pointer border-4 bg-[#1B1B1B] mb-[33px]  rounded-[10px] ${selectedBox === "ebook"
+                  ? "border-[#F18C2D]"
+                  : "border-[#1B1B1B]"
+                  }`}
               >
                 {/* E-Book Box content here */}
                 <div className=" xl:py-[34px] py-8 xl:px-[38px] px-6 flex items-center justify-between">
@@ -325,11 +327,10 @@ const FreeEBook = () => {
 
               <div
                 onClick={() => setSelectedBox("aiportal")}
-                className={`cursor-pointer border-4 ${
-                  selectedBox === "aiportal"
-                    ? "border-[#F18C2D]"
-                    : "border-[#1B1B1B]"
-                } rounded-[6px] bg-[#1B1B1B]`}
+                className={`cursor-pointer border-4 ${selectedBox === "aiportal"
+                  ? "border-[#F18C2D]"
+                  : "border-[#1B1B1B]"
+                  } rounded-[6px] bg-[#1B1B1B]`}
               >
                 {/* AI Portal Box content here */}
                 <div className=" ">
@@ -442,11 +443,10 @@ const FreeEBook = () => {
                   <div
                     onClick={() => setSelected("ebook")}
                     className={`mb-4 border-4 rounded-[6px] py-[24px] px-[12px] flex gap-5 justify-between items-center cursor-pointer transition-all duration-300
-          ${
-            selected === "ebook"
-              ? "border-[#F18C2D] bg-[#0A0A09]"
-              : "border-[#707070] bg-[#1B1B1B]"
-          }`}
+          ${selected === "ebook"
+                        ? "border-[#F18C2D] bg-[#0A0A09]"
+                        : "border-[#707070] bg-[#1B1B1B]"
+                      }`}
                   >
                     <div className="flex gap-2 items-start">
                       {selected === "ebook" && (
@@ -469,11 +469,10 @@ const FreeEBook = () => {
                       <button
                         type="button"
                         className={`align-middle inline-flex items-center justify-center text-center primary-btn px-4 py-2 font-bold sm:text-xl text-base relative z-10 rounded-[50px] hover-full-rounded-btn
-              ${
-                selected === "ebook"
-                  ? "bg-gradient-GreenBlue text-black"
-                  : "bg-[#3E3E3D] text-[#BFDF6A]"
-              }`}
+              ${selected === "ebook"
+                            ? "bg-gradient-GreenBlue text-black"
+                            : "bg-[#3E3E3D] text-[#BFDF6A]"
+                          }`}
                       >
                         $0.99
                       </button>
@@ -484,11 +483,10 @@ const FreeEBook = () => {
                   <div
                     onClick={() => setSelected("portal")}
                     className={`border-4 rounded-[6px] py-[24px] px-[12px] flex gap-5 justify-between items-center cursor-pointer transition-all duration-300
-          ${
-            selected === "portal"
-              ? "border-[#F18C2D] bg-[#0A0A09]"
-              : "border-[#707070] bg-[#1B1B1B]"
-          }`}
+          ${selected === "portal"
+                        ? "border-[#F18C2D] bg-[#0A0A09]"
+                        : "border-[#707070] bg-[#1B1B1B]"
+                      }`}
                   >
                     <div className="flex gap-2 items-start">
                       {selected === "portal" && (
@@ -511,11 +509,10 @@ const FreeEBook = () => {
                       <button
                         type="button"
                         className={`align-middle inline-flex items-center justify-center text-center primary-btn px-4 py-2 font-bold sm:text-xl text-base relative z-10 rounded-[50px] hover-full-rounded-btn
-              ${
-                selected === "portal"
-                  ? "bg-gradient-GreenBlue text-black"
-                  : "bg-[#3E3E3D] text-[#BFDF6A]"
-              }`}
+              ${selected === "portal"
+                            ? "bg-gradient-GreenBlue text-black"
+                            : "bg-[#3E3E3D] text-[#BFDF6A]"
+                          }`}
                       >
                         $119
                       </button>
@@ -664,9 +661,8 @@ const FreeEBook = () => {
               {faqs.map((faq, index) => (
                 <div
                   key={index}
-                  className={`py-4 ${
-                    index !== faqs.length - 1 ? "border-b border-[#9D9B9B]" : ""
-                  }`}
+                  className={`py-4 ${index !== faqs.length - 1 ? "border-b border-[#9D9B9B]" : ""
+                    }`}
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
