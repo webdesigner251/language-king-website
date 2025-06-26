@@ -160,10 +160,10 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="sm:pt-[50px] md:pb-[100px] sm:pb-[80px] ">
+      <section className="sm:pt-[70px] md:pb-[100px] sm:pb-[80px] ">
         <div className="custom-container mx-auto px-0 sm:px-[32px] w-full relative z-10">
-          <div className="flex md:flex-nowrap flex-wrap gap-[50px] ">
-            <div className="2xl:w-[60%] md:w-[50%] w-full md:flex hidden ps-8 flex-col gap-[150px]">
+          <div className="flex md:flex-nowrap justify-between flex-wrap gap-[50px]">
+            <div className="2xl:w-[60%] md:w-[50%] w-full md:flex hidden ps-8 flex-col gap-[150px] sm:pt-[26px]">
               <div className="lg:max-w-[670px] max-w-[560px]">
                 <img
                   src={ContactImage1}

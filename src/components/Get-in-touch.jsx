@@ -196,9 +196,9 @@ const GetInTouch = () => {
           >
             Please fill out the below form. Our team will be in touch shortly.
           </p>
-          <form className="sm:pt-7 pt-4">
+          <form className="sm:pt-8 pt-4">
             {/* Full Name */}
-            <div className="flex flex-col mb-4">
+            <div className="flex flex-col mb-5">
               <label
                 htmlFor="name"
                 className="text-black font-bold text-sm mb-[6px]"
@@ -218,7 +218,7 @@ const GetInTouch = () => {
             </div>
 
             {/* Phone Number */}
-            <div className="flex flex-col mb-4">
+            <div className="flex flex-col mb-5">
               <label
                 htmlFor="phone"
                 className="text-black font-bold text-sm mb-[6px]"
@@ -236,7 +236,7 @@ const GetInTouch = () => {
             </div>
 
             {/* Course Interested In */}
-            <div className="flex flex-col mb-4">
+            <div className="flex flex-col mb-5">
               <label
                 htmlFor="course"
                 className="text-black font-bold text-sm mb-[6px]"
