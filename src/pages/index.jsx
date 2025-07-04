@@ -137,7 +137,7 @@ const Home = () => {
               <h2 className="text-gradient-primary font-bold 2xl:text-[32px] text-2xl">
                 # Australia’s No.1
               </h2>
-              <h1 className="font-inter font-bold main-heading 2xl:mt-2 mt-0 text-white">
+              <h1 className="font-inter text-[clamp(2.25rem,2.25vw+1.8rem,4.5rem)] font-bold leading-tight 2xl:mt-2 mt-0 text-white">
                 PTE, IELTS & NAATI CCL Coaching Institute
               </h1>
               <p className="md:text-lg text-base font-light max-w-[600px] text-white/75">
@@ -209,13 +209,13 @@ const Home = () => {
                 />
               </div>
               <div className="lg:py-[16px]">
-                <h2 className="text-[#52D34E] [text-shadow:0px_5px_0px_#000000] font-bold md:text-[24px] inline-block sm:text-2xl text-lg">
+                <h2 className="text-[#52D34E] [text-shadow:0px_5px_0px_#000000] font-bold inline-block text-[clamp(1.125rem,_1rem+0.5vw,_1.5rem)]">
                   NAATI CCL Fast Track Course
                 </h2>
-                <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] leading-[1.2] my-[12px]">
+                <h2 className="font-bold text-[clamp(1.5rem,_1.2rem+1vw,_2.5rem)] text-white xl:leading-[2.8rem] leading-[1.2] my-[12px]">
                   Need to clear the test in 3 days, we’ve got you covered!
                 </h2>
-                <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-0">
+                <p className="text-[clamp(1rem,_0.875rem+0.5vw,_1.25rem)] font-light max-w-[800px] text-white/75 mb-0">
                   This is a super fast-paced course. It’s geared for speed,
                   designed for those who need to clear the test on urgent basis,
                   and do whatever it takes to clear it.
@@ -257,13 +257,13 @@ const Home = () => {
                 />
               </div>
               <div className="lg:py-[16px]">
-                <h2 className="text-gradient-secondary font-bold md:text-[24px] inline-block sm:text-2xl text-lg">
+                <h2 className="text-gradient-secondary font-bold inline-block text-[clamp(1.125rem,_1rem+0.5vw,_1.5rem)]">
                   PTE Master Class
                 </h2>
-                <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] leading-[1.2] my-[8px]">
+                <h2 className="font-bold text-[clamp(1.5rem,_1.2rem+1vw,_2.5rem)] text-white xl:leading-[2.8rem] leading-[1.2] my-[8px]">
                   Missed your score by a few marks! Clear in 2 weeks
                 </h2>
-                <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-0">
+                <p className="text-[clamp(1rem,_0.875rem+0.5vw,_1.25rem)] font-light max-w-[800px] text-white/75 mb-0">
                   This is literally the best advice that I give every student.
                   My strategies will teach you how to get 90 in each module.
                   I’ve helped students out for 5+ years as a super-friendly
@@ -306,14 +306,14 @@ const Home = () => {
                 />
               </div>
               <div className="lg:py-[16px]">
-                <h2 className="dark-text-custom font-bold md:text-[24px] inline-block sm:text-2xl text-lg">
+                <h2 className="dark-text-custom font-bold inline-block text-[clamp(1.125rem,_1rem+0.5vw,_1.5rem)]">
                   PTE Master Handbook
                 </h2>
-                <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] leading-[1.2] my-[8px]">
+                <h2 className="font-bold text-[clamp(1.5rem,_1.2rem+1vw,_2.5rem)] text-white xl:leading-[2.8rem] leading-[1.2] my-[8px]">
                   PTE 79+ in 7 days <br />
                   Crack PTE in 1 attempt
                 </h2>
-                <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-0">
+                <p className="text-[clamp(1rem,_0.875rem+0.5vw,_1.25rem)] font-light max-w-[800px] text-white/75 mb-0">
                   Learn exactly what students did to achieve their desired band.
                   This book explains the exam structure, target scores, key
                   tasks to focus on, and the 7-day strategy you need to follow
@@ -391,10 +391,10 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    <h3 className="text-white font-bold 2xl:text-[24px] text-[22px] sm:leading-[1.3] leading-[28px]">
+                    <h3 className="text-white font-bold text-[clamp(1.375rem,_1.3rem+0.2vw,_1.5rem)] leading-[clamp(1.75rem,_1.6rem+0.2vw,_1.875rem)]">
                       {item.title}
                     </h3>
-                    <span className="text-white/60 sm:mt-[6px] mt-[4px] block text-base font-semibold">
+                    <span className="text-white/60 mt-[clamp(4px,_0.25rem+0.2vw,_6px)] block text-[clamp(1rem,_0.95rem+0.2vw,_1.125rem)] font-semibold">
                       PTE MasterClass
                     </span>
                   </div>
@@ -414,7 +414,7 @@ const Home = () => {
       <section className="pb-8">
         <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
           <div className="bg-black1 flex flex-col sm:gap-[57px] gap-[42px] sm:leading-[auto] leading-[40px] border border-white/10 group md:px-[38px] sm:px-6 px-4 md:pt-[60px] md:pb-[85px] pt-6 pb-7  relative">
-            <h2 className="lg:text-[42px] sm:text-[40px] text-[32px] leading-[1.2] font-bold text-white text-left">
+            <h2 className="text-[clamp(2rem,_1.75rem+1vw,_2.625rem)] leading-[1.2] font-bold text-white text-left">
               What’s included in every Course
             </h2>
             <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-around gap-x-[20px] gap-y-[60px]">
