@@ -187,9 +187,102 @@ const GetInTouch = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   return (
-    <>
+    // <>
+    //   {!isSubmitted ? (
+    //     <div className="bg-white rounded-[9px] 2xl:p-[44px] md:p-[31px] sm:p-5 p-4">
+    //       <p
+    //         className="max-w-[450px] font-normal leading-[22px] tracking-[0.011em] text-black lg:text-lg sm:text-base text-sm"
+    //         style={{ textShadow: "1px 1px 0px rgba(0, 0, 0, 0.3)" }}
+    //       >
+    //         Please fill out the below form. Our team will be in touch shortly.
+    //       </p>
+    //       <form className="sm:pt-8 pt-4">
+    //         {/* Full Name */}
+    //         <div className="flex flex-col mb-5">
+    //           <label
+    //             htmlFor="name"
+    //             className="text-black font-bold text-sm mb-[6px]"
+    //           >
+    //             Full Name*
+    //           </label>
+    //           <input
+    //             type="text"
+    //             name="name"
+    //             placeholder="Your first & last name"
+    //             value={formData.name}
+    //             onChange={(e) =>
+    //               setFormData({ ...formData, [e.target.name]: e.target.value })
+    //             }
+    //             className="border-1 border-[#949AA5] rounded-md bg-white py-[12px] sm:px-[18px] px-4 sm:text-lg text-base"
+    //           />
+    //         </div>
+
+    //         {/* Phone Number */}
+    //         <div className="flex flex-col mb-5">
+    //           <label
+    //             htmlFor="phone"
+    //             className="text-black font-bold text-sm mb-[6px]"
+    //           >
+    //             Phone Number*
+    //           </label>
+    //           <PhoneInput
+    //             formData={formData}
+    //             setFormData={setFormData}
+    //             errors={{}} // no validation errors
+    //             flagwrapper="border-[#949AA5]"
+    //             wrapperClassName="w-full border-1 rounded-md bg-white sm:text-lg text-base border-[#949AA5]"
+    //             inputClassName="py-[12px] sm:px-[18px] px-4"
+    //           />
+    //         </div>
+
+    //         {/* Course Interested In */}
+    //         <div className="flex flex-col mb-5">
+    //           <label
+    //             htmlFor="course"
+    //             className="text-black font-bold text-sm mb-[6px]"
+    //           >
+    //             Course Interested in*
+    //           </label>
+    //           <CustomDropdown
+    //             selected={formData.course}
+    //             onChange={(value) =>
+    //               setFormData((prev) => ({ ...prev, course: value }))
+    //             }
+    //             error={null}
+    //             buttonClassName="bg-white rounded-md border-1 py-[12px] sm:px-[18px] px-4"
+    //           />
+    //         </div>
+
+    //         {/* Privacy Notice */}
+    //         <span className="font-normal text-[#949AA4] sm:text-sm text-xs py-2 block">
+    //           Your information will be used to consider and fulfill your request
+    //           and will be handled pursuant to our{" "}
+    //           <a href="#" className="underline">
+    //             Privacy Policy
+    //           </a>
+    //           .
+    //         </span>
+
+    //         {/* Button */}
+    //         <button
+    //           type="button"
+    //           onClick={() => setIsSubmitted(true)}
+    //           className="align-middle inline-flex items-center justify-center text-center primary-btn bg-[#E42552] text-white px-3 py-4 w-full font-bold text-lg relative z-10 mt-4 rounded-md"
+    //         >
+    //           Get In Touch
+    //         </button>
+    //       </form>
+    //     </div>
+    //   ) : (
+    //     <div className="bg-[#121211] rounded-[15px] px-5 py-6 shadow-[0_0_44px_5px_rgba(255,176,193,0.7)]">
+    //       <ContactThankyou />
+    //     </div>
+    //   )}
+    // </>
+
+        <>
       {!isSubmitted ? (
-        <div className="bg-white rounded-[9px] 2xl:p-[44px] md:p-[31px] sm:p-5 p-4">
+        <div className="bg-white rounded-[9px] pt-[2.084em] px-[2.292em] pb-[2.292em]">
           <p
             className="max-w-[450px] font-normal leading-[22px] tracking-[0.011em] text-black lg:text-lg sm:text-base text-sm"
             style={{ textShadow: "1px 1px 0px rgba(0, 0, 0, 0.3)" }}

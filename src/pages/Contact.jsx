@@ -76,13 +76,222 @@ const faqs = [
 
 const Contact = () => {
   return (
+    // <>
+    //   <section className="md:pt-[70px] pt-[100px] sm:mt-[-120px] mt-[-80px]">
+    //     <div className="custom-container mx-auto px-4 sm:px-[32px] w-full relative z-10">
+    //       <div className=" md:pt-[100px] sm:pt-[70px] pt-[60px] sm:pb-[54px]">
+    //         <div className="flex md:flex-nowrap justify-between flex-wrap lg:gap-[50px] gap-[30px]">
+    //           <div className="2xl:w-[60%] lg:w-[55%] md:w-[50%] w-full">
+    //             <h2 class="lg:text-[52px] sm:text-[42px] text-[32px] leading-[1.2] -mt-[10px] font-bold text-white text-left lg:max-w-full md:max-w-[340px]">
+    //               Get in touch with us
+    //             </h2>
+    //             <p className="relative text-[#B7B7B7] text-lg max-w-[600px] my-3">
+    //               Contact us on xxxxxxxxx/ xxxxxxxxx
+    //             </p>
+    //             {/* Mobile Form */}
+    //             <div className="md:hidden block pt-3">
+    //               <GetInTouch />
+    //             </div>
+    //             <div className="lg:my-[60px] my-[50px]">
+    //               <h3 className="text-white font-bold md:text-2xl sm:text-xl text-lg">
+    //                 Why Language King?
+    //               </h3>
+    //               <ul className="mt-5 sm:ps-5 gap-5 max-w-[690px]">
+    //                 <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
+    //                   <img
+    //                     src={CheckmarkGray}
+    //                     alt="CheckmarkGray"
+    //                     className="w-4 pt-1"
+    //                   />
+    //                   Learn from 8 each tutors. The best way to crack any exam
+    //                   is to learn from the person who has cracked it.
+    //                 </li>
+    //                 <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
+    //                   <img
+    //                     src={CheckmarkGray}
+    //                     alt="CheckmarkGray"
+    //                     className="w-4 pt-1"
+    //                   />
+    //                   Stay up-to-date with changes in exam, and learn the latest
+    //                   strategies from carefully designed video lectures by
+    //                   Abhishek, PTE & NAATI Master Trainer.
+    //                 </li>
+    //                 <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
+    //                   <img
+    //                     src={CheckmarkGray}
+    //                     alt="CheckmarkGray"
+    //                     className="w-4 pt-1"
+    //                   />
+    //                   1-to-1 feedback from experts & personalized timetable to
+    //                   fit your busy schedule, learn from the comfort of your
+    //                   home while sipping coffee.
+    //                 </li>
+    //                 <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
+    //                   <img
+    //                     src={CheckmarkGray}
+    //                     alt="CheckmarkGray"
+    //                     className="w-4 pt-1"
+    //                   />
+    //                   Access to AI based portal with real time scoring, 5000+
+    //                   practice questions, including sectional and full mock
+    //                   test.
+    //                 </li>
+    //               </ul>
+    //             </div>
+    //             <div className="flex sm:gap-5 gap-3 max-w-[700px]">
+    //               <img
+    //                 src={PinkQuote}
+    //                 alt="PinkQuote"
+    //                 className="-mt-[80px] sm:w-[50px] w-8"
+    //               />
+    //               <p className="lg:text-2xl sm:text-xl text-base text-white">
+    //                 Language King is perfect for new or struggling students,
+    //                 offering expert feedback and guidance to help achieve
+    //                 desired scores.
+    //               </p>
+    //             </div>
+    //           </div>
+    //           {/* Desktop Form */}
+    //           <div className="lg:w-[532px] md:w-[50%] w-full md:block hidden">
+    //             <GetInTouch />
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </section>
+
+    //   <section className="sm:pt-[70px] md:pb-[100px] sm:pb-[80px] ">
+    //     <div className="custom-container mx-auto px-0 sm:px-[32px] w-full relative z-10">
+    //       <div className="flex md:flex-nowrap justify-between flex-wrap gap-[50px]">
+    //         <div className="2xl:w-[60%] md:w-[50%] w-full md:flex hidden ps-8 flex-col gap-[150px] sm:pt-[26px]">
+    //           <div className="lg:max-w-[670px] max-w-[560px]">
+    //             <img
+    //               src={ContactImage1}
+    //               alt="ContactImage1"
+    //               className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[4deg] w-full"
+    //             />
+    //           </div>
+    //           <div className="lg:max-w-[670px] max-w-[560px]">
+    //             <img
+    //               src={ContactImage2}
+    //               alt="ContactImage1"
+    //               className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[-7deg] w-full"
+    //             />
+    //           </div>
+    //           <div className="lg:max-w-[670px] max-w-[560px]">
+    //             <img
+    //               src={ContactImage3}
+    //               alt="ContactImage1"
+    //               className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[3deg] w-full"
+    //             />
+    //           </div>
+    //           <div className="lg:max-w-[670px] max-w-[560px]">
+    //             <img
+    //               src={ContactImage4}
+    //               alt="ContactImage1"
+    //               className="shadow-[0_0_25px_11px_rgba(255,255,255,0.55)] -rotate-[4.5deg] w-full"
+    //             />
+    //           </div>
+    //         </div>
+    //         <div className="lg:w-[532px] md:w-[50%] w-full md:block hidden">
+    //           <h3 className="uppercase text-white md:text-[25px] sm:text-xl text-lg font-bold pb-1 border-b-2 border-white">
+    //             FREQUENTLY ASKED QUESTIONS
+    //           </h3>
+
+    //           <div className="mt-6">
+    //             {faqs.map((faq, idx) => (
+    //               <div key={idx} className="mb-4 3xl:text-xl text-lg">
+    //                 <h3 className="text-white font-bold">{faq.question}</h3>
+    //                 <p
+    //                   className="pt-1 text-[#cacaca] text-base font-normal leading-[24px]"
+    //                   dangerouslySetInnerHTML={{ __html: faq.answer }}
+    //                 />
+    //               </div>
+    //             ))}
+    //           </div>
+
+    //           <div className="flex flex-col items-start gap-[22px] mt-[120px]">
+    //             <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[35px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+    //               <img
+    //                 src={facebookIcon}
+    //                 alt="facebookIcon"
+    //                 className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
+    //               />
+    //               <img
+    //                 src={facebookIconLight}
+    //                 alt="facebookIcon"
+    //                 className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
+    //               />
+    //               <div>
+    //                 <h4 className="font-aileron sm:text-lg text-base  text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+    //                   Join the Facebook Community
+    //                 </h4>
+    //                 <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block leading-[14px] mt-1">
+    //                   facebook.com/languageking
+    //                 </span>
+    //               </div>
+    //             </div>
+    //             <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[45px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+    //               <img
+    //                 src={InstaIcon}
+    //                 alt="InstaIcon"
+    //                 className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
+    //               />
+    //               <img
+    //                 src={InstaIconLight}
+    //                 alt="facebookIcon"
+    //                 className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
+    //               />
+    //               <div>
+    //                 <h4 className="font-aileron sm:text-lg text-base  text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+    //                   Follow us on Instagram
+    //                 </h4>
+    //                 <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block leading-[14px] mt-1">
+    //                   instagram.com/languageking
+    //                 </span>
+    //               </div>
+    //             </div>
+    //             <div className="bg-[#1A1A1A] py-[14px] ps-[14px] pe-[35px] rounded-[100px] flex items-center gap-4 group transition-all duration-300 ease hover:bg-white">
+    //               <img
+    //                 src={TiktokIcon}
+    //                 alt="TiktokIcon"
+    //                 className="w-14 h-14 group-hover:hidden transition-all duration-300 ease"
+    //               />
+    //               <img
+    //                 src={TiktokIconLight}
+    //                 alt="facebookIcon"
+    //                 className="w-14 h-14 hidden group-hover:flex transition-all duration-300 ease"
+    //               />
+    //               <div>
+    //                 <h4 className="font-aileron sm:text-lg text-base  text-white transition-all duration-300 ease group-hover:text-black font-bold leading-[1.1]">
+    //                   Explore our content on TikTok
+    //                 </h4>
+    //                 <span className="text-sm text-white/50 font-semibold transition-all duration-300 ease group-hover:text-black/50 break-all block leading-[14px] mt-1">
+    //                   tiktok.com/@languageking
+    //                 </span>
+    //               </div>
+    //             </div>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </section>
+
+    //   <section className="bg-gradient-redBlack md:hidden pt-[50px] -mb-[40px] ">
+    //     <img
+    //       src={ContactMobileImage}
+    //       alt="contactMobile"
+    //       className="w-full h-auto"
+    //     />
+    //   </section>
+    // </>
     <>
       <section className="md:pt-[70px] pt-[100px] sm:mt-[-120px] mt-[-80px]">
         <div className="custom-container mx-auto px-4 sm:px-[32px] w-full relative z-10">
           <div className=" md:pt-[100px] sm:pt-[70px] pt-[60px] sm:pb-[54px]">
-            <div className="flex md:flex-nowrap justify-between flex-wrap lg:gap-[50px] gap-[30px]">
+            <div className="flex md:flex-nowrap justify-between flex-wrap gap-[8.856em]">
               <div className="2xl:w-[60%] lg:w-[55%] md:w-[50%] w-full">
-                <h2 class="lg:text-[52px] sm:text-[42px] text-[32px] leading-[1.2] -mt-[10px] font-bold text-white text-left lg:max-w-full md:max-w-[340px]">
+                <h2 class="sm:text-[3.438em] text-[32px] leading-[1.2] -mt-[10px] font-bold text-white text-left lg:max-w-full md:max-w-[340px]">
                   Get in touch with us
                 </h2>
                 <p className="relative text-[#B7B7B7] text-lg max-w-[600px] my-3">
@@ -92,12 +301,12 @@ const Contact = () => {
                 <div className="md:hidden block pt-3">
                   <GetInTouch />
                 </div>
-                <div className="lg:my-[60px] my-[50px]">
-                  <h3 className="text-white font-bold md:text-2xl sm:text-xl text-lg">
+                <div className="lg:my-[4.376em] my-[50px]">
+                  <h3 className="text-white font-bold text-[1.587em] text-lg">
                     Why Language King?
                   </h3>
-                  <ul className="mt-5 sm:ps-5 gap-5 max-w-[690px]">
-                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
+                  <ul className="mt-[2.292em] sm:ps-[1.094em] gap-5 max-w-[690px]">
+                    <li className="flex items-start sm:leading-[1.303em] leading-[1.4] sm:text-[1.042em] text-sm text-[#ACACAC] gap-[2.084em] pb-3">
                       <img
                         src={CheckmarkGray}
                         alt="CheckmarkGray"
@@ -106,7 +315,7 @@ const Contact = () => {
                       Learn from 8 each tutors. The best way to crack any exam
                       is to learn from the person who has cracked it.
                     </li>
-                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
+                    <li className="flex items-start sm:leading-[1.303em] leading-[1.4] sm:text-[1.042em] text-sm text-[#ACACAC] gap-[2.084em] py-3">
                       <img
                         src={CheckmarkGray}
                         alt="CheckmarkGray"
@@ -116,7 +325,7 @@ const Contact = () => {
                       strategies from carefully designed video lectures by
                       Abhishek, PTE & NAATI Master Trainer.
                     </li>
-                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
+                    <li className="flex items-start sm:leading-[1.303em] leading-[1.4] sm:text-[1.042em] text-sm text-[#ACACAC] gap-[2.084em] py-3">
                       <img
                         src={CheckmarkGray}
                         alt="CheckmarkGray"
@@ -126,7 +335,7 @@ const Contact = () => {
                       fit your busy schedule, learn from the comfort of your
                       home while sipping coffee.
                     </li>
-                    <li className="flex items-start sm:leading-[1.2] leading-[1.4] sm:text-base text-sm text-[#ACACAC] sm:gap-7 gap-4 py-3">
+                    <li className="flex items-start sm:leading-[1.303em] leading-[1.4] sm:text-[1.042em] text-sm text-[#ACACAC] gap-[2.084em] pt-3">
                       <img
                         src={CheckmarkGray}
                         alt="CheckmarkGray"
@@ -142,9 +351,9 @@ const Contact = () => {
                   <img
                     src={PinkQuote}
                     alt="PinkQuote"
-                    className="-mt-[80px] sm:w-[50px] w-8"
+                    className="-mt-[80px] sm:w-[3.230em] w-8"
                   />
-                  <p className="lg:text-2xl sm:text-xl text-base text-white">
+                  <p className="lg:text-[1.511em] sm:text-xl text-base text-white">
                     Language King is perfect for new or struggling students,
                     offering expert feedback and guidance to help achieve
                     desired scores.
@@ -152,7 +361,7 @@ const Contact = () => {
                 </div>
               </div>
               {/* Desktop Form */}
-              <div className="lg:w-[532px] md:w-[50%] w-full md:block hidden">
+              <div className="lg:w-[35.219em] md:w-[50%] w-full md:block hidden">
                 <GetInTouch />
               </div>
             </div>
