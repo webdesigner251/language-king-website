@@ -286,9 +286,9 @@ const Contact = () => {
     //   </section>
     // </>
     <>
-      <section className="md:pt-[70px] pt-[100px] sm:mt-[-120px] mt-[-80px]">
-        <div className="custom-container mx-auto px-4 sm:px-[32px] w-full relative z-10">
-          <div className=" md:pt-[100px] sm:pt-[70px] pt-[60px] sm:pb-[54px]">
+      <section className="md:pt-[6.614em] pt-[6.614em] sm:mt-[-120px] mt-[-80px]">
+        <div className="custom-container mx-auto px-4 sm:px-[2.116em] w-full relative z-10">
+          <div className=" md:pt-[6.614em] sm:pb-[3.571em]">
             <div className="flex md:flex-nowrap justify-between flex-wrap gap-[8.856em]">
               <div className="2xl:w-[60%] lg:w-[55%] md:w-[50%] w-full">
                 <h2 class="sm:text-[3.438em] text-[32px] leading-[1.2] -mt-[10px] font-bold text-white text-left lg:max-w-full md:max-w-[340px]">
