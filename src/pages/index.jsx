@@ -123,6 +123,490 @@ const Home = () => {
   const closePopup = () => setShowPopup(false);
 
   return (
+    // <>
+    //   <section className="banner-wrapper min-h-[110vh] sm:pt-[270px] pt-[450px] sm:pb-[100px] pb-[60px] mt-[-150px] relative flex items-center overflow-hidden">
+    //     {/* <section className="banner-wrapper sm:pt-[320px] pt-[400px] sm:pb-[200px] pb-[40px] min-h-[100vh] mt-[-150px] relative flex items-center overflow-hidden"></section> */}
+    //     <img
+    //       src={HomeBanner}
+    //       alt="HomeBanner"
+    //       className="scale-[1.1] absolute w-full h-full top-0 left-0 right-0 bottom-0 object-cover"
+    //     />
+    //     <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full z-10 relative ">
+    //       <div className="max-w-[clamp(20em,_90vw,_55.334em)]">
+    //         <div className="flex flex-col gap-[clamp(0.75em,_0.5em+0.5vw,_1.5em)]">
+    //           <h2 className="text-gradient-primary font-bold text-[clamp(1.5em,_1.2em+0.6vw,_2em)]">
+    //             # Australia’s No.1
+    //           </h2>
+
+    //           <h1 className="font-inter text-[clamp(2.25em,2.25vw+1.8em,4.5em)] font-bold leading-tight text-white">
+    //             PTE, IELTS & NAATI CCL Coaching Institute
+    //           </h1>
+
+    //           <p className="text-[clamp(1em,_0.95em+0.4vw,_1.125em)] font-light max-w-[clamp(20em,_70vw,_37.35em)] text-white/75">
+    //             Join 10,000+ satisfied students in achieving their desired Test
+    //             Scores. Helped many students, now it's your turn!
+    //           </p>
+    //         </div>
+
+    //         <div className="mt-[clamp(2em,_1.5em+1vw,_3em)] flex flex-wrap sm:flex-nowrap gap-[clamp(1em,_0.75em+0.5vw,_2em)] max-w-auto lg:max-w-[clamp(20em,_70vw,_40em)]">
+    //           <Link
+    //             to="/home2"
+    //             className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full sm:w-[50%] font-bold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] relative z-10"
+    //           >
+    //             Get-a Callback
+    //           </Link>
+
+    //           <Link
+    //             to="/free-e-book"
+    //             className="align-middle inline-flex items-center gap-[clamp(0.75em,_0.5em+0.5vw,_1.125em)] justify-center text-center bg-transparent border-2 border-Cadmium-Orange text-white px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full sm:w-[50%] font-semibold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] transition-all duration-300 ease hover:bg-white/10"
+    //           >
+    //             <svg
+    //               width="20"
+    //               height="20"
+    //               viewBox="0 0 22 24"
+    //               fill="none"
+    //               xmlns="http://www.w3.org/2000/svg"
+    //             >
+    //               <path
+    //                 d="M21.93 11.9998L0 23.9253V0.0742188L21.93 11.9998Z"
+    //                 fill="url(#paint0_linear_702_4078)"
+    //               />
+    //               <defs>
+    //                 <linearGradient
+    //                   id="paint0_linear_702_4078"
+    //                   x1="0"
+    //                   y1="11.9997"
+    //                   x2="21.93"
+    //                   y2="11.9997"
+    //                   gradientUnits="userSpaceOnUse"
+    //                 >
+    //                   <stop stopColor="#D7FF53" />
+    //                   <stop offset="1" stopColor="#FD4F2B" />
+    //                 </linearGradient>
+    //               </defs>
+    //             </svg>
+    //             Watch FREE Lessons
+    //           </Link>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </section>
+
+    //   <section className="mb-8 lg:scroll-mt-[90px]" id="courses">
+    //     <div className="custom-container mx-auto py-0 px-[clamp(1em,_1vw+1em,_2em)] z-50 border-t border-[#252525]">
+    //       <div>
+    //         <h2 className="text-white font-bold text-[clamp(1.125em,_1em+0.8vw,_1.65em)] relative inline-block z-10 my-[clamp(1.25em,_2vw,_2.375em)] stroke-heading">
+    //           Our Courses
+    //         </h2>
+    //       </div>
+
+    //       <div className="flex flex-col gap-[clamp(1.5em,_1em+1vw,_2.375em)]">
+    //         {/* COURSE CARD 1 */}
+    //         <div className="course-drop-shadow bg-course-green-bg hover:bg-course-green-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[clamp(1.5em,_1em+1vw,_2.375em)] transition-all duration-300 ease group p-[clamp(1em,_0.5em+1vw,_1.5em)] relative">
+    //           <div className="ribbon ribbon-top-left z-10">
+    //             <span>New course!</span>
+    //           </div>
+    //           <div className="overflow-hidden relative z-0 max-h-[28.125em]">
+    //             <img
+    //               src={CourseImg1}
+    //               alt="CourseImg1"
+    //               className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]"
+    //             />
+    //           </div>
+    //           <div className="lg:py-[clamp(0.875em,_0.75em+0.2vw,_1.125em)]">
+    //             <h2 className="text-[#52D34E] font-bold inline-block text-[clamp(1.25em,0.25vw+1.25em,1.5em)]">
+    //               NAATI CCL Fast Track Course
+    //             </h2>
+    //             <h2 className="font-bold text-[clamp(1.5em,1vw+1.5em,2.5em)] leading-[1.2] text-white my-[0.214em]">
+    //               Need to clear the test in 3 days, we’ve got you covered!
+    //             </h2>
+
+    //             <p className="text-[clamp(1em,0.125vw+1em,1.125em)] font-light max-w-[clamp(20em,90vw,50em)] text-white/75 mb-0">
+    //               This is a super fast-paced course. It’s geared for speed,
+    //               designed for those who need to clear the test on urgent basis,
+    //               and do whatever it takes to clear it.
+    //             </p>
+    //             <div className="sm:flex items-center gap-[clamp(0.75em,_0.5em+0.5vw,_1em)] my-[clamp(0.5em,_0.5em+0.5vw,_0.5em)] hidden">
+    //               <img
+    //                 src={avatar}
+    //                 alt="avatar"
+    //                 className="w-[3.125em] h-[3.125em] rounded-full border-4 border-white/10"
+    //               />
+    //               <h3 className="text-[clamp(1em,_0.9em+0.4vw,_1.125em)] font-light text-white/60">
+    //                 Taught by <span className="text-white font-semibold">Abhishek</span>
+    //               </h3>
+    //             </div>
+    //             <div className="pt-[clamp(0.75em,_0.5em+0.3vw,_1em)] flex lg:flex-nowrap flex-wrap lg:gap-[16px] gap-[12px] lg:max-w-[clamp(20em,_70vw,_50em)]">
+    //               <Link
+    //                 onClick={openPopup}
+    //                 className="primary-btn bg-gradient-GreenBtn inline-flex justify-center items-center text-center text-white px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full lg:w-[50%] font-bold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
+    //               >
+    //                 Take the Course
+    //               </Link>
+    //               <Link
+    //                 to="/naaticcl"
+    //                 className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full lg:w-[50%] font-bold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] z-10 transition-all duration-300 ease hover:bg-white/10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
+    //               >
+    //                 View Details
+    //               </Link>
+    //             </div>
+    //           </div>
+    //         </div>
+
+    //         <div className="course-drop-shadow bg-course-blue-bg hover:bg-course-blue-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[clamp(1.5em,_1em+1vw,_2.375em)] transition-all duration-300 ease group p-[clamp(1em,_0.5em+1vw,_1.5em)] relative">
+    //           <div className="overflow-hidden relative z-0 max-h-[28.125em]">
+    //             <img
+    //               src={CourseImg2}
+    //               alt="CourseIm21"
+    //               className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]"
+    //             />
+    //           </div>
+    //           <div className="lg:py-[clamp(0.875em,_0.75em+0.2vw,_1.125em)]">
+    //             <h2 className="text-gradient-secondary font-bold inline-block text-[clamp(1.25em,0.25vw+1.25em,1.5em)]">
+    //               PTE Master Class
+    //             </h2>
+    //             <h2 className="font-bold text-white text-[clamp(1.5em,1vw+1.5em,2.5em)] leading-[1.2] my-[8px]">
+    //               Missed your score by a few marks! Clear in 2 weeks
+    //             </h2>
+    //             <p className="text-[clamp(1em,0.125vw+1em,1.125em)] font-light max-w-[clamp(20em,90vw,50em)] text-white/75 mb-0">
+    //               This is literally the best advice that I give every student.
+    //               My strategies will teach you how to get 90 in each module.
+    //               I’ve helped students out for 5+ years as a super-friendly
+    //               teacher to get their desired score, now it’s your turn.
+    //             </p>
+    //             <div className="sm:flex items-center gap-[clamp(0.75em,_0.5em+0.5vw,_1em)] my-[clamp(0.5em,_0.5em+0.5vw,_0.5em)] hidden">
+    //               <img
+    //                 src={avatar}
+    //                 alt="avatar"
+    //                 className="w-[3.125em] h-[3.125em] rounded-full border-4 border-white/10"
+    //               />
+    //               <h3 className="text-[clamp(1em,_0.9em+0.4vw,_1.125em)] font-light text-white/60">
+    //                 Taught by <span className="text-white font-semibold">Abhishek</span>
+    //               </h3>
+    //             </div>
+    //             <div className="pt-[clamp(0.75em,_0.5em+0.3vw,_1em)] flex lg:flex-nowrap flex-wrap lg:gap-[16px] gap-[12px] lg:max-w-[clamp(20em,_70vw,_50em)]">
+    //               <Link
+    //                 onClick={openPopup}
+    //                 className="primary-btn bg-gradient-secondary inline-flex justify-center items-center text-center text-white px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full lg:w-[50%] font-bold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
+    //               >
+    //                 Take the Course
+    //               </Link>
+    //               <Link
+    //                 to="/pte-masterclass"
+    //                 className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full lg:w-[50%] font-bold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] z-10 transition-all duration-300 ease hover:bg-white/10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
+    //               >
+    //                 View Details
+    //               </Link>
+    //             </div>
+    //           </div>
+    //         </div>
+
+    //         <div className="course-drop-shadow bg-course-black-bg hover:bg-course-black-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[clamp(1.5em,_1em+1vw,_2.375em)] transition-all duration-300 ease group p-[clamp(1em,_0.5em+1vw,_1.5em)] relative">
+    //           <div className="overflow-hidden relative z-0 max-h-[28.125em]">
+    //             <img
+    //               src={CourseImg3}
+    //               alt="CourseImg3"
+    //               className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]"
+    //             />
+    //           </div>
+    //           <div className="lg:py-[clamp(0.875em,_0.75em+0.2vw,_1.125em)]">
+    //             <h2 className="dark-text-custom font-bold inline-block text-[clamp(1.25em,0.25vw+1.25em,1.5em)]">
+    //               PTE Master Handbook
+    //             </h2>
+    //             <h2 className="font-bold text-white text-[clamp(1.5em,1vw+1.5em,2.5em)] leading-[1.2] my-[8px]">
+    //               PTE 79+ in 7 days <br />
+    //               Crack PTE in 1 attempt
+    //             </h2>
+    //             <p className="text-[clamp(1em,0.125vw+1em,1.125em)] font-light max-w-[clamp(20em,90vw,50em)] text-white/75 mb-0">
+    //               Learn exactly what students did to achieve their desired band.
+    //               This book explains the exam structure, target scores, key
+    //               tasks to focus on, and the 7-day strategy you need to follow
+    //               to go from 5 to 8 each as quickly as possible.
+    //             </p>
+    //             <div className="sm:flex items-center gap-[clamp(0.75em,_0.5em+0.5vw,_1em)] my-[clamp(0.5em,_0.5em+0.5vw,_0.5em)] hidden">
+    //               <img
+    //                 src={avatar}
+    //                 alt="avatar"
+    //                 className="w-[3.125em] h-[3.125em] rounded-full border-4 border-white/10"
+    //               />
+    //               <h3 className="text-[clamp(1em,_0.9em+0.4vw,_1.125em)] font-light text-white/60">
+    //                 Taught by <span className="text-white font-semibold">Abhishek</span>
+    //               </h3>
+    //             </div>
+    //             <div className="pt-[clamp(0.75em,_0.5em+0.3vw,_1em)] flex lg:flex-nowrap flex-wrap lg:gap-[16px] gap-[12px] lg:max-w-[clamp(20em,_70vw,_50em)]">
+    //               <Link
+    //                 to="/free-e-book"
+    //                 className="primary-btn bg-gradient-dark leading-[28px] inline-flex justify-center items-center text-center text-white px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full lg:w-[50%] font-bold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
+    //               >
+    //                 Free E-Book
+    //               </Link>
+    //               <a
+    //                 href="#"
+    //                 className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full lg:w-[50%] font-bold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] z-10 transition-all duration-300 ease hover:bg-white/10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
+    //               >
+    //                 View Details
+    //               </a>
+    //             </div>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </section>
+
+    //   {showPopup && <CallbackForm onClose={closePopup} />}
+
+    //   <section className="pb-[32px]">
+    //     <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
+    //       <div className="bg-[#252525] px-[clamp(1em,1vw+1em,2em)]">
+    //         <div className="py-[clamp(1.75em,0.75vw+1.75em,2.5em)]">
+    //           <h2 className="text-[clamp(1.3125em,0.8vw+1.2em,2.25em)] leading-normal font-bold text-white text-left mb-4">
+    //             Try these FREE video lessons
+    //           </h2>
+
+    //           <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-[28px] gap-[52px]">
+    //             {videoItems.map((item, index) => (
+    //               <div key={index} className="relative">
+    //                 <div className="border-b-[8px] border-[#A6A6A6] mb-3 shadow-[0px_5.03162px_0px_#000000]">
+    //                   <div
+    //                     className="w-full aspect-16/9 cursor-pointer relative"
+    //                     onClick={() => {
+    //                       setActiveVideo(item.videoSrc);
+    //                       setIsModalOpen(true);
+    //                     }}
+    //                   >
+    //                     <img
+    //                       src={item.thumbnail}
+    //                       alt={item.title}
+    //                       className="w-full h-full object-cover"
+    //                     />
+    //                     <div className="absolute inset-0 flex items-center justify-center transition">
+    //                       <div
+    //                         className={`w-16 h-16 bg-black/40 rounded-full flex items-center justify-center`}
+    //                       >
+    //                         <svg
+    //                           className="w-10 h-10 text-white"
+    //                           fill="currentColor"
+    //                           viewBox="0 0 24 24"
+    //                         >
+    //                           <path d="M8 5v14l11-7z" />
+    //                         </svg>
+    //                       </div>
+    //                     </div>
+    //                   </div>
+    //                 </div>
+    //                 <h3 className="text-white font-bold text-[clamp(1.375em,_1.3em+0.2vw,_1.5em)] leading-[1.3]">
+    //                   {item.title}
+    //                 </h3>
+    //                 <span className="text-white/60 mt-[clamp(4px,_0.25em+0.2vw,_6px)] block text-[clamp(1em,_0.95em+0.2vw,_1.125em)] font-semibold">
+    //                   PTE MasterClass
+    //                 </span>
+    //               </div>
+    //             ))}
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </section>
+
+    //   <VideoModal
+    //     isOpen={isModalOpen}
+    //     onClose={() => setIsModalOpen(false)}
+    //     videoSrc={activeVideo}
+    //   />
+
+    //   <section className="pb-8">
+    //     <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
+    //       <div className="bg-black1 flex flex-col gap-[clamp(2.625em,0.9615vw+2.625em,3.5625em)] leading-[2.5em] border border-white/10 group px-[clamp(1em,1vw+1em,2em)] pt-[clamp(1.5em,2.3077vw+1.5em,3.75em)] pb-[clamp(1.75em,3.6538vw+1.75em,5.3125em)] relative">
+    //         <h2 className="text-[clamp(2em,1.41vw+2em,3.375em)] leading-[1.2] font-bold text-white text-left">
+    //           What’s included in every Course
+    //         </h2>
+    //         <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-around gap-x-[clamp(1.25em,calc(1.25em+0.08vw),2.5em)] gap-y-[clamp(3.75em,calc(3.75em+0.16vw),6.25em)]">
+    //           <div className="text-center">
+    //             <img
+    //               src={Icon1}
+    //               alt="Icon"
+    //               className="mx-auto mb-[clamp(24px,0.064vw,25px)] max-w-[clamp(4.875em,calc(4.375em+2.5vw),7.375em)]"
+    //             />
+    //             <span className="text-white/50 block max-w-[270px] mx-auto text-[clamp(0.875em,calc(0.8em+0.375vw),1.25em)] leading-[1.3]">
+    //               <span className="block text-[#E9E9E9]">Video Lectures -</span>{" "}
+    //               Basic to advance
+    //             </span>
+    //           </div>
+    //           <div className="text-center">
+    //             <img
+    //               src={Icon2}
+    //               alt="Icon"
+    //               className="mx-auto mb-[clamp(24px,0.064vw,25px)] max-w-[clamp(4.875em,calc(4.375em+2.5vw),7.375em)]"
+    //             />
+    //             <span className="text-white/50 block max-w-[270px] mx-auto text-[clamp(0.875em,calc(0.8em+0.375vw),1.25em)] leading-[1.3]">
+    //               <span className="block text-[#E9E9E9]">Study Material -</span>{" "}
+    //               Templates and prediction file
+    //             </span>
+    //           </div>
+    //           <div className="text-center">
+    //             <img
+    //               src={Icon3}
+    //               alt="Icon"
+    //               className="mx-auto mb-[clamp(24px,0.064vw,25px)] max-w-[clamp(4.875em,calc(4.375em+2.5vw),7.375em)]"
+    //             />
+    //             <span className="text-white/50 block max-w-[270px] mx-auto text-[clamp(0.875em,calc(0.8em+0.375vw),1.25em)] leading-[1.3]">
+    //               <span className="block text-[#E9E9E9]">
+    //                 Class Recordings -{" "}
+    //               </span>
+    //               Video library of past classes
+    //             </span>
+    //           </div>
+    //           <div className="text-center">
+    //             <img
+    //               src={Icon4}
+    //               alt="Icon"
+    //               className="mx-auto mb-[clamp(24px,0.064vw,25px)] max-w-[clamp(4.875em,calc(4.375em+2.5vw),7.375em)]"
+    //             />
+    //             <span className="text-white/50 block max-w-[270px] mx-auto text-[clamp(0.875em,calc(0.8em+0.375vw),1.25em)] leading-[1.3]">
+    //               <span className="block text-[#E9E9E9]">AI Portal -</span>Mock
+    //               Test & 5000+ exam questions
+    //             </span>
+    //           </div>
+    //           <div className="text-center">
+    //             <img
+    //               src={Icon5}
+    //               alt="Icon"
+    //               className="mx-auto mb-[clamp(24px,0.064vw,25px)] max-w-[clamp(4.875em,calc(4.375em+2.5vw),7.375em)]"
+    //             />
+    //             <span className="text-white/50 block max-w-[270px] mx-auto text-[clamp(0.875em,calc(0.8em+0.375vw),1.25em)] leading-[1.3]">
+    //               <span className="block text-[#E9E9E9]">Feedback -</span>
+    //               Ask an Expert
+    //             </span>
+    //           </div>
+    //           <div className="text-center">
+    //             <img
+    //               src={Icon6}
+    //               alt="Icon"
+    //               className="mx-auto mb-[clamp(24px,0.064vw,25px)] max-w-[clamp(4.875em,calc(4.375em+2.5vw),7.375em)]"
+    //             />
+    //             <span className="text-white/50 block max-w-[270px] mx-auto text-[clamp(0.875em,calc(0.8em+0.375vw),1.25em)] leading-[1.3]">
+    //               <span className="block text-[#E9E9E9]">Live Classes - </span>
+    //               Learn with other students
+    //             </span>
+    //           </div>
+    //           <div className="text-center">
+    //             <img
+    //               src={Icon7}
+    //               alt="Icon"
+    //               className="mx-auto mb-[clamp(24px,0.064vw,25px)] max-w-[clamp(4.875em,calc(4.375em+2.5vw),7.375em)]"
+    //             />
+    //             <span className="text-white/50 block max-w-[270px] mx-auto text-[clamp(0.875em,calc(0.8em+0.375vw),1.25em)] leading-[1.3]">
+    //               <span className="block text-[#E9E9E9]">
+    //                 Expert Trainers -
+    //               </span>
+    //               Learn from certified trainers
+    //             </span>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </section>
+
+    //   <section className="pb-8">
+    //     <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
+    //       <div className="bg-[#212121] px-4 sm:px-8 sm:pb-[32px] pb-4 relative z-10">
+    //         <div className="relative z-20">
+    //           <div className="sm:py-[32px] py-7 flex justify-between items-center">
+    //             <h2 className="sm:text-3xl text-2xl font-bold text-white text-left">
+    //               Testimonials
+    //             </h2>
+    //             <div className="flex items-center justify-end">
+    //               <Link
+    //                 to="/testimonials"
+    //                 className="bg-black2 sm:p-[12px] p-[9px] sm:min-w-[140px] min-w-[100px] text-center rounded-[6px] text-white sm:text-lg text-base font-semibold "
+    //               >
+    //                 View all
+    //               </Link>
+    //             </div>
+    //           </div>
+    //           <TestimonialCarousel testimonials={testimonials} />
+    //         </div>
+    //         <img
+    //           src={GrainIMG}
+    //           alt="GrainIMG"
+    //           className="absolute top-0  w-full h-full left-0 right-0 z-0 object-cover"
+    //         />
+    //       </div>
+    //     </div>
+    //   </section>
+
+    //   <section>
+    //     <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
+    //       <div className="bg-[#121212] px-4 py-6 sm:px-[32px] sm:py-[44px] border-[1.5px] border-white/10 transition-all duration-300 ease group relative">
+    //         <div className="flex md:flex-nowrap flex-wrap gap-[130px] items-stretch justify-between middle-border">
+    //           <div className="md:block hidden md:w-[50%] w-full">
+    //             <img
+    //               src={personImage}
+    //               alt="personImage"
+    //               className="w-full rounded-[11px]"
+    //             />
+    //             <h2 className="font-bold text-white lg:text-[40px] text-3xl mt-[32px]">
+    //               What’s covered in class:
+    //             </h2>
+    //             <div className="grid lg:grid-cols-2 grid-cols-1 mt-[42px] gap-7 ">
+    //               <div className="flex items-center gap-4 text-white font-medium lg:text-[22px] text-xl">
+    //                 <img
+    //                   src={checklist}
+    //                   alt="checklist"
+    //                   className="w-[26px] h-[26px]"
+    //                 />
+    //                 Basic Introduction
+    //               </div>
+    //               <div className="flex items-center gap-4 text-white font-medium lg:text-[22px] text-xl">
+    //                 <img
+    //                   src={checklist}
+    //                   alt="checklist"
+    //                   className="w-[26px] h-[26px]"
+    //                 />
+    //                 Test Format & Overview
+    //               </div>
+    //               <div className="flex items-center gap-4 text-white font-medium lg:text-[22px] text-xl">
+    //                 <img
+    //                   src={checklist}
+    //                   alt="checklist"
+    //                   className="w-[26px] h-[26px]"
+    //                 />
+    //                 Level of English
+    //               </div>
+    //               <div className="flex items-center gap-4 text-white font-medium lg:text-[22px] text-xl">
+    //                 <img
+    //                   src={checklist}
+    //                   alt="checklist"
+    //                   className="w-[26px] h-[26px]"
+    //                 />
+    //                 Scorecard Analysis
+    //               </div>
+    //               <div className="flex items-center gap-4 text-white font-medium lg:text-[22px] text-xl">
+    //                 <img
+    //                   src={checklist}
+    //                   alt="checklist"
+    //                   className="w-[26px] h-[26px]"
+    //                 />
+    //                 And more!
+    //               </div>
+    //             </div>
+    //           </div>
+    //           <div className="md:w-[50%] w-full">
+    //             <h2 className="font-bold lg:text-[42px] sm:text-4xl text-[26px] text-gradient-OrangeRed border-b-2 border-[#2A2A2A] pb-5">
+    //               Book a FREE Trial Class
+    //             </h2>
+    //             <p className="font-normal text-white/75 lg:text-[22px] sm:text-xl text-base pt-7">
+    //               Please fill out the below form. Our team will be in touch shortly.
+    //             </p>
+    //             <div className="sm:pt-6 pt-4">
+    //               <BookFreeTrail />
+    //             </div>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </section>
+    // </>
     <>
       <section className="banner-wrapper min-h-[110vh] sm:pt-[270px] pt-[450px] sm:pb-[100px] pb-[60px] mt-[-150px] relative flex items-center overflow-hidden">
         {/* <section className="banner-wrapper sm:pt-[320px] pt-[400px] sm:pb-[200px] pb-[40px] min-h-[100vh] mt-[-150px] relative flex items-center overflow-hidden"></section> */}
@@ -132,33 +616,29 @@ const Home = () => {
           className="scale-[1.1] absolute w-full h-full top-0 left-0 right-0 bottom-0 object-cover"
         />
         <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] w-full z-10 relative ">
-          <div className="max-w-[clamp(20em,_90vw,_55.334em)]">
-            <div className="flex flex-col gap-[clamp(0.75em,_0.5em+0.5vw,_1.5em)]">
-              <h2 className="text-gradient-primary font-bold text-[clamp(1.5em,_1.2em+0.6vw,_2em)]">
+          <div className="max-w-[830px]">
+            <div className="flex flex-col 2xl:gap-6 gap-3">
+              <h2 className="text-gradient-primary font-bold 2xl:text-[32px] text-2xl">
                 # Australia’s No.1
               </h2>
-
-              <h1 className="font-inter text-[clamp(2.25em,2.25vw+1.8em,4.5em)] font-bold leading-tight text-white">
+              <h1 className="font-inter font-bold main-heading 2xl:mt-2 mt-0 text-white">
                 PTE, IELTS & NAATI CCL Coaching Institute
               </h1>
-
-              <p className="text-[clamp(1em,_0.95em+0.4vw,_1.125em)] font-light max-w-[clamp(20em,_70vw,_37.35em)] text-white/75">
+              <p className="md:text-lg text-base font-light max-w-[600px] text-white/75">
                 Join 10,000+ satisfied students in achieving their desired Test
                 Scores. Helped many students, now it's your turn!
               </p>
             </div>
-
-            <div className="mt-[clamp(2em,_1.5em+1vw,_3em)] flex flex-wrap sm:flex-nowrap gap-[clamp(1em,_0.75em+0.5vw,_2em)] max-w-auto lg:max-w-[clamp(20em,_70vw,_40em)]">
+            <div className="mt-[48px] flex sm:flex-nowrap flex-wrap sm:gap-[31px] gap-[16px] max-w-[600px]">
               <Link
                 to="/home2"
-                className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full sm:w-[50%] font-bold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] relative z-10"
+                className="align-middle inline-flex items-center justify-center text-center primary-btn bg-gradient-primary text-black px-3 sm:py-3 py-[14px] sm:w-[50%] w-full sm:font-semibold font-bold sm:text-xl text-lg relative z-10"
               >
                 Get-a Callback
               </Link>
-
               <Link
-                to="/free-e-book"
-                className="align-middle inline-flex items-center gap-[clamp(0.75em,_0.5em+0.5vw,_1.125em)] justify-center text-center bg-transparent border-2 border-Cadmium-Orange text-white px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full sm:w-[50%] font-semibold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] transition-all duration-300 ease hover:bg-white/10"
+                to="/contact2"
+                className="align-middle inline-flex items-center gap-[18px] justify-center text-center bg-transparent border-2 border-Cadmium-Orange text-white px-3 sm:py-3 py-[14px] sm:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all duration-300 ease hover:bg-white/10"
               >
                 <svg
                   width="20"
@@ -193,59 +673,58 @@ const Home = () => {
       </section>
 
       <section className="mb-8 lg:scroll-mt-[90px]" id="courses">
-        <div className="custom-container mx-auto py-0 px-[clamp(1em,_1vw+1em,_2em)] z-50 border-t border-[#252525]">
-          <div>
-            <h2 className="text-white font-bold text-[clamp(1.125em,_1em+0.8vw,_1.65em)] relative inline-block z-10 my-[clamp(1.25em,_2vw,_2.375em)] stroke-heading">
+        <div className="custom-container mx-auto py-0 px-4 sm:px-[32px] z-50 border-t border-[#252525]">
+          <div className="">
+            <h2 className="text-white font-bold sm:text-[26.39px] text-lg relative  inline-block z-10 sm:my-[38px] mt-[30px] mb-[20px] stroke-heading">
               Our Courses
             </h2>
           </div>
-
-          <div className="flex flex-col gap-[clamp(1.5em,_1em+1vw,_2.375em)]">
-            {/* COURSE CARD 1 */}
-            <div className="course-drop-shadow bg-course-green-bg hover:bg-course-green-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[clamp(1.5em,_1em+1vw,_2.375em)] transition-all duration-300 ease group p-[clamp(1em,_0.5em+1vw,_1.5em)] relative">
+          <div className="flex flex-col gap-[32px]">
+            <div className="bg-course-green-bg hover:bg-course-green-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
               <div className="ribbon ribbon-top-left z-10">
                 <span>New course!</span>
               </div>
-              <div className="overflow-hidden relative z-0 max-h-[28.125em]">
+
+              <div className="overflow-hidden relative z-0 max-h-[450px]">
                 <img
                   src={CourseImg1}
                   alt="CourseImg1"
                   className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]"
                 />
               </div>
-              <div className="lg:py-[clamp(0.875em,_0.75em+0.2vw,_1.125em)]">
-                <h2 className="text-[#52D34E] font-bold inline-block text-[clamp(1.25em,0.25vw+1.25em,1.5em)]">
+              <div className="lg:py-[16px]">
+                <h2 className="text-[#52D34E] [text-shadow:0px_5px_0px_#000000] font-bold md:text-[24px] inline-block sm:text-2xl text-lg">
                   NAATI CCL Fast Track Course
                 </h2>
-                <h2 className="font-bold text-[clamp(1.5em,1vw+1.5em,2.5em)] leading-[1.2] text-white my-[0.214em]">
+                <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] leading-[1.2] my-[12px]">
                   Need to clear the test in 3 days, we’ve got you covered!
                 </h2>
-
-                <p className="text-[clamp(1em,0.125vw+1em,1.125em)] font-light max-w-[clamp(20em,90vw,50em)] text-white/75 mb-0">
+                <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-0">
                   This is a super fast-paced course. It’s geared for speed,
                   designed for those who need to clear the test on urgent basis,
                   and do whatever it takes to clear it.
                 </p>
-                <div className="sm:flex items-center gap-[clamp(0.75em,_0.5em+0.5vw,_1em)] my-[clamp(0.5em,_0.5em+0.5vw,_0.5em)] hidden">
+                <div className="sm:flex items-center gap-3 my-[12px] hidden">
                   <img
                     src={avatar}
                     alt="avatar"
-                    className="w-[3.125em] h-[3.125em] rounded-full border-4 border-white/10"
+                    className="w-[50px] h-[50px] rounded-full border-4 border-white/10"
                   />
-                  <h3 className="text-[clamp(1em,_0.9em+0.4vw,_1.125em)] font-light text-white/60">
-                    Taught by <span className="text-white font-semibold">Abhishek</span>
+                  <h3 className="text-base font-light text-white/60">
+                    Taught by{" "}
+                    <span className="text-white font-semibold">Abhishek</span>
                   </h3>
                 </div>
-                <div className="pt-[clamp(0.75em,_0.5em+0.3vw,_1em)] flex lg:flex-nowrap flex-wrap lg:gap-[16px] gap-[12px] lg:max-w-[clamp(20em,_70vw,_50em)]">
+                <div className="pt-[12px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
                   <Link
                     onClick={openPopup}
-                    className="primary-btn bg-gradient-GreenBtn inline-flex justify-center items-center text-center text-white px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full lg:w-[50%] font-bold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
+                    className="primary-btn bg-gradient-GreenBtn inline-flex justify-center items-center text-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
                   >
                     Take the Course
                   </Link>
                   <Link
                     to="/naaticcl"
-                    className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full lg:w-[50%] font-bold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] z-10 transition-all duration-300 ease hover:bg-white/10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
+                    className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg z-10 transition-all duration-300 ease hover:bg-white/10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
                   >
                     View Details
                   </Link>
@@ -253,47 +732,48 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="course-drop-shadow bg-course-blue-bg hover:bg-course-blue-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[clamp(1.5em,_1em+1vw,_2.375em)] transition-all duration-300 ease group p-[clamp(1em,_0.5em+1vw,_1.5em)] relative">
-              <div className="overflow-hidden relative z-0 max-h-[28.125em]">
+            <div className="course-drop-shadow bg-course-blue-bg hover:bg-course-blue-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
+              <div className="overflow-hidden relative z-0 max-h-[450px]">
                 <img
                   src={CourseImg2}
                   alt="CourseIm21"
                   className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]"
                 />
               </div>
-              <div className="lg:py-[clamp(0.875em,_0.75em+0.2vw,_1.125em)]">
-                <h2 className="text-gradient-secondary font-bold inline-block text-[clamp(1.25em,0.25vw+1.25em,1.5em)]">
+              <div className="lg:py-[16px]">
+                <h2 className="text-gradient-secondary font-bold md:text-[24px] inline-block sm:text-2xl text-lg">
                   PTE Master Class
                 </h2>
-                <h2 className="font-bold text-white text-[clamp(1.5em,1vw+1.5em,2.5em)] leading-[1.2] my-[8px]">
+                <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] leading-[1.2] my-[8px]">
                   Missed your score by a few marks! Clear in 2 weeks
                 </h2>
-                <p className="text-[clamp(1em,0.125vw+1em,1.125em)] font-light max-w-[clamp(20em,90vw,50em)] text-white/75 mb-0">
+                <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-0">
                   This is literally the best advice that I give every student.
                   My strategies will teach you how to get 90 in each module.
                   I’ve helped students out for 5+ years as a super-friendly
                   teacher to get their desired score, now it’s your turn.
                 </p>
-                <div className="sm:flex items-center gap-[clamp(0.75em,_0.5em+0.5vw,_1em)] my-[clamp(0.5em,_0.5em+0.5vw,_0.5em)] hidden">
+                <div className="sm:flex items-center gap-3 my-[12px] hidden">
                   <img
                     src={avatar}
                     alt="avatar"
-                    className="w-[3.125em] h-[3.125em] rounded-full border-4 border-white/10"
+                    className="w-[50px] h-[50px] rounded-full border-4 border-white/10"
                   />
-                  <h3 className="text-[clamp(1em,_0.9em+0.4vw,_1.125em)] font-light text-white/60">
-                    Taught by <span className="text-white font-semibold">Abhishek</span>
+                  <h3 className="text-base font-light text-white/60">
+                    Taught by{" "}
+                    <span className="text-white font-semibold">Abhishek</span>
                   </h3>
                 </div>
-                <div className="pt-[clamp(0.75em,_0.5em+0.3vw,_1em)] flex lg:flex-nowrap flex-wrap lg:gap-[16px] gap-[12px] lg:max-w-[clamp(20em,_70vw,_50em)]">
+                <div className="pt-[12px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
                   <Link
                     onClick={openPopup}
-                    className="primary-btn bg-gradient-secondary inline-flex justify-center items-center text-center text-white px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full lg:w-[50%] font-bold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
+                    className="primary-btn bg-gradient-secondary leading-[28px] inline-flex justify-center items-center text-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
                   >
                     Take the Course
                   </Link>
                   <Link
                     to="/pte-masterclass"
-                    className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full lg:w-[50%] font-bold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] z-10 transition-all duration-300 ease hover:bg-white/10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
+                    className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all z-10 duration-300 ease hover:bg-white/10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
                   >
                     View Details
                   </Link>
@@ -301,48 +781,49 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="course-drop-shadow bg-course-black-bg hover:bg-course-black-hover-bg border-[1.5px] border-white/10 grid items-center lg:grid-cols-2 gap-[clamp(1.5em,_1em+1vw,_2.375em)] transition-all duration-300 ease group p-[clamp(1em,_0.5em+1vw,_1.5em)] relative">
-              <div className="overflow-hidden relative z-0 max-h-[28.125em]">
+            <div className="course-drop-shadow bg-course-black-bg hover:bg-course-black-hover-bg border-[1.5px] border-[#333434] grid items-center lg:grid-cols-2 gap-[38px] transition-all duration-300 ease group px-4 sm:px-6 py-4 sm:py-6 relative">
+              <div className="overflow-hidden relative z-0 max-h-[450px]">
                 <img
                   src={CourseImg3}
                   alt="CourseImg3"
                   className="w-full h-full object-cover transition-all duration-300 ease group-hover:scale-[1.05]"
                 />
               </div>
-              <div className="lg:py-[clamp(0.875em,_0.75em+0.2vw,_1.125em)]">
-                <h2 className="dark-text-custom font-bold inline-block text-[clamp(1.25em,0.25vw+1.25em,1.5em)]">
+              <div className="lg:py-[16px]">
+                <h2 className="dark-text-custom font-bold md:text-[24px] inline-block sm:text-2xl text-lg">
                   PTE Master Handbook
                 </h2>
-                <h2 className="font-bold text-white text-[clamp(1.5em,1vw+1.5em,2.5em)] leading-[1.2] my-[8px]">
+                <h2 className="font-bold xl:text-[40px] md:text-[32px] sm:text-[30px] text-2xl text-white xl:leading-[2.8rem] leading-[1.2] my-[8px]">
                   PTE 79+ in 7 days <br />
                   Crack PTE in 1 attempt
                 </h2>
-                <p className="text-[clamp(1em,0.125vw+1em,1.125em)] font-light max-w-[clamp(20em,90vw,50em)] text-white/75 mb-0">
+                <p className="md:text-xl lg:text-lg text-base font-light max-w-[800px] text-white/75 mb-0">
                   Learn exactly what students did to achieve their desired band.
                   This book explains the exam structure, target scores, key
                   tasks to focus on, and the 7-day strategy you need to follow
                   to go from 5 to 8 each as quickly as possible.
                 </p>
-                <div className="sm:flex items-center gap-[clamp(0.75em,_0.5em+0.5vw,_1em)] my-[clamp(0.5em,_0.5em+0.5vw,_0.5em)] hidden">
+                <div className="sm:flex items-center gap-3 my-[12px] hidden">
                   <img
                     src={avatar}
                     alt="avatar"
-                    className="w-[3.125em] h-[3.125em] rounded-full border-4 border-white/10"
+                    className="w-[50px] h-[50px] rounded-full border-4 border-white/10"
                   />
-                  <h3 className="text-[clamp(1em,_0.9em+0.4vw,_1.125em)] font-light text-white/60">
-                    Taught by <span className="text-white font-semibold">Abhishek</span>
+                  <h3 className="text-base font-light text-white/60">
+                    Taught by{" "}
+                    <span className="text-white font-semibold">Abhishek</span>
                   </h3>
                 </div>
-                <div className="pt-[clamp(0.75em,_0.5em+0.3vw,_1em)] flex lg:flex-nowrap flex-wrap lg:gap-[16px] gap-[12px] lg:max-w-[clamp(20em,_70vw,_50em)]">
+                <div className="pt-[12px] flex lg:flex-nowrap flex-wrap lg:gap-[31px] gap-[16px] lg:max-w-[800px]">
                   <Link
                     to="/free-e-book"
-                    className="primary-btn bg-gradient-dark leading-[28px] inline-flex justify-center items-center text-center text-white px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full lg:w-[50%] font-bold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
+                    className="primary-btn bg-gradient-dark leading-[28px] inline-flex justify-center items-center text-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg relative z-10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
                   >
                     Free E-Book
                   </Link>
                   <a
                     href="#"
-                    className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-[clamp(1em,_0.75em+0.5vw,_1.5em)] py-[clamp(0.587em,_0.75em+0.3vw,_0.4em)] w-full lg:w-[50%] font-bold text-[clamp(1.125em,_1em+0.4vw,_1.25em)] z-10 transition-all duration-300 ease hover:bg-white/10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
+                    className="text-center bg-transparent border-[1.5px] border-white/20 inline-flex justify-center items-center text-white px-3 sm:py-3 py-[14px] lg:w-[50%] w-full font-semibold sm:text-xl text-lg transition-all z-10 duration-300 ease hover:bg-white/10 shadow-[0px_4px_0px_rgba(0,0,0,0.25),_0px_3px_0px_rgba(0,0,0,0.25)]"
                   >
                     View Details
                   </a>
@@ -357,9 +838,9 @@ const Home = () => {
 
       <section className="pb-[32px]">
         <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
-          <div className="bg-[#252525] px-[clamp(1em,1vw+1em,2em)]">
-            <div className="py-[clamp(1.75em,0.75vw+1.75em,2.5em)]">
-              <h2 className="text-[clamp(1.3125em,0.8vw+1.2em,2.25em)] leading-normal font-bold text-white text-left mb-4">
+          <div className="bg-[#252525] px-4 sm:px-8 ">
+            <div className="sm:py-10 py-7">
+              <h2 className="sm:text-2xl text-[21px] leading-normal font-bold text-white text-left mb-4">
                 Try these FREE video lessons
               </h2>
 
@@ -394,10 +875,10 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-                    <h3 className="text-white font-bold text-[clamp(1.375em,_1.3em+0.2vw,_1.5em)] leading-[1.3]">
+                    <h3 className="text-white font-bold 2xl:text-[24px] text-[22px] sm:leading-[1.3] leading-[28px]">
                       {item.title}
                     </h3>
-                    <span className="text-white/60 mt-[clamp(4px,_0.25em+0.2vw,_6px)] block text-[clamp(1em,_0.95em+0.2vw,_1.125em)] font-semibold">
+                    <span className="text-white/60 sm:mt-[6px] mt-[4px] block text-base font-semibold">
                       PTE MasterClass
                     </span>
                   </div>
@@ -416,18 +897,18 @@ const Home = () => {
 
       <section className="pb-8">
         <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
-          <div className="bg-black1 flex flex-col gap-[clamp(2.625em,0.9615vw+2.625em,3.5625em)] leading-[2.5em] border border-white/10 group px-[clamp(1em,1vw+1em,2em)] pt-[clamp(1.5em,2.3077vw+1.5em,3.75em)] pb-[clamp(1.75em,3.6538vw+1.75em,5.3125em)] relative">
-            <h2 className="text-[clamp(2em,1.41vw+2em,3.375em)] leading-[1.2] font-bold text-white text-left">
+          <div className="bg-black1 flex flex-col sm:gap-[57px] gap-[42px] sm:leading-[auto] leading-[40px] border border-white/10 group md:px-[38px] sm:px-6 px-4 md:pt-[60px] md:pb-[85px] pt-6 pb-7  relative">
+            <h2 className="lg:text-[42px] sm:text-[40px] text-[32px] leading-[1.2] font-bold text-white text-left">
               What’s included in every Course
             </h2>
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-around gap-x-[clamp(1.25em,calc(1.25em+0.08vw),2.5em)] gap-y-[clamp(3.75em,calc(3.75em+0.16vw),6.25em)]">
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-around gap-x-[20px] gap-y-[60px]">
               <div className="text-center">
                 <img
                   src={Icon1}
                   alt="Icon"
-                  className="mx-auto mb-[clamp(24px,0.064vw,25px)] max-w-[clamp(4.875em,calc(4.375em+2.5vw),7.375em)]"
+                  className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]"
                 />
-                <span className="text-white/50 block max-w-[270px] mx-auto text-[clamp(0.875em,calc(0.8em+0.375vw),1.25em)] leading-[1.3]">
+                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">
                   <span className="block text-[#E9E9E9]">Video Lectures -</span>{" "}
                   Basic to advance
                 </span>
@@ -436,9 +917,9 @@ const Home = () => {
                 <img
                   src={Icon2}
                   alt="Icon"
-                  className="mx-auto mb-[clamp(24px,0.064vw,25px)] max-w-[clamp(4.875em,calc(4.375em+2.5vw),7.375em)]"
+                  className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]"
                 />
-                <span className="text-white/50 block max-w-[270px] mx-auto text-[clamp(0.875em,calc(0.8em+0.375vw),1.25em)] leading-[1.3]">
+                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">
                   <span className="block text-[#E9E9E9]">Study Material -</span>{" "}
                   Templates and prediction file
                 </span>
@@ -447,9 +928,9 @@ const Home = () => {
                 <img
                   src={Icon3}
                   alt="Icon"
-                  className="mx-auto mb-[clamp(24px,0.064vw,25px)] max-w-[clamp(4.875em,calc(4.375em+2.5vw),7.375em)]"
+                  className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]"
                 />
-                <span className="text-white/50 block max-w-[270px] mx-auto text-[clamp(0.875em,calc(0.8em+0.375vw),1.25em)] leading-[1.3]">
+                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">
                   <span className="block text-[#E9E9E9]">
                     Class Recordings -{" "}
                   </span>
@@ -460,9 +941,9 @@ const Home = () => {
                 <img
                   src={Icon4}
                   alt="Icon"
-                  className="mx-auto mb-[clamp(24px,0.064vw,25px)] max-w-[clamp(4.875em,calc(4.375em+2.5vw),7.375em)]"
+                  className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]"
                 />
-                <span className="text-white/50 block max-w-[270px] mx-auto text-[clamp(0.875em,calc(0.8em+0.375vw),1.25em)] leading-[1.3]">
+                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">
                   <span className="block text-[#E9E9E9]">AI Portal -</span>Mock
                   Test & 5000+ exam questions
                 </span>
@@ -471,9 +952,9 @@ const Home = () => {
                 <img
                   src={Icon5}
                   alt="Icon"
-                  className="mx-auto mb-[clamp(24px,0.064vw,25px)] max-w-[clamp(4.875em,calc(4.375em+2.5vw),7.375em)]"
+                  className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]"
                 />
-                <span className="text-white/50 block max-w-[270px] mx-auto text-[clamp(0.875em,calc(0.8em+0.375vw),1.25em)] leading-[1.3]">
+                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">
                   <span className="block text-[#E9E9E9]">Feedback -</span>
                   Ask an Expert
                 </span>
@@ -482,9 +963,9 @@ const Home = () => {
                 <img
                   src={Icon6}
                   alt="Icon"
-                  className="mx-auto mb-[clamp(24px,0.064vw,25px)] max-w-[clamp(4.875em,calc(4.375em+2.5vw),7.375em)]"
+                  className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]"
                 />
-                <span className="text-white/50 block max-w-[270px] mx-auto text-[clamp(0.875em,calc(0.8em+0.375vw),1.25em)] leading-[1.3]">
+                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">
                   <span className="block text-[#E9E9E9]">Live Classes - </span>
                   Learn with other students
                 </span>
@@ -493,9 +974,9 @@ const Home = () => {
                 <img
                   src={Icon7}
                   alt="Icon"
-                  className="mx-auto mb-[clamp(24px,0.064vw,25px)] max-w-[clamp(4.875em,calc(4.375em+2.5vw),7.375em)]"
+                  className="mx-auto sm:mb-[25px] mb-6 sm:max-w-[88px] max-w-[78px]"
                 />
-                <span className="text-white/50 block max-w-[270px] mx-auto text-[clamp(0.875em,calc(0.8em+0.375vw),1.25em)] leading-[1.3]">
+                <span className="text-white/50 md:text-lg sm:text-lg text-sm block max-w-[270px] mx-auto">
                   <span className="block text-[#E9E9E9]">
                     Expert Trainers -
                   </span>
@@ -607,6 +1088,7 @@ const Home = () => {
         </div>
       </section>
     </>
+
   );
 };
 
