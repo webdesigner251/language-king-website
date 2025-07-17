@@ -16,7 +16,7 @@ import Contact from "./pages/Contact";
 import FreeEBook from "./pages/Free-E-book";
 import Home2 from "./pages/thankyou"; // This page is for view purpose only to show the thankyou card design for client remove it when backend done.
 import FreeEBooksubmit from "./pages/e-book-submit";
-import Contact2 from './pages/contact2'
+
 
 function App() {
   const location = useLocation();
@@ -39,7 +39,6 @@ function App() {
           <Route path="/free-e-book" element={<FreeEBook />}></Route>
           <Route path="/home2" element={<Home2 />}></Route>
           <Route path="/ebook-submit" element={<FreeEBooksubmit />}></Route>
-          <Route path="/contact2" element={<Contact2 />}></Route>
         </Routes>
       </main>
       <Footer />
