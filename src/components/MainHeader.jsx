@@ -26,11 +26,10 @@ const MainHeader = () => {
 
   return (
     <header
-      className={`text-white sm:py-[32px] py-[32px] z-50 active-header ${
-        isSticky
-          ? "lg:sticky lg:top-0 lg:bg-black lg:shadow-md"
-          : "bg-noise-pattern relative"
-      }`}
+      className={`text-white sm:py-[32px] py-[32px] z-50 active-header ${isSticky
+        ? "lg:sticky lg:top-0 lg:bg-black lg:shadow-md"
+        : "bg-noise-pattern relative"
+        }`}
     >
       <div className="custom-container mx-auto py-0 px-4 sm:px-[32px]">
         <div className="flex items-center justify-between relative">
@@ -86,11 +85,10 @@ const MainHeader = () => {
                 <li className="text-center inline-flex items-center">
                   <Link
                     to="/contact"
-                    className={`relative inline-flex items-center justify-center 2xl:px-[22px] 2xl:py-[12.8px] px-[15px] py-[10px] font-bold 2xl:text-[18px] text-[16px] transition-all duration-300 header-btn min-w-[180px] z-10 ${
-                      isSticky
-                        ? "primary-btn bg-gradient-primary text-black border-none"
-                        : "text-white border border-white/25 hover:border-white bg-black"
-                    } `}
+                    className={`px-4 py-2 text-base w-auto text-center focus:outline-none relative inline-flex items-center justify-center font-bold transition-all duration-300 header-btn z-10  min-w-[150px] ${isSticky
+                      ? "primary-btn bg-gradient-primary text-black border-none "
+                      : "text-white border border-white/25 hover:border-white bg-black"
+                      } `}
                   >
                     Get-a Callback
                   </Link>
